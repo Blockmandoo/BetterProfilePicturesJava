@@ -1,10 +1,82 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Better Profile Pictures</title>
+	<link rel="icon" href="assets/objects/BetterPicture.png">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#5FD83B"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta property="og:description" content="Automatically generating a new profile picture using a java canvas."/>
+	<meta property="og:image:type" content="image/png"/>
+	<meta property="og:image:url" content="/assets/objects/BetterPicture.png"/>
+	<meta property="og:site_name" content="BetterProfilePictures"/>
+	<meta property="og:title" content="Better Profile Pictures"/>
+	<meta property="og:type" content="article"/>
+	<title>Better Profile Pictures</title>
 </head>
 
-<body>
+<body class="darkMode">
+	<nav></nav>
+	<section id="banner"><a href="#" id="canvasLink">
+		<canvas width="256" height="256"></canvas>
+		</a>
+		<aside>
+			<h1 id="title">Icon Title</h1>
+			<p id="description">
+				Icon description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, minus, tempora. Iusto, quae expedita in natus quas possimus impedit distinctio.
+			</p>
+			<div id="buttons">
+				<button id="download" type="button">Download</button>
+				<button id="random" type="button">Random</button>
+				<button id="upload" type="button">Upload</button>
+				Darkmode:
+				<button id="darkmode" class="toggle"></button>
+			</div>
+		</aside>
+	</section>
+	<main>
+		<div id="genre">
+			<div class="imageCard">
+				<tooltip>
+					<h5>Genre1</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id.
+					</p>
+				</tooltip>
+				<img class="lightMode" src="assets/darkmode/abstract/4Fold.png" alt="">
+				<img class="darkMode" src="assets/abstract/4Fold.png" alt="">
+			</div>
+			<div class="imageCard">
+				<tooltip>
+					<h5>Genre2</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, vero.
+					</p>
+				</tooltip>
+				<img class="lightMode" src="assets/darkmode/animals/Butterfly.png" alt="">
+				<img class="darkMode" src="assets/animals/Butterfly.png" alt="">
+			</div>
+			<div class="imageCard">
+				<tooltip>
+					<h5>Genre3</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, minima.
+					</p>
+				</tooltip>
+				<img class="lightMode" src="assets/darkmode/defaults/Discord.png" alt="">
+				<img class="darkMode" src="assets/defaults/Discord.png" alt="">
+			</div>
+		</div>
+		<div id="logo">
+		</div>
+		<div id="logoColor">
+		</div>
+		<div id="backgroundColor">
+		</div>
+		<div id="backgroundStyle">
+		</div>
+		<div id="shape">
+		</div>
+	</main>
 </body>
 </html>

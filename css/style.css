@@ -1,1 +1,34 @@
-/* CSS Document */
+@import url(buttonColors.css);
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 0 10px; }
+
+img {
+  height: 80px;
+  width: 80px; }
+
+.imageCard {
+  position: relative;
+  display: inline; }
+
+tooltip {
+  width: 120px;
+  position: relative;
+  display: block; }
+
+body.lightMode .darkMode {
+  display: none; }
+
+body.lightMode {
+  background: white;
+  color: #1f1f1f; }
+
+body.darkMode .lightMode {
+  display: none; }
+
+body.darkMode {
+  background: #1f1f1f;
+  color: white; }

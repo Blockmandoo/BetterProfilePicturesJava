@@ -1,0 +1,7 @@
+body.lightMode .darkMode {
+	display: none;
+}
+body.lightMode {
+	background: $white;
+	color: $black;
+}

@@ -1,2 +1,9 @@
-/* CSS Document */
+$black: #1f1f1f;
+$white: white;
+$imgSize: 80px;
 
+@import "_reset";
+@import "_layout";
+@import "buttonColors.css";
+@import "_lightmode";
+@import "_darkmode";

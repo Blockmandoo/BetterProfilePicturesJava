@@ -1,2 +1,16 @@
-/* CSS Document */
-
+body {
+	padding: 0 10px;
+}
+img {
+	height: $imgSize;
+	width: $imgSize;
+}
+.imageCard {
+	position: relative;
+	display: inline;
+}
+tooltip {
+	width: 1.5*$imgSize;
+	position: relative;
+	display: block;
+}
