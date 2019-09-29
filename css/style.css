@@ -1,5 +1,6 @@
 @import url(buttonColors.css);
 html, body {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -32,3 +33,6 @@ body.darkMode .lightMode {
 body.darkMode {
   background: #1f1f1f;
   color: white; }
+
+button {
+  padding: 4px 6px; }
