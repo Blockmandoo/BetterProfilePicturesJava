@@ -1,7 +1,44 @@
-body.lightMode .darkMode {
-	display: none;
-}
 body.lightMode {
-	background: $white;
+	background: $offwhite;
 	color: $black;
+	.darkMode {
+		display: none;
+	}
+	&::before {
+		content: "";
+		background: linear-gradient(rgba(239,236,230,0.9) 25%, $offwhite), url("../assets/Background-Icons.png");
+		background-position: center;
+		background-size: 100%, $imgSize*6;
+		position: fixed;
+		top: 0; left: 0; right: 0; bottom: 0;
+		filter: blur(3px);
+		z-index: -1;
+	}
+	#banner {
+		background: $white;
+	}
+	image-card {
+		tool-tip {
+			background: hsla(0, 0, 85, .75);
+			border: 1px solid $black;
+		}
+		img {
+			background: hsla(0, 0, 100, .4);
+			outline: 2px solid transparent;
+			outline-offset: -2px;
+			transition: outline .4s ease, background .2s ease;
+		}
+		&:hover img {
+			outline: 2px solid $black;
+			outline-offset: -2px;
+		}
+	}
+	image-card.active {
+		tool-tip {
+			border-color: $darkgreen;
+		}
+		img {
+			outline-color: $darkgreen;
+		}
+	}
 }

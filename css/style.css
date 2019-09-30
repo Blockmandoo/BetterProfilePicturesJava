@@ -1,16 +1,51 @@
 @import url(buttonColors.css);
-html, body {
+html, body, h1, h2, h3, h4, h5, p {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0; }
 
-body {
-  padding: 0 10px; }
+h5 {
+  font-size: 1.1em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1.3em; }
+
+h2 {
+  font-size: 1.4em; }
+
+h1 {
+  font-size: 1.5em; }
+
+main {
+  padding: 0 18px;
+  width: 95%;
+  margin: auto; }
+
+#banner {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 20px 0;
+  display: grid;
+  grid-template: ". canvas description ."; }
+  #banner > a#canvasLink {
+    grid-area: canvas;
+    text-align: right; }
+    #banner > a#canvasLink canvas {
+      margin-right: 10px; }
+  #banner > aside {
+    grid-area: description;
+    max-width: 400px; }
+    #banner > aside > * {
+      margin: 10px 0px; }
 
 button.toggle {
   padding: 4px;
-  width: 60px; }
+  width: 55px; }
   button.toggle input {
     display: none; }
   button.toggle label {
@@ -18,34 +53,116 @@ button.toggle {
     height: 16px;
     width: 16px; }
     button.toggle label.checked {
-      transform: translateX(36px); }
+      transform: translateX(29px); }
+
+main {
+  padding: 20px 0; }
+  main div {
+    margin-bottom: 15px; }
 
 img {
   height: 80px;
   width: 80px; }
 
-.imageCard {
-  position: relative;
-  display: inline; }
+h1, h2, h3, h4, h5 {
+  margin-bottom: 5px; }
 
-tooltip {
-  width: 120px;
+image-card {
   position: relative;
-  display: block; }
+  display: inline-block; }
+  image-card tool-tip {
+    padding: 5px;
+    width: 120px;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    top: 80px;
+    transform: translateX(-25px);
+    z-index: 1;
+    transition: opacity .4s ease; }
+  image-card:hover tool-tip {
+    opacity: 1;
+    visibility: visible; }
 
-body.lightMode .darkMode {
-  display: none; }
+body::before, #banner {
+  transition: background 1s ease; }
+
+tool-tip {
+  transition: background 1s ease, border 1s ease; }
 
 body.lightMode {
-  background: white;
+  background: #efece6;
   color: #1f1f1f; }
-
-body.darkMode .lightMode {
-  display: none; }
+  body.lightMode .darkMode {
+    display: none; }
+  body.lightMode::before {
+    content: "";
+    background: linear-gradient(rgba(239, 236, 230, 0.9) 25%, #efece6), url("../assets/Background-Icons.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+  body.lightMode #banner {
+    background: white; }
+  body.lightMode image-card tool-tip {
+    background: rgba(217, 217, 217, 0.75);
+    border: 1px solid #1f1f1f; }
+  body.lightMode image-card img {
+    background: rgba(255, 255, 255, 0.4);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+  body.lightMode image-card:hover img {
+    outline: 2px solid #1f1f1f;
+    outline-offset: -2px; }
+  body.lightMode image-card.active tool-tip {
+    border-color: #37b41d; }
+  body.lightMode image-card.active img {
+    outline-color: #37b41d; }
 
 body.darkMode {
-  background: #1f1f1f;
+  background: #383838;
   color: white; }
+  body.darkMode .lightMode {
+    display: none; }
+  body.darkMode::before {
+    content: "";
+    background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/Background-Icons.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+  body.darkMode #banner {
+    background: #383838; }
+  body.darkMode image-card tool-tip {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid white; }
+  body.darkMode image-card img {
+    background: rgba(38, 38, 38, 0.4);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+  body.darkMode image-card:hover img {
+    outline: 2px solid white;
+    outline-offset: -2px; }
+  body.darkMode image-card.active tool-tip {
+    border-color: #9efe1a; }
+  body.darkMode image-card.active img {
+    outline-color: #9efe1a; }
+
+canvas {
+  background: #7b7b7b; }
 
 #buttons button {
   background: #37b41d;
@@ -59,6 +176,8 @@ body.darkMode {
     background: #37b41d;
     border-color: #9efe1a;
     color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#37b41d, #37b41d);
     background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
     background-position: right;
     background-size: contain;
@@ -69,6 +188,8 @@ body.darkMode {
       border-color: #37b41d;
       color: #1f1f1f; }
     #buttons button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#9efe1a, #9efe1a);
       background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9efe1a, #9efe1a);
       background-position: right;
       background-size: contain;
@@ -77,6 +198,8 @@ body.darkMode {
     background: #37b41d;
     border-color: #9efe1a;
     color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#37b41d, #37b41d);
     background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
     background-position: right;
     background-size: contain;
@@ -87,6 +210,8 @@ body.darkMode {
       border-color: #37b41d;
       color: #1f1f1f; }
     #buttons button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#9efe1a, #9efe1a);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9efe1a, #9efe1a);
       background-position: right;
       background-size: contain;
@@ -111,3 +236,10 @@ body.darkMode {
 
 button {
   padding: 4px 6px; }
+
+image-card tool-tip {
+  text-align: center;
+  border-radius: 3px; }
+
+main {
+  text-align: center; }

@@ -1,9 +1,13 @@
+// main: buttonColors.scss
+
 // Set background to color and an image on the right
 @mixin background($color, $imageURL) {
+	background: url($imageURL), -webkit-linear-gradient($color, $color);
+	background: url($imageURL), -o-linear-gradient($color, $color);
 	background: url($imageURL), linear-gradient($color, $color);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 // Style a button

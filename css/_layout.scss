@@ -1,5 +1,29 @@
-body {
-	padding: 0 10px;
+main {
+	padding: 0 18px;
+	width: 95%;
+	margin: auto;
+}
+#banner {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	padding: 20px 0;
+	display: grid;
+	grid-template: ". canvas description .";
+	>a#canvasLink {
+		grid-area: canvas;
+		text-align: right;
+		canvas {
+			margin-right: 10px;
+		}
+	}
+	>aside {
+		grid-area: description;
+		max-width: 400px;
+		>* {
+			margin: 10px 0px;
+		}
+	}
 }
 button.toggle {
 	$padding: 4px;
@@ -14,20 +38,41 @@ button.toggle {
 		height: $labelSize;
 		width: $labelSize;
 		&.checked {
-			transform: translateX($toggleWidth - (2 * $padding + $labelSize));
+			transform: translateX($toggleWidth - (2 * $padding + $labelSize + 2 /*2 x Border width*/));
+
 		}
+	}
+}
+main {
+	padding: 20px 0;
+	div {
+		margin-bottom: 15px;
 	}
 }
 img {
 	height: $imgSize;
 	width: $imgSize;
 }
-.imageCard {
-	position: relative;
-	display: inline;
+h1, h2, h3, h4 ,h5 {
+	margin-bottom: 5px;
 }
-tooltip {
-	width: 1.5*$imgSize;
+image-card {
 	position: relative;
-	display: block;
+	display: inline-block;
+	tool-tip {
+		padding: 5px;
+		width: 1.5*$imgSize;
+		position: absolute;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		top: 80px;
+	  transform: translateX(-25px);
+		z-index: 1;
+		transition: opacity .4s ease;
+	}
+	&:hover tool-tip {
+		opacity: 1;
+		visibility: visible;
+	}
 }

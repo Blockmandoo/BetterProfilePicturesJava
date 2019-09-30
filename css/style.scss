@@ -1,15 +1,24 @@
 $black: #1f1f1f;
 $white: white;
+$offblack: #383838;
+$offwhite: #efece6;
+$lightgreen: #9efe1a;
+$darkgreen: #37b41d;
+$tempgray: #7b7b7b;
 $imgSize: 80px;
-$toggleWidth: 60px;
+$toggleWidth: 55px;
 
 @import "_reset";
 @import "_layout";
 @import "_buttonMixins";
 @import "buttonColors.css";
+@import "_darkmodeTransition";
 @import "_lightmode";
 @import "_darkmode";
 
+canvas {
+  background: $tempgray;
+}
 #buttons {
   @include buttons(#37b41d, #9efe1a);
   button {
@@ -25,4 +34,11 @@ $toggleWidth: 60px;
 }
 button {
   padding: 4px 6px;
+}
+image-card tool-tip {
+  text-align: center;
+  border-radius: 3px;
+}
+main {
+  text-align: center;
 }

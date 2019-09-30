@@ -12,10 +12,11 @@
 	<meta property="og:site_name" content="BetterProfilePictures"/>
 	<meta property="og:title" content="Better Profile Pictures"/>
 	<meta property="og:type" content="article"/>
+	<script src="scripts/customElements.js"></script>
 	<title>Better Profile Pictures</title>
 </head>
 
-<body class="darkMode">
+<body class="lightMode">
 	<nav></nav>
 	<section id="banner"><a href="#" id="canvasLink">
 		<canvas width="256" height="256"></canvas>
@@ -30,52 +31,267 @@
 				<button id="random" type="button">Random</button>
 				<button id="upload" type="button">Upload</button>
 				Darkmode:
-				<button class="toggle"><input id="darkmode" type="checkbox"><label for="darkmode" class="checked">&nbsp;</label></button>
+				<button class="toggle">
+				<input id="darkmode" type="checkbox">
+				<label for="darkmode" class="checked">
+					&nbsp;
+				</label>
+				</button>
 			</div>
 		</aside>
 	</section>
 	<main>
 		<div id="genre">
-			<div class="imageCard">
-				<tooltip>
-					<h5>Genre1</h5>
+			<h2>Logo Catagories</h2>
+			<image-card>
+				<tool-tip>
+					<h5>Abstract</h5>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id.
+						A bunch of <em>"I don't know..."</em> logos.
 					</p>
-				</tooltip>
-				<img class="lightMode" src="assets/darkmode/abstract/4Fold.png" alt="">
-				<img class="darkMode" src="assets/abstract/4Fold.png" alt="">
-			</div>
-			<div class="imageCard">
-				<tooltip>
-					<h5>Genre2</h5>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/abstract/DrunkTriangle.png" alt="">
+				<img class="darkMode" src="assets/abstract/DrunkTriangle.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Animals</h5>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, vero.
+						Daw look at all the cute fluffy animals. I must own them all.
 					</p>
-				</tooltip>
-				<img class="lightMode" src="assets/darkmode/animals/Butterfly.png" alt="">
-				<img class="darkMode" src="assets/animals/Butterfly.png" alt="">
-			</div>
-			<div class="imageCard">
-				<tooltip>
-					<h5>Genre3</h5>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/animals/Cat.png" alt="">
+				<img class="darkMode" src="assets/animals/Cat.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Defaults</h5>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, minima.
+						Someone sent you here because you are using a default picture, and you want to shut them up...
 					</p>
-				</tooltip>
-				<img class="lightMode" src="assets/darkmode/defaults/Discord.png" alt="">
-				<img class="darkMode" src="assets/defaults/Discord.png" alt="">
-			</div>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/defaults/Instagram.png" alt="">
+				<img class="darkMode" src="assets/defaults/Instagram.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Objects</h5>
+					<p>
+						I just looked at what was around me and gave it a logo...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/objects/Diamond.png" alt="">
+				<img class="darkMode" src="assets/objects/Diamond.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Food</h5>
+					<p>
+						Do not click if hungry! Contains lots of images of hunger inducing logos.
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/food/pizza.png" alt="">
+				<img class="darkMode" src="assets/food/pizza.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Letters / Numbers</h5>
+					<p>
+						Pick the first letter of your name or username...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/letters/A.png" alt="">
+				<img class="darkMode" src="assets/letters/A.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Others</h5>
+					<p>
+						Logos that don't fit in a catagory.
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/symbols/QMark.png" alt="">
+				<img class="darkMode" src="assets/symbols/QMark.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Shows</h5>
+					<p>
+						Just can't stop raving about some show?...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/symbols/Play.png" alt="">
+				<img class="darkMode" src="assets/symbols/Play.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Sports</h5>
+					<p>
+						Ewww, sports. But I guess a few people enjoy them so here ya go.
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/sports/basketball.png" alt="">
+				<img class="darkMode" src="assets/sports/basketball.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Superheroes</h5>
+					<p>
+						Do you idolize a specific superhero?...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/heroes/Superman.png" alt="">
+				<img class="darkMode" src="assets/heroes/Superman.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Supervillains</h5>
+					<p>
+						Do you idolize a specific supervillian?...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/villains/Hydra.png" alt="">
+				<img class="darkMode" src="assets/villains/Hydra.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Symbols</h5>
+					<p>
+						For when you want something more original than a letter or number.
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/symbols/Hashtag.png" alt="">
+				<img class="darkMode" src="assets/symbols/Hashtag.png" alt="">
+			</image-card>
+			<image-card>
+				<tool-tip>
+					<h5>Video Games</h5>
+					<p>
+						Represent your favorite video games or just pick a logo you really like...
+					</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkmode/other/VideoGame.png" alt="">
+				<img class="darkMode" src="assets/other/VideoGame.png" alt="">
+			</image-card>
 		</div>
-		<div id="logo">
+		<div id="logo" class="hidden">
+			<h2>Logo</h2>
+			<div id="Abstract" class="hidden">
+				<p>Abstract</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Animals" class="hidden">
+				<p>Animals</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Defaults" class="hidden">
+				<p>Defaults</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Objects" class="hidden">
+				<p>Objects</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Food" class="hidden">
+				<p>Food</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Letters" class="hidden">
+				<p>Letters / Numbers</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Others" class="hidden">
+				<p>Others</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Shows" class="hidden">
+				<p>Shows</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Sports" class="hidden">
+				<p>Sports</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Heroes" class="hidden">
+				<p>Superheroes</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Villains" class="hidden">
+				<p>Super Villains</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Symbols" class="hidden">
+				<p>Symbols</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
+			<div id="Games" class="hidden">
+				<p>Video Games</p>
+				<image-card>
+					<img class="lightMode" src="assets/darkmode/" alt="">
+					<img class="darkMode" src="assets/" alt="">
+				</image-card>
+			</div>
 		</div>
 		<div id="logoColor">
+			<h2>Logo Color</h2>
+			<image-card>
+				<img src="assets/" alt="">
+			</image-card>
 		</div>
 		<div id="backgroundColor">
+			<h2>Background Color</h2>
+			<image-card>
+				<img src="assets/" alt="">
+			</image-card>
 		</div>
 		<div id="backgroundStyle">
+			<h2>Background Style</h2>
+			<image-card>
+				<img src="assets/" alt="">
+			</image-card>
 		</div>
 		<div id="shape">
+			<h2>Shape</h2>
+			<image-card>
+				<img class="lightMode" src="assets/darkmode/" alt="">
+				<img class="darkMode" src="assets/" alt="">
+			</image-card>
 		</div>
 	</main>
 </body>
