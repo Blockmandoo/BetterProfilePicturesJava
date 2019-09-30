@@ -1,6 +1,23 @@
 body {
 	padding: 0 10px;
 }
+button.toggle {
+	$padding: 4px;
+	padding: $padding;
+	width: $toggleWidth;
+	input {
+		display: none;
+	}
+	label {
+		$labelSize: 16px;
+		display: block;
+		height: $labelSize;
+		width: $labelSize;
+		&.checked {
+			transform: translateX($toggleWidth - (2 * $padding + $labelSize));
+		}
+	}
+}
 img {
 	height: $imgSize;
 	width: $imgSize;

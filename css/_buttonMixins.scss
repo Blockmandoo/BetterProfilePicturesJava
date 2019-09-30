@@ -1,0 +1,92 @@
+// Set background to color and an image on the right
+@mixin background($color, $imageURL) {
+	background: url($imageURL), linear-gradient($color, $color);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// Style a button
+@mixin button($backgroundColor, $borderColor, $textColor, $textHoverColor) {
+	background: $backgroundColor;
+	border-color: $borderColor;
+	color: $textColor;
+	&:hover {
+		background: $borderColor;
+		border-color: $backgroundColor;
+		color: $textHoverColor;
+	}
+}
+
+// Button with logo image on the right
+@mixin buttonImg($backgroundColor, $borderColor, $imageURL, $imageHoverURL, $textColor, $textHoverColor) {
+	@include button($backgroundColor, $borderColor, $textColor, $textHoverColor);
+	@include background($backgroundColor, $imageURL);
+	&:hover {
+		@include background($borderColor, $imageHoverURL);
+	}
+}
+
+// Protocol for download button
+@mixin download($backgroundColor, $borderColor, $imageURL, $imageHoverURL, $textColor, $textHoverColor) {
+	&#download {
+		@include buttonImg($backgroundColor, $borderColor, $imageURL, $imageHoverURL, $textColor, $textHoverColor);
+		padding-right: 24px;
+	}
+}
+
+// Protocol for upload button
+@mixin upload($backgroundColor, $borderColor, $imageURL, $imageHoverURL, $textColor, $textHoverColor) {
+	&#upload {
+		@include buttonImg($backgroundColor, $borderColor, $imageURL, $imageHoverURL, $textColor, $textHoverColor);
+		padding-right: 24px;
+	}
+}
+
+// Protocol for toggle switch
+@mixin toggle($backgroundColor, $borderColor, $pegColor, $pegHoverColor) {
+	&.toggle {
+		background: $backgroundColor;
+		border-color: $borderColor;
+		label {
+			background: $pegColor;
+		}
+		&:hover {
+			background: $borderColor;
+			border-color: $backgroundColor;
+			label {
+				background: $pegHoverColor;
+			}
+		}
+	}
+}
+
+// Light colored buttons
+@mixin buttonsLight($backgroundColor, $borderColor) {
+	button {
+		@include button($backgroundColor, $borderColor,  $black, $black);
+		@include download($backgroundColor, $borderColor, "../assets/darkMode/symbols/Download.png", "../assets/darkMode/symbols/Download.png", $black, $black);
+		@include upload($backgroundColor, $borderColor, "../assets/darkMode/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $black, $black);
+		@include toggle($backgroundColor, $borderColor, $black, $black);
+	}
+}
+
+// Normal colored buttons
+@mixin buttons($backgroundColor, $borderColor) {
+	button {
+		@include button($backgroundColor, $borderColor,  $white, $black);
+		@include download($backgroundColor, $borderColor, "../assets/symbols/Download.png", "../assets/darkMode/symbols/Download.png", $white, $black);
+		@include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $white, $black);
+		@include toggle($backgroundColor, $borderColor, $white, $black);
+	}
+}
+
+// Dark colored buttons
+@mixin buttonsDark($backgroundColor, $borderColor) {
+	button {
+		@include button($backgroundColor, $borderColor,  $white, $white);
+		@include download($backgroundColor, $borderColor, "../assets/symbols/Download.png", "../assets/symbols/Download.png", $white, $white);
+		@include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/symbols/Upload.png", $white, $white);
+		@include toggle($backgroundColor, $borderColor, $white, $white);
+	}
+}

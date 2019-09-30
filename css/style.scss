@@ -1,14 +1,28 @@
 $black: #1f1f1f;
 $white: white;
 $imgSize: 80px;
+$toggleWidth: 60px;
 
 @import "_reset";
 @import "_layout";
+@import "_buttonMixins";
 @import "buttonColors.css";
 @import "_lightmode";
 @import "_darkmode";
 
-
+#buttons {
+  @include buttons(#37b41d, #9efe1a);
+  button {
+    border-width: 1px;
+    border-style: solid;
+  }
+  * {
+    transition: background .3s ease, color .3s ease;
+  }
+  .toggle label {
+    transition: background .3s ease, color .3s ease, transform .4s ease;
+  }
+}
 button {
   padding: 4px 6px;
 }

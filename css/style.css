@@ -1,11 +1,24 @@
 @import url(buttonColors.css);
 html, body {
   font-family: montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0; }
 
 body {
   padding: 0 10px; }
+
+button.toggle {
+  padding: 4px;
+  width: 60px; }
+  button.toggle input {
+    display: none; }
+  button.toggle label {
+    display: block;
+    height: 16px;
+    width: 16px; }
+    button.toggle label.checked {
+      transform: translateX(36px); }
 
 img {
   height: 80px;
@@ -33,6 +46,68 @@ body.darkMode .lightMode {
 body.darkMode {
   background: #1f1f1f;
   color: white; }
+
+#buttons button {
+  background: #37b41d;
+  border-color: #9efe1a;
+  color: white; }
+  #buttons button:hover {
+    background: #9efe1a;
+    border-color: #37b41d;
+    color: #1f1f1f; }
+  #buttons button#download {
+    background: #37b41d;
+    border-color: #9efe1a;
+    color: white;
+    background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#download:hover {
+      background: #9efe1a;
+      border-color: #37b41d;
+      color: #1f1f1f; }
+    #buttons button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9efe1a, #9efe1a);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button#upload {
+    background: #37b41d;
+    border-color: #9efe1a;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#upload:hover {
+      background: #9efe1a;
+      border-color: #37b41d;
+      color: #1f1f1f; }
+    #buttons button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9efe1a, #9efe1a);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button.toggle {
+    background: #37b41d;
+    border-color: #9efe1a; }
+    #buttons button.toggle label {
+      background: white; }
+    #buttons button.toggle:hover {
+      background: #9efe1a;
+      border-color: #37b41d; }
+      #buttons button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons button {
+  border-width: 1px;
+  border-style: solid; }
+#buttons * {
+  transition: background .3s ease, color .3s ease; }
+#buttons .toggle label {
+  transition: background .3s ease, color .3s ease, transform .4s ease; }
 
 button {
   padding: 4px 6px; }
