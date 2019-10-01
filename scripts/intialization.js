@@ -5,5 +5,5 @@ function initialize() {
 	applyCount();
 
 	//Run canvas function on repeat after window is loaded
-	updateImage();
+	window.onload = updateImage();
 }
