@@ -1,6 +1,6 @@
 var globalColor = "Peridot";
 var globalGenre = "Objects";
-var globalLogo = "BetterPicture";
+var globalLogo = "Leaf";
 var globalLogoColor = "White";
 var globalShape = "Square";
 var globalStyle = "Blast";
