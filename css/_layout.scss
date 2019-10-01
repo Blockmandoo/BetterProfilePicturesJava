@@ -15,31 +15,36 @@ main {
 		text-align: right;
 		canvas {
 			margin-right: 10px;
+			margin-left: 20px;
 		}
 	}
 	>aside {
 		grid-area: description;
 		max-width: 400px;
+		margin-right: 20px;
 		>* {
 			margin: 10px 0px;
 		}
 	}
 }
-button.toggle {
-	$padding: 4px;
-	padding: $padding;
-	width: $toggleWidth;
-	input {
-		display: none;
-	}
-	label {
-		$labelSize: 16px;
-		display: block;
-		height: $labelSize;
-		width: $labelSize;
-		&.checked {
-			transform: translateX($toggleWidth - (2 * $padding + $labelSize + 2 /*2 x Border width*/));
+button {
+	margin-top: 4px;
+	&.toggle {
+		$padding: 4px;
+		padding: $padding;
+		width: $toggleWidth;
+		input {
+			display: none;
+		}
+		label {
+			$labelSize: 16px;
+			display: block;
+			height: $labelSize;
+			width: $labelSize;
+			&.checked {
+				transform: translateX($toggleWidth - (2 * $padding + $labelSize + 2 /*2 x Border width*/));
 
+			}
 		}
 	}
 }
@@ -48,6 +53,15 @@ main {
 	div {
 		margin-bottom: 15px;
 	}
+}
+.lock {
+	// Delete me later
+	visibility: hidden;
+	display: none;
+}
+.hidden {
+	// opacity: .5;
+	display: none;
 }
 img {
 	height: $imgSize;
@@ -60,19 +74,20 @@ image-card {
 	position: relative;
 	display: inline-block;
 	tool-tip {
+		pointer-events: none;
 		padding: 5px;
 		width: 1.5*$imgSize;
 		position: absolute;
 		display: block;
 		opacity: 0;
-		visibility: hidden;
-		top: 80px;
-	  transform: translateX(-25px);
+		top: $imgSize;
+		transform: translate(-25px, -30px);
 		z-index: 1;
-		transition: opacity .4s ease;
+		transition: opacity .4s ease, transform .6s ease;
 	}
-	&:hover tool-tip {
+	&:hover tool-tip:not(:hover) {
 		opacity: 1;
-		visibility: visible;
+		transform: translate(-25px, 5px);
+		// z-index: 1;
 	}
 }

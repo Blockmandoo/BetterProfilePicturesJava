@@ -1,0 +1,41 @@
+// main: style.scss
+/*Mobile layout
+
+Tablet*/
+@media (max-width: 777px) {
+  canvas {
+    width: 33vw;
+  }
+  image-card > tool-tip {
+    display: none;
+  }
+}
+
+/*Phone*/
+@media (max-width: 500px) {
+  img {
+  	height: $phoneImgSize;
+  	width: $phoneImgSize;
+  }
+  body p {
+    font-size: 15px;
+  }
+  #banner {
+    padding: 10px;
+  	grid-template: "canvas" "description";
+    >a#canvasLink {
+      text-align: center;
+    }
+    aside {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
+/*SkinnyPhone*/
+@media (max-width: 400px) {
+  #description {
+    display: none;
+  }
+}

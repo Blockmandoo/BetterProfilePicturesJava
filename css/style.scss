@@ -2,14 +2,17 @@ $black: #1f1f1f;
 $white: white;
 $offblack: #383838;
 $offwhite: #efece6;
+$transparentBlack: rgba(0, 0, 0, .5);
 $lightgreen: #9efe1a;
 $darkgreen: #37b41d;
-$tempgray: #7b7b7b;
+$tempgray: hsla(0, 0, 50%, .5);
 $imgSize: 80px;
+$phoneImgSize: 60px;
 $toggleWidth: 55px;
 
 @import "_reset";
 @import "_layout";
+@import "_mobile";
 @import "_buttonMixins";
 @import "buttonColors.css";
 @import "_darkmodeTransition";
@@ -19,17 +22,25 @@ $toggleWidth: 55px;
 canvas {
   background: $tempgray;
 }
+canvas, button {
+  filter: drop-shadow(4px 4px 4px $transparentBlack);
+}
 #buttons {
   @include buttons(#37b41d, #9efe1a);
   button {
     border-width: 1px;
     border-style: solid;
+    cursor: pointer;
   }
   * {
-    transition: background .3s ease, color .3s ease;
+    transition: background .3s ease, color .3s ease, filter 1s ease;
   }
   .toggle label {
     transition: background .3s ease, color .3s ease, transform .4s ease;
+    cursor: pointer;
+  }
+  .toggle, .toggle label {
+    // border-radius: 50px;
   }
 }
 button {
@@ -39,6 +50,12 @@ image-card tool-tip {
   text-align: center;
   border-radius: 3px;
 }
+#shape img {
+  background: none;
+}
 main {
   text-align: center;
+  div {
+    // font-size: 0;
+  }
 }

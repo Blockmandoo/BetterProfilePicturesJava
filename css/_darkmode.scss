@@ -1,3 +1,4 @@
+/*Dark mode stylings*/
 body.darkMode {
 	background: $offblack;
 	color: $white;
@@ -7,38 +8,42 @@ body.darkMode {
 	&::before {
 		content: "";
 		background: linear-gradient(rgba(56,56,56,0.9) 25%, $offblack), url("../assets/Background-Icons.png");
+		// background: linear-gradient(rgba(56,56,56,0.9) 25%, $offblack), url("../assets/6x6.png");
 		background-position: center;
 		background-size: 100%, $imgSize*6;
 		position: fixed;
 		top: 0; left: 0; right: 0; bottom: 0;
 		filter: blur(3px);
 		z-index: -1;
+		@media (max-width: 500px) {
+			background-size: 100%, $phoneImgSize*6;
+		}
 	}
 	#banner {
 		background: $offblack;
 	}
 	image-card {
 		tool-tip {
-			background: hsla(0, 0, 0, .75);
-			border: 1px solid $white;
+			background: hsla(0, 0, 10, .75);
+			border: 1px solid $offwhite;
 		}
 		img {
 			background: hsla(0, 0, 15, .4);
 			outline: 2px solid transparent;
 			outline-offset: -2px;
 			transition: outline .4s ease, background .2s ease;
+			&:hover {
+				outline: 2px solid $white;
+				outline-offset: -2px;
+			}
 		}
-		&:hover img {
-			outline: 2px solid $white;
-			outline-offset: -2px;
-		}
-	}
-	image-card.active {
-		tool-tip {
-			border-color: $lightgreen;
-		}
-		img {
-			outline-color: $lightgreen;
+		&.active {
+			tool-tip {
+				border-color: $lightgreen;
+			}
+			img:not(:hover) {
+				outline-color: $lightgreen;
+			}
 		}
 	}
 }

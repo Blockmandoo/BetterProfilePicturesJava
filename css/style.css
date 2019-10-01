@@ -36,29 +36,40 @@ main {
     grid-area: canvas;
     text-align: right; }
     #banner > a#canvasLink canvas {
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-left: 20px; }
   #banner > aside {
     grid-area: description;
-    max-width: 400px; }
+    max-width: 400px;
+    margin-right: 20px; }
     #banner > aside > * {
       margin: 10px 0px; }
 
-button.toggle {
-  padding: 4px;
-  width: 55px; }
-  button.toggle input {
-    display: none; }
-  button.toggle label {
-    display: block;
-    height: 16px;
-    width: 16px; }
-    button.toggle label.checked {
-      transform: translateX(29px); }
+button {
+  margin-top: 4px; }
+  button.toggle {
+    padding: 4px;
+    width: 55px; }
+    button.toggle input {
+      display: none; }
+    button.toggle label {
+      display: block;
+      height: 16px;
+      width: 16px; }
+      button.toggle label.checked {
+        transform: translateX(29px); }
 
 main {
   padding: 20px 0; }
   main div {
     margin-bottom: 15px; }
+
+.lock {
+  visibility: hidden;
+  display: none; }
+
+.hidden {
+  display: none; }
 
 img {
   height: 80px;
@@ -71,26 +82,63 @@ image-card {
   position: relative;
   display: inline-block; }
   image-card tool-tip {
+    pointer-events: none;
     padding: 5px;
     width: 120px;
     position: absolute;
     display: block;
     opacity: 0;
-    visibility: hidden;
     top: 80px;
-    transform: translateX(-25px);
+    transform: translate(-25px, -30px);
     z-index: 1;
-    transition: opacity .4s ease; }
-  image-card:hover tool-tip {
+    transition: opacity .4s ease, transform .6s ease; }
+  image-card:hover tool-tip:not(:hover) {
     opacity: 1;
-    visibility: visible; }
+    transform: translate(-25px, 5px); }
 
-body::before, #banner {
+/*Mobile layout
+
+Tablet*/
+@media (max-width: 777px) {
+  canvas {
+    width: 33vw; }
+
+  image-card > tool-tip {
+    display: none; } }
+/*Phone*/
+@media (max-width: 500px) {
+  img {
+    height: 60px;
+    width: 60px; }
+
+  body p {
+    font-size: 15px; }
+
+  #banner {
+    padding: 10px;
+    grid-template: "canvas" "description"; }
+    #banner > a#canvasLink {
+      text-align: center; }
+    #banner aside {
+      max-width: none;
+      width: 100%; } }
+/*SkinnyPhone*/
+@media (max-width: 400px) {
+  #description {
+    display: none; } }
+body::before, #banner, tool-tip {
+  transition: background 1s ease, background-image 1s ease, color 1s ease; }
+
+img {
   transition: background 1s ease; }
 
-tool-tip {
-  transition: background 1s ease, border 1s ease; }
+h1, h2, h3, h4, h5, p {
+  transition: color 1s ease; }
 
+canvas, button {
+  transition: filter 1s ease; }
+
+/*Light mode stylings*/
 body.lightMode {
   background: #efece6;
   color: #1f1f1f; }
@@ -98,7 +146,7 @@ body.lightMode {
     display: none; }
   body.lightMode::before {
     content: "";
-    background: linear-gradient(rgba(239, 236, 230, 0.9) 25%, #efece6), url("../assets/Background-Icons.png");
+    background: linear-gradient(rgba(239, 236, 230, 0.8) 25%, #efece6), url("../assets/Background-Icons.png");
     background-position: center;
     background-size: 100%, 480px;
     position: fixed;
@@ -108,13 +156,16 @@ body.lightMode {
     bottom: 0;
     filter: blur(3px);
     z-index: -1; }
+    @media (max-width: 500px) {
+      body.lightMode::before {
+        background-size: 100%, 360px; } }
   body.lightMode #banner {
     background: white; }
   body.lightMode image-card tool-tip {
     background: rgba(217, 217, 217, 0.75);
-    border: 1px solid #1f1f1f; }
+    border: 1px solid #383838; }
   body.lightMode image-card img {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.3);
     outline: 2px solid transparent;
     outline-offset: -2px;
     transition: outline .4s ease, background .2s ease; }
@@ -123,9 +174,10 @@ body.lightMode {
     outline-offset: -2px; }
   body.lightMode image-card.active tool-tip {
     border-color: #37b41d; }
-  body.lightMode image-card.active img {
+  body.lightMode image-card.active img:not(:hover) {
     outline-color: #37b41d; }
 
+/*Dark mode stylings*/
 body.darkMode {
   background: #383838;
   color: white; }
@@ -143,26 +195,32 @@ body.darkMode {
     bottom: 0;
     filter: blur(3px);
     z-index: -1; }
+    @media (max-width: 500px) {
+      body.darkMode::before {
+        background-size: 100%, 360px; } }
   body.darkMode #banner {
     background: #383838; }
   body.darkMode image-card tool-tip {
-    background: rgba(0, 0, 0, 0.75);
-    border: 1px solid white; }
+    background: rgba(26, 26, 26, 0.75);
+    border: 1px solid #efece6; }
   body.darkMode image-card img {
     background: rgba(38, 38, 38, 0.4);
     outline: 2px solid transparent;
     outline-offset: -2px;
     transition: outline .4s ease, background .2s ease; }
-  body.darkMode image-card:hover img {
-    outline: 2px solid white;
-    outline-offset: -2px; }
+    body.darkMode image-card img:hover {
+      outline: 2px solid white;
+      outline-offset: -2px; }
   body.darkMode image-card.active tool-tip {
     border-color: #9efe1a; }
-  body.darkMode image-card.active img {
+  body.darkMode image-card.active img:not(:hover) {
     outline-color: #9efe1a; }
 
 canvas {
-  background: #7b7b7b; }
+  background: rgba(128, 128, 128, 0.5); }
+
+canvas, button {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); }
 
 #buttons button {
   background: #37b41d;
@@ -228,11 +286,13 @@ canvas {
         background: #1f1f1f; }
 #buttons button {
   border-width: 1px;
-  border-style: solid; }
+  border-style: solid;
+  cursor: pointer; }
 #buttons * {
-  transition: background .3s ease, color .3s ease; }
+  transition: background .3s ease, color .3s ease, filter 1s ease; }
 #buttons .toggle label {
-  transition: background .3s ease, color .3s ease, transform .4s ease; }
+  transition: background .3s ease, color .3s ease, transform .4s ease;
+  cursor: pointer; }
 
 button {
   padding: 4px 6px; }
@@ -240,6 +300,9 @@ button {
 image-card tool-tip {
   text-align: center;
   border-radius: 3px; }
+
+#shape img {
+  background: none; }
 
 main {
   text-align: center; }
