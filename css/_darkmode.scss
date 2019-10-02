@@ -1,3 +1,4 @@
+// main: style.scss
 /*Dark mode stylings*/
 body.darkMode {
 	background: $offblack;
@@ -21,6 +22,16 @@ body.darkMode {
 	}
 	#banner {
 		background: $offblack;
+	}
+	button {
+	  &.lock {
+	    background: url("../assets/objects/Lock.png");
+	    background-size: cover;
+	  }
+	  &.unlock {
+	    background: url("../assets/objects/Unlock.png");
+	    background-size: cover;
+	  }
 	}
 	image-card {
 		tool-tip {

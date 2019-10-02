@@ -1,11 +1,10 @@
 $black: #1f1f1f;
-$white: white;
+$white: #cecece;
 $offblack: #383838;
-$offwhite: #efece6;
+$offwhite: #aaa;
 $transparentBlack: rgba(0, 0, 0, .5);
 $lightgreen: #9efe1a;
 $darkgreen: #37b41d;
-$tempgray: hsla(0, 0, 50%, .5);
 $imgSize: 80px;
 $phoneImgSize: 60px;
 $toggleWidth: 55px;
@@ -19,9 +18,6 @@ $toggleWidth: 55px;
 @import "_lightmode";
 @import "_darkmode";
 
-canvas {
-  // background: $tempgray;
-}
 canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
@@ -40,11 +36,21 @@ canvas, button {
     cursor: pointer;
   }
   .toggle, .toggle label {
-    // border-radius: 50px;
+    border-radius: 50px;
   }
 }
 button {
   padding: 4px 6px;
+  &.lock, &.unlock {
+    padding: 0;
+    margin-top: 0;
+    width: 32px;
+		height: 32px;
+    transform: translateY(-4px);
+    // border: 1px solid #9efe1a;
+    border: none;
+    // background: #37b41d;
+  }
 }
 image-card tool-tip {
   text-align: center;

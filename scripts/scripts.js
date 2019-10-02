@@ -114,10 +114,29 @@ function randomIcon() {
 	var genre = logoElement.parentNode.getAttribute("id");
 
 	//Setting the icon
-	setGenre(genre);
-	setBackgroundColor(backgroundColorNames[backgroundColorIndex]);
-	setBackgroundStyle(backgroundStyleNames[backgroundStyleIndex]);
-	setLogo(logoNames[logoIndex]);
-	setLogoColor(logoColorNames[logoColorIndex]);
-	setShape(shapeNames[shapeIndex]);
+	if (document.querySelector("#backgroundColor .unlock")) {
+		setBackgroundColor(backgroundColorNames[backgroundColorIndex]);
+	}
+	if (document.querySelector("#backgroundStyle .unlock")) {
+		setBackgroundStyle(backgroundStyleNames[backgroundStyleIndex]);
+	}
+	if (document.querySelector("#logo .unlock")) {
+		setGenre(genre);
+		setLogo(logoNames[logoIndex]);
+	}
+	if (document.querySelector("#logoColor .unlock")) {
+		setLogoColor(logoColorNames[logoColorIndex]);
+	}
+	if (document.querySelector("#shape .unlock")) {
+		setShape(shapeNames[shapeIndex]);
+	}
+}
+
+//Random icon lock switch
+function swapLock(button) {
+	if (button.className == "lock") {
+		button.className = "unlock";
+	} else {
+		button.className = "lock";
+	}
 }

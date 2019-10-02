@@ -92,11 +92,6 @@ main div {
   margin-bottom: 15px;
 }
 
-.lock {
-  visibility: hidden;
-  display: none;
-}
-
 .hidden {
   display: none;
 }
@@ -178,8 +173,8 @@ body::before, #banner, tool-tip {
   transition: background 1s ease, background-image 1s ease, color 1s ease;
 }
 
-img {
-  transition: background 1s ease;
+img, button.lock, button.unlock {
+  transition: background 1s ease, background-image 1s ease;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -192,7 +187,7 @@ canvas, button {
 
 /*Light mode stylings*/
 body.lightMode {
-  background: #efece6;
+  background: #aaa;
   color: #1f1f1f;
 }
 
@@ -202,7 +197,7 @@ body.lightMode .darkMode {
 
 body.lightMode::before {
   content: "";
-  background: linear-gradient(rgba(239, 236, 230, 0.8) 25%, #efece6), url("../assets/Background-Icons.png");
+  background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/Background-Icons.png");
   background-position: center;
   background-size: 100%, 480px;
   position: fixed;
@@ -221,7 +216,17 @@ body.lightMode::before {
 }
 
 body.lightMode #banner {
-  background: white;
+  background: #cecece;
+}
+
+body.lightMode button.lock {
+  background: url("../assets/darkmode/objects/Lock.png");
+  background-size: cover;
+}
+
+body.lightMode button.unlock {
+  background: url("../assets/darkmode/objects/Unlock.png");
+  background-size: cover;
 }
 
 body.lightMode image-card tool-tip {
@@ -252,7 +257,7 @@ body.lightMode image-card.active img:not(:hover) {
 /*Dark mode stylings*/
 body.darkMode {
   background: #383838;
-  color: white;
+  color: #cecece;
 }
 
 body.darkMode .lightMode {
@@ -283,9 +288,19 @@ body.darkMode #banner {
   background: #383838;
 }
 
+body.darkMode button.lock {
+  background: url("../assets/objects/Lock.png");
+  background-size: cover;
+}
+
+body.darkMode button.unlock {
+  background: url("../assets/objects/Unlock.png");
+  background-size: cover;
+}
+
 body.darkMode image-card tool-tip {
   background: rgba(26, 26, 26, 0.75);
-  border: 1px solid #efece6;
+  border: 1px solid #aaa;
 }
 
 body.darkMode image-card img {
@@ -296,7 +311,7 @@ body.darkMode image-card img {
 }
 
 body.darkMode image-card img:hover {
-  outline: 2px solid white;
+  outline: 2px solid #cecece;
   outline-offset: -2px;
 }
 
@@ -315,7 +330,7 @@ canvas, button {
 #buttons button {
   background: #37b41d;
   border-color: #9efe1a;
-  color: white;
+  color: #cecece;
 }
 
 #buttons button:hover {
@@ -327,7 +342,7 @@ canvas, button {
 #buttons button#download {
   background: #37b41d;
   border-color: #9efe1a;
-  color: white;
+  color: #cecece;
   background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#37b41d, #37b41d);
   background: url("../assets/symbols/Download.png"), -o-linear-gradient(#37b41d, #37b41d);
   background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
@@ -355,7 +370,7 @@ canvas, button {
 #buttons button#upload {
   background: #37b41d;
   border-color: #9efe1a;
-  color: white;
+  color: #cecece;
   background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#37b41d, #37b41d);
   background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#37b41d, #37b41d);
   background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
@@ -386,7 +401,7 @@ canvas, button {
 }
 
 #buttons button.toggle label {
-  background: white;
+  background: #cecece;
 }
 
 #buttons button.toggle:hover {
@@ -413,8 +428,21 @@ canvas, button {
   cursor: pointer;
 }
 
+#buttons .toggle, #buttons .toggle label {
+  border-radius: 50px;
+}
+
 button {
   padding: 4px 6px;
+}
+
+button.lock, button.unlock {
+  padding: 0;
+  margin-top: 0;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-4px);
+  border: none;
 }
 
 image-card tool-tip {

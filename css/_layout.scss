@@ -1,3 +1,4 @@
+// main: style.scss
 main {
 	padding: 0 18px;
 	width: 95%;
@@ -54,13 +55,7 @@ main {
 		margin-bottom: 15px;
 	}
 }
-.lock {
-	// Delete me later
-	visibility: hidden;
-	display: none;
-}
 .hidden {
-	// opacity: .5;
 	display: none;
 }
 img {

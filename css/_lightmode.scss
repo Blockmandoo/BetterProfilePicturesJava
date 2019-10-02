@@ -1,3 +1,4 @@
+// main: style.scss
 /*Light mode stylings*/
 body.lightMode {
 	background: $offwhite;
@@ -7,8 +8,8 @@ body.lightMode {
 	}
 	&::before {
 		content: "";
-		background: linear-gradient(rgba(239,236,230,0.8) 25%, $offwhite), url("../assets/Background-Icons.png");
-		// background: linear-gradient(rgba(239,236,230,0.8) 25%, $offwhite), url("../assets/6x6.png");
+		background: linear-gradient(rgba(179,176,170,0.85) 25%, $offwhite), url("../assets/Background-Icons.png");
+		// background: linear-gradient(rgba(179,176,170,0.85) 25%, $offwhite), url("../assets/6x6.png");
 		background-position: center;
 		background-size: 100%, $imgSize*6;
 		position: fixed;
@@ -21,6 +22,16 @@ body.lightMode {
 	}
 	#banner {
 		background: $white;
+	}
+	button {
+	  &.lock {
+	    background: url("../assets/darkmode/objects/Lock.png");
+	    background-size: cover;
+	  }
+	  &.unlock {
+	    background: url("../assets/darkmode/objects/Unlock.png");
+	    background-size: cover;
+	  }
 	}
 	image-card {
 		tool-tip {

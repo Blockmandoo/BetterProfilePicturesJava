@@ -9,6 +9,7 @@ function addClicks() {
 	shapeClicks();
 	downloadLink();
 	randomLink();
+	lockButton();
 }
 
 function backgroundStyleClicks() {
@@ -132,11 +133,26 @@ function randomLink() {
 	var element = document.querySelector("#random");
 	if (element.addEventListener) {
 		element.addEventListener("click", function () {
-				randomIcon();
+			randomIcon();
+		}, false);
+	} else if (element.attachEvent) {
+		element.attachEvent("onClick", function () {
+			randomIcon();
+		});
+	}
+}
+
+function lockButton() {
+	var elements = document.querySelectorAll("button.lock, button.unlock");
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].addEventListener) {
+			elements[i].addEventListener("click", function () {
+				swapLock(this);
 			}, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("onClick", function () {
-				randomIcon();
+		} else if (elements[i].attachEvent) {
+			elements[i].attachEvent("onClick", function () {
+				swapLock(this);
 			});
 		}
+	}
 }

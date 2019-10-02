@@ -1,8 +1,8 @@
 body::before, #banner, tool-tip {
   transition: background 1s ease, background-image 1s ease, color 1s ease;
 }
-img {
-  transition: background 1s ease;
+img, button.lock, button.unlock {
+  transition: background 1s ease, background-image 1s ease;
 }
 h1, h2, h3, h4, h5, p {
   transition: color 1s ease;
