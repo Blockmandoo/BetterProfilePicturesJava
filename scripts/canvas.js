@@ -34,8 +34,6 @@ function setLogo(logo) {
 	}
 	globalLogo = logo;
 	globalGenre = tempGenre;
-	logo = logo.replace("gameofthrones/", ""); //Fix Game of Thrones condition
-	logo = logo.replace("mlp/", ""); //Fix My little Pony condition
 
 	//Set active Logo display
 	var activeLogo = document.querySelector("#logo .active")
@@ -191,10 +189,10 @@ function makeImage() {
 	var borderOffset;
 	switch (globalShape) {
 		case "Hexagon":
-			borderOffset = 18;
+			borderOffset = 17;
 			break;
 		case "HexagonLong":
-			borderOffset = 18;
+			borderOffset = 17;
 			break;
 		case "Diamond":
 			borderOffset = 38;
