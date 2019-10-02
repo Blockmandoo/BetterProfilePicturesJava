@@ -32,6 +32,10 @@ function setLogo(logo) {
 	if (devMode) {
 		console.log("Setting logo: " + logo);
 	}
+
+	//Sepcial case for shows
+	logo = logo.replace("-", "/");
+
 	globalLogo = logo;
 	globalGenre = tempGenre;
 
@@ -40,6 +44,10 @@ function setLogo(logo) {
 	if (activeLogo) {
 		activeLogo.className = "";
 	}
+	
+	//Sepcial case for shows
+	logo = logo.replace("/", "-");
+
 	document.querySelector("#logo [name='" + logo + "']").className = "active";
 
 	updateImage();

@@ -8,6 +8,7 @@ function addClicks() {
 	logoColorClicks();
 	shapeClicks();
 	downloadLink();
+	randomLink();
 }
 
 function backgroundStyleClicks() {
@@ -125,4 +126,17 @@ function downloadLink() {
 			});
 		}
 	}
+}
+
+function randomLink() {
+	var element = document.querySelector("#random");
+	if (element.addEventListener) {
+		element.addEventListener("click", function () {
+				randomIcon();
+			}, false);
+		} else if (element.attachEvent) {
+			element.attachEvent("onClick", function () {
+				randomIcon();
+			});
+		}
 }
