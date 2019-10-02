@@ -1,9 +1,9 @@
-var globalColor = "Peridot";
+var globalBackgroundColor = "Peridot";
+var globalBackgroundStyle = "Blast";
 var globalGenre = "Objects";
 var globalLogo = "Leaf";
 var globalLogoColor = "White";
 var globalShape = "Square";
-var globalStyle = "Blast";
 var tempGenre;
 var refreshRate = 250; //How often should I update the canvas?
 var refreshTime = 5000; //How long should I update the canvas?
@@ -35,50 +35,50 @@ function setLogo(logo) {
 	globalLogo = logo;
 	globalGenre = tempGenre;
 	logo = logo.replace("gameofthrones/", ""); //Fix Game of Thrones condition
-	logo = logo.replace("mlp/", ""); //Fix Game of Thrones condition
+	logo = logo.replace("mlp/", ""); //Fix My little Pony condition
 
 	//Set active Logo display
 	var activeLogo = document.querySelector("#logo .active")
 	if (activeLogo) {
 		activeLogo.className = "";
 	}
-	document.querySelector("#logo [alt='" + logo + "']").className = "active";
+	document.querySelector("#logo [name='" + logo + "']").className = "active";
 
 	updateImage();
 }
 
-function setColor(color) {
+function setBackgroundColor(color) {
 	if (devMode) {
-		console.log("Setting color: " + color);
+		console.log("Setting background color: " + color);
 	}
-	globalColor = color;
+	globalBackgroundColor = color;
 
 	//Set download button color
 	document.querySelector("#buttons").className = color;
 
 	//Set active Color display
-	var activeColor = document.querySelector("#color .active")
+	var activeColor = document.querySelector("#backgroundColor .active")
 	if (activeColor) {
 		activeColor.className = "";
 	}
-	document.querySelector("#color [alt='" + color + "']").className = "active";
+	document.querySelector("#backgroundColor [name='" + color + "']").className = "active";
 
 	updateImage();
 }
 
-function setStyle(style) {
+function setBackgroundStyle(style) {
 	if (devMode) {
-		console.log("Setting style: " + style);
+		console.log("Setting background style: " + style);
 	}
 
 	//Set active Style display
-	var activeStyle = document.querySelector("#style .active")
+	var activeStyle = document.querySelector("#backgroundStyle .active")
 	if (activeStyle) {
 		activeStyle.className = "";
 	}
-	document.querySelector("#style [alt='" + style + "']").className = "active";
+	document.querySelector("#backgroundStyle [name='" + style + "']").className = "active";
 
-	globalStyle = style;
+	globalBackgroundStyle = style;
 	updateImage();
 }
 
@@ -93,7 +93,7 @@ function setShape(shape) {
 	if (activeShape) {
 		activeShape.className = "";
 	}
-	document.querySelector("#shape [alt='" + shape + "']").className = "active";
+	document.querySelector("#shape [name='" + shape + "']").className = "active";
 
 	updateImage();
 }
@@ -109,7 +109,7 @@ function setLogoColor(color) {
 	if (activeColor) {
 		activeColor.className = "";
 	}
-	document.querySelector("#logoColor [alt='" + color + "']").className = "active";
+	document.querySelector("#logoColor [name='" + color + "']").className = "active";
 
 	updateImage();
 }
@@ -127,7 +127,7 @@ function setGenre(genre) {
 	if (activeGenre) {
 		activeGenre.className = "";
 	}
-	document.querySelector("#genre [alt='" + tempGenre + "']").className = "active";
+	document.querySelector("#genre [name='" + tempGenre + "']").className = "active";
 
 	//Target the logo header and un-hide it.
 	var logosDiv = document.querySelector("#logo.hidden");
@@ -142,7 +142,7 @@ function setGenre(genre) {
 	}
 
 	//Target desired genre div and unhide it.
-	var genreDiv = document.querySelector("#logo div." + genre);
+	var genreDiv = document.querySelector("#logo div#" + genre);
 	if (genreDiv) {
 		genreDiv.classList.remove("hidden");
 	}
@@ -162,6 +162,9 @@ function updateImage() {
 function makeImage() {
 	var canvas = document.querySelector("canvas"); //Grab canvas element.
 	var canvasContext = canvas.getContext("2d");
+	if (devMode) {
+		console.log("Refresh image");
+	}
 
 	//Define the logo image.
 	var logoImage = new Image();
@@ -178,7 +181,7 @@ function makeImage() {
 
 	//Define the background image.
 	var backgroundImage = new Image();
-	backgroundImage.src = "assets/background/" + globalStyle + "-" + globalColor + ".png";
+	backgroundImage.src = "assets/background/" + globalBackgroundStyle + "-" + globalBackgroundColor + ".png";
 
 	//Define the shape image.
 	var shapeImage = new Image();

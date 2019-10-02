@@ -27,6 +27,15 @@ function choiceCount(catagory) {
 	return images.length;
 }
 
+//Activate active cards
+function activateCards() {
+	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").className = "active";
+	document.querySelector("#logo [name='" + globalLogo + "']").className = "active";
+	document.querySelector("#logoColor [name='" + globalLogoColor + "']").className = "active";
+	document.querySelector("#shape [name='" + globalShape + "']").className = "active";
+	document.querySelector("#backgroundStyle [name='" + globalBackgroundStyle + "']").className = "active";
+}
+
 //Code injected from the interwebs because it makes no sense but works
 function numberWithCommas(number) {
 	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

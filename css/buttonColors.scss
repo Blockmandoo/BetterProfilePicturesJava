@@ -4,103 +4,37 @@ $white: white;
 @import "_buttonMixins";
 
 #buttons {
-	&.Amethyst {
-		 @include buttons(#660eb6, #ad21fe);
-	}
-	&.Aquamarine {
-		 @include buttons(#09829f, #17dedc);
-	}
-	&.BloodSky {
-		 @include buttons(#a51840, #e63200);
-	}
-	&.BronzeSunset {
-		 @include buttons(#815143, #faf779);
-	}
-	&.BurningHorizon {
-		 @include buttons(#ba047b, #ff7c29);
-	}
-	&.Camo {
-		 @include buttons(#666047, #bfaf8d);
-	}
-	&.Chlorophyte {
-		 @include buttons(#79c41e, #fbff1f);
-	}
-	&.ChocolateDiamond {
-		 @include buttons(#5e2e10, #7c4815);
-	}
-	&.Copper {
-		 @include buttons(#a94809, #ffa100);
-	}
-	&.CorrodedSepia {
-		 @include buttons(#996271, #f7a975);
-	}
-	&.Dusk {
-		 @include buttons(#5b1b94, #c23abb);
-	}
-	&.Hematite {
-		 @include buttons(#5a5b5d, #8e9093);
-	}
-	&.Jasper {
-		 @include buttons(#d16c00, #fea000);
-	}
-	&.Kiwi {
-		 @include buttonsLight(#ece99c, #a0bc2b);
-	}
-	&.Midnight {
-		 @include buttonsDark(#03295b, #044b8c);
-	}
-	&.Moonstone {
-		 @include buttonsLight(#d2d2d2, #fafafa);
-	}
-	&.Mourning {
-		 @include buttons(#3b544a, #699081);
-	}
-	&.Obsidian {
-		 @include buttonsDark(#232323, #464646);
-	}
-	&.Ocean {
-		 @include buttons(#2677b7, #17e0dd);
-	}
-	&.Peach {
-		 @include buttonsLight(#d9a979, #decf87);
-	}
-	&.Pearl {
-		 @include buttonsLight(#8d8d91, #dbdee2);
-	}
-	&.PerfectDay {
-		 @include buttonsLight(#6ab5f9, #93ccff);
-	}
-	&.Peridot {
-		 @include buttons(#37b41d, #9efe1a);
-	}
-	&.RoseQuartz {
-		 @include buttons(#a2219f, #fe56dc);
-	}
-	&.Ruby {
-		 @include buttons(#a61a08, #e53200);
-	}
-	&.SailorsDelight {
-		 @include buttons(#ca7066, #f5bf64);
-	}
-	&.Sandstorm {
-		 @include buttons(#796b37, #f4e17f);
-	}
-	&.Sapphire {
-		 @include buttons(#2a4abf, #1aa5fe);
-	}
-	&.Tangerine {
-		 @include buttons(#be7f08, #c4a30b);
-	}
-	&.Topaz {
-		 @include buttonsLight(#e1c10f, #fbfe1f);
-	}
-	&.Twitch {
-		 @include buttons(#4c357d, #6c1793);
-	}
-	&.Void {
-		 @include buttonsDark(#1e0a2d, #442f66);
-	}
-	&.WaterBlue {
-		 @include buttons(#44b8a4, #6ada94);
-	}
+	&.Amethyst { @include buttons(#660eb6, #ad21fe);}
+	&.Aquamarine { @include buttons(#09829f, #17dedc);}
+	&.BloodSky { @include buttons(#a51840, #e63200);}
+	&.BronzeSunset { @include buttons(#815143, #faf779);}
+	&.BurningHorizon { @include buttons(#ba047b, #ff7c29);}
+	&.Camo { @include buttons(#666047, #bfaf8d);}
+	&.Chlorophyte { @include buttons(#79c41e, #fbff1f);}
+	&.ChocolateDiamond { @include buttons(#5e2e10, #7c4815);}
+	&.Cobalt { @include buttons(#2677b7, #17e0dd);}
+	&.Copper { @include buttons(#a94809, #ffa100);}
+	&.CorrodedSepia { @include buttons(#996271, #f7a975);}
+	&.Hematite { @include buttons(#5a5b5d, #8e9093);}
+	&.Jade { @include buttons(#44b8a4, #6ada94);}
+	&.Jasper { @include buttons(#d16c00, #fea000);}
+	&.Kiwi { @include buttonsLight(#ece99c, #a0bc2b);}
+	&.Midnight { @include buttonsDark(#03295b, #044b8c);}
+	&.Moonstone { @include buttonsLight(#d2d2d2, #fafafa);}
+	&.Mourning { @include buttons(#3b544a, #699081);}
+	&.Obsidian { @include buttonsDark(#232323, #464646);}
+	&.Peach { @include buttonsLight(#d9a979, #decf87);}
+	&.Pearl { @include buttonsLight(#8d8d91, #dbdee2);}
+	&.PerfectDay { @include buttonsLight(#6ab5f9, #93ccff);}
+	&.Peridot { @include buttons(#37b41d, #9efe1a);}
+	&.RoseQuartz { @include buttons(#a2219f, #fe56dc);}
+	&.Ruby { @include buttons(#a61a08, #e53200);}
+	&.SailorsDelight { @include buttons(#ca7066, #f5bf64);}
+	&.Sandstorm { @include buttons(#796b37, #f4e17f);}
+	&.Sapphire { @include buttons(#2a4abf, #1aa5fe);}
+	&.Tangerine { @include buttons(#be7f08, #c4a30b);}
+	&.Topaz { @include buttonsLight(#e1c10f, #fbfe1f);}
+	&.Twilight { @include buttons(#5b1b94, #c23abb);}
+	&.Twitch { @include buttons(#4c357d, #6c1793);}
+	&.Void { @include buttonsDark(#1e0a2d, #442f66);}
 }

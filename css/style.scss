@@ -20,7 +20,7 @@ $toggleWidth: 55px;
 @import "_darkmode";
 
 canvas {
-  background: $tempgray;
+  // background: $tempgray;
 }
 canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);

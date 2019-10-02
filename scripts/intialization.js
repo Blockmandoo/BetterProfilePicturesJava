@@ -1,9 +1,15 @@
 var devmode = isDevMode();
 
 function initialize() {
-	//Update combination count
+	// Update combination count
 	applyCount();
 
-	//Run canvas function on repeat after window is loaded
-	window.onload = updateImage();
+	// Activate cards
+	activateCards();
+
+	// Run canvas function on repeat after window is loaded
+	updateImage();
+
+	// Add onClick events to image-cards
+	addClicks();
 }

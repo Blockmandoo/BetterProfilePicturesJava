@@ -494,6 +494,68 @@
       border-color: #5e2e10; }
       #buttons.ChocolateDiamond button.toggle:hover label {
         background: #1f1f1f; }
+#buttons.Cobalt button {
+  background: #2677b7;
+  border-color: #17e0dd;
+  color: white; }
+  #buttons.Cobalt button:hover {
+    background: #17e0dd;
+    border-color: #2677b7;
+    color: #1f1f1f; }
+  #buttons.Cobalt button#download {
+    background: #2677b7;
+    border-color: #17e0dd;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#2677b7, #2677b7);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Cobalt button#download:hover {
+      background: #17e0dd;
+      border-color: #2677b7;
+      color: #1f1f1f; }
+    #buttons.Cobalt button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#17e0dd, #17e0dd);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Cobalt button#upload {
+    background: #2677b7;
+    border-color: #17e0dd;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#2677b7, #2677b7);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Cobalt button#upload:hover {
+      background: #17e0dd;
+      border-color: #2677b7;
+      color: #1f1f1f; }
+    #buttons.Cobalt button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#17e0dd, #17e0dd);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Cobalt button.toggle {
+    background: #2677b7;
+    border-color: #17e0dd; }
+    #buttons.Cobalt button.toggle label {
+      background: white; }
+    #buttons.Cobalt button.toggle:hover {
+      background: #17e0dd;
+      border-color: #2677b7; }
+      #buttons.Cobalt button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons.Copper button {
   background: #a94809;
   border-color: #ffa100;
@@ -618,68 +680,6 @@
       border-color: #996271; }
       #buttons.CorrodedSepia button.toggle:hover label {
         background: #1f1f1f; }
-#buttons.Dusk button {
-  background: #5b1b94;
-  border-color: #c23abb;
-  color: white; }
-  #buttons.Dusk button:hover {
-    background: #c23abb;
-    border-color: #5b1b94;
-    color: #1f1f1f; }
-  #buttons.Dusk button#download {
-    background: #5b1b94;
-    border-color: #c23abb;
-    color: white;
-    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#5b1b94, #5b1b94);
-    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#5b1b94, #5b1b94);
-    background: url("../assets/symbols/Download.png"), linear-gradient(#5b1b94, #5b1b94);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.Dusk button#download:hover {
-      background: #c23abb;
-      border-color: #5b1b94;
-      color: #1f1f1f; }
-    #buttons.Dusk button#download:hover {
-      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#c23abb, #c23abb);
-      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#c23abb, #c23abb);
-      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#c23abb, #c23abb);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.Dusk button#upload {
-    background: #5b1b94;
-    border-color: #c23abb;
-    color: white;
-    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#5b1b94, #5b1b94);
-    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#5b1b94, #5b1b94);
-    background: url("../assets/symbols/Upload.png"), linear-gradient(#5b1b94, #5b1b94);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.Dusk button#upload:hover {
-      background: #c23abb;
-      border-color: #5b1b94;
-      color: #1f1f1f; }
-    #buttons.Dusk button#upload:hover {
-      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#c23abb, #c23abb);
-      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#c23abb, #c23abb);
-      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#c23abb, #c23abb);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.Dusk button.toggle {
-    background: #5b1b94;
-    border-color: #c23abb; }
-    #buttons.Dusk button.toggle label {
-      background: white; }
-    #buttons.Dusk button.toggle:hover {
-      background: #c23abb;
-      border-color: #5b1b94; }
-      #buttons.Dusk button.toggle:hover label {
-        background: #1f1f1f; }
 #buttons.Hematite button {
   background: #5a5b5d;
   border-color: #8e9093;
@@ -741,6 +741,68 @@
       background: #8e9093;
       border-color: #5a5b5d; }
       #buttons.Hematite button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Jade button {
+  background: #44b8a4;
+  border-color: #6ada94;
+  color: white; }
+  #buttons.Jade button:hover {
+    background: #6ada94;
+    border-color: #44b8a4;
+    color: #1f1f1f; }
+  #buttons.Jade button#download {
+    background: #44b8a4;
+    border-color: #6ada94;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#44b8a4, #44b8a4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Jade button#download:hover {
+      background: #6ada94;
+      border-color: #44b8a4;
+      color: #1f1f1f; }
+    #buttons.Jade button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#6ada94, #6ada94);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Jade button#upload {
+    background: #44b8a4;
+    border-color: #6ada94;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#44b8a4, #44b8a4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Jade button#upload:hover {
+      background: #6ada94;
+      border-color: #44b8a4;
+      color: #1f1f1f; }
+    #buttons.Jade button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#6ada94, #6ada94);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Jade button.toggle {
+    background: #44b8a4;
+    border-color: #6ada94; }
+    #buttons.Jade button.toggle label {
+      background: white; }
+    #buttons.Jade button.toggle:hover {
+      background: #6ada94;
+      border-color: #44b8a4; }
+      #buttons.Jade button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.Jasper button {
   background: #d16c00;
@@ -1114,68 +1176,6 @@
       border-color: #232323; }
       #buttons.Obsidian button.toggle:hover label {
         background: white; }
-#buttons.Ocean button {
-  background: #2677b7;
-  border-color: #17e0dd;
-  color: white; }
-  #buttons.Ocean button:hover {
-    background: #17e0dd;
-    border-color: #2677b7;
-    color: #1f1f1f; }
-  #buttons.Ocean button#download {
-    background: #2677b7;
-    border-color: #17e0dd;
-    color: white;
-    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#2677b7, #2677b7);
-    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#2677b7, #2677b7);
-    background: url("../assets/symbols/Download.png"), linear-gradient(#2677b7, #2677b7);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.Ocean button#download:hover {
-      background: #17e0dd;
-      border-color: #2677b7;
-      color: #1f1f1f; }
-    #buttons.Ocean button#download:hover {
-      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#17e0dd, #17e0dd);
-      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#17e0dd, #17e0dd);
-      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#17e0dd, #17e0dd);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.Ocean button#upload {
-    background: #2677b7;
-    border-color: #17e0dd;
-    color: white;
-    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#2677b7, #2677b7);
-    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#2677b7, #2677b7);
-    background: url("../assets/symbols/Upload.png"), linear-gradient(#2677b7, #2677b7);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.Ocean button#upload:hover {
-      background: #17e0dd;
-      border-color: #2677b7;
-      color: #1f1f1f; }
-    #buttons.Ocean button#upload:hover {
-      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#17e0dd, #17e0dd);
-      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#17e0dd, #17e0dd);
-      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#17e0dd, #17e0dd);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.Ocean button.toggle {
-    background: #2677b7;
-    border-color: #17e0dd; }
-    #buttons.Ocean button.toggle label {
-      background: white; }
-    #buttons.Ocean button.toggle:hover {
-      background: #17e0dd;
-      border-color: #2677b7; }
-      #buttons.Ocean button.toggle:hover label {
-        background: #1f1f1f; }
 #buttons.Peach button {
   background: #d9a979;
   border-color: #decf87;
@@ -1858,6 +1858,68 @@
       border-color: #e1c10f; }
       #buttons.Topaz button.toggle:hover label {
         background: #1f1f1f; }
+#buttons.Twilight button {
+  background: #5b1b94;
+  border-color: #c23abb;
+  color: white; }
+  #buttons.Twilight button:hover {
+    background: #c23abb;
+    border-color: #5b1b94;
+    color: #1f1f1f; }
+  #buttons.Twilight button#download {
+    background: #5b1b94;
+    border-color: #c23abb;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#5b1b94, #5b1b94);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Twilight button#download:hover {
+      background: #c23abb;
+      border-color: #5b1b94;
+      color: #1f1f1f; }
+    #buttons.Twilight button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#c23abb, #c23abb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Twilight button#upload {
+    background: #5b1b94;
+    border-color: #c23abb;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#5b1b94, #5b1b94);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Twilight button#upload:hover {
+      background: #c23abb;
+      border-color: #5b1b94;
+      color: #1f1f1f; }
+    #buttons.Twilight button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#c23abb, #c23abb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Twilight button.toggle {
+    background: #5b1b94;
+    border-color: #c23abb; }
+    #buttons.Twilight button.toggle label {
+      background: white; }
+    #buttons.Twilight button.toggle:hover {
+      background: #c23abb;
+      border-color: #5b1b94; }
+      #buttons.Twilight button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons.Twitch button {
   background: #4c357d;
   border-color: #6c1793;
@@ -1982,65 +2044,3 @@
       border-color: #1e0a2d; }
       #buttons.Void button.toggle:hover label {
         background: white; }
-#buttons.WaterBlue button {
-  background: #44b8a4;
-  border-color: #6ada94;
-  color: white; }
-  #buttons.WaterBlue button:hover {
-    background: #6ada94;
-    border-color: #44b8a4;
-    color: #1f1f1f; }
-  #buttons.WaterBlue button#download {
-    background: #44b8a4;
-    border-color: #6ada94;
-    color: white;
-    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#44b8a4, #44b8a4);
-    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#44b8a4, #44b8a4);
-    background: url("../assets/symbols/Download.png"), linear-gradient(#44b8a4, #44b8a4);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.WaterBlue button#download:hover {
-      background: #6ada94;
-      border-color: #44b8a4;
-      color: #1f1f1f; }
-    #buttons.WaterBlue button#download:hover {
-      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#6ada94, #6ada94);
-      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#6ada94, #6ada94);
-      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#6ada94, #6ada94);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.WaterBlue button#upload {
-    background: #44b8a4;
-    border-color: #6ada94;
-    color: white;
-    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#44b8a4, #44b8a4);
-    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#44b8a4, #44b8a4);
-    background: url("../assets/symbols/Upload.png"), linear-gradient(#44b8a4, #44b8a4);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 24px; }
-    #buttons.WaterBlue button#upload:hover {
-      background: #6ada94;
-      border-color: #44b8a4;
-      color: #1f1f1f; }
-    #buttons.WaterBlue button#upload:hover {
-      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#6ada94, #6ada94);
-      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#6ada94, #6ada94);
-      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#6ada94, #6ada94);
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat; }
-  #buttons.WaterBlue button.toggle {
-    background: #44b8a4;
-    border-color: #6ada94; }
-    #buttons.WaterBlue button.toggle label {
-      background: white; }
-    #buttons.WaterBlue button.toggle:hover {
-      background: #6ada94;
-      border-color: #44b8a4; }
-      #buttons.WaterBlue button.toggle:hover label {
-        background: #1f1f1f; }
