@@ -7,6 +7,7 @@ function addClicks() {
 	logoClicks();
 	logoColorClicks();
 	shapeClicks();
+	downloadLink();
 }
 
 function backgroundStyleClicks() {
@@ -106,6 +107,21 @@ function shapeClicks() {
 			elements[i].attachEvent("onClick", function () {
 				var name = this.getAttribute("name");
 				setShape(name);
+			});
+		}
+	}
+}
+
+function downloadLink() {
+	var elements = document.querySelectorAll("#download, #canvasLink");
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].addEventListener) {
+			elements[i].addEventListener("click", function () {
+				downloadCanvas();
+			}, false);
+		} else if (elements[i].attachEvent) {
+			elements[i].attachEvent("onClick", function () {
+				downloadCanvas();
 			});
 		}
 	}
