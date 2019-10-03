@@ -20,9 +20,10 @@ Logos:
     Thunder cloud
 
 Features:
+  Better, less random(ish) button
   Border Options
   Cookie tracker for darkmode
   Highlight new content
   Logo Descriptions
+  Patch notes Page
   Upload images button
-  Better, less random(ish) button

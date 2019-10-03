@@ -1,13 +1,13 @@
-var globalBackgroundColor = "Peridot";
-var globalBackgroundStyle = "Blast";
-var globalGenre = "Objects";
-var globalLogo = "Leaf";
-var globalLogoColor = "White";
-var globalShape = "Square";
-var tempGenre;
-var refreshRate = 250; //How often should I update the canvas?
-var refreshTime = 5000; //How long should I update the canvas?
-var devmode = isDevMode(); //Want to be told what's going on currently in the console?
+var globalBackgroundColor = "Peridot",
+ 		globalBackgroundStyle = "Blast",
+		globalGenre = "Objects",
+		globalLogo = "Leaf",
+		globalLogoColor = "White",
+		globalShape = "Square",
+		tempGenre,
+		refreshRate = 250, //How often should I update the canvas?
+		refreshTime = 10000, //How long should I update the canvas?
+		devmode = isDevMode(); //Want to be told what's going on currently in the console?
 
 //Download canvas
 function downloadCanvas() {
@@ -44,7 +44,7 @@ function setLogo(logo) {
 	if (activeLogo) {
 		activeLogo.className = "";
 	}
-	
+
 	//Sepcial case for shows
 	logo = logo.replace("/", "-");
 
