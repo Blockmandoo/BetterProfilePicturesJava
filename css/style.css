@@ -197,7 +197,7 @@ body.lightMode .darkMode {
 
 body.lightMode::before {
   content: "";
-  background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/Background-Icons.png");
+  background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
   position: fixed;
@@ -266,7 +266,7 @@ body.darkMode .lightMode {
 
 body.darkMode::before {
   content: "";
-  background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/Background-Icons.png");
+  background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
   position: fixed;

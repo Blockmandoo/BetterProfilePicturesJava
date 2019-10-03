@@ -8,7 +8,7 @@ body.lightMode {
 	}
 	&::before {
 		content: "";
-		background: linear-gradient(rgba(179,176,170,0.85) 25%, $offwhite), url("../assets/Background-Icons.png");
+		background: linear-gradient(rgba(179,176,170,0.85) 25%, $offwhite), url("../assets/6x6.png");
 		// background: linear-gradient(rgba(179,176,170,0.85) 25%, $offwhite), url("../assets/6x6.png");
 		background-position: center;
 		background-size: 100%, $imgSize*6;
