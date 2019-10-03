@@ -3,34 +3,27 @@ html, body, h1, h2, h3, h4, h5, p {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 h5 {
-  font-size: 1.1em;
-}
+  font-size: 1.1em; }
 
 h4 {
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 h3 {
-  font-size: 1.3em;
-}
+  font-size: 1.3em; }
 
 h2 {
-  font-size: 1.4em;
-}
+  font-size: 1.4em; }
 
 h1 {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 main {
   padding: 0 18px;
   width: 95%;
-  margin: auto;
-}
+  margin: auto; }
 
 #banner {
   position: sticky;
@@ -38,422 +31,296 @@ main {
   z-index: 2;
   padding: 20px 0;
   display: grid;
-  grid-template: ". canvas description .";
-}
-
-#banner > a#canvasLink {
-  grid-area: canvas;
-  text-align: right;
-}
-
-#banner > a#canvasLink canvas {
-  margin-right: 10px;
-  margin-left: 20px;
-}
-
-#banner > aside {
-  grid-area: description;
-  max-width: 400px;
-  margin-right: 20px;
-}
-
-#banner > aside > * {
-  margin: 10px 0px;
-}
+  grid-template: ". canvas description ."; }
+  #banner > a#canvasLink {
+    grid-area: canvas;
+    text-align: right; }
+    #banner > a#canvasLink canvas {
+      margin-right: 10px;
+      margin-left: 20px; }
+  #banner > aside {
+    grid-area: description;
+    max-width: 400px;
+    margin-right: 20px; }
+    #banner > aside > * {
+      margin: 10px 0px; }
 
 button {
-  margin-top: 4px;
-}
-
-button.toggle {
-  padding: 4px;
-  width: 55px;
-}
-
-button.toggle input {
-  display: none;
-}
-
-button.toggle label {
-  display: block;
-  height: 16px;
-  width: 16px;
-}
-
-button.toggle label.checked {
-  transform: translateX(29px);
-}
+  margin-top: 4px; }
+  button.toggle {
+    padding: 4px;
+    width: 55px; }
+    button.toggle input {
+      display: none; }
+    button.toggle label {
+      display: block;
+      height: 16px;
+      width: 16px; }
+      button.toggle label.checked {
+        transform: translateX(29px); }
 
 main {
-  padding: 20px 0;
-}
-
-main div {
-  margin-bottom: 15px;
-}
+  padding: 20px 0; }
+  main div {
+    margin-bottom: 15px; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 img {
   height: 80px;
-  width: 80px;
-}
+  width: 80px; }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 image-card {
   position: relative;
-  display: inline-block;
-}
-
-image-card tool-tip {
-  pointer-events: none;
-  padding: 5px;
-  width: 120px;
-  position: absolute;
-  display: block;
-  opacity: 0;
-  top: 80px;
-  transform: translate(-25px, -30px);
-  z-index: 1;
-  transition: opacity .4s ease, transform .6s ease;
-}
-
-image-card:hover tool-tip:not(:hover) {
-  opacity: 1;
-  transform: translate(-25px, 5px);
-}
+  display: inline-block; }
+  image-card tool-tip {
+    pointer-events: none;
+    padding: 5px;
+    width: 120px;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 80px;
+    transform: translate(-25px, -30px);
+    z-index: 1;
+    transition: opacity .4s ease, transform .6s ease; }
+  image-card:hover tool-tip:not(:hover) {
+    opacity: 1;
+    transform: translate(-25px, 5px); }
 
 /*Mobile layout
 
 Tablet*/
 @media (max-width: 777px) {
   canvas {
-    width: 33vw;
-  }
-  image-card > tool-tip {
-    display: none;
-  }
-}
+    width: 33vw; }
 
+  image-card > tool-tip {
+    display: none; } }
 /*Phone*/
 @media (max-width: 500px) {
   img {
     height: 60px;
-    width: 60px;
-  }
+    width: 60px; }
+
   body p {
-    font-size: 15px;
-  }
+    font-size: 15px; }
+
   #banner {
     padding: 10px;
-    grid-template: "canvas" "description";
-  }
-  #banner > a#canvasLink {
-    text-align: center;
-  }
-  #banner aside {
-    max-width: none;
-    width: 100%;
-  }
-}
-
+    grid-template: "canvas" "description"; }
+    #banner > a#canvasLink {
+      text-align: center; }
+    #banner aside {
+      max-width: none;
+      width: 100%; } }
 /*SkinnyPhone*/
 @media (max-width: 400px) {
   #description {
-    display: none;
-  }
-}
-
+    display: none; } }
 body::before, #banner, tool-tip {
-  transition: background 1s ease, background-image 1s ease, color 1s ease;
-}
+  transition: background 1s ease, background-image 1s ease, color 1s ease; }
 
 img, button.lock, button.unlock {
-  transition: background 1s ease, background-image 1s ease;
-}
+  transition: background 1s ease, background-image 1s ease; }
 
 h1, h2, h3, h4, h5, p {
-  transition: color 1s ease;
-}
+  transition: color 1s ease; }
 
 canvas, button {
-  transition: filter 1s ease;
-}
+  transition: filter 1s ease; }
 
 /*Light mode stylings*/
 body.lightMode {
   background: #aaa;
-  color: #1f1f1f;
-}
-
-body.lightMode .darkMode {
-  display: none;
-}
-
-body.lightMode::before {
-  content: "";
-  background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
-  background-position: center;
-  background-size: 100%, 480px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-@media (max-width: 500px) {
+  color: #1f1f1f; }
+  body.lightMode .darkMode {
+    display: none; }
   body.lightMode::before {
-    background-size: 100%, 360px;
-  }
-}
-
-body.lightMode #banner {
-  background: #cecece;
-}
-
-body.lightMode button.lock {
-  background: url("../assets/darkmode/objects/Lock.png");
-  background-size: cover;
-}
-
-body.lightMode button.unlock {
-  background: url("../assets/darkmode/objects/Unlock.png");
-  background-size: cover;
-}
-
-body.lightMode image-card tool-tip {
-  background: rgba(217, 217, 217, 0.75);
-  border: 1px solid #383838;
-}
-
-body.lightMode image-card img {
-  background: rgba(255, 255, 255, 0.3);
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  transition: outline .4s ease, background .2s ease;
-}
-
-body.lightMode image-card:hover img {
-  outline: 2px solid #1f1f1f;
-  outline-offset: -2px;
-}
-
-body.lightMode image-card.active tool-tip {
-  border-color: #37b41d;
-}
-
-body.lightMode image-card.active img:not(:hover) {
-  outline-color: #37b41d;
-}
+    content: "";
+    background: -webkit-linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
+    background: -o-linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
+    background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+    @media (max-width: 500px) {
+      body.lightMode::before {
+        background-size: 100%, 360px; } }
+  body.lightMode #banner {
+    background: #cecece; }
+  body.lightMode button.lock {
+    background: url("../assets/darkmode/objects/Lock.png");
+    background-size: cover; }
+  body.lightMode button.unlock {
+    background: url("../assets/darkmode/objects/Unlock.png");
+    background-size: cover; }
+  body.lightMode image-card tool-tip {
+    background: rgba(217, 217, 217, 0.75);
+    border: 1px solid #383838; }
+  body.lightMode image-card img {
+    background: rgba(255, 255, 255, 0.3);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+  body.lightMode image-card:hover img {
+    outline: 2px solid #1f1f1f;
+    outline-offset: -2px; }
+  body.lightMode image-card.active tool-tip {
+    border-color: #37b41d; }
+  body.lightMode image-card.active img:not(:hover) {
+    outline-color: #37b41d; }
 
 /*Dark mode stylings*/
 body.darkMode {
   background: #383838;
-  color: #cecece;
-}
-
-body.darkMode .lightMode {
-  display: none;
-}
-
-body.darkMode::before {
-  content: "";
-  background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background-position: center;
-  background-size: 100%, 480px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-@media (max-width: 500px) {
+  color: #cecece; }
+  body.darkMode .lightMode {
+    display: none; }
   body.darkMode::before {
-    background-size: 100%, 360px;
-  }
-}
-
-body.darkMode #banner {
-  background: #383838;
-}
-
-body.darkMode button.lock {
-  background: url("../assets/objects/Lock.png");
-  background-size: cover;
-}
-
-body.darkMode button.unlock {
-  background: url("../assets/objects/Unlock.png");
-  background-size: cover;
-}
-
-body.darkMode image-card tool-tip {
-  background: rgba(26, 26, 26, 0.75);
-  border: 1px solid #aaa;
-}
-
-body.darkMode image-card img {
-  background: rgba(38, 38, 38, 0.4);
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  transition: outline .4s ease, background .2s ease;
-}
-
-body.darkMode image-card img:hover {
-  outline: 2px solid #cecece;
-  outline-offset: -2px;
-}
-
-body.darkMode image-card.active tool-tip {
-  border-color: #9efe1a;
-}
-
-body.darkMode image-card.active img:not(:hover) {
-  outline-color: #9efe1a;
-}
+    content: "";
+    background: -webkit-linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background: -o-linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+    @media (max-width: 500px) {
+      body.darkMode::before {
+        background-size: 100%, 360px; } }
+  body.darkMode #banner {
+    background: #383838; }
+  body.darkMode button.lock {
+    background: url("../assets/objects/Lock.png");
+    background-size: cover; }
+  body.darkMode button.unlock {
+    background: url("../assets/objects/Unlock.png");
+    background-size: cover; }
+  body.darkMode image-card tool-tip {
+    background: rgba(26, 26, 26, 0.75);
+    border: 1px solid #aaa; }
+  body.darkMode image-card img {
+    background: rgba(38, 38, 38, 0.4);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+    body.darkMode image-card img:hover {
+      outline: 2px solid #cecece;
+      outline-offset: -2px; }
+  body.darkMode image-card.active tool-tip {
+    border-color: #9efe1a; }
+  body.darkMode image-card.active img:not(:hover) {
+    outline-color: #9efe1a; }
 
 canvas, button {
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-}
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); }
 
 #buttons button {
   background: #37b41d;
   border-color: #9efe1a;
-  color: #cecece;
-}
-
-#buttons button:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
-  color: #1f1f1f;
-}
-
-#buttons button#download {
-  background: #37b41d;
-  border-color: #9efe1a;
-  color: #cecece;
-  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#download:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
-  color: #1f1f1f;
-}
-
-#buttons button#download:hover {
-  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9efe1a, #9efe1a);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button#upload {
-  background: #37b41d;
-  border-color: #9efe1a;
-  color: #cecece;
-  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#upload:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
-  color: #1f1f1f;
-}
-
-#buttons button#upload:hover {
-  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9efe1a, #9efe1a);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button.toggle {
-  background: #37b41d;
-  border-color: #9efe1a;
-}
-
-#buttons button.toggle label {
-  background: #cecece;
-}
-
-#buttons button.toggle:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
-}
-
-#buttons button.toggle:hover label {
-  background: #1f1f1f;
-}
-
+  color: #cecece; }
+  #buttons button:hover {
+    background: #9efe1a;
+    border-color: #37b41d;
+    color: #1f1f1f; }
+  #buttons button#download {
+    background: #37b41d;
+    border-color: #9efe1a;
+    color: #cecece;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#download:hover {
+      background: #9efe1a;
+      border-color: #37b41d;
+      color: #1f1f1f; }
+    #buttons button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9efe1a, #9efe1a);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button#upload {
+    background: #37b41d;
+    border-color: #9efe1a;
+    color: #cecece;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#upload:hover {
+      background: #9efe1a;
+      border-color: #37b41d;
+      color: #1f1f1f; }
+    #buttons button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9efe1a, #9efe1a);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button.toggle {
+    background: #37b41d;
+    border-color: #9efe1a; }
+    #buttons button.toggle label {
+      background: #cecece; }
+    #buttons button.toggle:hover {
+      background: #9efe1a;
+      border-color: #37b41d; }
+      #buttons button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons button {
   border-width: 1px;
   border-style: solid;
-  cursor: pointer;
-}
-
+  cursor: pointer; }
 #buttons * {
-  transition: background .3s ease, color .3s ease, filter 1s ease;
-}
-
+  transition: background .3s ease, color .3s ease, filter 1s ease; }
 #buttons .toggle label {
   transition: background .3s ease, color .3s ease, transform .4s ease;
-  cursor: pointer;
-}
-
+  cursor: pointer; }
 #buttons .toggle, #buttons .toggle label {
-  border-radius: 50px;
-}
+  border-radius: 50px; }
 
 button {
-  padding: 4px 6px;
-}
-
-button.lock, button.unlock {
-  padding: 0;
-  margin-top: 0;
-  width: 32px;
-  height: 32px;
-  transform: translateY(-4px);
-  border: none;
-}
+  padding: 4px 6px; }
+  button.lock, button.unlock {
+    padding: 0;
+    margin-top: 0;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-4px);
+    border: none; }
 
 image-card tool-tip {
   text-align: center;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 #shape img {
-  background: none;
-}
+  background: none; }
 
 main {
-  text-align: center;
-}
+  text-align: center; }
