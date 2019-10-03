@@ -38,3 +38,27 @@ $white: white;
 	&.Twitch { @include buttons(#4c357d, #6c1793);}
 	&.Void { @include buttonsDark(#1e0a2d, #442f66);}
 }
+button.disabled {
+	background: #777 !important;
+	border-color: #888 !important;
+	color: #ccc !important;
+	cursor: default;
+	&:hover {
+		background: #666 !important;
+		border-color: #888 !important;
+		color: #bbb !important;
+		cursor: default;
+	}
+	&#upload {
+		background-image: url(../assets/symbols/Upload.png), linear-gradient(#777, #777) !important;
+		background-position: right !important;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		&:hover {
+			background-image: url(../assets/symbols/Upload.png), linear-gradient(#666, #666) !important;
+			background-position: right !important;
+			background-size: contain !important;
+			background-repeat: no-repeat !important;
+		}
+	}
+}

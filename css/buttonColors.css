@@ -2044,3 +2044,24 @@
       border-color: #1e0a2d; }
       #buttons.Void button.toggle:hover label {
         background: white; }
+
+button.disabled {
+  background: #777 !important;
+  border-color: #888 !important;
+  color: #ccc !important;
+  cursor: default; }
+  button.disabled:hover {
+    background: #666 !important;
+    border-color: #888 !important;
+    color: #bbb !important;
+    cursor: default; }
+  button.disabled#upload {
+    background-image: url(../assets/symbols/Upload.png), linear-gradient(#777, #777) !important;
+    background-position: right !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important; }
+    button.disabled#upload:hover {
+      background-image: url(../assets/symbols/Upload.png), linear-gradient(#666, #666) !important;
+      background-position: right !important;
+      background-size: contain !important;
+      background-repeat: no-repeat !important; }
