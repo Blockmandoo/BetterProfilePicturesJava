@@ -16,6 +16,7 @@
 	<script src="scripts/canvas.js"></script>
 	<script src="scripts/customElements.js"></script>
 	<script src="scripts/onClick.js"></script>
+	<script src="scripts/validSchemes.js"></script>
 	<!-- Last --><script src="scripts/intialization.js"></script>
 	<title>Better Profile Pictures</title>
 </head>
@@ -35,6 +36,12 @@
 				combinations, so have fun!)
 			</p>
 			<div id="buttons" class="Peridot">
+				<button id="download" type="button">Download</button>
+				<button id="upload" type="button" class="disabled">Upload</button>
+				<br>
+				<button id="random" type="button">Random</button>
+				<button id="sudorandom" type="button" class="disabled">Random-ish</button>
+				<br>
 				Darkmode:
 				<button class="toggle" onClick="darkmodeToggle()">
 				<input id="darkmode" type="checkbox">
@@ -42,12 +49,6 @@
 					&nbsp;
 				</label>
 				</button>
-				<br>
-				<button id="download" type="button">Download</button>
-				<button id="upload" type="button" class="disabled">Upload</button>
-				<br>
-				<button id="random" type="button">Random</button>
-				<button id="sudorandom" type="button" class="disabled">Random-ish</button>
 			</div>
 		</aside>
 	</section>

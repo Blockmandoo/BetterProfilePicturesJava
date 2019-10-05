@@ -10,9 +10,13 @@ function initialize() {
 	// Run canvas function on repeat
 	updateImage();
 
-	//Catalog all the choice for the random button
+	// Catalog all the choice for the random button
 	catalogChoices();
 
 	// Add onClick events to image-cards
 	addClicks();
+
+	// Setup sudo random options
+	intLogoSchemes();
+	intBackgroundSchemes();
 }
