@@ -64,12 +64,6 @@ function setDescription(head, flavor) {
 	document.getElementById("flavorText").innerHTML = flavor;
 }
 
-//Hide logos (used for random button)
-function hideLogos() {
-	document.querySelector("#logo").className = "hidden";
-	document.querySelector("#genre .active").className = "";
-}
-
 //intialization to get all the possible options
 function catalogChoices() {
 	backgroundColorNames = [];
@@ -99,14 +93,23 @@ function catalogChoices() {
 	}
 }
 
+//Random icon lock switch
+function swapLock(button) {
+	if (button.className == "lock") {
+		button.className = "unlock";
+	} else {
+		button.className = "lock";
+	}
+}
+
 //Random icon generator
 function randomIcon() {
 	//Get random values for each choice
-	var backgroundColorIndex = Math.floor(Math.random() * backgroundColorNames.length);
-	var backgroundStyleIndex = Math.floor(Math.random() * backgroundStyleNames.length);
-	var logoIndex = Math.floor(Math.random() * logoNames.length);
-	var logoColorIndex = Math.floor(Math.random() * logoColorNames.length);
-	var shapeIndex = Math.floor(Math.random() * shapeNames.length);
+	var backgroundColorIndex = Math.floor(Math.random() * (backgroundColorNames.length - 1));
+	var backgroundStyleIndex = Math.floor(Math.random() * (backgroundStyleNames.length - 1));
+	var logoIndex = Math.floor(Math.random() * (logoNames.length - 1));
+	var logoColorIndex = Math.floor(Math.random() * (logoColorNames.length - 1));
+	var shapeIndex = Math.floor(Math.random() * (shapeNames.length - 1));
 
 	//Genre calculations
 	var logoName = logoNames[logoIndex];
@@ -132,11 +135,51 @@ function randomIcon() {
 	}
 }
 
-//Random icon lock switch
-function swapLock(button) {
-	if (button.className == "lock") {
-		button.className = "unlock";
+function randomishIcon() {
+	//Get random values for each choice
+	// var backgroundColorIndex = Math.floor(Math.random() * backgroundColorNames.length - 1));
+	var backgroundColorIndex;
+	var backgroundStyleIndex = Math.floor(Math.random() * (backgroundStyleNames.length - 1));
+	var logoIndex = Math.floor(Math.random() * (logoNames.length - 1));
+	// var logoColorIndex = Math.floor(Math.random() * logoColorNames.length - 1));
+	var logoColorIndex;
+	var shapeIndex = Math.floor(Math.random() * (shapeNames.length - 1));
+
+	if (document.querySelector("#backgroundColor .lock")) {
+		//Background First
+		var backgroundColor = document.querySelector("#backgroundColor .active").getAttribute("name");
+		for (var i = 0; i < backgroundSchemes.length; i++) {
+			if (backgroundSchemes[i].backgroundColor = backgroundColor) {
+				backgroundColorIndex = i;
+				break;
+			}
+		}
+
 	} else {
-		button.className = "lock";
+		//Logo First
+		var library = logoSchemes[Math.floor(Math.random() * (logoSchemes.length - 1))];
+	}
+
+	//Genre calculations
+	var logoName = logoNames[logoIndex];
+	var logoElement = document.querySelector("image-card[name="+logoName+"]");
+	var genre = logoElement.parentNode.getAttribute("id");
+
+	//Setting the icon
+	if (document.querySelector("#backgroundColor .unlock")) {
+		setBackgroundColor(backgroundColorNames[backgroundStyleIndex]);
+	}
+	if (document.querySelector("#backgroundStyle .unlock")) {
+		setBackgroundStyle(backgroundStyleNames[backgroundStyleIndex]);
+	}
+	if (document.querySelector("#logo .unlock")) {
+		setGenre(genre);
+		setLogo(logoNames[logoIndex]);
+	}
+	if (document.querySelector("#logoColor .unlock")) {
+		setLogoColor(logoColorNames[logoColorIndex]);
+	}
+	if (document.querySelector("#shape .unlock")) {
+		setShape(shapeNames[shapeIndex]);
 	}
 }

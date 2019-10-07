@@ -117,9 +117,15 @@ Tablet*/
       text-align: center; }
     #banner aside {
       max-width: none;
-      width: 100%; } }
+      width: 100%; }
+
+  #buttons {
+    text-align: center; } }
 /*SkinnyPhone*/
 @media (max-width: 400px) {
+  #title {
+    text-align: center; }
+
   #description {
     display: none; } }
 body::before, #banner, tool-tip {

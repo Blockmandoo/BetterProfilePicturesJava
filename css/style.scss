@@ -22,7 +22,7 @@ canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
 #buttons {
-  @include buttons(#37b41d, #9efe1a);
+  @include buttons($darkgreen, $lightgreen);
   button {
     border-width: 1px;
     border-style: solid;

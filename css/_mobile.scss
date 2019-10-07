@@ -31,10 +31,16 @@ Tablet*/
       width: 100%;
     }
   }
+  #buttons {
+    text-align: center;
+  }
 }
 
 /*SkinnyPhone*/
 @media (max-width: 400px) {
+  #title {
+    text-align: center;
+  }
   #description {
     display: none;
   }
