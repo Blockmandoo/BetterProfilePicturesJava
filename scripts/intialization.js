@@ -20,3 +20,5 @@ function initialize() {
 	intLogoSchemes();
 	intBackgroundSchemes();
 }
+
+initialize();

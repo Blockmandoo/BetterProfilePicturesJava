@@ -18,6 +18,7 @@ Logos:
     Skull and cross bones
     Slade
     Thunder cloud
+    Deathly Hallows
 
 Features:
   Better, less random(ish) button

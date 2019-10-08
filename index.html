@@ -17,7 +17,6 @@
 	<script src="scripts/customElements.js"></script>
 	<script src="scripts/onClick.js"></script>
 	<script src="scripts/validSchemes.js"></script>
-	<!-- Last --><script src="scripts/intialization.js"></script>
 	<title>Better Profile Pictures</title>
 </head>
 
@@ -40,7 +39,8 @@
 				<button id="upload" type="button" class="disabled">Upload</button>
 				<br>
 				<button id="random" type="button">Random</button>
-				<button id="sudorandom" type="button" class="disabled">Random-ish</button>
+				<button id="sudorandom" title="Use color schemes that make more sense"
+				type="button" class="disabled">Random-ish</button>
 				<br>
 				Darkmode:
 				<button class="toggle" onClick="darkmodeToggle()">
@@ -1665,8 +1665,6 @@
 			</image-card>
 		</div>
 	</main>
-	<script>
-		initialize();
-	</script>
+	<script src="scripts/intialization.js"></script>
 </body>
 </html>
