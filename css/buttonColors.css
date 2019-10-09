@@ -680,6 +680,68 @@
       border-color: #996271; }
       #buttons.CorrodedSepia button.toggle:hover label {
         background: #1f1f1f; }
+#buttons.Corruption button {
+  background: #401f46;
+  border-color: #890f3d;
+  color: white; }
+  #buttons.Corruption button:hover {
+    background: #890f3d;
+    border-color: #401f46;
+    color: #1f1f1f; }
+  #buttons.Corruption button#download {
+    background: #401f46;
+    border-color: #890f3d;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#401f46, #401f46);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Corruption button#download:hover {
+      background: #890f3d;
+      border-color: #401f46;
+      color: #1f1f1f; }
+    #buttons.Corruption button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#890f3d, #890f3d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Corruption button#upload {
+    background: #401f46;
+    border-color: #890f3d;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#401f46, #401f46);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Corruption button#upload:hover {
+      background: #890f3d;
+      border-color: #401f46;
+      color: #1f1f1f; }
+    #buttons.Corruption button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#890f3d, #890f3d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Corruption button.toggle {
+    background: #401f46;
+    border-color: #890f3d; }
+    #buttons.Corruption button.toggle label {
+      background: white; }
+    #buttons.Corruption button.toggle:hover {
+      background: #890f3d;
+      border-color: #401f46; }
+      #buttons.Corruption button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons.Hematite button {
   background: #5a5b5d;
   border-color: #8e9093;

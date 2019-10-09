@@ -9,11 +9,11 @@ $imgSize: 80px;
 $phoneImgSize: 60px;
 $toggleWidth: 55px;
 
+@import "buttonColors.css";
 @import "_reset";
 @import "_layout";
 @import "_mobile";
 @import "_buttonMixins";
-@import "buttonColors.css";
 @import "_darkmodeTransition";
 @import "_lightmode";
 @import "_darkmode";
