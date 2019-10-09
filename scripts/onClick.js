@@ -1,5 +1,3 @@
-var devmode = isDevMode();
-
 function addClicks() {
 	backgroundColorClicks();
 	backgroundStyleClicks();
@@ -9,6 +7,7 @@ function addClicks() {
 	shapeClicks();
 	downloadLink();
 	randomLink();
+	randomishLink();
 	lockButton();
 }
 
@@ -138,6 +137,19 @@ function randomLink() {
 	} else if (element.attachEvent) {
 		element.attachEvent("onClick", function () {
 			randomIcon();
+		});
+	}
+}
+
+function randomishLink() {
+	var element = document.querySelector("#sudorandom");
+	if (element.addEventListener) {
+		element.addEventListener("click", function () {
+			randomishIcon();
+		}, false);
+	} else if (element.attachEvent) {
+		element.attachEvent("onClick", function () {
+			randomishIcon();
 		});
 	}
 }

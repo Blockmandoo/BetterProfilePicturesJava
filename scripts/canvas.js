@@ -5,9 +5,9 @@ var globalBackgroundColor = "Peridot",
 		globalLogoColor = "White",
 		globalShape = "Square",
 		tempGenre,
+                        //1000 = 1 Second
 		refreshRate = 250, //How often should I update the canvas?
-		refreshTime = 10000, //How long should I update the canvas?
-		devmode = isDevMode(); //Want to be told what's going on currently in the console?
+		refreshTime = 10000; //How long should I update the canvas?
 
 //Download canvas
 function downloadCanvas() {
@@ -155,6 +155,7 @@ function setGenre(genre) {
 }
 
 function updateImage() {
+  clearInterval(refresh);
 	var refresh = setInterval(makeImage, refreshRate);
 	setTimeout(function () {
 		clearInterval(refresh);

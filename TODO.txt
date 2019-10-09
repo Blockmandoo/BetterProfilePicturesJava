@@ -13,22 +13,21 @@ Logos:
     -x-Poison Ivy
     -x-Two face
   Other:
+    Deathly Hallows
     Egyptian Hieroglyphs
+    Holliday
+    Overwatch
     Pin
     Skull and cross bones
     Slade
     Thunder cloud
-    Deathly Hallows
-    Holliday
-    Overwatch
 
 Features:
-  Better, less random(ish) button
+  About us page
   Border Options
   Cookie tracker for darkmode
   Highlight new content
   Logo Descriptions
   Patch notes page
-  Upload images button
   Suggestion page
-  About us page
+  Upload images button

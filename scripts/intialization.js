@@ -1,9 +1,4 @@
-var devmode = isDevMode();
-
 function initialize() {
-	// Update combination count
-	applyCount();
-
 	// Activate cards
 	activateCards();
 
@@ -19,6 +14,9 @@ function initialize() {
 	// Setup sudo random options
 	intLogoSchemes();
 	intBackgroundSchemes();
+
+	// Update combination count
+	applyCount();
 }
 
 initialize();
