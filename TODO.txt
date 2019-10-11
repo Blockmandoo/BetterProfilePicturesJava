@@ -29,5 +29,6 @@ Features:
   Highlight new content
   Logo Descriptions
   Patch notes page
+  Share image button
   Suggestion page
   Upload images button
