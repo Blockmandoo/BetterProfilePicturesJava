@@ -23,6 +23,10 @@ main {
 		grid-area: description;
 		max-width: 400px;
 		margin-right: 20px;
+		#description {
+			min-height: 80px;
+			min-width: 300px;
+		}
 		>* {
 			margin: 10px 0px;
 		}

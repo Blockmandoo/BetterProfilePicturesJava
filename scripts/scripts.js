@@ -5,24 +5,6 @@ var backgroundColorNames = [],
 		shapeNames = [],
 		devMode = false;
 
-function darkmodeToggle() {
-	var body = document.querySelector("body");
-	var toggle = document.querySelector("label[for='darkmode']");
-	if (body.classList[0] == "darkMode") {
-		body.className = "lightMode";
-		toggle.className = "checked";
-		if (devMode) {
-			console.log("Setting to light mode.");
-		}
-	} else {
-		body.className = "darkMode";
-		toggle.className = "";
-		if (devMode) {
-			console.log("Setting to dark mode.");
-		}
-	}
-}
-
 //Activate active cards
 function activateCards() {
 	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").className = "active";
@@ -69,13 +51,7 @@ function applyCount() {
 	//Apply the total to the combination span
 	var countElement = document.querySelector(".combinations");
 	countElement.textContent = multiplyAll();
-	countElement.title = randomishCombinations() + " decent combinations.";
-}
-
-//Change description
-function setDescription(head, flavor) {
-	document.getElementById("header").textContent = head;
-	document.getElementById("flavorText").innerHTML = flavor;
+	countElement.title = "~" + randomishCombinations() + " decent combinations.";
 }
 
 //intialization to get all the possible options
@@ -107,12 +83,22 @@ function catalogChoices() {
 	}
 }
 
-//Random icon lock switch
-function swapLock(button) {
-	if (button.className == "lock") {
-		button.className = "unlock";
+//Toggle darkmode on and off
+function darkmodeToggle() {
+	var body = document.querySelector("body");
+	var toggle = document.querySelector("label[for='darkmode']");
+	if (body.classList[0] == "darkMode") {
+		body.className = "lightMode";
+		toggle.className = "checked";
+		if (devMode) {
+			console.log("Setting to light mode.");
+		}
 	} else {
-		button.className = "lock";
+		body.className = "darkMode";
+		toggle.className = "";
+		if (devMode) {
+			console.log("Setting to dark mode.");
+		}
 	}
 }
 
@@ -140,6 +126,10 @@ function randomIcon() {
 	if (document.querySelector("#logo .unlock")) {
 		setGenre(genre);
 		setLogo(logoNames[logoIndex]);
+		var card = document.querySelector("#logo image-card[name='" + logoNames[logoIndex] + "']")
+		var head = card.getAttribute("head");
+		var description = card.getAttribute("description");
+		setDescription(head, description);
 	}
 	if (document.querySelector("#logoColor .unlock")) {
 		setLogoColor(logoColorNames[logoColorIndex]);
@@ -149,6 +139,7 @@ function randomIcon() {
 	}
 }
 
+//Sudo-random icon generator
 function randomishIcon() {
 	//Get random values for each choice
 	// var backgroundColorIndex = Math.floor(Math.random() * backgroundColorNames.length));
@@ -219,8 +210,27 @@ function randomishIcon() {
 	if (document.querySelector("#logo .unlock")) {
 		setGenre(genre);
 		setLogo(logoNames[logoIndex]);
+		var card = document.querySelector("#logo image-card[name='" + logoNames[logoIndex] + "']")
+		var head = card.getAttribute("head");
+		var description = card.getAttribute("description");
+		setDescription(head, description);
 	}
 	if (document.querySelector("#shape .unlock")) {
 		setShape(shapeNames[shapeIndex]);
+	}
+}
+
+//Change description
+function setDescription(head, flavor) {
+	document.getElementById("title").textContent = head;
+	document.getElementById("description").innerHTML = flavor;
+}
+
+//Random icon lock switch
+function swapLock(button) {
+	if (button.className == "lock") {
+		button.className = "unlock";
+	} else {
+		button.className = "lock";
 	}
 }

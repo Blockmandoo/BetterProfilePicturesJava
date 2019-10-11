@@ -5,9 +5,10 @@ var globalBackgroundColor = "Peridot",
 		globalLogoColor = "White",
 		globalShape = "Square",
 		tempGenre,
-                        //1000 = 1 Second
-		refreshRate = 250, //How often should I update the canvas?
-		refreshTime = 10000; //How long should I update the canvas?
+                                //1000 = 1 Second
+		refreshRate = 250,          //How often should I update the canvas?
+    refreshTime = 10000,        //How long should I update the canvas after the page loads?
+		secondRefreshTime = 3000;   //How long should I update the canvas?
 
 //Download canvas
 function downloadCanvas() {
@@ -25,144 +26,6 @@ function downloadCanvas() {
 	document.body.appendChild(tmpLink);
 	tmpLink.click();
 	document.body.removeChild(tmpLink);
-}
-
-//Simple set functions
-function setLogo(logo) {
-	if (devMode) {
-		console.log("Setting logo: " + logo);
-	}
-
-	//Sepcial case for shows
-	logo = logo.replace("-", "/");
-
-	globalLogo = logo;
-	globalGenre = tempGenre;
-
-	//Set active Logo display
-	var activeLogo = document.querySelector("#logo .active")
-	if (activeLogo) {
-		activeLogo.className = "";
-	}
-
-	//Sepcial case for shows
-	logo = logo.replace("/", "-");
-
-	document.querySelector("#logo [name='" + logo + "']").className = "active";
-
-	updateImage();
-}
-
-function setBackgroundColor(color) {
-	if (devMode) {
-		console.log("Setting background color: " + color);
-	}
-	globalBackgroundColor = color;
-
-	//Set download button color
-	document.querySelector("#buttons").className = color;
-
-	//Set active Color display
-	var activeColor = document.querySelector("#backgroundColor .active")
-	if (activeColor) {
-		activeColor.className = "";
-	}
-	document.querySelector("#backgroundColor [name='" + color + "']").className = "active";
-
-	updateImage();
-}
-
-function setBackgroundStyle(style) {
-	if (devMode) {
-		console.log("Setting background style: " + style);
-	}
-
-	//Set active Style display
-	var activeStyle = document.querySelector("#backgroundStyle .active")
-	if (activeStyle) {
-		activeStyle.className = "";
-	}
-	document.querySelector("#backgroundStyle [name='" + style + "']").className = "active";
-
-	globalBackgroundStyle = style;
-	updateImage();
-}
-
-function setShape(shape) {
-	if (devMode) {
-		console.log("Setting shape: " + shape);
-	}
-	globalShape = shape;
-
-	//Set active Shape display
-	var activeShape = document.querySelector("#shape .active")
-	if (activeShape) {
-		activeShape.className = "";
-	}
-	document.querySelector("#shape [name='" + shape + "']").className = "active";
-
-	updateImage();
-}
-
-function setLogoColor(color) {
-	if (devMode) {
-		console.log("Setting logo color: " + color);
-	}
-	globalLogoColor = color;
-
-	//Set active Color display
-	var activeColor = document.querySelector("#logoColor .active")
-	if (activeColor) {
-		activeColor.className = "";
-	}
-	document.querySelector("#logoColor [name='" + color + "']").className = "active";
-
-	updateImage();
-}
-
-//Complicated set function
-function setGenre(genre) {
-	if (devMode) {
-		console.log("Setting genre: " + genre);
-	}
-	//Sets a temp genre
-	tempGenre = genre;
-
-	//Set active Genre display
-	var activeGenre = document.querySelector("#genre .active")
-	if (activeGenre) {
-		activeGenre.className = "";
-	}
-	document.querySelector("#genre [name='" + tempGenre + "']").className = "active";
-
-	//Target the logo header and un-hide it.
-	var logosDiv = document.querySelector("#logo.hidden");
-	if (logosDiv) {
-		logosDiv.classList.remove("hidden");
-	}
-
-	//Hide all the non-hidden genres.
-	var logo = document.querySelector("#logo div:not(.hidden)");
-	if (logo) {
-		logo.classList.add("hidden");
-	}
-
-	//Target desired genre div and unhide it.
-	var genreDiv = document.querySelector("#logo div#" + genre);
-	if (genreDiv) {
-		genreDiv.classList.remove("hidden");
-	}
-}
-
-function updateImage() {
-  clearInterval(refresh);
-	var refresh = setInterval(makeImage, refreshRate);
-	setTimeout(function () {
-		clearInterval(refresh);
-		if (devMode) {
-			console.log("Stop!");
-		}
-	}, refreshTime);
 }
 
 //Core function
@@ -221,4 +84,143 @@ function makeImage() {
 	canvasContext.globalCompositeOperation = "destination-in";
 	canvasContext.drawImage(shapeImage, 0, 0, 256, 256);
 
+}
+
+function setBackgroundColor(color) {
+	if (devMode) {
+		console.log("Setting background color: " + color);
+	}
+	globalBackgroundColor = color;
+
+	//Set download button color
+	document.querySelector("#buttons").className = color;
+
+	//Set active Color display
+	var activeColor = document.querySelector("#backgroundColor .active")
+	if (activeColor) {
+		activeColor.className = "";
+	}
+	document.querySelector("#backgroundColor [name='" + color + "']").className = "active";
+
+	updateImage();
+}
+
+function setBackgroundStyle(style) {
+	if (devMode) {
+		console.log("Setting background style: " + style);
+	}
+
+	//Set active Style display
+	var activeStyle = document.querySelector("#backgroundStyle .active")
+	if (activeStyle) {
+		activeStyle.className = "";
+	}
+	document.querySelector("#backgroundStyle [name='" + style + "']").className = "active";
+
+	globalBackgroundStyle = style;
+	updateImage();
+}
+
+//Complicated set function
+function setGenre(genre) {
+	if (devMode) {
+		console.log("Setting genre: " + genre);
+	}
+	//Sets a temp genre
+	tempGenre = genre;
+
+	//Set active Genre display
+	var activeGenre = document.querySelector("#genre .active")
+	if (activeGenre) {
+		activeGenre.className = "";
+	}
+	document.querySelector("#genre [name='" + tempGenre + "']").className = "active";
+
+	//Target the logo header and un-hide it.
+	var logosDiv = document.querySelector("#logo.hidden");
+	if (logosDiv) {
+		logosDiv.classList.remove("hidden");
+	}
+
+	//Hide all the non-hidden genres.
+	var logo = document.querySelector("#logo div:not(.hidden)");
+	if (logo) {
+		logo.classList.add("hidden");
+	}
+
+	//Target desired genre div and unhide it.
+	var genreDiv = document.querySelector("#logo div#" + genre);
+	if (genreDiv) {
+		genreDiv.classList.remove("hidden");
+	}
+}
+
+//Simple set functions
+function setLogo(logo) {
+	if (devMode) {
+		console.log("Setting logo: " + logo);
+	}
+
+	//Sepcial case for shows
+	logo = logo.replace("-", "/");
+
+	globalLogo = logo;
+	globalGenre = tempGenre;
+
+	//Set active Logo display
+	var activeLogo = document.querySelector("#logo .active")
+	if (activeLogo) {
+		activeLogo.className = "";
+	}
+
+	//Sepcial case for shows
+	logo = logo.replace("/", "-");
+
+	document.querySelector("#logo [name='" + logo + "']").className = "active";
+
+	updateImage();
+}
+
+function setLogoColor(color) {
+	if (devMode) {
+		console.log("Setting logo color: " + color);
+	}
+	globalLogoColor = color;
+
+	//Set active Color display
+	var activeColor = document.querySelector("#logoColor .active")
+	if (activeColor) {
+		activeColor.className = "";
+	}
+	document.querySelector("#logoColor [name='" + color + "']").className = "active";
+
+	updateImage();
+}
+
+function setShape(shape) {
+	if (devMode) {
+		console.log("Setting shape: " + shape);
+	}
+	globalShape = shape;
+
+	//Set active Shape display
+	var activeShape = document.querySelector("#shape .active")
+	if (activeShape) {
+		activeShape.className = "";
+	}
+	document.querySelector("#shape [name='" + shape + "']").className = "active";
+
+	updateImage();
+}
+
+function updateImage() {
+  clearInterval(refresh);
+	var refresh = setInterval(makeImage, refreshRate);
+	setTimeout(function () {
+		clearInterval(refresh);
+		if (devMode) {
+			console.log("Stop!");
+		}
+	}, refreshTime);
+  refreshTime = secondRefreshTime;
 }
