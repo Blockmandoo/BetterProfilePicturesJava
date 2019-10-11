@@ -232,6 +232,14 @@ body.lightMode #banner {
   background: #dcdcdc;
 }
 
+body.lightMode #banner a {
+  color: #0d81e6;
+}
+
+body.lightMode #banner a:hover {
+  color: #4fa3ec;
+}
+
 body.lightMode button.lock {
   background: url("../assets/darkmode/objects/Lock.png");
   background-size: cover;
@@ -303,6 +311,14 @@ body.darkMode #banner {
   background: #383838;
 }
 
+body.darkMode #banner a {
+  color: #77aedc;
+}
+
+body.darkMode #banner a:hover {
+  color: #529ddc;
+}
+
 body.darkMode button.lock {
   background: url("../assets/objects/Lock.png");
   background-size: cover;
@@ -336,6 +352,14 @@ body.darkMode image-card.active tool-tip {
 
 body.darkMode image-card.active img:not(:hover) {
   outline-color: #9efe1a;
+}
+
+#banner a {
+  text-decoration: none;
+}
+
+#banner a:hover {
+  text-decoration: underline;
 }
 
 canvas, button {
@@ -463,6 +487,11 @@ button.lock, button.unlock {
 image-card tool-tip {
   text-align: center;
   border-radius: 3px;
+}
+
+image-card tool-tip a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #shape img {

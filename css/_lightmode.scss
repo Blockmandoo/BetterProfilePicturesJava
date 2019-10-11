@@ -23,6 +23,12 @@ body.lightMode {
 	}
 	#banner {
 		background: $white;
+		a {
+			color: #0d81e6;
+			&:hover {
+				color: #4fa3ec;
+			}
+		}
 	}
 	button {
 	  &.lock {

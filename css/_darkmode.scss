@@ -23,6 +23,12 @@ body.darkMode {
 	}
 	#banner {
 		background: $offblack;
+		a {
+			color: #77aedc;
+			&:hover {
+				color: #529ddc;
+			}
+		}
 	}
 	button {
 	  &.lock {

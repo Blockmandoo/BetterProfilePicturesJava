@@ -18,6 +18,12 @@ $toggleWidth: 55px;
 @import "_lightmode";
 @import "_darkmode";
 
+#banner a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
@@ -53,6 +59,10 @@ button {
 image-card tool-tip {
   text-align: center;
   border-radius: 3px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 #shape img {
   background: none;

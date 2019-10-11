@@ -54,6 +54,25 @@ function applyCount() {
 	countElement.title = "~" + randomishCombinations() + " decent combinations.";
 }
 
+//Generate tooltips for logos
+function applyHead() {
+	var logoCards = document.querySelectorAll("#logo image-card");
+	for (var i = 0; i < logoCards.length; i++) {
+		var logoCard = logoCards[i]
+		var tooltip = document.createElement("tool-tip");
+		var header = document.createElement("p");
+		var headName = logoCard.getAttribute("head");
+		tooltip.appendChild(header);
+		header.innerHTML = headName;
+		if (logoCard.prepend) {
+			logoCard.prepend(tooltip);
+		} else if (logoCard.appendChild) {
+			//IE Support because IE sucks
+			logoCard.appendChild(tooltip);
+		}
+	}
+}
+
 //intialization to get all the possible options
 function catalogChoices() {
 	backgroundColorNames = [];
@@ -222,7 +241,7 @@ function randomishIcon() {
 
 //Change description
 function setDescription(head, flavor) {
-	document.getElementById("title").textContent = head;
+	document.getElementById("title").innerHTML = head;
 	document.getElementById("description").innerHTML = flavor;
 }
 
