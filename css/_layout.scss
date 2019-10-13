@@ -87,6 +87,5 @@ image-card {
 	&:hover tool-tip:not(:hover) {
 		opacity: 1;
 		transform: translate(-25px, 5px);
-		// z-index: 1;
 	}
 }

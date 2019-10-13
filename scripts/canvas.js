@@ -60,14 +60,31 @@ function makeImage() {
 	//Shrink logo for odd shapes
 	var borderOffset;
 	switch (globalShape) {
-		case "Hexagon":
-			borderOffset = 17;
+    case "Circle":
+      borderOffset = -1;
+      break;
+		case "Decagon":
+			borderOffset = 6;
 			break;
+		case "Diamond":
+			borderOffset = 37;
+			break;
+		case "Hexagon":
 		case "HexagonLong":
 			borderOffset = 17;
 			break;
-		case "Diamond":
-			borderOffset = 38;
+  	case "RoundedHexagon":
+  	case "RoundedHexagonLong":
+			borderOffset = 9;
+			break;
+		case "Nonogon":
+			borderOffset = 8;
+			break;
+		case "Pentagon":
+			borderOffset = 24;
+			break;
+		case "Septagon":
+			borderOffset = 13;
 			break;
 		default:
 			borderOffset = 0;
