@@ -1,4 +1,4 @@
-# BetterProfilePicutresJava
+# BetterProfilePicturesJava
 Automatically generating a new profile picture using a java canvas. 
 
 This is a website that will build you a custom profile picture based on the choices you make to build one.
