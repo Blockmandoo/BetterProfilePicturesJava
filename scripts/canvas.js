@@ -1,9 +1,9 @@
-var globalBackgroundColor = "Peridot",
- 		globalBackgroundStyle = "Blast",
+var globalBackgroundColor = "BurningHorizon",
+ 		globalBackgroundStyle = "Stars",
 		globalGenre = "Objects",
 		globalLogo = "Leaf",
 		globalLogoColor = "White",
-		globalShape = "Square",
+		globalShape = "RoundedSquare",
 		tempGenre,
                                 //1000 = 1 Second
 		refreshRate = 250,          //How often should I update the canvas?
@@ -138,7 +138,6 @@ function setBackgroundStyle(style) {
 	updateImage();
 }
 
-//Complicated set function
 function setGenre(genre) {
 	if (devMode) {
 		console.log("Setting genre: " + genre);
@@ -172,7 +171,6 @@ function setGenre(genre) {
 	}
 }
 
-//Simple set functions
 function setLogo(logo) {
 	if (devMode) {
 		console.log("Setting logo: " + logo);

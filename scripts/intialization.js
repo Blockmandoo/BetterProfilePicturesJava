@@ -20,6 +20,9 @@ function initialize() {
 
 	// Update combination count
 	applyCount();
+
+	// Update button colors
+	setBackgroundColor(globalBackgroundColor);
 }
 
 initialize();

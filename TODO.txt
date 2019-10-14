@@ -13,7 +13,6 @@ Logos:
 Features:
   About us page
   Border Options
-  Change shape manager to use one color for display and script
   Cookie tracker for darkmode
   Highlight new content
   Patch notes page
