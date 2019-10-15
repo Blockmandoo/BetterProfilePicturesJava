@@ -1,33 +1,21 @@
 Logos:
-  Heroes:
-    Beastboy
-    Cyborg
-    Green Arrow
-    Hawkeye
-    Hawkgirl
-    Raven
-    Starfire
-    Static Shock
   Villains:
     -x-Joker
     -x-Poison Ivy
     -x-Two face
+    Slade
   Other:
     Deathly Hallows
-    Egyptian Hieroglyphs
     Holliday
-    Overwatch
+    Overwatch heroes
     Pin
-    Skull and cross bones
-    Slade
-    Thunder cloud
 
 Features:
   About us page
   Border Options
   Cookie tracker for darkmode
   Highlight new content
-  Logo Descriptions
   Patch notes page
+  Share image button
   Suggestion page
   Upload images button

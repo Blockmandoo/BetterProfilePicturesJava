@@ -15,8 +15,14 @@ function initialize() {
 	intLogoSchemes();
 	intBackgroundSchemes();
 
+	// Add tooltips to all the logos based on  their heads
+	applyHead();
+
 	// Update combination count
 	applyCount();
+
+	// Update button colors
+	setBackgroundColor(globalBackgroundColor);
 }
 
 initialize();
