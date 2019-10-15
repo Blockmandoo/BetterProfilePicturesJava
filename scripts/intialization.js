@@ -1,7 +1,4 @@
 function initialize() {
-	//Get global variables from url
-	setGlobals();
-
 	// Activate cards
 	activateCards();
 
@@ -26,6 +23,9 @@ function initialize() {
 
 	// Update button colors
 	setBackgroundColor(globalBackgroundColor);
+
+	//Get global variables from url
+	setGlobals();
 }
 
 initialize();
