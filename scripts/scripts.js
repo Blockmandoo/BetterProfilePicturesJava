@@ -69,7 +69,7 @@ function applyCount() {
 	//Apply the total to the combination span
 	var countElement = document.querySelector(".combinations");
 	countElement.textContent = multiplyAll();
-	countElement.title = randomishCombinations() + " decent combinations.";
+	countElement.title = "~" + randomishCombinations() + " decent combinations.";
 }
 
 //Change description
