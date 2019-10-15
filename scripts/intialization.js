@@ -1,4 +1,7 @@
 function initialize() {
+	//Get global variables from url
+	setGlobals();
+
 	// Activate cards
 	activateCards();
 

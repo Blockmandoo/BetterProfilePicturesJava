@@ -245,6 +245,35 @@ function setDescription(head, flavor) {
 	document.getElementById("description").innerHTML = flavor;
 }
 
+//Get and set global values
+function setGlobals() {
+	//https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+	function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+	}
+
+	// query string: ?bgColor=Peridot&logo=Leaf
+	var bgColor = getParameterByName('bgColor');
+	var bgStyle = getParameterByName('bgStyle');
+	var genre = getParameterByName('genre');
+	var logo = getParameterByName('logo');
+	var logoColor = getParameterByName('logoColor');
+	var shape = getParameterByName('shape');
+
+	if (bgColor) globalBackgroundColor = bgColor;
+	if (bgStyle) globalBackgroundStyle = bgStyle;
+	if (genre) globalGenre = genre;
+	if (logo) globalLogo = logo;
+	if (logoColor) globalLogoColor = logoColor;
+	if (shape) globalShape = shape;
+}
+
 //Random icon lock switch
 function swapLock(button) {
 	if (button.className == "lock") {

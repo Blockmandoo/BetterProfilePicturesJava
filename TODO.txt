@@ -11,11 +11,13 @@ Logos:
     Pin
 
 Features:
-  About us page
   Border Options
   Cookie tracker for darkmode
   Highlight new content
-  Patch notes page
-  Share image button
-  Suggestion page
-  Upload images button
+  Pages:
+    About us page
+    Patch notes page
+    Suggestion page
+  Buttons:
+    Share image button
+    Upload images button
