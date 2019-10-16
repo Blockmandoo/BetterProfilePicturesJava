@@ -25,7 +25,7 @@ function initialize() {
 	setBackgroundColor(globalBackgroundColor);
 
 	//Get global variables from url
-	setIcons();
+	setIcon();
 }
 
 initialize();
