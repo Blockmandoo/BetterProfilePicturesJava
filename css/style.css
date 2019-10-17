@@ -47,6 +47,9 @@ main {
       min-width: 300px; }
     #banner > aside > * {
       margin: 10px 0px; }
+  #banner input {
+    width: 0;
+  }
 
 button {
   margin-top: 4px; }
