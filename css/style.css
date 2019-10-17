@@ -70,6 +70,10 @@ main {
 .hidden {
   display: none; }
 
+.invisible {
+  pointer-events: none;
+  opacity: 0; }
+
 img {
   height: 80px;
   width: 80px; }

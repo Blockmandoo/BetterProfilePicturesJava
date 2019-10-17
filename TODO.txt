@@ -9,6 +9,7 @@ Logos:
     Holliday
     Overwatch heroes
     Pin
+    Share link
 
 Features:
   Border Options

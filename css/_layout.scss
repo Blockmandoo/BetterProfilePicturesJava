@@ -62,6 +62,10 @@ main {
 .hidden {
 	display: none;
 }
+.invisible {
+	pointer-events: none;
+  opacity: 0;
+}
 img {
 	height: $imgSize;
 	width: $imgSize;

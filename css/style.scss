@@ -10,12 +10,19 @@ $phoneImgSize: 60px;
 $toggleWidth: 55px;
 
 @import "buttonColors.css";
+// Reset
 @import "_reset";
+// Layout
 @import "_layout";
+// Mobile layout
 @import "_mobile";
+// Button Mixins
 @import "_buttonMixins";
+// Darkmode Transitions
 @import "_darkmodeTransition";
+// Lightmode Scheme
 @import "_lightmode";
+// Darkmode Scheme
 @import "_darkmode";
 
 #banner a {
