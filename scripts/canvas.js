@@ -7,8 +7,8 @@ var globalBackgroundColor = "BurningHorizon",
 		tempGenre,
                                 //1000 = 1 Second
 		refreshRate = 250,          //How often should I update the canvas?
-    refreshTime = 10000,        //How long should I update the canvas after the page loads?
-		secondRefreshTime = 3000;   //How long should I update the canvas?
+    refreshTime = 15000,        //How long should I update the canvas after the page loads?
+		secondRefreshTime = 4000;   //How long should I update the canvas?
 
 //Download canvas
 function downloadCanvas() {

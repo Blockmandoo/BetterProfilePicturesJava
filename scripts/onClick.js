@@ -1,14 +1,15 @@
 function addClicks() {
 	backgroundColorClicks();
 	backgroundStyleClicks();
+	downloadLink();
 	genreClicks();
+	lockButton();
 	logoClicks();
 	logoColorClicks();
-	shapeClicks();
-	downloadLink();
-	randomLink();
 	randomishLink();
-	lockButton();
+	randomLink();
+	shapeClicks();
+	shareLink();
 }
 
 function backgroundColorClicks() {
@@ -170,6 +171,21 @@ function shapeClicks() {
 			elements[i].attachEvent("onClick", function () {
 				var name = this.getAttribute("name");
 				setShape(name);
+			});
+		}
+	}
+}
+
+function shareLink() {
+	var elements = document.querySelectorAll("#share");
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].addEventListener) {
+			elements[i].addEventListener("click", function () {
+				copyLink();
+			}, false);
+		} else if (elements[i].attachEvent) {
+			elements[i].attachEvent("onClick", function () {
+				copyLink();
 			});
 		}
 	}

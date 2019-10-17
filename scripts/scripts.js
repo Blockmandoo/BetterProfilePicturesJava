@@ -102,6 +102,25 @@ function catalogChoices() {
 	}
 }
 
+//Copy link button
+function copyLink() {
+	// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+	var announcement = document.querySelector("#shareText");
+	var link = "https://betterprofilepicturejava.netlify.com/" + "?genre=" + globalGenre + "&logo=" + globalLogo + "&logoColor=" + globalLogoColor + "&bgColor=" + globalBackgroundColor + "&bgStyle=" + globalBackgroundStyle + "&shape=" + globalShape;
+	var copyArea = document.querySelector("#shareLink");
+	copyArea.value = link;
+
+  copyArea.select();
+  copyArea.setSelectionRange(0, 99999); /*For mobile devices*/
+  document.execCommand("copy");
+
+	announcement.className = "";
+	setTimeout(hideAnnouncement, 3000);
+	function hideAnnouncement() {
+		announcement.className = "hidden";
+	}
+}
+
 //Toggle darkmode on and off
 function darkmodeToggle() {
 	var body = document.querySelector("body");
@@ -245,7 +264,7 @@ function setDescription(head, flavor) {
 	document.getElementById("description").innerHTML = flavor;
 }
 
-//Get and set global values
+//Get and set icon based on url
 function setIcon() {
 	//https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 	function getParameterByName(name, url) {
