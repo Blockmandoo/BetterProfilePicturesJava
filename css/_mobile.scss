@@ -1,13 +1,37 @@
 // main: style.scss
-/*Mobile layout
+/*Mobile layout*/
 
-Tablet*/
+/*Tablet*/
 @media (max-width: 777px) {
   canvas {
     width: 33vw;
   }
   image-card > tool-tip {
     display: none;
+  }
+}
+
+/*Short Device*/
+@media (max-height: 600px) {
+  img {
+    height: 60px;
+    width: 60px;
+  }
+  #banner {
+    canvas {
+      width: 33vh;
+    }
+    image-card > tool-tip {
+      display: none;
+    }
+    #description {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    #title {
+      text-align: center;
+    }
   }
 }
 
@@ -38,10 +62,29 @@ Tablet*/
 
 /*SkinnyPhone*/
 @media (max-width: 400px) {
-  #title {
-    text-align: center;
+  #banner {
+    padding: 10px 0 5px;
+    canvas {
+      width: 100px;
+    }
+    #title {
+      text-align: center;
+    }
+    #description {
+      display: none;
+    }
+    br.noMobile {
+      display: none;
+    }
   }
-  #description {
-    display: none;
+}
+
+/*Really Short Device*/
+@media (max-height: 420px) {
+  #banner {
+    padding: 10px 0 5px;
+    canvas {
+      width: 136px;
+    }
   }
 }
