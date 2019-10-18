@@ -16,6 +16,11 @@ $white: white;
 	&.Copper {@include buttons(#a94809, #ffa100);}
 	&.CorrodedSepia {@include buttons(#996271, #f7a975);}
 	&.Corruption {@include buttons(#401f46, #890f3d);}
+	&.DiscoBlue {@include buttons(#3c6afb, #00d6f7);}
+	&.DiscoCyan {@include buttons(#23dba4, #63f701);}
+	&.DiscoGreen {@include buttonsLight(#79f768, #f7ef01);}
+	&.DiscoOrange {@include buttonsLight(#ec457e, #f78801);}
+	&.DiscoPink {@include buttons(#8e00df, #f700c1);}
 	&.Hematite {@include buttons(#5a5b5d, #8e9093);}
 	&.Jade {@include buttons(#44b8a4, #6ada94);}
 	&.Jasper {@include buttons(#d16c00, #fea000);}

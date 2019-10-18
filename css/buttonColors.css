@@ -742,6 +742,316 @@
       border-color: #401f46; }
       #buttons.Corruption button.toggle:hover label {
         background: #1f1f1f; }
+#buttons.DiscoBlue button {
+  background: #3c6afb;
+  border-color: #00d6f7;
+  color: white; }
+  #buttons.DiscoBlue button:hover {
+    background: #00d6f7;
+    border-color: #3c6afb;
+    color: #1f1f1f; }
+  #buttons.DiscoBlue button#download {
+    background: #3c6afb;
+    border-color: #00d6f7;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#3c6afb, #3c6afb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoBlue button#download:hover {
+      background: #00d6f7;
+      border-color: #3c6afb;
+      color: #1f1f1f; }
+    #buttons.DiscoBlue button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#00d6f7, #00d6f7);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoBlue button#upload {
+    background: #3c6afb;
+    border-color: #00d6f7;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#3c6afb, #3c6afb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoBlue button#upload:hover {
+      background: #00d6f7;
+      border-color: #3c6afb;
+      color: #1f1f1f; }
+    #buttons.DiscoBlue button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#00d6f7, #00d6f7);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoBlue button.toggle {
+    background: #3c6afb;
+    border-color: #00d6f7; }
+    #buttons.DiscoBlue button.toggle label {
+      background: white; }
+    #buttons.DiscoBlue button.toggle:hover {
+      background: #00d6f7;
+      border-color: #3c6afb; }
+      #buttons.DiscoBlue button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.DiscoCyan button {
+  background: #23dba4;
+  border-color: #63f701;
+  color: white; }
+  #buttons.DiscoCyan button:hover {
+    background: #63f701;
+    border-color: #23dba4;
+    color: #1f1f1f; }
+  #buttons.DiscoCyan button#download {
+    background: #23dba4;
+    border-color: #63f701;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#23dba4, #23dba4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoCyan button#download:hover {
+      background: #63f701;
+      border-color: #23dba4;
+      color: #1f1f1f; }
+    #buttons.DiscoCyan button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#63f701, #63f701);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoCyan button#upload {
+    background: #23dba4;
+    border-color: #63f701;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#23dba4, #23dba4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoCyan button#upload:hover {
+      background: #63f701;
+      border-color: #23dba4;
+      color: #1f1f1f; }
+    #buttons.DiscoCyan button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#63f701, #63f701);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoCyan button.toggle {
+    background: #23dba4;
+    border-color: #63f701; }
+    #buttons.DiscoCyan button.toggle label {
+      background: white; }
+    #buttons.DiscoCyan button.toggle:hover {
+      background: #63f701;
+      border-color: #23dba4; }
+      #buttons.DiscoCyan button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.DiscoGreen button {
+  background: #79f768;
+  border-color: #f7ef01;
+  color: #1f1f1f; }
+  #buttons.DiscoGreen button:hover {
+    background: #f7ef01;
+    border-color: #79f768;
+    color: #1f1f1f; }
+  #buttons.DiscoGreen button#download {
+    background: #79f768;
+    border-color: #f7ef01;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#79f768, #79f768);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoGreen button#download:hover {
+      background: #f7ef01;
+      border-color: #79f768;
+      color: #1f1f1f; }
+    #buttons.DiscoGreen button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f7ef01, #f7ef01);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoGreen button#upload {
+    background: #79f768;
+    border-color: #f7ef01;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#79f768, #79f768);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoGreen button#upload:hover {
+      background: #f7ef01;
+      border-color: #79f768;
+      color: #1f1f1f; }
+    #buttons.DiscoGreen button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f7ef01, #f7ef01);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoGreen button.toggle {
+    background: #79f768;
+    border-color: #f7ef01; }
+    #buttons.DiscoGreen button.toggle label {
+      background: #1f1f1f; }
+    #buttons.DiscoGreen button.toggle:hover {
+      background: #f7ef01;
+      border-color: #79f768; }
+      #buttons.DiscoGreen button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.DiscoOrange button {
+  background: #ec457e;
+  border-color: #f78801;
+  color: #1f1f1f; }
+  #buttons.DiscoOrange button:hover {
+    background: #f78801;
+    border-color: #ec457e;
+    color: #1f1f1f; }
+  #buttons.DiscoOrange button#download {
+    background: #ec457e;
+    border-color: #f78801;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ec457e, #ec457e);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoOrange button#download:hover {
+      background: #f78801;
+      border-color: #ec457e;
+      color: #1f1f1f; }
+    #buttons.DiscoOrange button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f78801, #f78801);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoOrange button#upload {
+    background: #ec457e;
+    border-color: #f78801;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ec457e, #ec457e);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoOrange button#upload:hover {
+      background: #f78801;
+      border-color: #ec457e;
+      color: #1f1f1f; }
+    #buttons.DiscoOrange button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f78801, #f78801);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoOrange button.toggle {
+    background: #ec457e;
+    border-color: #f78801; }
+    #buttons.DiscoOrange button.toggle label {
+      background: #1f1f1f; }
+    #buttons.DiscoOrange button.toggle:hover {
+      background: #f78801;
+      border-color: #ec457e; }
+      #buttons.DiscoOrange button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.DiscoPink button {
+  background: #8e00df;
+  border-color: #f700c1;
+  color: white; }
+  #buttons.DiscoPink button:hover {
+    background: #f700c1;
+    border-color: #8e00df;
+    color: #1f1f1f; }
+  #buttons.DiscoPink button#download {
+    background: #8e00df;
+    border-color: #f700c1;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#8e00df, #8e00df);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoPink button#download:hover {
+      background: #f700c1;
+      border-color: #8e00df;
+      color: #1f1f1f; }
+    #buttons.DiscoPink button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f700c1, #f700c1);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoPink button#upload {
+    background: #8e00df;
+    border-color: #f700c1;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#8e00df, #8e00df);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoPink button#upload:hover {
+      background: #f700c1;
+      border-color: #8e00df;
+      color: #1f1f1f; }
+    #buttons.DiscoPink button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f700c1, #f700c1);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoPink button.toggle {
+    background: #8e00df;
+    border-color: #f700c1; }
+    #buttons.DiscoPink button.toggle label {
+      background: white; }
+    #buttons.DiscoPink button.toggle:hover {
+      background: #f700c1;
+      border-color: #8e00df; }
+      #buttons.DiscoPink button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons.Hematite button {
   background: #5a5b5d;
   border-color: #8e9093;
