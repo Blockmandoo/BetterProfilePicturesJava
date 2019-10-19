@@ -4,7 +4,7 @@ var logoSchemes = [],
 class validColorSheme {
 	constructor(logoColor) {
 		this.logoColor = logoColor;
-		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
+		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DiscoOrange", "DiscoGreen", "DiscoCyan", "DiscoBlue", "DiscoPink", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
 	}
 	allow(backgroundColorSchemes) {
 		this.backgroundColorSchemes = backgroundColorSchemes;
@@ -18,7 +18,7 @@ class validColorSheme {
 		return this;
 	}
 	reset() {
-		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
+		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DiscoOrange", "DiscoGreen", "DiscoCyan", "DiscoBlue", "DiscoPink", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
 		return this;
 	}
 }
