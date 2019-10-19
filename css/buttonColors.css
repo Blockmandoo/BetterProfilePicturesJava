@@ -50,6 +50,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Amethyst button#share {
+    background: #660eb6;
+    border-color: #ad21fe;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#660eb6, #660eb6);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#660eb6, #660eb6);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#660eb6, #660eb6);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Amethyst button#share:hover {
+      background: #ad21fe;
+      border-color: #660eb6;
+      color: #1f1f1f; }
+    #buttons.Amethyst button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ad21fe, #ad21fe);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ad21fe, #ad21fe);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ad21fe, #ad21fe);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Amethyst button.toggle {
     background: #660eb6;
     border-color: #ad21fe; }
@@ -112,6 +134,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Aquamarine button#share {
+    background: #09829f;
+    border-color: #17dedc;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#09829f, #09829f);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#09829f, #09829f);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#09829f, #09829f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Aquamarine button#share:hover {
+      background: #17dedc;
+      border-color: #09829f;
+      color: #1f1f1f; }
+    #buttons.Aquamarine button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#17dedc, #17dedc);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#17dedc, #17dedc);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#17dedc, #17dedc);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Aquamarine button.toggle {
     background: #09829f;
     border-color: #17dedc; }
@@ -121,6 +165,90 @@
       background: #17dedc;
       border-color: #09829f; }
       #buttons.Aquamarine button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Aurora button {
+  background: #1b536f;
+  border-color: #209db2;
+  color: white; }
+  #buttons.Aurora button:hover {
+    background: #209db2;
+    border-color: #1b536f;
+    color: #1f1f1f; }
+  #buttons.Aurora button#download {
+    background: #1b536f;
+    border-color: #209db2;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#1b536f, #1b536f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Aurora button#download:hover {
+      background: #209db2;
+      border-color: #1b536f;
+      color: #1f1f1f; }
+    #buttons.Aurora button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#209db2, #209db2);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Aurora button#upload {
+    background: #1b536f;
+    border-color: #209db2;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#1b536f, #1b536f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Aurora button#upload:hover {
+      background: #209db2;
+      border-color: #1b536f;
+      color: #1f1f1f; }
+    #buttons.Aurora button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#209db2, #209db2);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Aurora button#share {
+    background: #1b536f;
+    border-color: #209db2;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#1b536f, #1b536f);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#1b536f, #1b536f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Aurora button#share:hover {
+      background: #209db2;
+      border-color: #1b536f;
+      color: #1f1f1f; }
+    #buttons.Aurora button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#209db2, #209db2);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#209db2, #209db2);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Aurora button.toggle {
+    background: #1b536f;
+    border-color: #209db2; }
+    #buttons.Aurora button.toggle label {
+      background: white; }
+    #buttons.Aurora button.toggle:hover {
+      background: #209db2;
+      border-color: #1b536f; }
+      #buttons.Aurora button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.BloodSky button {
   background: #a51840;
@@ -174,6 +302,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.BloodSky button#share {
+    background: #a51840;
+    border-color: #e63200;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#a51840, #a51840);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#a51840, #a51840);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#a51840, #a51840);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.BloodSky button#share:hover {
+      background: #e63200;
+      border-color: #a51840;
+      color: #1f1f1f; }
+    #buttons.BloodSky button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#e63200, #e63200);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#e63200, #e63200);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#e63200, #e63200);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.BloodSky button.toggle {
     background: #a51840;
     border-color: #e63200; }
@@ -183,6 +333,90 @@
       background: #e63200;
       border-color: #a51840; }
       #buttons.BloodSky button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Bolivian button {
+  background: #e5eb3c;
+  border-color: #35f422;
+  color: #1f1f1f; }
+  #buttons.Bolivian button:hover {
+    background: #35f422;
+    border-color: #e5eb3c;
+    color: #1f1f1f; }
+  #buttons.Bolivian button#download {
+    background: #e5eb3c;
+    border-color: #35f422;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#e5eb3c, #e5eb3c);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Bolivian button#download:hover {
+      background: #35f422;
+      border-color: #e5eb3c;
+      color: #1f1f1f; }
+    #buttons.Bolivian button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#35f422, #35f422);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Bolivian button#upload {
+    background: #e5eb3c;
+    border-color: #35f422;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#e5eb3c, #e5eb3c);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Bolivian button#upload:hover {
+      background: #35f422;
+      border-color: #e5eb3c;
+      color: #1f1f1f; }
+    #buttons.Bolivian button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#35f422, #35f422);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Bolivian button#share {
+    background: #e5eb3c;
+    border-color: #35f422;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#e5eb3c, #e5eb3c);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#e5eb3c, #e5eb3c);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Bolivian button#share:hover {
+      background: #35f422;
+      border-color: #e5eb3c;
+      color: #1f1f1f; }
+    #buttons.Bolivian button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#35f422, #35f422);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#35f422, #35f422);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Bolivian button.toggle {
+    background: #e5eb3c;
+    border-color: #35f422; }
+    #buttons.Bolivian button.toggle label {
+      background: #1f1f1f; }
+    #buttons.Bolivian button.toggle:hover {
+      background: #35f422;
+      border-color: #e5eb3c; }
+      #buttons.Bolivian button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.BronzeSunset button {
   background: #815143;
@@ -233,6 +467,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#faf779, #faf779);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#faf779, #faf779);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#faf779, #faf779);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.BronzeSunset button#share {
+    background: #815143;
+    border-color: #faf779;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#815143, #815143);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#815143, #815143);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#815143, #815143);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.BronzeSunset button#share:hover {
+      background: #faf779;
+      border-color: #815143;
+      color: #1f1f1f; }
+    #buttons.BronzeSunset button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#faf779, #faf779);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#faf779, #faf779);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#faf779, #faf779);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -298,6 +554,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.BurningHorizon button#share {
+    background: #ba047b;
+    border-color: #ff7c29;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#ba047b, #ba047b);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.BurningHorizon button#share:hover {
+      background: #ff7c29;
+      border-color: #ba047b;
+      color: #1f1f1f; }
+    #buttons.BurningHorizon button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ff7c29, #ff7c29);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.BurningHorizon button.toggle {
     background: #ba047b;
     border-color: #ff7c29; }
@@ -357,6 +635,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#bfaf8d, #bfaf8d);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#bfaf8d, #bfaf8d);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#bfaf8d, #bfaf8d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Camo button#share {
+    background: #666047;
+    border-color: #bfaf8d;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#666047, #666047);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#666047, #666047);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#666047, #666047);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Camo button#share:hover {
+      background: #bfaf8d;
+      border-color: #666047;
+      color: #1f1f1f; }
+    #buttons.Camo button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#bfaf8d, #bfaf8d);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#bfaf8d, #bfaf8d);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#bfaf8d, #bfaf8d);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -422,6 +722,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Chlorophyte button#share {
+    background: #79c41e;
+    border-color: #fbff1f;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#79c41e, #79c41e);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#79c41e, #79c41e);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#79c41e, #79c41e);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Chlorophyte button#share:hover {
+      background: #fbff1f;
+      border-color: #79c41e;
+      color: #1f1f1f; }
+    #buttons.Chlorophyte button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fbff1f, #fbff1f);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fbff1f, #fbff1f);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fbff1f, #fbff1f);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Chlorophyte button.toggle {
     background: #79c41e;
     border-color: #fbff1f; }
@@ -481,6 +803,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#7c4815, #7c4815);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#7c4815, #7c4815);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#7c4815, #7c4815);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.ChocolateDiamond button#share {
+    background: #5e2e10;
+    border-color: #7c4815;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#5e2e10, #5e2e10);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#5e2e10, #5e2e10);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#5e2e10, #5e2e10);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.ChocolateDiamond button#share:hover {
+      background: #7c4815;
+      border-color: #5e2e10;
+      color: #1f1f1f; }
+    #buttons.ChocolateDiamond button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#7c4815, #7c4815);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#7c4815, #7c4815);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#7c4815, #7c4815);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -546,6 +890,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Cobalt button#share {
+    background: #2677b7;
+    border-color: #17e0dd;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#2677b7, #2677b7);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#2677b7, #2677b7);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Cobalt button#share:hover {
+      background: #17e0dd;
+      border-color: #2677b7;
+      color: #1f1f1f; }
+    #buttons.Cobalt button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#17e0dd, #17e0dd);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#17e0dd, #17e0dd);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Cobalt button.toggle {
     background: #2677b7;
     border-color: #17e0dd; }
@@ -605,6 +971,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ffa100, #ffa100);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ffa100, #ffa100);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ffa100, #ffa100);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Copper button#share {
+    background: #a94809;
+    border-color: #ffa100;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#a94809, #a94809);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#a94809, #a94809);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#a94809, #a94809);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Copper button#share:hover {
+      background: #ffa100;
+      border-color: #a94809;
+      color: #1f1f1f; }
+    #buttons.Copper button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ffa100, #ffa100);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ffa100, #ffa100);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ffa100, #ffa100);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -670,6 +1058,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.CorrodedSepia button#share {
+    background: #996271;
+    border-color: #f7a975;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#996271, #996271);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#996271, #996271);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#996271, #996271);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.CorrodedSepia button#share:hover {
+      background: #f7a975;
+      border-color: #996271;
+      color: #1f1f1f; }
+    #buttons.CorrodedSepia button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f7a975, #f7a975);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f7a975, #f7a975);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f7a975, #f7a975);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.CorrodedSepia button.toggle {
     background: #996271;
     border-color: #f7a975; }
@@ -732,6 +1142,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Corruption button#share {
+    background: #401f46;
+    border-color: #890f3d;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#401f46, #401f46);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#401f46, #401f46);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Corruption button#share:hover {
+      background: #890f3d;
+      border-color: #401f46;
+      color: #1f1f1f; }
+    #buttons.Corruption button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#890f3d, #890f3d);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#890f3d, #890f3d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Corruption button.toggle {
     background: #401f46;
     border-color: #890f3d; }
@@ -741,6 +1173,90 @@
       background: #890f3d;
       border-color: #401f46; }
       #buttons.Corruption button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.DeepDepths button {
+  background: #035848;
+  border-color: #048c67;
+  color: white; }
+  #buttons.DeepDepths button:hover {
+    background: #048c67;
+    border-color: #035848;
+    color: #1f1f1f; }
+  #buttons.DeepDepths button#download {
+    background: #035848;
+    border-color: #048c67;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#035848, #035848);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DeepDepths button#download:hover {
+      background: #048c67;
+      border-color: #035848;
+      color: #1f1f1f; }
+    #buttons.DeepDepths button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#048c67, #048c67);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DeepDepths button#upload {
+    background: #035848;
+    border-color: #048c67;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#035848, #035848);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DeepDepths button#upload:hover {
+      background: #048c67;
+      border-color: #035848;
+      color: #1f1f1f; }
+    #buttons.DeepDepths button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#048c67, #048c67);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DeepDepths button#share {
+    background: #035848;
+    border-color: #048c67;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#035848, #035848);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#035848, #035848);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DeepDepths button#share:hover {
+      background: #048c67;
+      border-color: #035848;
+      color: #1f1f1f; }
+    #buttons.DeepDepths button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#048c67, #048c67);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#048c67, #048c67);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DeepDepths button.toggle {
+    background: #035848;
+    border-color: #048c67; }
+    #buttons.DeepDepths button.toggle label {
+      background: white; }
+    #buttons.DeepDepths button.toggle:hover {
+      background: #048c67;
+      border-color: #035848; }
+      #buttons.DeepDepths button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.DiscoBlue button {
   background: #3c6afb;
@@ -791,6 +1307,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#00d6f7, #00d6f7);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#00d6f7, #00d6f7);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#00d6f7, #00d6f7);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoBlue button#share {
+    background: #3c6afb;
+    border-color: #00d6f7;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#3c6afb, #3c6afb);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#3c6afb, #3c6afb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoBlue button#share:hover {
+      background: #00d6f7;
+      border-color: #3c6afb;
+      color: #1f1f1f; }
+    #buttons.DiscoBlue button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#00d6f7, #00d6f7);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#00d6f7, #00d6f7);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -856,6 +1394,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.DiscoCyan button#share {
+    background: #23dba4;
+    border-color: #63f701;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#23dba4, #23dba4);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#23dba4, #23dba4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoCyan button#share:hover {
+      background: #63f701;
+      border-color: #23dba4;
+      color: #1f1f1f; }
+    #buttons.DiscoCyan button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#63f701, #63f701);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#63f701, #63f701);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.DiscoCyan button.toggle {
     background: #23dba4;
     border-color: #63f701; }
@@ -915,6 +1475,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f7ef01, #f7ef01);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f7ef01, #f7ef01);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f7ef01, #f7ef01);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.DiscoGreen button#share {
+    background: #79f768;
+    border-color: #f7ef01;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#79f768, #79f768);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#79f768, #79f768);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoGreen button#share:hover {
+      background: #f7ef01;
+      border-color: #79f768;
+      color: #1f1f1f; }
+    #buttons.DiscoGreen button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f7ef01, #f7ef01);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f7ef01, #f7ef01);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -980,6 +1562,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.DiscoOrange button#share {
+    background: #ec457e;
+    border-color: #f78801;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ec457e, #ec457e);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ec457e, #ec457e);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoOrange button#share:hover {
+      background: #f78801;
+      border-color: #ec457e;
+      color: #1f1f1f; }
+    #buttons.DiscoOrange button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f78801, #f78801);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f78801, #f78801);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.DiscoOrange button.toggle {
     background: #ec457e;
     border-color: #f78801; }
@@ -1042,6 +1646,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.DiscoPink button#share {
+    background: #8e00df;
+    border-color: #f700c1;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#8e00df, #8e00df);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#8e00df, #8e00df);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.DiscoPink button#share:hover {
+      background: #f700c1;
+      border-color: #8e00df;
+      color: #1f1f1f; }
+    #buttons.DiscoPink button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f700c1, #f700c1);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f700c1, #f700c1);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.DiscoPink button.toggle {
     background: #8e00df;
     border-color: #f700c1; }
@@ -1051,6 +1677,174 @@
       background: #f700c1;
       border-color: #8e00df; }
       #buttons.DiscoPink button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Flax button {
+  background: #2b62bc;
+  border-color: #5788ff;
+  color: white; }
+  #buttons.Flax button:hover {
+    background: #5788ff;
+    border-color: #2b62bc;
+    color: white; }
+  #buttons.Flax button#download {
+    background: #2b62bc;
+    border-color: #5788ff;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#2b62bc, #2b62bc);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Flax button#download:hover {
+      background: #5788ff;
+      border-color: #2b62bc;
+      color: white; }
+    #buttons.Flax button#download:hover {
+      background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Download.png"), -o-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Download.png"), linear-gradient(#5788ff, #5788ff);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Flax button#upload {
+    background: #2b62bc;
+    border-color: #5788ff;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#2b62bc, #2b62bc);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Flax button#upload:hover {
+      background: #5788ff;
+      border-color: #2b62bc;
+      color: white; }
+    #buttons.Flax button#upload:hover {
+      background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Upload.png"), linear-gradient(#5788ff, #5788ff);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Flax button#share {
+    background: #2b62bc;
+    border-color: #5788ff;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#2b62bc, #2b62bc);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#2b62bc, #2b62bc);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Flax button#share:hover {
+      background: #5788ff;
+      border-color: #2b62bc;
+      color: white; }
+    #buttons.Flax button#share:hover {
+      background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Link.png"), -o-linear-gradient(#5788ff, #5788ff);
+      background: url("../assets/symbols/Link.png"), linear-gradient(#5788ff, #5788ff);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Flax button.toggle {
+    background: #2b62bc;
+    border-color: #5788ff; }
+    #buttons.Flax button.toggle label {
+      background: white; }
+    #buttons.Flax button.toggle:hover {
+      background: #5788ff;
+      border-color: #2b62bc; }
+      #buttons.Flax button.toggle:hover label {
+        background: white; }
+#buttons.Gold button {
+  background: #8b4503;
+  border-color: #d3ce30;
+  color: white; }
+  #buttons.Gold button:hover {
+    background: #d3ce30;
+    border-color: #8b4503;
+    color: #1f1f1f; }
+  #buttons.Gold button#download {
+    background: #8b4503;
+    border-color: #d3ce30;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#8b4503, #8b4503);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Gold button#download:hover {
+      background: #d3ce30;
+      border-color: #8b4503;
+      color: #1f1f1f; }
+    #buttons.Gold button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#d3ce30, #d3ce30);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Gold button#upload {
+    background: #8b4503;
+    border-color: #d3ce30;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#8b4503, #8b4503);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Gold button#upload:hover {
+      background: #d3ce30;
+      border-color: #8b4503;
+      color: #1f1f1f; }
+    #buttons.Gold button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#d3ce30, #d3ce30);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Gold button#share {
+    background: #8b4503;
+    border-color: #d3ce30;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#8b4503, #8b4503);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#8b4503, #8b4503);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Gold button#share:hover {
+      background: #d3ce30;
+      border-color: #8b4503;
+      color: #1f1f1f; }
+    #buttons.Gold button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#d3ce30, #d3ce30);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#d3ce30, #d3ce30);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Gold button.toggle {
+    background: #8b4503;
+    border-color: #d3ce30; }
+    #buttons.Gold button.toggle label {
+      background: white; }
+    #buttons.Gold button.toggle:hover {
+      background: #d3ce30;
+      border-color: #8b4503; }
+      #buttons.Gold button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.Hematite button {
   background: #5a5b5d;
@@ -1104,6 +1898,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Hematite button#share {
+    background: #5a5b5d;
+    border-color: #8e9093;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#5a5b5d, #5a5b5d);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#5a5b5d, #5a5b5d);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#5a5b5d, #5a5b5d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Hematite button#share:hover {
+      background: #8e9093;
+      border-color: #5a5b5d;
+      color: #1f1f1f; }
+    #buttons.Hematite button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#8e9093, #8e9093);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#8e9093, #8e9093);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#8e9093, #8e9093);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Hematite button.toggle {
     background: #5a5b5d;
     border-color: #8e9093; }
@@ -1113,6 +1929,90 @@
       background: #8e9093;
       border-color: #5a5b5d; }
       #buttons.Hematite button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Ice button {
+  background: #9bd8eb;
+  border-color: #69facf;
+  color: #1f1f1f; }
+  #buttons.Ice button:hover {
+    background: #69facf;
+    border-color: #9bd8eb;
+    color: #1f1f1f; }
+  #buttons.Ice button#download {
+    background: #9bd8eb;
+    border-color: #69facf;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9bd8eb, #9bd8eb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Ice button#download:hover {
+      background: #69facf;
+      border-color: #9bd8eb;
+      color: #1f1f1f; }
+    #buttons.Ice button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#69facf, #69facf);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Ice button#upload {
+    background: #9bd8eb;
+    border-color: #69facf;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9bd8eb, #9bd8eb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Ice button#upload:hover {
+      background: #69facf;
+      border-color: #9bd8eb;
+      color: #1f1f1f; }
+    #buttons.Ice button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#69facf, #69facf);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Ice button#share {
+    background: #9bd8eb;
+    border-color: #69facf;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#9bd8eb, #9bd8eb);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#9bd8eb, #9bd8eb);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Ice button#share:hover {
+      background: #69facf;
+      border-color: #9bd8eb;
+      color: #1f1f1f; }
+    #buttons.Ice button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#69facf, #69facf);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#69facf, #69facf);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Ice button.toggle {
+    background: #9bd8eb;
+    border-color: #69facf; }
+    #buttons.Ice button.toggle label {
+      background: #1f1f1f; }
+    #buttons.Ice button.toggle:hover {
+      background: #69facf;
+      border-color: #9bd8eb; }
+      #buttons.Ice button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.Jade button {
   background: #44b8a4;
@@ -1163,6 +2063,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#6ada94, #6ada94);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#6ada94, #6ada94);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#6ada94, #6ada94);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Jade button#share {
+    background: #44b8a4;
+    border-color: #6ada94;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#44b8a4, #44b8a4);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#44b8a4, #44b8a4);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Jade button#share:hover {
+      background: #6ada94;
+      border-color: #44b8a4;
+      color: #1f1f1f; }
+    #buttons.Jade button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#6ada94, #6ada94);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#6ada94, #6ada94);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1228,6 +2150,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Jasper button#share {
+    background: #d16c00;
+    border-color: #fea000;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#d16c00, #d16c00);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#d16c00, #d16c00);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#d16c00, #d16c00);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Jasper button#share:hover {
+      background: #fea000;
+      border-color: #d16c00;
+      color: #1f1f1f; }
+    #buttons.Jasper button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fea000, #fea000);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fea000, #fea000);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fea000, #fea000);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Jasper button.toggle {
     background: #d16c00;
     border-color: #fea000; }
@@ -1287,6 +2231,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#a0bc2b, #a0bc2b);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#a0bc2b, #a0bc2b);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#a0bc2b, #a0bc2b);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Kiwi button#share {
+    background: #ece99c;
+    border-color: #a0bc2b;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ece99c, #ece99c);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ece99c, #ece99c);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ece99c, #ece99c);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Kiwi button#share:hover {
+      background: #a0bc2b;
+      border-color: #ece99c;
+      color: #1f1f1f; }
+    #buttons.Kiwi button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#a0bc2b, #a0bc2b);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#a0bc2b, #a0bc2b);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#a0bc2b, #a0bc2b);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1352,6 +2318,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Midnight button#share {
+    background: #03295b;
+    border-color: #044b8c;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#03295b, #03295b);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#03295b, #03295b);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#03295b, #03295b);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Midnight button#share:hover {
+      background: #044b8c;
+      border-color: #03295b;
+      color: white; }
+    #buttons.Midnight button#share:hover {
+      background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#044b8c, #044b8c);
+      background: url("../assets/symbols/Link.png"), -o-linear-gradient(#044b8c, #044b8c);
+      background: url("../assets/symbols/Link.png"), linear-gradient(#044b8c, #044b8c);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Midnight button.toggle {
     background: #03295b;
     border-color: #044b8c; }
@@ -1411,6 +2399,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#fafafa, #fafafa);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#fafafa, #fafafa);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#fafafa, #fafafa);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Moonstone button#share {
+    background: #d2d2d2;
+    border-color: #fafafa;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#d2d2d2, #d2d2d2);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#d2d2d2, #d2d2d2);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Moonstone button#share:hover {
+      background: #fafafa;
+      border-color: #d2d2d2;
+      color: #1f1f1f; }
+    #buttons.Moonstone button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fafafa, #fafafa);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fafafa, #fafafa);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fafafa, #fafafa);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1476,6 +2486,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Mourning button#share {
+    background: #3b544a;
+    border-color: #699081;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#3b544a, #3b544a);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#3b544a, #3b544a);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#3b544a, #3b544a);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Mourning button#share:hover {
+      background: #699081;
+      border-color: #3b544a;
+      color: #1f1f1f; }
+    #buttons.Mourning button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#699081, #699081);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#699081, #699081);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#699081, #699081);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Mourning button.toggle {
     background: #3b544a;
     border-color: #699081; }
@@ -1535,6 +2567,28 @@
       background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#464646, #464646);
       background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#464646, #464646);
       background: url("../assets/symbols/Upload.png"), linear-gradient(#464646, #464646);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Obsidian button#share {
+    background: #232323;
+    border-color: #464646;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#232323, #232323);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#232323, #232323);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#232323, #232323);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Obsidian button#share:hover {
+      background: #464646;
+      border-color: #232323;
+      color: white; }
+    #buttons.Obsidian button#share:hover {
+      background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#464646, #464646);
+      background: url("../assets/symbols/Link.png"), -o-linear-gradient(#464646, #464646);
+      background: url("../assets/symbols/Link.png"), linear-gradient(#464646, #464646);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1600,6 +2654,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Peach button#share {
+    background: #d9a979;
+    border-color: #decf87;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#d9a979, #d9a979);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#d9a979, #d9a979);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#d9a979, #d9a979);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Peach button#share:hover {
+      background: #decf87;
+      border-color: #d9a979;
+      color: #1f1f1f; }
+    #buttons.Peach button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#decf87, #decf87);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#decf87, #decf87);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#decf87, #decf87);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Peach button.toggle {
     background: #d9a979;
     border-color: #decf87; }
@@ -1609,6 +2685,90 @@
       background: #decf87;
       border-color: #d9a979; }
       #buttons.Peach button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.PeaGreen button {
+  background: #448602;
+  border-color: #57a305;
+  color: white; }
+  #buttons.PeaGreen button:hover {
+    background: #57a305;
+    border-color: #448602;
+    color: #1f1f1f; }
+  #buttons.PeaGreen button#download {
+    background: #448602;
+    border-color: #57a305;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#448602, #448602);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.PeaGreen button#download:hover {
+      background: #57a305;
+      border-color: #448602;
+      color: #1f1f1f; }
+    #buttons.PeaGreen button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#57a305, #57a305);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.PeaGreen button#upload {
+    background: #448602;
+    border-color: #57a305;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#448602, #448602);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.PeaGreen button#upload:hover {
+      background: #57a305;
+      border-color: #448602;
+      color: #1f1f1f; }
+    #buttons.PeaGreen button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#57a305, #57a305);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.PeaGreen button#share {
+    background: #448602;
+    border-color: #57a305;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#448602, #448602);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#448602, #448602);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.PeaGreen button#share:hover {
+      background: #57a305;
+      border-color: #448602;
+      color: #1f1f1f; }
+    #buttons.PeaGreen button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#57a305, #57a305);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#57a305, #57a305);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.PeaGreen button.toggle {
+    background: #448602;
+    border-color: #57a305; }
+    #buttons.PeaGreen button.toggle label {
+      background: white; }
+    #buttons.PeaGreen button.toggle:hover {
+      background: #57a305;
+      border-color: #448602; }
+      #buttons.PeaGreen button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.Pearl button {
   background: #8d8d91;
@@ -1659,6 +2819,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#dbdee2, #dbdee2);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#dbdee2, #dbdee2);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#dbdee2, #dbdee2);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Pearl button#share {
+    background: #8d8d91;
+    border-color: #dbdee2;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#8d8d91, #8d8d91);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#8d8d91, #8d8d91);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#8d8d91, #8d8d91);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Pearl button#share:hover {
+      background: #dbdee2;
+      border-color: #8d8d91;
+      color: #1f1f1f; }
+    #buttons.Pearl button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#dbdee2, #dbdee2);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#dbdee2, #dbdee2);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#dbdee2, #dbdee2);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1724,6 +2906,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.PerfectDay button#share {
+    background: #6ab5f9;
+    border-color: #93ccff;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#6ab5f9, #6ab5f9);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#6ab5f9, #6ab5f9);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#6ab5f9, #6ab5f9);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.PerfectDay button#share:hover {
+      background: #93ccff;
+      border-color: #6ab5f9;
+      color: #1f1f1f; }
+    #buttons.PerfectDay button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#93ccff, #93ccff);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#93ccff, #93ccff);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#93ccff, #93ccff);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.PerfectDay button.toggle {
     background: #6ab5f9;
     border-color: #93ccff; }
@@ -1786,6 +2990,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Peridot button#share {
+    background: #37b41d;
+    border-color: #9efe1a;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#37b41d, #37b41d);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#37b41d, #37b41d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Peridot button#share:hover {
+      background: #9efe1a;
+      border-color: #37b41d;
+      color: #1f1f1f; }
+    #buttons.Peridot button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#9efe1a, #9efe1a);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#9efe1a, #9efe1a);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Peridot button.toggle {
     background: #37b41d;
     border-color: #9efe1a; }
@@ -1795,6 +3021,174 @@
       background: #9efe1a;
       border-color: #37b41d; }
       #buttons.Peridot button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Pyrite button {
+  background: #be9c18;
+  border-color: #ffe830;
+  color: #1f1f1f; }
+  #buttons.Pyrite button:hover {
+    background: #ffe830;
+    border-color: #be9c18;
+    color: #1f1f1f; }
+  #buttons.Pyrite button#download {
+    background: #be9c18;
+    border-color: #ffe830;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#be9c18, #be9c18);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Pyrite button#download:hover {
+      background: #ffe830;
+      border-color: #be9c18;
+      color: #1f1f1f; }
+    #buttons.Pyrite button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ffe830, #ffe830);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Pyrite button#upload {
+    background: #be9c18;
+    border-color: #ffe830;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#be9c18, #be9c18);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Pyrite button#upload:hover {
+      background: #ffe830;
+      border-color: #be9c18;
+      color: #1f1f1f; }
+    #buttons.Pyrite button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ffe830, #ffe830);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Pyrite button#share {
+    background: #be9c18;
+    border-color: #ffe830;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#be9c18, #be9c18);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#be9c18, #be9c18);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Pyrite button#share:hover {
+      background: #ffe830;
+      border-color: #be9c18;
+      color: #1f1f1f; }
+    #buttons.Pyrite button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ffe830, #ffe830);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ffe830, #ffe830);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Pyrite button.toggle {
+    background: #be9c18;
+    border-color: #ffe830; }
+    #buttons.Pyrite button.toggle label {
+      background: #1f1f1f; }
+    #buttons.Pyrite button.toggle:hover {
+      background: #ffe830;
+      border-color: #be9c18; }
+      #buttons.Pyrite button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Rhododendron button {
+  background: #b853c5;
+  border-color: #da88eb;
+  color: #1f1f1f; }
+  #buttons.Rhododendron button:hover {
+    background: #da88eb;
+    border-color: #b853c5;
+    color: #1f1f1f; }
+  #buttons.Rhododendron button#download {
+    background: #b853c5;
+    border-color: #da88eb;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#b853c5, #b853c5);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Rhododendron button#download:hover {
+      background: #da88eb;
+      border-color: #b853c5;
+      color: #1f1f1f; }
+    #buttons.Rhododendron button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#da88eb, #da88eb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Rhododendron button#upload {
+    background: #b853c5;
+    border-color: #da88eb;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#b853c5, #b853c5);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Rhododendron button#upload:hover {
+      background: #da88eb;
+      border-color: #b853c5;
+      color: #1f1f1f; }
+    #buttons.Rhododendron button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#da88eb, #da88eb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Rhododendron button#share {
+    background: #b853c5;
+    border-color: #da88eb;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#b853c5, #b853c5);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#b853c5, #b853c5);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Rhododendron button#share:hover {
+      background: #da88eb;
+      border-color: #b853c5;
+      color: #1f1f1f; }
+    #buttons.Rhododendron button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#da88eb, #da88eb);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#da88eb, #da88eb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Rhododendron button.toggle {
+    background: #b853c5;
+    border-color: #da88eb; }
+    #buttons.Rhododendron button.toggle label {
+      background: #1f1f1f; }
+    #buttons.Rhododendron button.toggle:hover {
+      background: #da88eb;
+      border-color: #b853c5; }
+      #buttons.Rhododendron button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.RoseQuartz button {
   background: #a2219f;
@@ -1845,6 +3239,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#fe56dc, #fe56dc);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#fe56dc, #fe56dc);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#fe56dc, #fe56dc);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.RoseQuartz button#share {
+    background: #a2219f;
+    border-color: #fe56dc;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#a2219f, #a2219f);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#a2219f, #a2219f);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#a2219f, #a2219f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.RoseQuartz button#share:hover {
+      background: #fe56dc;
+      border-color: #a2219f;
+      color: #1f1f1f; }
+    #buttons.RoseQuartz button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fe56dc, #fe56dc);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fe56dc, #fe56dc);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fe56dc, #fe56dc);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -1910,6 +3326,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Ruby button#share {
+    background: #a61a08;
+    border-color: #e53200;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#a61a08, #a61a08);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#a61a08, #a61a08);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#a61a08, #a61a08);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Ruby button#share:hover {
+      background: #e53200;
+      border-color: #a61a08;
+      color: #1f1f1f; }
+    #buttons.Ruby button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#e53200, #e53200);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#e53200, #e53200);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#e53200, #e53200);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Ruby button.toggle {
     background: #a61a08;
     border-color: #e53200; }
@@ -1969,6 +3407,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f5bf64, #f5bf64);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f5bf64, #f5bf64);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f5bf64, #f5bf64);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.SailorsDelight button#share {
+    background: #ca7066;
+    border-color: #f5bf64;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ca7066, #ca7066);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ca7066, #ca7066);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#ca7066, #ca7066);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.SailorsDelight button#share:hover {
+      background: #f5bf64;
+      border-color: #ca7066;
+      color: #1f1f1f; }
+    #buttons.SailorsDelight button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f5bf64, #f5bf64);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f5bf64, #f5bf64);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f5bf64, #f5bf64);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -2034,6 +3494,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Sandstorm button#share {
+    background: #796b37;
+    border-color: #f4e17f;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#796b37, #796b37);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#796b37, #796b37);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#796b37, #796b37);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Sandstorm button#share:hover {
+      background: #f4e17f;
+      border-color: #796b37;
+      color: #1f1f1f; }
+    #buttons.Sandstorm button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f4e17f, #f4e17f);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f4e17f, #f4e17f);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f4e17f, #f4e17f);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Sandstorm button.toggle {
     background: #796b37;
     border-color: #f4e17f; }
@@ -2096,6 +3578,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Sapphire button#share {
+    background: #2a4abf;
+    border-color: #1aa5fe;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#2a4abf, #2a4abf);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#2a4abf, #2a4abf);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#2a4abf, #2a4abf);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Sapphire button#share:hover {
+      background: #1aa5fe;
+      border-color: #2a4abf;
+      color: #1f1f1f; }
+    #buttons.Sapphire button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#1aa5fe, #1aa5fe);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#1aa5fe, #1aa5fe);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#1aa5fe, #1aa5fe);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Sapphire button.toggle {
     background: #2a4abf;
     border-color: #1aa5fe; }
@@ -2105,6 +3609,90 @@
       background: #1aa5fe;
       border-color: #2a4abf; }
       #buttons.Sapphire button.toggle:hover label {
+        background: #1f1f1f; }
+#buttons.Slate button {
+  background: #43638d;
+  border-color: #7facf4;
+  color: white; }
+  #buttons.Slate button:hover {
+    background: #7facf4;
+    border-color: #43638d;
+    color: #1f1f1f; }
+  #buttons.Slate button#download {
+    background: #43638d;
+    border-color: #7facf4;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#43638d, #43638d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Slate button#download:hover {
+      background: #7facf4;
+      border-color: #43638d;
+      color: #1f1f1f; }
+    #buttons.Slate button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#7facf4, #7facf4);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Slate button#upload {
+    background: #43638d;
+    border-color: #7facf4;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#43638d, #43638d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Slate button#upload:hover {
+      background: #7facf4;
+      border-color: #43638d;
+      color: #1f1f1f; }
+    #buttons.Slate button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#7facf4, #7facf4);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Slate button#share {
+    background: #43638d;
+    border-color: #7facf4;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#43638d, #43638d);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#43638d, #43638d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Slate button#share:hover {
+      background: #7facf4;
+      border-color: #43638d;
+      color: #1f1f1f; }
+    #buttons.Slate button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#7facf4, #7facf4);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#7facf4, #7facf4);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Slate button.toggle {
+    background: #43638d;
+    border-color: #7facf4; }
+    #buttons.Slate button.toggle label {
+      background: white; }
+    #buttons.Slate button.toggle:hover {
+      background: #7facf4;
+      border-color: #43638d; }
+      #buttons.Slate button.toggle:hover label {
         background: #1f1f1f; }
 #buttons.Tangerine button {
   background: #be7f08;
@@ -2158,6 +3746,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Tangerine button#share {
+    background: #be7f08;
+    border-color: #c4a30b;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#be7f08, #be7f08);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#be7f08, #be7f08);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#be7f08, #be7f08);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Tangerine button#share:hover {
+      background: #c4a30b;
+      border-color: #be7f08;
+      color: #1f1f1f; }
+    #buttons.Tangerine button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#c4a30b, #c4a30b);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#c4a30b, #c4a30b);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#c4a30b, #c4a30b);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Tangerine button.toggle {
     background: #be7f08;
     border-color: #c4a30b; }
@@ -2168,6 +3778,90 @@
       border-color: #be7f08; }
       #buttons.Tangerine button.toggle:hover label {
         background: #1f1f1f; }
+#buttons.Tempest button {
+  background: #5c0340;
+  border-color: #8c046d;
+  color: white; }
+  #buttons.Tempest button:hover {
+    background: #8c046d;
+    border-color: #5c0340;
+    color: white; }
+  #buttons.Tempest button#download {
+    background: #5c0340;
+    border-color: #8c046d;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#5c0340, #5c0340);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Tempest button#download:hover {
+      background: #8c046d;
+      border-color: #5c0340;
+      color: white; }
+    #buttons.Tempest button#download:hover {
+      background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Download.png"), -o-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Download.png"), linear-gradient(#8c046d, #8c046d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Tempest button#upload {
+    background: #5c0340;
+    border-color: #8c046d;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#5c0340, #5c0340);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Tempest button#upload:hover {
+      background: #8c046d;
+      border-color: #5c0340;
+      color: white; }
+    #buttons.Tempest button#upload:hover {
+      background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Upload.png"), linear-gradient(#8c046d, #8c046d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Tempest button#share {
+    background: #5c0340;
+    border-color: #8c046d;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#5c0340, #5c0340);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#5c0340, #5c0340);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Tempest button#share:hover {
+      background: #8c046d;
+      border-color: #5c0340;
+      color: white; }
+    #buttons.Tempest button#share:hover {
+      background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Link.png"), -o-linear-gradient(#8c046d, #8c046d);
+      background: url("../assets/symbols/Link.png"), linear-gradient(#8c046d, #8c046d);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Tempest button.toggle {
+    background: #5c0340;
+    border-color: #8c046d; }
+    #buttons.Tempest button.toggle label {
+      background: white; }
+    #buttons.Tempest button.toggle:hover {
+      background: #8c046d;
+      border-color: #5c0340; }
+      #buttons.Tempest button.toggle:hover label {
+        background: white; }
 #buttons.Topaz button {
   background: #e1c10f;
   border-color: #fbfe1f;
@@ -2217,6 +3911,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#fbfe1f, #fbfe1f);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#fbfe1f, #fbfe1f);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#fbfe1f, #fbfe1f);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Topaz button#share {
+    background: #e1c10f;
+    border-color: #fbfe1f;
+    color: #1f1f1f;
+    background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#e1c10f, #e1c10f);
+    background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#e1c10f, #e1c10f);
+    background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#e1c10f, #e1c10f);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Topaz button#share:hover {
+      background: #fbfe1f;
+      border-color: #e1c10f;
+      color: #1f1f1f; }
+    #buttons.Topaz button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fbfe1f, #fbfe1f);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fbfe1f, #fbfe1f);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fbfe1f, #fbfe1f);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -2282,6 +3998,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Twilight button#share {
+    background: #5b1b94;
+    border-color: #c23abb;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#5b1b94, #5b1b94);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#5b1b94, #5b1b94);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Twilight button#share:hover {
+      background: #c23abb;
+      border-color: #5b1b94;
+      color: #1f1f1f; }
+    #buttons.Twilight button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#c23abb, #c23abb);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#c23abb, #c23abb);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Twilight button.toggle {
     background: #5b1b94;
     border-color: #c23abb; }
@@ -2341,6 +4079,28 @@
       background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#6c1793, #6c1793);
       background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#6c1793, #6c1793);
       background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#6c1793, #6c1793);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Twitch button#share {
+    background: #4c357d;
+    border-color: #6c1793;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#4c357d, #4c357d);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#4c357d, #4c357d);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#4c357d, #4c357d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Twitch button#share:hover {
+      background: #6c1793;
+      border-color: #4c357d;
+      color: #1f1f1f; }
+    #buttons.Twitch button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#6c1793, #6c1793);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#6c1793, #6c1793);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#6c1793, #6c1793);
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -2406,6 +4166,28 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; }
+  #buttons.Void button#share {
+    background: #1e0a2d;
+    border-color: #442f66;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#1e0a2d, #1e0a2d);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#1e0a2d, #1e0a2d);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#1e0a2d, #1e0a2d);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Void button#share:hover {
+      background: #442f66;
+      border-color: #1e0a2d;
+      color: white; }
+    #buttons.Void button#share:hover {
+      background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#442f66, #442f66);
+      background: url("../assets/symbols/Link.png"), -o-linear-gradient(#442f66, #442f66);
+      background: url("../assets/symbols/Link.png"), linear-gradient(#442f66, #442f66);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
   #buttons.Void button.toggle {
     background: #1e0a2d;
     border-color: #442f66; }
@@ -2416,6 +4198,90 @@
       border-color: #1e0a2d; }
       #buttons.Void button.toggle:hover label {
         background: white; }
+#buttons.Zucchini button {
+  background: #3e7425;
+  border-color: #75bd48;
+  color: white; }
+  #buttons.Zucchini button:hover {
+    background: #75bd48;
+    border-color: #3e7425;
+    color: #1f1f1f; }
+  #buttons.Zucchini button#download {
+    background: #3e7425;
+    border-color: #75bd48;
+    color: white;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#3e7425, #3e7425);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Zucchini button#download:hover {
+      background: #75bd48;
+      border-color: #3e7425;
+      color: #1f1f1f; }
+    #buttons.Zucchini button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#75bd48, #75bd48);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Zucchini button#upload {
+    background: #3e7425;
+    border-color: #75bd48;
+    color: white;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#3e7425, #3e7425);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Zucchini button#upload:hover {
+      background: #75bd48;
+      border-color: #3e7425;
+      color: #1f1f1f; }
+    #buttons.Zucchini button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#75bd48, #75bd48);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Zucchini button#share {
+    background: #3e7425;
+    border-color: #75bd48;
+    color: white;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#3e7425, #3e7425);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#3e7425, #3e7425);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons.Zucchini button#share:hover {
+      background: #75bd48;
+      border-color: #3e7425;
+      color: #1f1f1f; }
+    #buttons.Zucchini button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#75bd48, #75bd48);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#75bd48, #75bd48);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons.Zucchini button.toggle {
+    background: #3e7425;
+    border-color: #75bd48; }
+    #buttons.Zucchini button.toggle label {
+      background: white; }
+    #buttons.Zucchini button.toggle:hover {
+      background: #75bd48;
+      border-color: #3e7425; }
+      #buttons.Zucchini button.toggle:hover label {
+        background: #1f1f1f; }
 
 button.disabled {
   background: #777 !important;

@@ -4,7 +4,7 @@ var logoSchemes = [],
 class validColorSheme {
 	constructor(logoColor) {
 		this.logoColor = logoColor;
-		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DiscoOrange", "DiscoGreen", "DiscoCyan", "DiscoBlue", "DiscoPink", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
+		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "Aurora", "BloodSky", "Bolivian", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DeepDepths", "DiscoBlue", "DiscoCyan", "DiscoGreen", "DiscoOrange", "DiscoPink", "Flax", "Gold", "Hematite", "Ice", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "PeaGreen", "Pearl", "PerfectDay", "Peridot", "Pyrite", "Rhododendron", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Slate", "Tangerine", "Tempest", "Topaz", "Twilight", "Twitch", "Void", "Zucchini"];
 	}
 	allow(backgroundColorSchemes) {
 		this.backgroundColorSchemes = backgroundColorSchemes;
@@ -18,7 +18,7 @@ class validColorSheme {
 		return this;
 	}
 	reset() {
-		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "BloodSky", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DiscoOrange", "DiscoGreen", "DiscoCyan", "DiscoBlue", "DiscoPink", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Tangerine", "Topaz", "Twilight", "Twitch", "Void"];
+		this.backgroundColorSchemes = ["Amethyst", "Aquamarine", "Aurora", "BloodSky", "Bolivian", "BronzeSunset", "BurningHorizon", "Camo", "Chlorophyte", "ChocolateDiamond", "Cobalt", "Copper", "CorrodedSepia", "Corruption", "DeepDepths", "DiscoBlue", "DiscoCyan", "DiscoGreen", "DiscoOrange", "DiscoPink", "Flax", "Gold", "Hematite", "Ice", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "PeaGreen", "Pearl", "PerfectDay", "Peridot", "Pyrite", "Rhododendron", "RoseQuartz", "Ruby", "SailorsDelight", "Sandstorm", "Sapphire", "Slate", "Tangerine", "Tempest", "Topaz", "Twilight", "Twitch", "Void", "Zucchini"];
 		return this;
 	}
 }
@@ -51,50 +51,50 @@ class validBackgroundColorSheme {
 
 function intLogoSchemes() {
 	var white = new validColorSheme("White");
-	white.remove(["Kiwi", "Moonstone", "Pearl", "Topaz"]);
+	white.remove(["Bolivian", "Kiwi", "Moonstone", "Pearl", "Topaz"]);
 
 	var moonstone = new validColorSheme("Moonstone");
-	moonstone.remove(["DiscoOrange", "DiscoGreen", "Kiwi", "Moonstone", "Peach", "Pearl", "Topaz"]);
+	moonstone.remove(["Bolivian", "DiscoGreen", "DiscoOrange", "Ice", "Kiwi", "Moonstone", "Peach", "Pearl", "Pyrite", "Topaz"]);
 
 	var pearl = new validColorSheme("Pearl");
-	pearl.remove(["DiscoCyan", "DiscoPink", "Hematite", "Kiwi", "Moonstone", "Peach", "Pearl", "DiscoOrange"]);
+	pearl.remove(["Bolivian", "DiscoCyan", "DiscoOrange", "DiscoPink", "Gold", "Hematite", "Kiwi", "Moonstone", "Peach", "PeaGreen", "Pearl", "Pyrite", "Rhododendron"]);
 
 	var hematite = new validColorSheme("Hematite");
-	hematite.remove(["Camo", "ChocolateDiamond", "DiscoPink", "Hematite", "Mourning", "Obsidian", "Pearl", "Sandstorm", "Twitch"]);
+	hematite.remove(["Aurora", "Camo", "ChocolateDiamond", "DeepDepths", "DiscoPink", "Flax", "Gold", "Hematite", "Mourning", "Obsidian", "PeaGreen", "Pearl", "Rhododendron", "Sandstorm", "Slate", "Tempest", "Twitch", "Zucchini"]);
 
 	var obsidian = new validColorSheme("Obsidian");
-	obsidian.remove(["ChocolateDiamond", "Cobalt", "Corruption", "DiscoBlue", "DiscoPink", "Hematite", "Midnight", "Mourning", "Obsidian", "Sandstorm", "Sapphire", "Twilight", "Twitch", "Void"]);
+	obsidian.remove(["Aurora", "ChocolateDiamond", "Cobalt", "Corruption", "DeepDepths", "DiscoBlue", "DiscoPink", "Flax", "Hematite", "Midnight", "Mourning", "Obsidian", "Sandstorm", "Sapphire", "Slate", "Tempest", "Twilight", "Twitch", "Void", "Zucchini"]);
 
 	var black = new validColorSheme("Black");
-	black.remove(["ChocolateDiamond", "Midnight", "Mourning", "Obsidian", "Sandstorm", "Twilight", "Void"]);
+	black.remove(["Aurora", "ChocolateDiamond", "DeepDepths", "Midnight", "Mourning", "Obsidian", "Sandstorm", "Twilight", "Void"]);
 
 
 	var ruby = new validColorSheme("Ruby");
-	ruby.allow(["Corruption", "Midnight", "Moonstone", "Obsidian", "Peach", "Pearl", "Topaz", "Void"]);
+	ruby.allow(["Bolivian", "Corruption", "Midnight", "Moonstone", "Obsidian", "Peach", "Pearl", "Pyrite", "Topaz", "Void"]);
 
 	var jasper = new validColorSheme("Jasper");
-	jasper.allow(["Amethyst", "Aquamarine", "Camo", "ChocolateDiamond", "Cobalt", "Corruption", "DiscoGreen", "DiscoBlue", "Hematite", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Pearl", "Sapphire", "Void"]);
+	jasper.allow(["Amethyst", "Aquamarine", "Aurora", "Camo", "ChocolateDiamond", "Cobalt", "Corruption", "DeepDepths", "DiscoBlue", "DiscoGreen", "Flax", "Hematite", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Pearl", "Sapphire", "Slate", "Tempest", "Void"]);
 
 	var topaz = new validColorSheme("Topaz");
-	topaz.allow(["Amethyst", "Aquamarine", "Camo", "ChocolateDiamond", "Cobalt", "DiscoCyan", "DiscoBlue", "Hematite", "Midnight", "Moonstone", "Mourning", "Obsidian", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "Sapphire", "Twilight", "Twitch", "Void"]);
+	topaz.allow(["Amethyst", "Aquamarine", "Aurora", "Camo", "ChocolateDiamond", "Cobalt", "DeepDepths", "DiscoBlue", "DiscoCyan", "Flax", "Hematite", "Midnight", "Moonstone", "Mourning", "Obsidian", "PeaGreen", "Pearl", "PerfectDay", "Peridot", "Rhododendron", "RoseQuartz", "Ruby", "Sapphire", "Slate", "Tempest", "Twilight", "Twitch", "Void", "Zucchini"]);
 
 	var peridot = new validColorSheme("Peridot");
-	peridot.allow(["Amethyst", "Camo", "ChocolateDiamond", "Cobalt", "Hematite", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Pearl", "Sandstorm", "Sapphire", "Tangerine", "Twilight", "Void"]);
+	peridot.allow(["Amethyst", "Aurora", "Bolivian", "Camo", "ChocolateDiamond", "Cobalt", "DeepDepths", "Hematite", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Pearl", "Rhododendron", "Sandstorm", "Sapphire", "Tangerine", "Tempest", "Twilight", "Void", "Zucchini"]);
 
 	var aquamarine = new validColorSheme("Aquamarine");
-	aquamarine.allow(["ChocolateDiamond", "DiscoGreen", "Hematite", "Jasper", "Kiwi", "Midnight", "Moonstone", "Obsidian", "Peach", "Topaz", "Twilight", "Twitch", "Void"]);
+	aquamarine.allow(["Bolivian", "ChocolateDiamond", "DiscoGreen", "Hematite", "Jasper", "Kiwi", "Midnight", "Moonstone", "Obsidian", "Peach", "Topaz", "Twilight", "Twitch", "Void"]);
 
 	var sapphire = new validColorSheme("Sapphire");
-	sapphire.allow(["Chlorophyte", "ChocolateDiamond", "Copper", "DiscoGreen", "DiscoCyan", "Jade", "Jasper", "Kiwi", "Moonstone", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "Ruby", "SailorsDelight", "Tangerine", "Void", "DiscoOrange"]);
+	sapphire.allow(["Bolivian", "Chlorophyte", "ChocolateDiamond", "Copper", "DiscoCyan", "DiscoGreen", "DiscoOrange", "Ice", "Jade", "Jasper", "Kiwi", "Moonstone", "Peach", "Pearl", "PerfectDay", "Peridot", "Pyrite", "Rhododendron", "RoseQuartz", "Ruby", "SailorsDelight", "Tangerine", "Void"]);
 
 	var amethyst = new validColorSheme("Amethyst");
-	amethyst.allow(["Aquamarine", "Chlorophyte", "DiscoOrange", "DiscoGreen", "Hematite", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "SailorsDelight", "Tangerine", "Topaz", "Void"]);
+	amethyst.allow(["Aquamarine", "Bolivian", "Chlorophyte", "DiscoGreen", "DiscoOrange", "Hematite", "Ice", "Jade", "Jasper", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "Pyrite", "SailorsDelight", "Slate", "Tangerine", "Topaz", "Void"]);
 
 	var roseQuartz = new validColorSheme("RoseQuartz");
-	roseQuartz.allow(["Corruption", "Chlorophyte", "DiscoGreen", "DiscoBlue", "Hematite", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "Sapphire", "Topaz", "Void"]);
+	roseQuartz.allow(["Aurora", "Bolivian", "Chlorophyte", "Corruption", "DeepDepths", "DiscoBlue", "DiscoGreen", "Flax", "Hematite", "Ice", "Kiwi", "Midnight", "Moonstone", "Mourning", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "Sapphire", "Topaz", "Void"]);
 
 	var chocolateDiamond = new validColorSheme("ChocolateDiamond");
-	chocolateDiamond.allow(["Chlorophyte", "DiscoGreen", "DiscoCyan", "Jade", "Jasper", "Kiwi", "Moonstone", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "RoseQuartz", "SailorsDelight", "Tangerine", "DiscoOrange"]);
+	chocolateDiamond.allow(["Bolivian", "Chlorophyte", "DiscoCyan", "DiscoGreen", "DiscoOrange", "Ice", "Jade", "Jasper", "Kiwi", "Moonstone", "Obsidian", "Peach", "Pearl", "PerfectDay", "Peridot", "Pyrite", "Rhododendron", "RoseQuartz", "SailorsDelight", "Tangerine"]);
 
 
 	logoSchemes = [white, moonstone, pearl, hematite, obsidian, black, ruby, jasper, topaz, peridot, aquamarine, sapphire, amethyst, roseQuartz, chocolateDiamond];
@@ -103,7 +103,9 @@ function intLogoSchemes() {
 function intBackgroundSchemes() {
 	var amethyst = new validBackgroundColorSheme("Amethyst"); amethyst.search();
 	var aquamarine = new validBackgroundColorSheme("Aquamarine"); aquamarine.search();
+	var aurora = new validBackgroundColorSheme("Aurora"); aurora.search();
 	var bloodSky = new validBackgroundColorSheme("BloodSky"); bloodSky.search();
+	var bolivian = new validBackgroundColorSheme("Bolivian"); bolivian.search();
 	var bronzeSunset = new validBackgroundColorSheme("BronzeSunset"); bronzeSunset.search();
 	var burningHorizon = new validBackgroundColorSheme("BurningHorizon"); burningHorizon.search();
 	var camo = new validBackgroundColorSheme("Camo"); camo.search();
@@ -113,12 +115,16 @@ function intBackgroundSchemes() {
 	var copper = new validBackgroundColorSheme("Copper"); copper.search();
 	var corrodedSepia = new validBackgroundColorSheme("CorrodedSepia"); corrodedSepia.search();
 	var corruption = new validBackgroundColorSheme("Corruption"); corruption.search();
+	var deepDepths = new validBackgroundColorSheme("DeepDepths"); deepDepths.search();
 	var discoBlue = new validBackgroundColorSheme("DiscoBlue"); discoBlue.search();
 	var discoCyan = new validBackgroundColorSheme("DiscoCyan"); discoCyan.search();
 	var discoGreen = new validBackgroundColorSheme("DiscoGreen"); discoGreen.search();
 	var discoOrange = new validBackgroundColorSheme("DiscoOrange"); discoOrange.search();
 	var discoPink = new validBackgroundColorSheme("DiscoPink"); discoPink.search();
+	var flax = new validBackgroundColorSheme("Flax"); flax.search();
+	var gold = new validBackgroundColorSheme("Gold"); gold.search();
 	var hematite = new validBackgroundColorSheme("Hematite"); hematite.search();
+	var ice = new validBackgroundColorSheme("Ice"); ice.search();
 	var jade = new validBackgroundColorSheme("Jade"); jade.search();
 	var jasper = new validBackgroundColorSheme("Jasper"); jasper.search();
 	var kiwi = new validBackgroundColorSheme("Kiwi"); kiwi.search();
@@ -127,19 +133,25 @@ function intBackgroundSchemes() {
 	var mourning = new validBackgroundColorSheme("Mourning"); mourning.search();
 	var obsidian = new validBackgroundColorSheme("Obsidian"); obsidian.search();
 	var peach = new validBackgroundColorSheme("Peach"); peach.search();
+	var peaGeen = new validBackgroundColorSheme("PeaGreen"); peaGeen.search();
 	var pearl = new validBackgroundColorSheme("Pearl"); pearl.search();
 	var perfectDay = new validBackgroundColorSheme("PerfectDay"); perfectDay.search();
 	var peridot = new validBackgroundColorSheme("Peridot"); peridot.search();
+	var pyrite = new validBackgroundColorSheme("Pyrite"); pyrite.search();
+	var rhododendron = new validBackgroundColorSheme("Rhododendron"); rhododendron.search();
 	var roseQuartz = new validBackgroundColorSheme("RoseQuartz"); roseQuartz.search();
 	var ruby = new validBackgroundColorSheme("Ruby"); ruby.search();
 	var sailorsDelight = new validBackgroundColorSheme("SailorsDelight"); sailorsDelight.search();
 	var sandstorm = new validBackgroundColorSheme("Sandstorm"); sandstorm.search();
 	var sapphire = new validBackgroundColorSheme("Sapphire"); sapphire.search();
+	var slate = new validBackgroundColorSheme("Slate"); slate.search();
 	var tangerine = new validBackgroundColorSheme("Tangerine"); tangerine.search();
+	var tempest = new validBackgroundColorSheme("Tempest"); tempest.search();
 	var topaz = new validBackgroundColorSheme("Topaz"); topaz.search();
 	var twilight = new validBackgroundColorSheme("Twilight"); twilight.search();
 	var twitch = new validBackgroundColorSheme("Twitch"); twitch.search();
 	var voidColor = new validBackgroundColorSheme("Void"); voidColor.search();
+	var zucchini = new validBackgroundColorSheme("Zucchini"); zucchini.search();
 
-	backgroundSchemes = [amethyst, aquamarine, bloodSky, bronzeSunset, burningHorizon, camo, chlorophyte, chocolateDiamond, cobalt, copper, corrodedSepia, discoBlue, discoCyan, discoGreen, discoOrange, discoPink, hematite, jade, jasper, kiwi, midnight, moonstone, mourning, obsidian, peach, pearl, perfectDay, peridot, roseQuartz, ruby, sailorsDelight, sandstorm, sapphire, tangerine, topaz, twilight, twitch, voidColor];
+	backgroundSchemes = [amethyst, aquamarine, aurora, bloodSky, bolivian, bronzeSunset, burningHorizon, camo, chlorophyte, chocolateDiamond, cobalt, copper, corrodedSepia, deepDepths, discoBlue, discoCyan, discoGreen, discoOrange, discoPink, flax, gold, hematite, ice, jade, jasper, kiwi, midnight, moonstone, mourning, obsidian, peach, peaGeen, pearl, perfectDay, peridot, pyrite, rhododendron, roseQuartz, ruby, sailorsDelight, sandstorm, sapphire, slate, tangerine, tempest, topaz, twilight, twitch, voidColor, zucchini];
 }
