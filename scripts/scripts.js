@@ -121,6 +121,22 @@ function copyLink() {
 	}
 }
 
+//Check storage for what darkmode should be in
+function darkmodeCheck() {
+	var body = document.querySelector("body");
+	var toggle = document.querySelector("label[for='darkmode']");
+	if (localStorage.darkmode) {
+		localStorage.darkmode = true;
+	}
+	if (localStorage.darkmode == true) {
+		body.className = "lightMode";
+		toggle.className = "checked";
+	} else {
+		body.className = "darkMode";
+		toggle.className = "";
+	}
+}
+
 //Toggle darkmode on and off
 function darkmodeToggle() {
 	var body = document.querySelector("body");
@@ -128,12 +144,14 @@ function darkmodeToggle() {
 	if (body.classList[0] == "darkMode") {
 		body.className = "lightMode";
 		toggle.className = "checked";
+			localStorage.darkmode = false;
 		if (devMode) {
 			console.log("Setting to light mode.");
 		}
 	} else {
 		body.className = "darkMode";
 		toggle.className = "";
+			localStorage.darkmode = true;
 		if (devMode) {
 			console.log("Setting to dark mode.");
 		}

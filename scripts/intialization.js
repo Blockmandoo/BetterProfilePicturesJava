@@ -2,6 +2,9 @@ function initialize() {
 	// Activate cards
 	activateCards();
 
+	// Check the last darkmode setting
+	darkmodeCheck();
+
 	// Run canvas function on repeat
 	updateImage();
 
