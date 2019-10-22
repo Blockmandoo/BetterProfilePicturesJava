@@ -23,7 +23,7 @@ function applyCount() {
 
 	//Count all the image-card elements in a div
 	function choiceCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card");
+		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday)");
 		return images.length;
 	}
 
@@ -75,16 +75,11 @@ function applyHead() {
 
 //intialization to get all the possible options
 function catalogChoices() {
-	backgroundColorNames = [];
-	backgroundStyleNames = [];
-	logoNames = [];
-	logoColorNames = [];
-	shapeNames = [];
-	var backgroundColors = document.querySelectorAll("#backgroundColor image-card");
-	var backgroundStyles = document.querySelectorAll("#backgroundStyle image-card");
+	var backgroundColors = document.querySelectorAll("#backgroundColor image-card:not(.holiday)");
+	var backgroundStyles = document.querySelectorAll("#backgroundStyle image-card:not(.holiday)");
 	var logos = document.querySelectorAll("#logo image-card");
-	var logoColors = document.querySelectorAll("#logoColor image-card");
-	var shapes = document.querySelectorAll("#shape image-card");
+	var logoColors = document.querySelectorAll("#logoColor image-card:not(.holiday)");
+	var shapes = document.querySelectorAll("#shape image-card:not(.holiday)");
 	for (var i = 0; i < backgroundColors.length; i++) {
 		backgroundColorNames.push(backgroundColors[i].getAttribute("name"));
 	}

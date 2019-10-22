@@ -77,6 +77,9 @@ function makeImage() {
   	case "RoundedHexagonLong":
 			borderOffset = 9;
 			break;
+    case "Pumpkin":
+      borderOffset = 50;
+      break;
 		case "Nonogon":
 			borderOffset = 8;
 			break;

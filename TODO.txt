@@ -17,9 +17,11 @@ Features:
     Share image button
     Upload images button
   Cookie tracker for darkmode
+  Highlight new content
+  Individual Count
+  Organize colors better
   Pages:
     About us page
     Patch notes page
     Suggestion page
-  Highlight new content
   Search box

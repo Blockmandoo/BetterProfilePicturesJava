@@ -28,4 +28,9 @@ function initialize() {
 	setIcon();
 }
 
-initialize();
+if (window.addEventListener) {
+  window.addEventListener("load", initialize, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onLoad", initialize);
+  });
+}

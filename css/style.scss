@@ -80,3 +80,86 @@ main {
     // font-size: 0;
   }
 }
+
+@mixin threeColorAnimation($color1, $color2, $color3) {
+  0% {
+    color: $color2;
+    background: linear-gradient(90deg, $color2, $color3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  12% {
+    color: $color1;
+    background: $color1;
+    background: linear-gradient(90deg, $color1, $color2, $color3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  25% {
+    color: $color1;
+    background: $color1;
+    background: linear-gradient(90deg, $color1, $color2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  37% {
+    color: $color2;
+    background: $color2;
+    background: linear-gradient(90deg, $color1, $color2, $color1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  50% {
+    color: $color2;
+    background: $color2;
+    background: linear-gradient(90deg, $color2, $color1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  62% {
+    color: $color3;
+    background: $color3;
+    background: linear-gradient(90deg, $color3, $color2, $color1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  75% {
+    color: $color3;
+    background: $color3;
+    background: linear-gradient(90deg, $color3, $color2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  87% {
+    color: $color3;
+    background: $color3;
+    background: linear-gradient(90deg, $color3, $color2, $color3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  100% {
+    color: $color2;
+    background: $color2;
+    background: linear-gradient(90deg, $color2, $color3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+$halloweenOrange: #b96c01;
+.limited {
+  &.halloween {
+    color: $halloweenOrange;
+    background: $halloweenOrange;
+    background: linear-gradient(90deg, $halloweenOrange, $white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation-duration: .7s;
+    animation-name: halloween;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes halloween {
+  @include threeColorAnimation($black, $halloweenOrange, $white);
+}
