@@ -1,15 +1,15 @@
 function initialize() {
-	// Activate cards
-	activateCards();
-
 	// Check the last darkmode setting
 	darkmodeCheck();
 
-	// Run canvas function on repeat
-	updateImage();
+	// Activate cards
+	activateCards();
 
 	// Catalog all the choice for the random button
 	catalogChoices();
+
+	// Run canvas function on repeat
+	updateImage();
 
 	// Add onClick events to image-cards
 	addClicks();
@@ -31,4 +31,6 @@ function initialize() {
 	setIcon();
 }
 
+
+// Execute all the initilize commands
 initialize();
