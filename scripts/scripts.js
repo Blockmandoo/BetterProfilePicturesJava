@@ -248,6 +248,7 @@ function getHoliday() {
 			cards[i].className = "activeHoliday " + holiday;
 		}
   }
+}
 
 //Random icon generator
 function randomIcon() {
