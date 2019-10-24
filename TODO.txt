@@ -13,14 +13,14 @@ Logos:
 Features:
   Border Options
   Buttons:
-    Share image button
     Upload images button
-  Cookie tracker for darkmode
+    Search box
   Highlight new content
   Individual Count
+  Individual Random
+  Loading screen before everything is loaded
   Organize colors better
   Pages:
     About us page
     Patch notes page
     Suggestion page
-  Search box
