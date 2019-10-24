@@ -116,6 +116,27 @@ function copyLink() {
 	}
 }
 
+//Check storage for what darkmode should be in
+function darkmodeCheck() {
+	var body = document.querySelector("body");
+	var toggle = document.querySelector("label[for='darkmode']");
+	switch (getCookie("darkmode")) {
+		case "true":
+			body.className = "darkMode";
+			toggle.className = "";
+			break;
+		case "false":
+			body.className = "lightMode";
+			toggle.className = "checked";
+			break;
+		case "":
+			setCookie("darkmode", "true");
+			body.className = "darkMode";
+			toggle.className = "";
+			break;
+	}
+}
+
 //Toggle darkmode on and off
 function darkmodeToggle() {
 	var body = document.querySelector("body");
@@ -123,16 +144,43 @@ function darkmodeToggle() {
 	if (body.classList[0] == "darkMode") {
 		body.className = "lightMode";
 		toggle.className = "checked";
+		setCookie("darkmode", "false");
 		if (devMode) {
 			console.log("Setting to light mode.");
 		}
 	} else {
 		body.className = "darkMode";
 		toggle.className = "";
+		setCookie("darkmode", "true");
 		if (devMode) {
 			console.log("Setting to dark mode.");
 		}
 	}
+}
+
+//Delete any variable from cookies
+function delCookie(name) {
+	document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	document.cookie = name + "; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	return document.cookie;
+}
+
+//Grab any variable from cookies
+function getCookie(cname) {
+	// https://www.w3schools.com/js/js_cookies.asp
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cookieArray = decodedCookie.split(';');
+  for(var i = 0; i <cookieArray.length; i++) {
+    var cookieVar = cookieArray[i];
+    while (cookieVar.charAt(0) == ' ') {
+      cookieVar = cookieVar.substring(1);
+    }
+    if (cookieVar.indexOf(name) == 0) {
+      return cookieVar.substring(name.length, cookieVar.length);
+    }
+  }
+  return "";
 }
 
 //Show limited edition images based on month
@@ -199,8 +247,7 @@ function getHoliday() {
 		for (var i = 0; i < cards.length; i++) {
 			cards[i].className = "activeHoliday " + holiday;
 		}
-	}
-}
+  }
 
 //Random icon generator
 function randomIcon() {
@@ -318,6 +365,11 @@ function randomishIcon() {
 	if (document.querySelector("#shape .unlock")) {
 		setShape(shapeNames[shapeIndex]);
 	}
+}
+
+//Set any variable in cookies
+function setCookie(name, value) {
+	document.cookie = name + "=" + value;
 }
 
 //Change description
