@@ -250,6 +250,11 @@ function getHoliday() {
   }
 }
 
+//Remove loading animation
+function loadingComplete() {
+	document.querySelector("div.loading").classList.add("complete")
+}
+
 //Random icon generator
 function randomIcon() {
 	//Get random values for each choice

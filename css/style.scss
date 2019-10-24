@@ -24,7 +24,20 @@ $toggleWidth: 55px;
 @import "_lightmode";
 // Darkmode Scheme
 @import "_darkmode";
+// General Stylings
 
+body > div.loading {
+  background: #313942;
+  background-image: url(../assets/downloadedLoadingGif.gif), linear-gradient(#313942, #313942);
+  background-size: 512px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 2s ease;
+  opacity: 1;
+  &.complete {
+    opacity: 0;
+  }
+}
 #banner a {
   text-decoration: none;
   &:hover {

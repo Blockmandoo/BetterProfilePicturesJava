@@ -2,6 +2,8 @@ Abstract
 Animals
 Defaults
 Food
+Halloween
+Hieroglyphics
 Letters / Numbers
 Objects
 Others

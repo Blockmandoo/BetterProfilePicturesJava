@@ -32,6 +32,9 @@ function initialize() {
 
 	//Get the month for the holiday images
 	getHoliday();
+
+	//Remove loading animation
+	loadingComplete();
 }
 
 if (window.addEventListener) {
