@@ -23,7 +23,7 @@ function applyCount() {
 
 	//Count all the image-card elements in a div
 	function choiceCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card");
+		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday)");
 		return images.length;
 	}
 
@@ -75,16 +75,11 @@ function applyHead() {
 
 //intialization to get all the possible options
 function catalogChoices() {
-	backgroundColorNames = [];
-	backgroundStyleNames = [];
-	logoNames = [];
-	logoColorNames = [];
-	shapeNames = [];
-	var backgroundColors = document.querySelectorAll("#backgroundColor image-card");
-	var backgroundStyles = document.querySelectorAll("#backgroundStyle image-card");
+	var backgroundColors = document.querySelectorAll("#backgroundColor image-card:not(.holiday)");
+	var backgroundStyles = document.querySelectorAll("#backgroundStyle image-card:not(.holiday)");
 	var logos = document.querySelectorAll("#logo image-card");
-	var logoColors = document.querySelectorAll("#logoColor image-card");
-	var shapes = document.querySelectorAll("#shape image-card");
+	var logoColors = document.querySelectorAll("#logoColor image-card:not(.holiday)");
+	var shapes = document.querySelectorAll("#shape image-card:not(.holiday)");
 	for (var i = 0; i < backgroundColors.length; i++) {
 		backgroundColorNames.push(backgroundColors[i].getAttribute("name"));
 	}
@@ -187,6 +182,72 @@ function getCookie(cname) {
   }
   return "";
 }
+
+//Show limited edition images based on month
+function getHoliday() {
+	var date = new Date();
+	switch (date.getMonth()) {
+		case 0:
+			//January
+			showHoliday("chineseNewYear");
+			showHoliday("newYear");
+			break;
+		case 1:
+			//Febuary
+			showHoliday("chineseNewYear");
+			showHoliday("valentines");
+			break;
+		case 2:
+			//March
+			showHoliday("stPatricks");
+			break;
+		case 3:
+			//April
+			showHoliday("easter");
+			break;
+		case 4:
+			//May
+			// showHoliday("");
+			break;
+		case 5:
+			//June
+			// showHoliday("");
+			break;
+		case 6:
+			//July
+			showHoliday("forthOfJuly");
+			break;
+		case 7:
+			//August
+			// showHoliday("");
+			break;
+		case 8:
+			//September
+			// showHoliday("");
+			break;
+		case 9:
+			//October
+			showHoliday("halloween");
+			break;
+		case 10:
+			//November
+			showHoliday("thanksgiving");
+			break;
+		case 11:
+			//December
+			showHoliday("christmas");
+			showHoliday("hanukkah");
+			showHoliday("newYear");
+			showHoliday("yule");
+			break;
+	}
+
+	function showHoliday(holiday) {
+		var cards = document.querySelectorAll("image-card.holiday." + holiday);
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].className = "activeHoliday " + holiday;
+		}
+  }
 
 //Random icon generator
 function randomIcon() {

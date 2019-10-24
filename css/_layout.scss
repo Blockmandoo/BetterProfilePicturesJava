@@ -57,7 +57,7 @@ button {
 	}
 }
 main {
-	padding: 20px 0;
+	padding: 20px 0 80px;
 	div {
 		margin-bottom: 15px;
 	}
@@ -94,5 +94,8 @@ image-card {
 	&:hover tool-tip:not(:hover) {
 		opacity: 1;
 		transform: translate(-25px, 5px);
+	}
+	&.holiday {
+		display: none;
 	}
 }

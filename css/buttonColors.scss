@@ -17,7 +17,7 @@ $white: white;
 	&.Cobalt {@include buttons(#2677b7, #17e0dd);}
 	&.Copper {@include buttons(#a94809, #ffa100);}
 	&.CorrodedSepia {@include buttons(#996271, #f7a975);}
-	&.Corruption {@include buttons(#401f46, #890f3d);}
+	&.Corruption {@include buttonsDark(#401f46, #890f3d);}
 	&.DeepDepths {@include buttons(#035848, #048c67);}
 	&.DiscoBlue {@include buttons(#3c6afb, #00d6f7);}
 	&.DiscoCyan {@include buttons(#23dba4, #63f701);}
@@ -52,9 +52,14 @@ $white: white;
 	&.Tempest {@include buttonsDark(#5c0340, #8c046d);}
 	&.Topaz {@include buttonsLight(#e1c10f, #fbfe1f);}
 	&.Twilight {@include buttons(#5b1b94, #c23abb);}
-	&.Twitch {@include buttons(#4c357d, #6c1793);}
+	&.Twitch {@include buttonsDark(#4c357d, #6c1793);}
 	&.Void {@include buttonsDark(#1e0a2d, #442f66);}
 	&.Zucchini {@include buttons(#3e7425, #75bd48);}
+
+	/* Holiday colors */
+	&.HalloweenBlack {@include buttonsDark(#130b11, #211118);}
+	&.HalloweenSunset {@include buttonsLight(#ecb92d, #f0f2b2);}
+	&.Pumpkin {@include buttons(#9a3a1d, #ea902b);}
 }
 button.disabled {
 	background: #777 !important;

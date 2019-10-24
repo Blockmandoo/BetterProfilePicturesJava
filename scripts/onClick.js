@@ -1,4 +1,5 @@
 function addClicks() {
+	autoPumpkin();
 	backgroundColorClicks();
 	backgroundStyleClicks();
 	downloadLink();
@@ -10,6 +11,20 @@ function addClicks() {
 	randomLink();
 	shapeClicks();
 	shareLink();
+}
+
+// Automatically change the shape to pumpkin if the texture is clicked
+function autoPumpkin() {
+	var element = document.querySelector("#backgroundStyle image-card[name=Pumpkin]");
+	if (element.addEventListener) {
+		element.addEventListener("click", function () {
+			setShape("Pumpkin");
+		}, false);
+	} else if (element.attachEvent) {
+		element.attachEvent("onClick", function () {
+			setShape("Pumpkin");
+		});
+	}
 }
 
 function backgroundColorClicks() {
