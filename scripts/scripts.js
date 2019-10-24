@@ -135,6 +135,73 @@ function darkmodeToggle() {
 	}
 }
 
+//Show limited edition images based on month
+function getHoliday() {
+	var date = new Date();
+	switch (date.getMonth()) {
+		case 0:
+			//January
+			showHoliday("chineseNewYear");
+			showHoliday("newYear");
+			break;
+		case 1:
+			//Febuary
+			showHoliday("chineseNewYear");
+			showHoliday("valentines");
+			break;
+		case 2:
+			//March
+			showHoliday("stPatricks");
+			break;
+		case 3:
+			//April
+			showHoliday("easter");
+			break;
+		case 4:
+			//May
+			// showHoliday("");
+			break;
+		case 5:
+			//June
+			// showHoliday("");
+			break;
+		case 6:
+			//July
+			showHoliday("forthOfJuly");
+			break;
+		case 7:
+			//August
+			// showHoliday("");
+			break;
+		case 8:
+			//September
+			// showHoliday("");
+			break;
+		case 9:
+			//October
+			showHoliday("halloween");
+			break;
+		case 10:
+			//November
+			showHoliday("thanksgiving");
+			break;
+		case 11:
+			//December
+			showHoliday("christmas");
+			showHoliday("hanukkah");
+			showHoliday("newYear");
+			showHoliday("yule");
+			break;
+	}
+
+	function showHoliday(holiday) {
+		var cards = document.querySelectorAll("image-card.holiday." + holiday);
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].className = "activeHoliday " + holiday;
+		}
+	}
+}
+
 //Random icon generator
 function randomIcon() {
 	//Get random values for each choice

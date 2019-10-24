@@ -98,7 +98,7 @@ function makeImage() {
 	canvasContext.globalCompositeOperation = "source-in";
 	canvasContext.drawImage(logoImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
 	canvasContext.globalCompositeOperation = "source-atop";
-	canvasContext.drawImage(logoColorImage, 0, 0, 256, 256);
+	canvasContext.drawImage(logoColorImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
 	canvasContext.globalCompositeOperation = "destination-over";
 	canvasContext.drawImage(backgroundImage, 0, 0, 256, 256);
 	canvasContext.globalCompositeOperation = "destination-in";

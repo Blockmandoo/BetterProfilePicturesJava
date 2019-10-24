@@ -95,4 +95,7 @@ image-card {
 		opacity: 1;
 		transform: translate(-25px, 5px);
 	}
+	&.holiday {
+		display: none;
+	}
 }

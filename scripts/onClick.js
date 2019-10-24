@@ -15,7 +15,7 @@ function addClicks() {
 
 // Automatically change the shape to pumpkin if the texture is clicked
 function autoPumpkin() {
-	var element = document.querySelector("#backgroundStyle image-card.halloween");
+	var element = document.querySelector("#backgroundStyle image-card[name=Pumpkin]");
 	if (element.addEventListener) {
 		element.addEventListener("click", function () {
 			setShape("Pumpkin");

@@ -26,10 +26,15 @@ function initialize() {
 
 	//Get global variables from url
 	setIcon();
+
+	//Get the month for the holiday images
+	getHoliday();
 }
 
 if (window.addEventListener) {
   window.addEventListener("load", initialize, false);
 } else if (window.attachEvent) {
   window.attachEvent("onLoad", initialize);
+} else {
+	initialize();
 }

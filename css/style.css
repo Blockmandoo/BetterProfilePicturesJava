@@ -142,6 +142,10 @@ image-card:hover tool-tip:not(:hover) {
   transform: translate(-25px, 5px);
 }
 
+image-card.holiday {
+  display: none;
+}
+
 /*Mobile layout*/
 /*Tablet*/
 @media (max-width: 777px) {
