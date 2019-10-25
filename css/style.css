@@ -428,9 +428,9 @@ body.darkMode image-card.active img:not(:hover) {
 }
 
 body > div.loading {
-  background: #313942;
-  background-image: url(../assets/Loading.svg), linear-gradient(#313942, #313942);
-  background-size: 400px, 50%;
+  background: #50362d;
+  background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
+  background-size: 400px, cover, cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 2s ease;
