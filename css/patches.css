@@ -1,0 +1,43 @@
+section#head {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0px;
+}
+
+section#head h1 {
+  margin: auto;
+  border-bottom: 2px solid #aaa;
+  border-radius: 2px;
+  width: 350px;
+  padding-bottom: 3px;
+}
+
+nav#patchesNav {
+  top: 116px;
+}
+
+main {
+  max-width: 700px;
+}
+
+div.patch {
+  text-align: left;
+  margin: 30px auto;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+div.patch h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+body.darkMode section#head, body.darkMode div.patch {
+  background: #383838;
+}
+
+body.lightMode section#head, body.lightMode div.patch {
+  background: #dcdcdc;
+}

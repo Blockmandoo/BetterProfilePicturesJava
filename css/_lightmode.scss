@@ -21,6 +21,23 @@ body.lightMode {
 			background-size: 100%, $phoneImgSize*6;
 		}
 	}
+	nav {
+		background: #79da77;
+		background-image: linear-gradient(90deg, #bdf380, #79da77, #55bba6);
+		> a {
+			color: $black;
+			&:not(:first-child) {
+				border-left: 1px solid rgba(77, 177, 125, .5);
+				// border-left: 1px solid #4db17d;
+			}
+			&:hover {
+				background: rgba(74,118,134,.2);
+				// background: #4a7686;
+				color: $offblack;
+				text-decoration: none;
+			}
+		}
+	}
 	#banner {
 		background: $white;
 		a {
@@ -63,5 +80,14 @@ body.lightMode {
 				outline-color: $darkgreen;
 			}
 		}
+	}
+
+	a {
+	  text-decoration: none;
+	  color: $darkgreen;
+	  &:hover {
+	    text-decoration: underline;
+	    color: #6ec142;
+	  }
 	}
 }

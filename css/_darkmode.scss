@@ -21,6 +21,22 @@ body.darkMode {
 			background-size: 100%, $phoneImgSize*6;
 		}
 	}
+	nav {
+		background: #1da71a;
+		background-image: linear-gradient(90deg, #7dc32c, #1da71a, #208873);
+		> a {
+			color: $black;
+			&:not(:first-child) {
+				border-left: 1px solid rgba(26, 123, 25, .5);
+				// border-left: 1px solid #125834;
+			}
+			&:hover {
+				background: rgba(247,255,203,.2);
+				color: $offblack;
+				text-decoration: none;
+			}
+		}
+	}
 	#banner {
 		background: $offblack;
 		a {
@@ -63,5 +79,14 @@ body.darkMode {
 				outline-color: $lightgreen;
 			}
 		}
+	}
+
+	a {
+	  text-decoration: none;
+	  color: $darkgreen;
+	  &:hover {
+	    text-decoration: underline;
+	    color: $lightgreen;
+	  }
 	}
 }

@@ -29,7 +29,7 @@ $toggleWidth: 55px;
 body > div.loading {
   background: #303030;
   background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
-  background-size: 400px, cover, cover;
+  background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 2s ease;
@@ -89,9 +89,6 @@ image-card tool-tip {
 }
 main {
   text-align: center;
-  div {
-    // font-size: 0;
-  }
 }
 
 @mixin threeColorAnimation($color1, $color2, $color3) {

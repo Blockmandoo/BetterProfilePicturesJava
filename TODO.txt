@@ -21,6 +21,6 @@ Features:
   Organize colors better
   Pages:
     About us page
-    Patch notes page
     Suggestion page
+  Setting page?
   Write missing descriptions

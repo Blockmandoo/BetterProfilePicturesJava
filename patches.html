@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> <!-- Mac thumbnail -->
+	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon64.png"> <!-- Normal browser thumbnail -->
+	<link rel="preload" href="assets/loading.svg"> <!-- Preload loading gif -->
+	<link rel="stylesheet" href="css/patches.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="msapplication-square150x150logo" content="assets/favicon150.png"> <!-- Windows 150 thumbnail -->
+	<meta name="msapplication-square310x310logo" content="assets/favicon310.png"> <!-- Windows 310 thumbnail -->
+	<meta name="msapplication-square70x70logo" content="assets/favicon70.png"> <!-- Windows 70 thumbnail -->
+	<meta name="msapplication-TileColor" content="#b54f35"> <!-- Windows thumbnail color -->
+	<meta name="msapplication-wide310x150logo" content="assets/favicon310x150.png"> <!-- Windows Rectangle thumbnail -->
+	<meta name="theme-color" content="#b54f35"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media."/>
+	<meta property="og:image:type" content="image/png"/>
+	<meta property="og:image:url" content="/assets/favicon300.png"/> <!-- Discord / Facebook thumbnail -->
+	<meta property="og:site_name" content="BetterProfilePictures"/>
+	<meta property="og:title" content="Better Profile Pictures"/>
+	<meta property="og:type" content="article"/>
+	<script src="scripts/scripts.js"></script>
+	<title>Better Profile Pictures</title>
+</head>
+<body class="darkMode">
+	<div class="loading"></div>
+  <section id="head">
+    <h1>Better Profile Pictures</h1>
+    <h2>Patch Notes</h2>
+  </section>
+  <nav id="patchesNav">
+		<a href="index.html">Picture Generator</a>
+  	<!-- <a>About Us</a> -->
+  	<a href="patches.html">Patch Notes</a>
+  	<!-- <a>Suggestions</a> -->
+  </nav>
+  <main>
+		<!-- Emmet to make patches -->
+    <!-- div.patch#patch1_##>(h3>a{Patch 1.##})+p+ul>li -->
+    <div class="patch" id="patch1_7">
+    	<h3><a href="">Patch 1.7</a> - Oct 25 2019</h3>
+    	<p></p>
+    	<ul>
+				<li>Brand new loading screen that <em>should</em> load before everything else, and then fades once everything is loaded, also made a loading <a href="loading.html">page</a> for testing</li>
+				<li>Brand new patch page, this one!</li>
+				<li>Made a loading svg that is displayed on the loading screen (hopefully it loads easily since its an svg)</li>
+				<li>New nav bar to help get you between different pages (currently only patch notes and picture generator)</li>
+				<li>Reorganized the html file, nothing looks different on the site, but know that it's more alphabetized now</li>
+				<li>The loading screen doesn't render on phones, since it acts funny there, might revisit this later</li>
+    	</ul>
+    </div>
+    <div class="patch" id="patch1_6">
+    	<h3><a href="">Patch 1.7</a> - Oct 24 2019</h3>
+    	<p>Spooky scary skeletons.</p>
+    	<ul>
+				<li>Added code for holidays, once content is added for those, they will only display for 1 month (i.e. Christmas in December)</li>
+				<li>Added darkmode tracking cookies, so you don't have to turn on the light everytime</li>
+				<li>Added Halloween content</li>
+				<li>All halloween content is marked as limited time, as it will not be easily accessable after October</li>
+				<li>Changed how logo color is applied, it now fits the size based on how much it is shrunk by image shape</li>
+				<li>Fixed few minor typos around the site</li>
+				<li>Pumpkin shape is automatically selected if pumpkin background style is selected</li>
+				<li>Script initialization now takes place <em>after</em> all the content loads</li>
+				<li>New background colors:</li>
+				<ul>
+					<li>Halloween Black</li>
+					<li>Halloween Sunset</li>
+					<li>Pumpkin</li>
+				</ul>
+				<li>New background styles:</li>
+				<ul>
+					<li>Halloween Sunset</li>
+					<li>Pumpkin</li>
+				</ul>
+				<li>New logo colors:</li>
+				<ul>
+					<li>Jack o'Lantern Candle</li>
+				</ul>
+				<li>New logos:</li>
+				<ul>
+					<li>Bat</li>
+					<li>Cat</li>
+					<li>Cauldron</li>
+					<li>Grave</li>
+					<li>Hat</li>
+					<li>Jack o'Lantern 1</li>
+					<li>Jack o'Lantern 2</li>
+					<li>Skull</li>
+					<li>Witch</li>
+				</ul>
+				<li>New shapes:</li>
+				<ul>
+					<li>Pumpkin</li>
+				</ul>
+    	</ul>
+    </div>
+    <div class="patch" id="patch1_5">
+    	<h3><a href="">Patch 1.6</a> - Oct 18 2019</h3>
+    	<p>Colors, some good, some bad.</p>
+    	<ul>
+				<li>Added a whole bunch of icons no one will probably ever see, but shows up if you save the website as a shortcut</li>
+				<li>Added flexability for mobile devices on their side or short windows</li>
+				<li>Canvas now refreshes for 15 seconds after the page loads up, and 4 seconds after a button is pressed</li>
+    		<li>Brand new share button (works off of the code added last patch that can decode the query variables)</li>
+				<li>New background colors:</li>
+				<ul>
+					<li>Aurora</li>
+					<li>Bolivian</li>
+					<li>Deep Depths</li>
+					<li>Disco Blue</li>
+					<li>Disco Cyan</li>
+					<li>Disco Green</li>
+					<li>Disco Orange</li>
+					<li>Disco Pink</li>
+					<li>Flax</li>
+					<li>Gold</li>
+					<li>Ice</li>
+					<li>Pea Green</li>
+					<li>Pyrite</li>
+					<li>Rhododendron</li>
+					<li>Slate</li>
+					<li>Tempest</li>
+					<li>Zucchini</li>
+				</ul>
+				<li>New background styles:</li>
+				<ul>
+					<li>Carbon Fiber</li>
+					<li>Diamond</li>
+					<li>Wallpaper</li>
+					<li>Waves</li>
+				</ul>
+    	</ul>
+    </div>
+    <div class="patch" id="patch1_4">
+    	<h3><a href="https://5da68164cc8b9a000b7cc476--betterprofilepicturejava.netlify.com">Patch 1.4</a> - Oct 15 2019</h3>
+    	<p>Content Patch! Look at all the content.</p>
+    	<ul>
+				<li>Brand new starting image using the burning horizon background color, star background style, along with the rounded sqaure</li>
+				<li>Fixed game links to now open in a new tab instead of getting rid of your lovely picture</li>
+				<li>Minor change, but now when you hover over the combinations it says how many decent combinations there are (based on the randomish color schemes)</li>
+				<li>New genre: Hieroglyphic</li>
+				<li>New logos:</li>
+				<ul>
+					<li>Beast Boy</li>
+					<li>Bird Hieroglyphic</li>
+					<li>Building Hieroglyphic</li>
+					<li>Cyborg</li>
+					<li>Double Leaf Hieroglyphic</li>
+					<li>Double Water Hieroglyphic</li>
+					<li>Eyeball Hieroglyphic</li>
+					<li>Foot Hieroglyphic</li>
+					<li>Green Arrow</li>
+					<li>Hand Hieroglyphic</li>
+					<li>Hawk Eye</li>
+					<li>Hawk Girl</li>
+					<li>Hawk Man</li>
+					<li>Leaf Hieroglyphic</li>
+					<li>Raven</li>
+					<li>Shepard's Hook Hieroglyphic</li>
+					<li>Skulls and Crossbones</li>
+					<li>Sphinx Hieroglyphic</li>
+					<li>Spiral Hieroglyphic</li>
+					<li>Static Shock</li>
+					<li>Thunder Cloud</li>
+					<li>Water Hieroglyphic</li>
+				</ul>
+				<li>New shapes:</li>
+				<ul>
+					<li>Decagon</li>
+					<li>Nonogon</li>
+					<li>Pentagon</li>
+					<li>Rounded Hexagon Long</li>
+					<li>Rounded Hexagon</li>
+					<li>Rounded Octogon</li>
+					<li>Septagon</li>
+				</ul>
+				<li>There is now code in place to grab the query variables in the url and auto-set the image being displayed</li>
+				<li>Simplified shape handling to only need one image instead of two</li>
+    	</ul>
+    </div>
+    <div class="patch" id="patch1_3">
+    	<h3><a href="https://5da208e2fca013000871c683--betterprofilepicturejava.netlify.com">Patch 1.3</a> - Oct 12 2019</h3>
+    	<p>Logo descriptions! Finally!</p>
+    	<ul>
+    		<li>Added headings and descriptions that display when you click on a logo</li>
+    		<li>Alphabetized the functions in the scripts</li>
+    		<li>Canvas refreshes for longer</li>
+    		<li>Games now have links to their game's homepage</li>
+    		<li>Gave up on the upload button for now, plan to revisit later</li>
+    		<li>Logos now have an auto generated tooltip based on the heading of the logo</li>
+    	</ul>
+    </div>
+    <div class="patch" id="patch1_2">
+      <h3><a href="https://5d9e6ceb7db8110008262bfb--betterprofilepicturejava.netlify.com/">Patch 1.2</a> - Oct 9 2019</h3>
+      <p>Oh my gosh that randomish button was so much work.</p>
+      <ul>
+				<li>Added a 'Randomish' button that picks from preset color schemes (This was actually a lot more work that it might seem)</li>
+				<li>Added tooltips to all options except logos</li>
+				<li>Adjusted the background image to be better centered</li>
+				<li>Changed how scripts are loaded</li>
+				<li>Fixed a small issue with the random button not always picking an image</li>
+				<li>New background colors:</li>
+        <ul>
+          <li>Corruption</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="patch" id="patch1_1">
+      <h3><a href="https://5d9649eeb9cf870008c492a0--betterprofilepicturejava.netlify.com">Patch 1.1</a> - Oct 3 2019</h3>
+      <p>Finally some new villain logos.</p>
+      <ul>
+        <li>Added a lock for the random button</li>
+        <li>Added an internal todolist</li>
+        <li>Fancy new hexagonal icon background, along with a <a href="background.html">page</a> to show it off</li>
+        <li>Inactive buttons are now clearly disabled</li>
+        <li>Made lightmode a little darker (too blinding)</li>
+        <li>New logos:</li>
+        <ul>
+          <li>Doctor Doom</li>
+          <li>General Zod</li>
+          <li>Harley Quinn</li>
+          <li>Legion of Doom</li>
+          <li>Lex Luther</li>
+          <li>Lock</li>
+          <li>Riddler</li>
+          <li>Scarecrow</li>
+          <li>Unlock</li>
+        </ul>
+      </ul>
+    </div>
+    <div id="patch1_0" class="patch">
+      <h3><a href="https://5d942cb26e13da0008c58731--betterprofilepicturejava.netlify.com">Patch 1.0</a> - Oct 1 2019</h3>
+      <p>First fully functioning version of B.P.P.</p>
+      <ul>
+        <li>Added 'Background' to globalColor and globalStyle</li>
+        <li>Added click events to all of the options, the download button, and the random button</li>
+        <li>Added javascript to automatically set the active selections</li>
+        <li>JS is now incharge of highlighting the default selections</li>
+        <li>New logos:</li>
+        <ul>
+          <li>Drink</li>
+        </ul>
+        <li>Rearranged buttonColors.scss</li>
+        <li>Renamed 'active' attribute to 'name'</li>
+        <li>Renamed the Better Profile logo to leaf</li>
+        <li>The random button required a few changes around the site:</li>
+        <ul>
+          <li>4Fold → FourFold</li>
+          <li>Minor JS changes to setLogo() to help handle new shows layout</li>
+          <li>Numbers → now spelled out</li>
+          <li>Show names '/' → '-'</li>
+        </ul>
+      </ul>
+    </div>
+  </main>
+	<script src="scripts/patchesInitialize.js"></script>
+</body>
+</html>

@@ -123,16 +123,16 @@ function darkmodeCheck() {
 	switch (getCookie("darkmode")) {
 		case "true":
 			body.className = "darkMode";
-			toggle.className = "";
+			if (toggle) {toggle.className = "";}
 			break;
 		case "false":
 			body.className = "lightMode";
-			toggle.className = "checked";
+			if (toggle) {toggle.className = "checked";}
 			break;
 		case "":
 			setCookie("darkmode", "true");
 			body.className = "darkMode";
-			toggle.className = "";
+			if (toggle) {toggle.className = "";}
 			break;
 	}
 }
