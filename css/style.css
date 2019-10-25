@@ -33,24 +33,16 @@ main {
 }
 
 body > div.loading {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-  background: #313942;
-  background-image: url(../assets/downloadedLoadingGif.gif), linear-gradient(#313942, #313942);
-  background-size: 512px, contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 2s ease;
-  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 100;
 }
 
 body > div.loading.complete {
-  opacity: 0;
-	pointer-events: none;
+  pointer-events: none;
 }
 
 #banner {
@@ -180,6 +172,9 @@ image-card.holiday {
 
 /*Short Device*/
 @media (max-height: 600px) {
+  body > div.loading {
+    display: none;
+  }
   img {
     height: 60px;
     width: 60px;
@@ -203,6 +198,9 @@ image-card.holiday {
 
 /*Phone*/
 @media (max-width: 500px) {
+  body > div.loading {
+    display: none;
+  }
   img {
     height: 60px;
     width: 60px;
@@ -427,6 +425,20 @@ body.darkMode image-card.active tool-tip {
 
 body.darkMode image-card.active img:not(:hover) {
   outline-color: #9efe1a;
+}
+
+body > div.loading {
+  background: #313942;
+  background-image: url(../assets/Loading.svg), linear-gradient(#313942, #313942);
+  background-size: 400px, 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 2s ease;
+  opacity: 1;
+}
+
+body > div.loading.complete {
+  opacity: 0;
 }
 
 #banner a {
