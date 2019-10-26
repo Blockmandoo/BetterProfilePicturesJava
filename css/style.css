@@ -128,6 +128,10 @@ main div {
   margin-bottom: 15px;
 }
 
+main .description {
+  margin-bottom: 4px;
+}
+
 .hidden {
   display: none;
 }
@@ -316,8 +320,8 @@ body.lightMode::before {
 }
 
 body.lightMode nav {
-  background: #79da77;
-  background-image: linear-gradient(90deg, #bdf380, #79da77, #55bba6);
+  background: #d65e5e;
+  background-image: linear-gradient(90deg, #fbb387, #d65e5e, #a748a0);
 }
 
 body.lightMode nav > a {
@@ -325,7 +329,7 @@ body.lightMode nav > a {
 }
 
 body.lightMode nav > a:not(:first-child) {
-  border-left: 1px solid rgba(77, 177, 125, 0.5);
+  border-left: 1px solid rgba(115, 28, 115, 0.5);
 }
 
 body.lightMode nav > a:hover {
@@ -383,12 +387,12 @@ body.lightMode image-card.active img:not(:hover) {
 
 body.lightMode a {
   text-decoration: none;
-  color: #37b41d;
+  color: #a748a0;
 }
 
 body.lightMode a:hover {
   text-decoration: underline;
-  color: #6ec142;
+  color: #d65e5e;
 }
 
 /*Dark mode stylings*/
@@ -424,8 +428,8 @@ body.darkMode::before {
 }
 
 body.darkMode nav {
-  background: #1da71a;
-  background-image: linear-gradient(90deg, #7dc32c, #1da71a, #208873);
+  background: #b5037a;
+  background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b);
 }
 
 body.darkMode nav > a {
@@ -433,7 +437,7 @@ body.darkMode nav > a {
 }
 
 body.darkMode nav > a:not(:first-child) {
-  border-left: 1px solid rgba(26, 123, 25, 0.5);
+  border-left: 1px solid rgba(81, 1, 81, 0.5);
 }
 
 body.darkMode nav > a:hover {
@@ -491,12 +495,12 @@ body.darkMode image-card.active img:not(:hover) {
 
 body.darkMode a {
   text-decoration: none;
-  color: #37b41d;
+  color: #b5037a;
 }
 
 body.darkMode a:hover {
   text-decoration: underline;
-  color: #9efe1a;
+  color: #fe7a2b;
 }
 
 body > div.loading {
@@ -505,7 +509,7 @@ body > div.loading {
   background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 2s ease;
+  transition: opacity 2s ease .5s;
   opacity: 1;
 }
 
@@ -526,24 +530,24 @@ canvas, button {
 }
 
 #buttons button {
-  background: #37b41d;
-  border-color: #9efe1a;
+  background: #ba047b;
+  border-color: #ff7c29;
   color: #dcdcdc;
 }
 
 #buttons button:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
+  background: #ff7c29;
+  border-color: #ba047b;
   color: #1f1f1f;
 }
 
 #buttons button#download {
-  background: #37b41d;
-  border-color: #9efe1a;
+  background: #ba047b;
+  border-color: #ff7c29;
   color: #dcdcdc;
-  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Download.png"), linear-gradient(#37b41d, #37b41d);
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#ba047b, #ba047b);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -551,27 +555,27 @@ canvas, button {
 }
 
 #buttons button#download:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
+  background: #ff7c29;
+  border-color: #ba047b;
   color: #1f1f1f;
 }
 
 #buttons button#download:hover {
-  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#9efe1a, #9efe1a);
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ff7c29, #ff7c29);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #buttons button#upload {
-  background: #37b41d;
-  border-color: #9efe1a;
+  background: #ba047b;
+  border-color: #ff7c29;
   color: #dcdcdc;
-  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Upload.png"), linear-gradient(#37b41d, #37b41d);
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#ba047b, #ba047b);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -579,27 +583,27 @@ canvas, button {
 }
 
 #buttons button#upload:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
+  background: #ff7c29;
+  border-color: #ba047b;
   color: #1f1f1f;
 }
 
 #buttons button#upload:hover {
-  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#9efe1a, #9efe1a);
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ff7c29, #ff7c29);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #buttons button#share {
-  background: #37b41d;
-  border-color: #9efe1a;
+  background: #ba047b;
+  border-color: #ff7c29;
   color: #dcdcdc;
-  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#37b41d, #37b41d);
-  background: url("../assets/symbols/Link.png"), linear-gradient(#37b41d, #37b41d);
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ba047b, #ba047b);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#ba047b, #ba047b);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -607,23 +611,23 @@ canvas, button {
 }
 
 #buttons button#share:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
+  background: #ff7c29;
+  border-color: #ba047b;
   color: #1f1f1f;
 }
 
 #buttons button#share:hover {
-  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#9efe1a, #9efe1a);
-  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#9efe1a, #9efe1a);
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ff7c29, #ff7c29);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #buttons button.toggle {
-  background: #37b41d;
-  border-color: #9efe1a;
+  background: #ba047b;
+  border-color: #ff7c29;
 }
 
 #buttons button.toggle label {
@@ -631,8 +635,8 @@ canvas, button {
 }
 
 #buttons button.toggle:hover {
-  background: #9efe1a;
-  border-color: #37b41d;
+  background: #ff7c29;
+  border-color: #ba047b;
 }
 
 #buttons button.toggle:hover label {
@@ -700,6 +704,17 @@ main {
   animation-iteration-count: infinite;
 }
 
+.limited.thanksgiving {
+  color: #f1b930;
+  background: #f1b930;
+  background: linear-gradient(90deg, #f1b930, #859d3c);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .7s;
+  animation-name: thanksgiving;
+  animation-iteration-count: infinite;
+}
+
 @keyframes halloween {
   0% {
     color: #b96c01;
@@ -760,6 +775,71 @@ main {
     color: #b96c01;
     background: #b96c01;
     background: linear-gradient(90deg, #b96c01, #dcdcdc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes thanksgiving {
+  0% {
+    color: #f1b930;
+    background: linear-gradient(90deg, #f1b930, #859d3c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  12% {
+    color: #6c2f00;
+    background: #6c2f00;
+    background: linear-gradient(90deg, #6c2f00, #f1b930, #859d3c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  25% {
+    color: #6c2f00;
+    background: #6c2f00;
+    background: linear-gradient(90deg, #6c2f00, #f1b930);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  37% {
+    color: #f1b930;
+    background: #f1b930;
+    background: linear-gradient(90deg, #6c2f00, #f1b930, #6c2f00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  50% {
+    color: #f1b930;
+    background: #f1b930;
+    background: linear-gradient(90deg, #f1b930, #6c2f00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  62% {
+    color: #859d3c;
+    background: #859d3c;
+    background: linear-gradient(90deg, #859d3c, #f1b930, #6c2f00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  75% {
+    color: #859d3c;
+    background: #859d3c;
+    background: linear-gradient(90deg, #859d3c, #f1b930);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  87% {
+    color: #859d3c;
+    background: #859d3c;
+    background: linear-gradient(90deg, #859d3c, #f1b930, #859d3c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  100% {
+    color: #f1b930;
+    background: #f1b930;
+    background: linear-gradient(90deg, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }

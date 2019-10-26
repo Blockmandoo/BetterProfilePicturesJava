@@ -22,12 +22,16 @@ body.lightMode {
 		}
 	}
 	nav {
-		background: #79da77;
-		background-image: linear-gradient(90deg, #bdf380, #79da77, #55bba6);
+		// background: #79da77;
+		background: #d65e5e;
+		// background-image: linear-gradient(90deg, #bdf380, #79da77, #55bba6);
+		background-image: linear-gradient(90deg, #fbb387, #d65e5e, #a748a0);
 		> a {
 			color: $black;
 			&:not(:first-child) {
-				border-left: 1px solid rgba(77, 177, 125, .5);
+				border-left: 1px solid rgba(115, 28, 115, .5);
+				// border-left: 1px solid #731c72;
+				// border-left: 1px solid rgba(77, 177, 125, .5);
 				// border-left: 1px solid #4db17d;
 			}
 			&:hover {
@@ -84,10 +88,10 @@ body.lightMode {
 
 	a {
 	  text-decoration: none;
-	  color: $darkgreen;
+	  color: #a748a0;
 	  &:hover {
 	    text-decoration: underline;
-	    color: #6ec142;
+	    color: #d65e5e;
 	  }
 	}
 }

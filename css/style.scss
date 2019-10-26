@@ -32,7 +32,7 @@ body > div.loading {
   background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 2s ease;
+  transition: opacity 2s ease .5s;
   opacity: 1;
   &.complete {
     opacity: 0;
@@ -48,7 +48,7 @@ canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
 #buttons {
-  @include buttons($darkgreen, $lightgreen);
+  @include buttons(#ba047b, #ff7c29);
   button {
     border-width: 1px;
     border-style: solid;
@@ -156,20 +156,29 @@ main {
   }
 }
 
-$halloweenOrange: #b96c01;
+@mixin limitedAppearence($name, $color2, $color3) {
+  color: $color2;
+  background: $color2;
+  background: linear-gradient(90deg, $color2, $color3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .7s;
+  animation-name: $name;
+  animation-iteration-count: infinite;
+}
+
 .limited {
   &.halloween {
-    color: $halloweenOrange;
-    background: $halloweenOrange;
-    background: linear-gradient(90deg, $halloweenOrange, $white);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation-duration: .7s;
-    animation-name: halloween;
-    animation-iteration-count: infinite;
+    @include limitedAppearence(halloween, #b96c01, $white)
+  }
+  &.thanksgiving {
+    @include limitedAppearence(thanksgiving, #f1b930, #859d3c)
   }
 }
 
 @keyframes halloween {
-  @include threeColorAnimation($black, $halloweenOrange, $white);
+  @include threeColorAnimation($black, #b96c01, $white);
+}
+@keyframes thanksgiving {
+  @include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
 }

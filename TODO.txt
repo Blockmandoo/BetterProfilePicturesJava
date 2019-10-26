@@ -13,12 +13,12 @@ Logos:
 Features:
   Border Options
   Buttons:
-    Upload images button
+    Download form submit button
     Search box
+    Upload images button
   Highlight new content
   Individual Count
   Individual Random
-  Organize colors better
   Pages:
     About us page
     Suggestion page

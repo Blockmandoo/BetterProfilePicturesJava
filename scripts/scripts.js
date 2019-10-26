@@ -22,14 +22,20 @@ function applyCount() {
 	}
 
 	//Count all the image-card elements in a div
-	function choiceCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday)");
+	function getChoiceCount(catagory) {
+		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday)");
+		return images.length;
+	}
+
+	//Count all the image-card elements in a div
+	function getHolidayCount(catagory) {
+		var images = document.querySelectorAll("div#" + catagory + " image-card.activeHoliday");
 		return images.length;
 	}
 
 	//Multiply all the image-card counts together for a total
 	function multiplyAll() {
-		var count = choiceCount("logo") * choiceCount("logoColor") * choiceCount("backgroundColor") * choiceCount("backgroundStyle") * choiceCount("shape");
+		var count = getChoiceCount("logo") * getChoiceCount("logoColor") * getChoiceCount("backgroundColor") * getChoiceCount("backgroundStyle") * getChoiceCount("shape");
 		return numberWithCommas(count);
 	}
 
@@ -44,14 +50,31 @@ function applyCount() {
 
 	//Multiply the sudo-random combinations
 	function randomishCombinations() {
-		var count = choiceCount("logo") * randomishColorCount() * choiceCount("backgroundStyle") * choiceCount("shape");
+		var count = getChoiceCount("logo") * randomishColorCount() * getChoiceCount("backgroundStyle") * getChoiceCount("shape");
 		return numberWithCommas(count);
 	}
 
+	function setChoiceCount(catagory) {
+		var count = getChoiceCount(catagory);
+		var holidays = getHolidayCount(catagory);
+		var countElement = document.querySelector("#" + catagory + " .choiceCount");
+		if (holidays == 0) {
+			countElement.innerHTML = "(" + count + " options)";
+		} else {
+			countElement.innerHTML = "(" + count + " options, and " + holidays + " holidays)";
+		}
+	}
+
 	//Apply the total to the combination span
-	var countElement = document.querySelector(".combinations");
-	countElement.textContent = multiplyAll();
-	countElement.title = "~" + randomishCombinations() + " decent combinations.";
+	var combinationElement = document.querySelector(".combinations");
+	combinationElement.textContent = multiplyAll();
+	combinationElement.title = "~" + randomishCombinations() + " decent combinations.";
+	setChoiceCount("genre");
+	// setChoiceCount("logo");
+	setChoiceCount("logoColor");
+	setChoiceCount("backgroundColor");
+	setChoiceCount("backgroundStyle");
+	setChoiceCount("shape");
 }
 
 //Generate tooltips for logos

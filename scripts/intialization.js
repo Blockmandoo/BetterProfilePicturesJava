@@ -21,9 +21,6 @@ function initialize() {
 	// Add tooltips to all the logos based on  their heads
 	applyHead();
 
-	// Update combination count
-	applyCount();
-
 	// Update button colors
 	setBackgroundColor(globalBackgroundColor);
 
@@ -32,6 +29,9 @@ function initialize() {
 
 	//Get the month for the holiday images
 	getHoliday();
+
+	// Update combination count
+	applyCount();
 
 	//Remove loading animation
 	loadingComplete();
