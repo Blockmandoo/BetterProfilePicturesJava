@@ -60,6 +60,8 @@ function applyCount() {
 		var countElement = document.querySelector("#" + catagory + " .choiceCount");
 		if (holidays == 0) {
 			countElement.innerHTML = "(" + count + " options)";
+		} else if (holidays == 1) {
+			countElement.innerHTML = "(" + count + " options, and " + holidays + " holiday)";
 		} else {
 			countElement.innerHTML = "(" + count + " options, and " + holidays + " holidays)";
 		}

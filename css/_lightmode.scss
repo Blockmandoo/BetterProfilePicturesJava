@@ -28,11 +28,13 @@ body.lightMode {
 		background-image: linear-gradient(90deg, #fbb387, #d65e5e, #a748a0);
 		> a {
 			color: $black;
+			$transparentBorder: rgba(115, 28, 115, .5);
+			$solidBorder: #731c72;
 			&:not(:first-child) {
-				border-left: 1px solid rgba(115, 28, 115, .5);
-				// border-left: 1px solid #731c72;
-				// border-left: 1px solid rgba(77, 177, 125, .5);
-				// border-left: 1px solid #4db17d;
+				border-left: 1px solid $transparentBorder;
+			}
+			&:not(:last-child) {
+				border-right: 1px solid $transparentBorder;
 			}
 			&:hover {
 				background: rgba(74,118,134,.2);

@@ -332,6 +332,10 @@ body.lightMode nav > a:not(:first-child) {
   border-left: 1px solid rgba(115, 28, 115, 0.5);
 }
 
+body.lightMode nav > a:not(:last-child) {
+  border-right: 1px solid rgba(115, 28, 115, 0.5);
+}
+
 body.lightMode nav > a:hover {
   background: rgba(74, 118, 134, 0.2);
   color: #383838;
@@ -438,6 +442,10 @@ body.darkMode nav > a {
 
 body.darkMode nav > a:not(:first-child) {
   border-left: 1px solid rgba(81, 1, 81, 0.5);
+}
+
+body.darkMode nav > a:not(:last-child) {
+  border-right: 1px solid rgba(81, 1, 81, 0.5);
 }
 
 body.darkMode nav > a:hover {
