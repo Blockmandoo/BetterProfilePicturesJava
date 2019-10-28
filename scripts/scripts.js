@@ -16,11 +16,6 @@ function activateCards() {
 
 //Apply the total to the combination span
 function applyCount() {
-	//Code injected from the interwebs because it makes no sense but works
-	function numberWithCommas(number) {
-		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	}
-
 	//Count all the image-card elements in a div
 	function getChoiceCount(catagory) {
 		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday)");
@@ -39,6 +34,11 @@ function applyCount() {
 		return numberWithCommas(count);
 	}
 
+	//Code injected from the interwebs because it makes no sense but works
+	function numberWithCommas(number) {
+		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
 	//Sudo-random count of options
 	function randomishColorCount() {
 		var count = 0;
@@ -55,16 +55,18 @@ function applyCount() {
 	}
 
 	function setChoiceCount(catagory) {
-		var count = getChoiceCount(catagory);
-		var holidays = getHolidayCount(catagory);
+		var count = getChoiceCount(catagory) + getHolidayCount(catagory);
 		var countElement = document.querySelector("#" + catagory + " .choiceCount");
-		if (holidays == 0) {
-			countElement.innerHTML = "(" + count + " options)";
-		} else if (holidays == 1) {
-			countElement.innerHTML = "(" + count + " options, and " + holidays + " holiday)";
-		} else {
-			countElement.innerHTML = "(" + count + " options, and " + holidays + " holidays)";
+		countElement.innerHTML = "(" + count + " options)";
+	}
+
+	function setLogoChoiceCount() {
+		var logosCatagories = document.querySelectorAll("div#logo > div");
+		for (var i = 0; i < logosCatagories.length; i++) {
+			var catagory = logosCatagories[i].id;
+			setChoiceCount(catagory);
 		}
+
 	}
 
 	//Apply the total to the combination span
@@ -72,7 +74,7 @@ function applyCount() {
 	combinationElement.textContent = multiplyAll();
 	combinationElement.title = "~" + randomishCombinations() + " decent combinations.";
 	setChoiceCount("genre");
-	// setChoiceCount("logo");
+	setLogoChoiceCount();
 	setChoiceCount("logoColor");
 	setChoiceCount("backgroundColor");
 	setChoiceCount("backgroundStyle");
