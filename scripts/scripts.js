@@ -28,9 +28,13 @@ function applyCount() {
 		return images.length;
 	}
 
+	function getBothCount(catagory) {
+		return getChoiceCount(catagory) + getHolidayCount(catagory);
+	}
+
 	//Multiply all the image-card counts together for a total
 	function multiplyAll() {
-		var count = getChoiceCount("logo") * getChoiceCount("logoColor") * getChoiceCount("backgroundColor") * getChoiceCount("backgroundStyle") * getChoiceCount("shape");
+		var count = getBothCount("logo") * getBothCount("logoColor") * getBothCount("backgroundColor") * getBothCount("backgroundStyle") * getBothCount("shape");
 		return numberWithCommas(count);
 	}
 
@@ -409,6 +413,15 @@ function setCookie(name, value) {
 function setDescription(head, flavor) {
 	document.getElementById("title").innerHTML = head;
 	document.getElementById("description").innerHTML = flavor;
+}
+
+//Set the holiday (for dev purposes)
+function setHoliday(holiday) {
+	var cards = document.querySelectorAll("image-card.holiday." + holiday);
+	for (var i = 0; i < cards.length; i++) {
+		cards[i].className = "activeHoliday " + holiday;
+	}
+	applyCount();
 }
 
 //Get and set icon based on url

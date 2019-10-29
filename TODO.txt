@@ -8,7 +8,6 @@ Logos:
     Deathly Hallows
     Overwatch heroes
     Pin
-    Share link
 
 Features:
   Border Options
@@ -17,10 +16,9 @@ Features:
     Search box
     Upload images button
   Highlight new content
-  Individual Count
   Individual Random
   Pages:
     About us page
+    Setting page?
     Suggestion page
-  Setting page?
   Write missing descriptions
