@@ -15,10 +15,14 @@ Features:
     Download form submit button
     Search box
     Upload images button
+  Change Lightmode active green
+  Color scrollbar
   Highlight new content
   Individual Random
+  Nav bar text color
   Pages:
     About us page
     Setting page?
     Suggestion page
+  T-Shirt shape
   Write missing descriptions

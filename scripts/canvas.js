@@ -194,7 +194,7 @@ function setLogo(logo) {
 	//Sepcial case for shows
 	logo = logo.replace("/", "-");
 
-	document.querySelector("#logo [name='" + logo + "']").className = "active";
+	document.querySelector("#logo #" + globalGenre + " [name='" + logo + "']").className = "active";
 
 	updateImage();
 }
