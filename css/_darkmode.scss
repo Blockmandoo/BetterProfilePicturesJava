@@ -27,7 +27,7 @@ body.darkMode {
 		// background-image: linear-gradient(90deg, #7dc32c, #1da71a, #208873);
 		background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b);
 		> a {
-			color: $black;
+			color: white;
 			$transparentBorder: rgba(81, 1, 81, .5);
 			$solidBorder: #520151;
 			&:not(:first-child) {
@@ -38,7 +38,7 @@ body.darkMode {
 			}
 			&:hover {
 				background: rgba(247,255,203,.2);
-				color: $offblack;
+				color: $black;
 				text-decoration: none;
 			}
 		}

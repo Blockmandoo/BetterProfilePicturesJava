@@ -190,9 +190,6 @@ image-card.holiday {
 
 /*Short Device*/
 @media (max-height: 600px) {
-  body > div.loading {
-    display: none;
-  }
   img {
     height: 60px;
     width: 60px;
@@ -216,9 +213,6 @@ image-card.holiday {
 
 /*Phone*/
 @media (max-width: 500px) {
-  body > div.loading {
-    display: none;
-  }
   img {
     height: 60px;
     width: 60px;
@@ -338,7 +332,7 @@ body.lightMode nav > a:not(:last-child) {
 
 body.lightMode nav > a:hover {
   background: rgba(74, 118, 134, 0.2);
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 
@@ -437,7 +431,7 @@ body.darkMode nav {
 }
 
 body.darkMode nav > a {
-  color: #1f1f1f;
+  color: white;
 }
 
 body.darkMode nav > a:not(:first-child) {
@@ -450,7 +444,7 @@ body.darkMode nav > a:not(:last-child) {
 
 body.darkMode nav > a:hover {
   background: rgba(247, 255, 203, 0.2);
-  color: #383838;
+  color: #1f1f1f;
   text-decoration: none;
 }
 

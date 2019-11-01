@@ -46,3 +46,10 @@ body.lightMode {
     background: #dcdcdc;
   }
 }
+
+li {
+  margin-bottom: 6px;
+}
+li li {
+  margin-bottom: 0;
+}

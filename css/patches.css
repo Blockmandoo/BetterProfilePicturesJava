@@ -41,3 +41,11 @@ body.darkMode section#head, body.darkMode div.patch {
 body.lightMode section#head, body.lightMode div.patch {
   background: #dcdcdc;
 }
+
+li {
+  margin-bottom: 6px;
+}
+
+li li {
+  margin-bottom: 0;
+}
