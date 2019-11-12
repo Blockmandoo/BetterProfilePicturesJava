@@ -1,0 +1,47 @@
+$black: #1f1f1f;
+$white: #dcdcdc;
+$offwhite: #aaa;
+section#head {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0px;
+  h1 {
+    margin: auto;
+    border-bottom: 2px solid $offwhite;
+    border-radius: 2px;
+    width: 350px;
+    padding-bottom: 3px;
+  }
+}
+
+nav#textPageNav {
+  top: 116px;
+}
+
+main {
+  max-width: 700px;
+  >div {
+    text-align: left;
+    margin: 30px auto;
+    padding: 8px;
+    border-radius: 6px;
+    h3 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+body.darkMode {
+  section#head, main > div {
+    background: #383838;
+  }
+}
+
+body.lightMode {
+  section#head, main > div {
+    background: #dcdcdc;
+  }
+}

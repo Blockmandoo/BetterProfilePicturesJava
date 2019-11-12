@@ -22,6 +22,7 @@ Features:
   Nav bar text color
   Pages:
     About us page
+    Future plans page
     Setting page?
     Suggestion page
   T-Shirt shape
