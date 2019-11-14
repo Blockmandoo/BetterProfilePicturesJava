@@ -19,11 +19,13 @@ Features:
   Color scrollbar
   Highlight new content
   Individual Random
-  Nav bar text color
+  Make a fix for holiday colors
   Pages:
     About us page
     Future plans page
     Setting page?
+    Stats pages
     Suggestion page
+  Reduce globals
   T-Shirt shape
   Write missing descriptions

@@ -404,6 +404,15 @@ function randomishIcon() {
 	}
 }
 
+//Set all holidays active (for dev purposes)
+function setAllHolidays() {
+	var cards = document.querySelectorAll("image-card.holiday");
+	for (var i = 0; i < cards.length; i++) {
+		cards[i].className = "activeHoliday";
+	}
+	applyCount();
+}
+
 //Set any variable in cookies
 function setCookie(name, value) {
 	document.cookie = name + "=" + value;

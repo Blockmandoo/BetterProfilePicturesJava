@@ -36,8 +36,10 @@ main > div h3 {
 
 body.darkMode section#head, body.darkMode main > div {
   background: #383838;
+  color: white;
 }
 
 body.lightMode section#head, body.lightMode main > div {
   background: #dcdcdc;
+  color: #383838;
 }

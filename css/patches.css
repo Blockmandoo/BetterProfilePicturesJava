@@ -36,10 +36,12 @@ div.patch h3 {
 
 body.darkMode section#head, body.darkMode div.patch {
   background: #383838;
+  color: white;
 }
 
 body.lightMode section#head, body.lightMode div.patch {
   background: #dcdcdc;
+  color: #383838;
 }
 
 li {

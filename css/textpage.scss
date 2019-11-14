@@ -1,6 +1,7 @@
 $black: #1f1f1f;
 $white: #dcdcdc;
 $offwhite: #aaa;
+$offblack: #383838;
 section#head {
   text-align: center;
   font-size: 20px;
@@ -36,12 +37,14 @@ main {
 
 body.darkMode {
   section#head, main > div {
-    background: #383838;
+    background: $offblack;
+    color: white;
   }
 }
 
 body.lightMode {
   section#head, main > div {
     background: #dcdcdc;
+    color: $offblack;
   }
 }
