@@ -21,7 +21,6 @@ Features:
   Individual Random
   Make a fix for holiday colors
   Pages:
-    About us page
     Future plans page
     Setting page?
     Stats pages

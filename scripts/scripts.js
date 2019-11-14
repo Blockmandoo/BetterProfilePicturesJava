@@ -75,8 +75,10 @@ function applyCount() {
 
 	//Apply the total to the combination span
 	var combinationElement = document.querySelector(".combinations");
-	combinationElement.textContent = multiplyAll();
-	combinationElement.title = "~" + randomishCombinations() + " decent combinations.";
+	if (combinationElement) {
+		combinationElement.innerHTML = multiplyAll();
+		combinationElement.title = "~" + randomishCombinations() + " decent combinations.";
+	}
 	setChoiceCount("genre");
 	setLogoChoiceCount();
 	setChoiceCount("logoColor");

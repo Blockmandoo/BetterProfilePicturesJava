@@ -50,7 +50,11 @@
   body p {
     font-size: 15px;
   }
+  nav {
+    font-size: .8em;
+  }
   #banner {
+    top: 31px;
     padding: 10px;
   	grid-template: "canvas" "description";
     >a#canvasLink {

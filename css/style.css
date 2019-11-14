@@ -46,7 +46,7 @@ body > div.loading.complete {
 }
 
 nav {
-  z-index: 2;
+  z-index: 3;
   position: sticky;
   top: 0px;
   display: grid;
@@ -220,7 +220,11 @@ image-card.holiday {
   body p {
     font-size: 15px;
   }
+  nav {
+    font-size: .8em;
+  }
   #banner {
+    top: 31px;
     padding: 10px;
     grid-template: "canvas" "description";
   }
