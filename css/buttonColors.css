@@ -1,5 +1,7 @@
 #buttons {
   /* Holiday colors */
+  /* -- Halloween -- */
+  /* -- ThanksGiving -- */
 }
 
 #buttons.Amethyst button {
@@ -6155,6 +6157,462 @@
 }
 
 #buttons.Pumpkin button.toggle:hover label {
+  background: #1f1f1f;
+}
+
+#buttons.FallBrown button {
+  background: #684425;
+  border-color: #996236;
+  color: white;
+}
+
+#buttons.FallBrown button:hover {
+  background: #996236;
+  border-color: #684425;
+  color: white;
+}
+
+#buttons.FallBrown button#download {
+  background: #684425;
+  border-color: #996236;
+  color: white;
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#684425, #684425);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallBrown button#download:hover {
+  background: #996236;
+  border-color: #684425;
+  color: white;
+}
+
+#buttons.FallBrown button#download:hover {
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#996236, #996236);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallBrown button#upload {
+  background: #684425;
+  border-color: #996236;
+  color: white;
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#684425, #684425);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallBrown button#upload:hover {
+  background: #996236;
+  border-color: #684425;
+  color: white;
+}
+
+#buttons.FallBrown button#upload:hover {
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#996236, #996236);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallBrown button#share {
+  background: #684425;
+  border-color: #996236;
+  color: white;
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#684425, #684425);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#684425, #684425);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallBrown button#share:hover {
+  background: #996236;
+  border-color: #684425;
+  color: white;
+}
+
+#buttons.FallBrown button#share:hover {
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#996236, #996236);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#996236, #996236);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallBrown button.toggle {
+  background: #684425;
+  border-color: #996236;
+}
+
+#buttons.FallBrown button.toggle label {
+  background: white;
+}
+
+#buttons.FallBrown button.toggle:hover {
+  background: #996236;
+  border-color: #684425;
+}
+
+#buttons.FallBrown button.toggle:hover label {
+  background: white;
+}
+
+#buttons.FallRed button {
+  background: #c54a26;
+  border-color: #ed732e;
+  color: white;
+}
+
+#buttons.FallRed button:hover {
+  background: #ed732e;
+  border-color: #c54a26;
+  color: #1f1f1f;
+}
+
+#buttons.FallRed button#download {
+  background: #c54a26;
+  border-color: #ed732e;
+  color: white;
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#c54a26, #c54a26);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallRed button#download:hover {
+  background: #ed732e;
+  border-color: #c54a26;
+  color: #1f1f1f;
+}
+
+#buttons.FallRed button#download:hover {
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ed732e, #ed732e);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallRed button#upload {
+  background: #c54a26;
+  border-color: #ed732e;
+  color: white;
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#c54a26, #c54a26);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallRed button#upload:hover {
+  background: #ed732e;
+  border-color: #c54a26;
+  color: #1f1f1f;
+}
+
+#buttons.FallRed button#upload:hover {
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ed732e, #ed732e);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallRed button#share {
+  background: #c54a26;
+  border-color: #ed732e;
+  color: white;
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#c54a26, #c54a26);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#c54a26, #c54a26);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallRed button#share:hover {
+  background: #ed732e;
+  border-color: #c54a26;
+  color: #1f1f1f;
+}
+
+#buttons.FallRed button#share:hover {
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ed732e, #ed732e);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ed732e, #ed732e);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallRed button.toggle {
+  background: #c54a26;
+  border-color: #ed732e;
+}
+
+#buttons.FallRed button.toggle label {
+  background: white;
+}
+
+#buttons.FallRed button.toggle:hover {
+  background: #ed732e;
+  border-color: #c54a26;
+}
+
+#buttons.FallRed button.toggle:hover label {
+  background: #1f1f1f;
+}
+
+#buttons.FallOrange button {
+  background: #f2912b;
+  border-color: #f8b12c;
+  color: #1f1f1f;
+}
+
+#buttons.FallOrange button:hover {
+  background: #f8b12c;
+  border-color: #f2912b;
+  color: #1f1f1f;
+}
+
+#buttons.FallOrange button#download {
+  background: #f2912b;
+  border-color: #f8b12c;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f2912b, #f2912b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallOrange button#download:hover {
+  background: #f8b12c;
+  border-color: #f2912b;
+  color: #1f1f1f;
+}
+
+#buttons.FallOrange button#download:hover {
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f8b12c, #f8b12c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallOrange button#upload {
+  background: #f2912b;
+  border-color: #f8b12c;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f2912b, #f2912b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallOrange button#upload:hover {
+  background: #f8b12c;
+  border-color: #f2912b;
+  color: #1f1f1f;
+}
+
+#buttons.FallOrange button#upload:hover {
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f8b12c, #f8b12c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallOrange button#share {
+  background: #f2912b;
+  border-color: #f8b12c;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f2912b, #f2912b);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f2912b, #f2912b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallOrange button#share:hover {
+  background: #f8b12c;
+  border-color: #f2912b;
+  color: #1f1f1f;
+}
+
+#buttons.FallOrange button#share:hover {
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f8b12c, #f8b12c);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f8b12c, #f8b12c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallOrange button.toggle {
+  background: #f2912b;
+  border-color: #f8b12c;
+}
+
+#buttons.FallOrange button.toggle label {
+  background: #1f1f1f;
+}
+
+#buttons.FallOrange button.toggle:hover {
+  background: #f8b12c;
+  border-color: #f2912b;
+}
+
+#buttons.FallOrange button.toggle:hover label {
+  background: #1f1f1f;
+}
+
+#buttons.FallGreen button {
+  background: #bba62c;
+  border-color: #f8b02a;
+  color: #1f1f1f;
+}
+
+#buttons.FallGreen button:hover {
+  background: #f8b02a;
+  border-color: #bba62c;
+  color: #1f1f1f;
+}
+
+#buttons.FallGreen button#download {
+  background: #bba62c;
+  border-color: #f8b02a;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#bba62c, #bba62c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallGreen button#download:hover {
+  background: #f8b02a;
+  border-color: #bba62c;
+  color: #1f1f1f;
+}
+
+#buttons.FallGreen button#download:hover {
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#f8b02a, #f8b02a);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallGreen button#upload {
+  background: #bba62c;
+  border-color: #f8b02a;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#bba62c, #bba62c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallGreen button#upload:hover {
+  background: #f8b02a;
+  border-color: #bba62c;
+  color: #1f1f1f;
+}
+
+#buttons.FallGreen button#upload:hover {
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#f8b02a, #f8b02a);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallGreen button#share {
+  background: #bba62c;
+  border-color: #f8b02a;
+  color: #1f1f1f;
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#bba62c, #bba62c);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#bba62c, #bba62c);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.FallGreen button#share:hover {
+  background: #f8b02a;
+  border-color: #bba62c;
+  color: #1f1f1f;
+}
+
+#buttons.FallGreen button#share:hover {
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#f8b02a, #f8b02a);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#f8b02a, #f8b02a);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.FallGreen button.toggle {
+  background: #bba62c;
+  border-color: #f8b02a;
+}
+
+#buttons.FallGreen button.toggle label {
+  background: #1f1f1f;
+}
+
+#buttons.FallGreen button.toggle:hover {
+  background: #f8b02a;
+  border-color: #bba62c;
+}
+
+#buttons.FallGreen button.toggle:hover label {
   background: #1f1f1f;
 }
 

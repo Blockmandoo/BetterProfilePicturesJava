@@ -20,6 +20,7 @@ Features:
   Highlight new content
   Individual Random
   Make a fix for holiday colors
+  Overlay options
   Pages:
     Future plans page
     Setting page?

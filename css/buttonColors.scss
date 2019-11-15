@@ -57,9 +57,15 @@ $white: white;
 	&.Zucchini {@include buttons(#3e7425, #75bd48);}
 
 	/* Holiday colors */
+	/* -- Halloween -- */
 	&.HalloweenBlack {@include buttonsDark(#130b11, #211118);}
 	&.HalloweenSunset {@include buttonsLight(#ecb92d, #f0f2b2);}
 	&.Pumpkin {@include buttons(#9a3a1d, #ea902b);}
+	/* -- ThanksGiving -- */
+	&.FallBrown {@include buttonsDark(#684425, #996236);}
+	&.FallRed {@include buttons(#c54a26, #ed732e);}
+	&.FallOrange {@include buttonsLight(#f2912b, #f8b12c);}
+	&.FallGreen {@include buttonsLight(#bba62c, #f8b02a);}
 }
 button.disabled {
 	background: #777 !important;

@@ -3,7 +3,7 @@
 <head>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> <!-- Mac thumbnail -->
 	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon64.png"> <!-- Normal browser thumbnail -->
-	<link rel="preload" href="assets/loading.svg"> <!-- Preload loading gif -->
+	<link rel="preload" href="assets/loading.svg" as="image"> <!-- Preload loading gif -->
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="msapplication-square150x150logo" content="assets/favicon150.png"> <!-- Windows 150 thumbnail -->
@@ -196,6 +196,15 @@
 				</tool-tip>
 				<img class="lightMode" src="assets/darkMode/halloween/Jack2.png" alt="Halloween">
 				<img class="darkMode" src="assets/halloween/Jack2.png" alt="Halloween">
+			</image-card>
+			<image-card name="Thanksgiving" class="holiday thanksgiving">
+				<tool-tip>
+					<h5>Thanksgiving</h5>
+					<p class="limited thanksgiving">Limited Edition!</p>
+					<p>Give thanks for all the choices you have.</p>
+				</tool-tip>
+				<img class="lightMode" src="assets/darkMode/thanksgiving/FallLeaves.png" alt="Thanksgiving">
+				<img class="darkMode" src="assets/thanksgiving/FallLeaves.png" alt="Thanksgiving">
 			</image-card>
 		</div>
 		<div id="logo" class="hidden">
@@ -1492,6 +1501,29 @@
 					<img class="darkMode" src="assets/symbols/Zzz.png" alt="Zzz">
 				</image-card>
 			</div>
+			<div id="Thanksgiving" class="hidden">
+				<p>Thanksgiving</p>
+				<p class="description">
+					<span class="choiceCount"></span>
+					<!-- <button type="button">Random</button> -->
+				</p>
+				<image-card name="FallLeaves" head="Fall Leaves" description="The leaves fell this year, right? Or did they just appear on the ground all at once again?">
+					<img class="lightMode" src="assets/darkMode/Thanksgiving/FallLeaves.png" alt="FallLeaves">
+					<img class="darkMode" src="assets/Thanksgiving/FallLeaves.png" alt="FallLeaves">
+				</image-card>
+				<image-card name="HandTurkey" head="Hand Turkey" description="Billy made a turkey in school today so I suppose we need to put it on the fridge now...">
+					<img class="lightMode" src="assets/darkMode/Thanksgiving/HandTurkey.png" alt="HandTurkey">
+					<img class="darkMode" src="assets/Thanksgiving/HandTurkey.png" alt="HandTurkey">
+				</image-card>
+				<image-card name="PilgrimHat" head="Pilgrim Hat" description="Who knows why they put a buckle on their hat, probably some new fashion trend.">
+					<img class="lightMode" src="assets/darkMode/Thanksgiving/PilgrimHat.png" alt="PilgrimHat">
+					<img class="darkMode" src="assets/Thanksgiving/PilgrimHat.png" alt="PilgrimHat">
+				</image-card>
+				<image-card name="Turkey" head="Turkey" description="You know... This turkey really doesn't look that different from Billy's turkey...">
+					<img class="lightMode" src="assets/darkMode/Thanksgiving/Turkey.png" alt="Turkey">
+					<img class="darkMode" src="assets/Thanksgiving/Turkey.png" alt="Turkey">
+				</image-card>
+			</div>
 			<div id="Villains" class="hidden">
 				<p>Super Villains</p>
 				<p class="description">
@@ -1636,6 +1668,34 @@
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/Pumpkin-Display.png" alt="">
+			</image-card>
+			<image-card name="FallBrown" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Brown</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/logoColors/FallBrown-Display.png" alt="">
+			</image-card>
+			<image-card name="FallRed" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Red</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/logoColors/FallRed-Display.png" alt="">
+			</image-card>
+			<image-card name="FallOrange" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Orange</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/logoColors/FallOrange-Display.png" alt="">
+			</image-card>
+			<image-card name="FallGreen" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Green</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/logoColors/FallGreen-Display.png" alt="">
 			</image-card>
 		</div>
 		<div id="backgroundColor">
@@ -1981,7 +2041,34 @@
 				</tool-tip>
 				<img src="assets/background/Gradient-HalloweenBlack.png" alt="HalloweenBlack">
 			</image-card>
-
+			<image-card name="FallBrown" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Brown</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/background/Gradient-FallBrown.png" alt="FallBrown">
+			</image-card>
+			<image-card name="FallRed" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Red</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/background/Gradient-FallRed.png" alt="FallRed">
+			</image-card>
+			<image-card name="FallOrange" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Orange</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/background/Gradient-FallOrange.png" alt="FallOrange">
+			</image-card>
+			<image-card name="FallGreen" class="holiday thanksgiving">
+				<tool-tip>
+					<p>Fall Green</p>
+					<p class="limited thanksgiving">Limited Edition!</p>
+				</tool-tip>
+				<img src="assets/background/Gradient-FallGreen.png" alt="FallGreen">
+			</image-card>
 		</div>
 		<div id="backgroundStyle">
 			<h2>Background Style

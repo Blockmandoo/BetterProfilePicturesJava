@@ -219,59 +219,56 @@ function getCookie(cname) {
 //Show limited edition images based on month
 function getHoliday() {
 	var date = new Date();
-	switch (date.getMonth()) {
-		case 0:
-			//January
+	var month = date.getMonth();
+	var day = date.getDate();
+	switch (month) {
+		case 0: //January
 			showHoliday("chineseNewYear");
-			showHoliday("newYear");
+			if (day < 2) {
+				showHoliday("newYear");
+			}
 			break;
-		case 1:
-			//Febuary
+		case 1: //Febuary
 			showHoliday("chineseNewYear");
 			showHoliday("valentines");
 			break;
-		case 2:
-			//March
+		case 2: //March
 			showHoliday("stPatricks");
 			break;
-		case 3:
-			//April
+		case 3: //April
 			showHoliday("easter");
 			break;
-		case 4:
-			//May
+		case 4: //May
 			// showHoliday("");
 			break;
-		case 5:
-			//June
+		case 5: //June
 			// showHoliday("");
 			break;
-		case 6:
-			//July
+		case 6: //July
 			showHoliday("forthOfJuly");
 			break;
-		case 7:
-			//August
+		case 7: //August
 			// showHoliday("");
 			break;
-		case 8:
-			//September
+		case 8: //September
 			// showHoliday("");
 			break;
-		case 9:
-			//October
+		case 9: //October
 			showHoliday("halloween");
 			break;
-		case 10:
-			//November
+		case 10: //November
 			showHoliday("thanksgiving");
+			if (day > 27) {
+				showHoliday("christmas");
+			}
 			break;
-		case 11:
-			//December
+		case 11: //December
 			showHoliday("christmas");
 			showHoliday("hanukkah");
-			showHoliday("newYear");
 			showHoliday("yule");
+			if (day > 20) {
+				showHoliday("newYear");
+			}
 			break;
 	}
 
