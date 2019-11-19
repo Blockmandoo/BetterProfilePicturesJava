@@ -1,4 +1,7 @@
 Logos:
+  Food:
+    Burger
+    Ice-cream
   Games:
     Dungeons and Dragons
   Heroes:
@@ -38,7 +41,6 @@ Features:
   Color scrollbar
   Highlight new content
   Individual Random
-  Make a fix for holiday colors
   Overlay options
   Pages:
     Future plans page
@@ -46,5 +48,22 @@ Features:
     Stats pages
     Suggestion page
   Reduce globals
+  Short browser (or tilted phone) split screen down the middle
   T-Shirt shape
-  Write missing descriptions
+  Write missing descriptions:
+    BeastBoy
+    Cyborg
+    DoctorDoom
+    GeneralZod
+    GreenArrow
+    HarleyQuinn
+    Hawkeye
+    Hawkgirl
+    Hawkman
+    LegionOfDoom
+    LexLuther
+    Raven
+    Riddler
+    Scarecrow
+    Sphinx
+    StaticShock
