@@ -32,7 +32,7 @@ body > div.loading {
   background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 2s ease .5s;
+  transition: opacity 1.75s ease .25s;
   opacity: 1;
   &.complete {
     opacity: 0;
@@ -70,8 +70,8 @@ button {
   &.lock, &.unlock {
     padding: 0;
     margin-top: 0;
-    width: 32px;
-		height: 32px;
+    width: 28px;
+		height: 28px;
     transform: translateY(-4px);
     border: none;
   }
@@ -90,67 +90,53 @@ image-card tool-tip {
 main {
   text-align: center;
 }
-
 @mixin threeColorAnimation($color1, $color2, $color3) {
   0% {
     color: $color2;
-    background: linear-gradient(90deg, $color2, $color3);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  12% {
-    color: $color1;
-    background: $color1;
+    background: $color2;
     background: linear-gradient(90deg, $color1, $color2, $color3);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  25% {
-    color: $color1;
-    background: $color1;
+  16.7% {
+    color: $color2;
+    background: $color2;
     background: linear-gradient(90deg, $color1, $color2);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  37% {
-    color: $color2;
-    background: $color2;
-    background: linear-gradient(90deg, $color1, $color2, $color1);
+  33.3% {
+    color: $color1;
+    background: $color1;
+    background: linear-gradient(90deg, $color3, $color1, $color2);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   50% {
-    color: $color2;
-    background: $color2;
-    background: linear-gradient(90deg, $color2, $color1);
+    color: $color1;
+    background: $color1;
+    background: linear-gradient(90deg, $color3, $color1);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  62% {
+  66.7% {
     color: $color3;
     background: $color3;
-    background: linear-gradient(90deg, $color3, $color2, $color1);
+    background: linear-gradient(90deg, $color2, $color3, $color1);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  75% {
+  83.3% {
     color: $color3;
     background: $color3;
-    background: linear-gradient(90deg, $color3, $color2);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  87% {
-    color: $color3;
-    background: $color3;
-    background: linear-gradient(90deg, $color3, $color2, $color3);
+    background: linear-gradient(90deg, $color2, $color3);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   100% {
     color: $color2;
     background: $color2;
-    background: linear-gradient(90deg, $color2, $color3);
+    background: linear-gradient(90deg, $color1, $color2, $color3);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
@@ -162,17 +148,20 @@ main {
   background: linear-gradient(90deg, $color2, $color3);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation-duration: .7s;
+  animation-duration: .4s;
   animation-name: $name;
   animation-iteration-count: infinite;
 }
 
 .limited {
   &.halloween {
-    @include limitedAppearence(halloween, #b96c01, $white)
+    @include limitedAppearence(halloween, #b96c01, $white);
   }
   &.thanksgiving {
-    @include limitedAppearence(thanksgiving, #f1b930, #859d3c)
+    @include limitedAppearence(thanksgiving, #f1b930, #859d3c);
+  }
+  &.christmas {
+    @include limitedAppearence(christmas, #468e40, #9c3b3b);
   }
 }
 
@@ -181,4 +170,7 @@ main {
 }
 @keyframes thanksgiving {
   @include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
+}
+@keyframes christmas {
+  @include threeColorAnimation($white, #468e40, #9c3b3e);
 }

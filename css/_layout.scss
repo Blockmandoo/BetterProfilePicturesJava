@@ -1,9 +1,4 @@
 // main: style.scss
-main {
-	padding: 0 18px;
-	width: 95%;
-	margin: auto;
-}
 body > div.loading {
 	position: fixed;
 	top: 0;
@@ -80,12 +75,17 @@ button {
 	}
 }
 main {
+	width: 95%;
+	margin: auto;
 	padding: 20px 0 80px;
 	div {
 		margin-bottom: 15px;
 	}
 	.description {
 		margin-bottom: 4px;
+	}
+	> div > p + p, > div > br + p {
+		margin-top: 8px;
 	}
 }
 .hidden {

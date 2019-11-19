@@ -66,6 +66,9 @@ $white: white;
 	&.FallRed {@include buttons(#c54a26, #ed732e);}
 	&.FallOrange {@include buttonsLight(#f2912b, #f8b12c);}
 	&.FallGreen {@include buttonsLight(#bba62c, #f8b02a);}
+	/* -- ThanksGiving -- */
+	&.BerryRed {@include buttons(#850c10, #fe363b);}
+	&.MistletoeGreen {@include buttons(#1b7912, #55fe31);}
 }
 button.disabled {
 	background: #777 !important;

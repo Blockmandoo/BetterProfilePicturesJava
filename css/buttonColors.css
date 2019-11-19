@@ -2,6 +2,7 @@
   /* Holiday colors */
   /* -- Halloween -- */
   /* -- ThanksGiving -- */
+  /* -- ThanksGiving -- */
 }
 
 #buttons.Amethyst button {
@@ -6613,6 +6614,234 @@
 }
 
 #buttons.FallGreen button.toggle:hover label {
+  background: #1f1f1f;
+}
+
+#buttons.BerryRed button {
+  background: #850c10;
+  border-color: #fe363b;
+  color: white;
+}
+
+#buttons.BerryRed button:hover {
+  background: #fe363b;
+  border-color: #850c10;
+  color: #1f1f1f;
+}
+
+#buttons.BerryRed button#download {
+  background: #850c10;
+  border-color: #fe363b;
+  color: white;
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#850c10, #850c10);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.BerryRed button#download:hover {
+  background: #fe363b;
+  border-color: #850c10;
+  color: #1f1f1f;
+}
+
+#buttons.BerryRed button#download:hover {
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#fe363b, #fe363b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.BerryRed button#upload {
+  background: #850c10;
+  border-color: #fe363b;
+  color: white;
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#850c10, #850c10);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.BerryRed button#upload:hover {
+  background: #fe363b;
+  border-color: #850c10;
+  color: #1f1f1f;
+}
+
+#buttons.BerryRed button#upload:hover {
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#fe363b, #fe363b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.BerryRed button#share {
+  background: #850c10;
+  border-color: #fe363b;
+  color: white;
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#850c10, #850c10);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#850c10, #850c10);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.BerryRed button#share:hover {
+  background: #fe363b;
+  border-color: #850c10;
+  color: #1f1f1f;
+}
+
+#buttons.BerryRed button#share:hover {
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#fe363b, #fe363b);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#fe363b, #fe363b);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.BerryRed button.toggle {
+  background: #850c10;
+  border-color: #fe363b;
+}
+
+#buttons.BerryRed button.toggle label {
+  background: white;
+}
+
+#buttons.BerryRed button.toggle:hover {
+  background: #fe363b;
+  border-color: #850c10;
+}
+
+#buttons.BerryRed button.toggle:hover label {
+  background: #1f1f1f;
+}
+
+#buttons.MistletoeGreen button {
+  background: #1b7912;
+  border-color: #55fe31;
+  color: white;
+}
+
+#buttons.MistletoeGreen button:hover {
+  background: #55fe31;
+  border-color: #1b7912;
+  color: #1f1f1f;
+}
+
+#buttons.MistletoeGreen button#download {
+  background: #1b7912;
+  border-color: #55fe31;
+  color: white;
+  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Download.png"), linear-gradient(#1b7912, #1b7912);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.MistletoeGreen button#download:hover {
+  background: #55fe31;
+  border-color: #1b7912;
+  color: #1f1f1f;
+}
+
+#buttons.MistletoeGreen button#download:hover {
+  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#55fe31, #55fe31);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.MistletoeGreen button#upload {
+  background: #1b7912;
+  border-color: #55fe31;
+  color: white;
+  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Upload.png"), linear-gradient(#1b7912, #1b7912);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.MistletoeGreen button#upload:hover {
+  background: #55fe31;
+  border-color: #1b7912;
+  color: #1f1f1f;
+}
+
+#buttons.MistletoeGreen button#upload:hover {
+  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#55fe31, #55fe31);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.MistletoeGreen button#share {
+  background: #1b7912;
+  border-color: #55fe31;
+  color: white;
+  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#1b7912, #1b7912);
+  background: url("../assets/symbols/Link.png"), linear-gradient(#1b7912, #1b7912);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
+
+#buttons.MistletoeGreen button#share:hover {
+  background: #55fe31;
+  border-color: #1b7912;
+  color: #1f1f1f;
+}
+
+#buttons.MistletoeGreen button#share:hover {
+  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#55fe31, #55fe31);
+  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#55fe31, #55fe31);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#buttons.MistletoeGreen button.toggle {
+  background: #1b7912;
+  border-color: #55fe31;
+}
+
+#buttons.MistletoeGreen button.toggle label {
+  background: white;
+}
+
+#buttons.MistletoeGreen button.toggle:hover {
+  background: #55fe31;
+  border-color: #1b7912;
+}
+
+#buttons.MistletoeGreen button.toggle:hover label {
   background: #1f1f1f;
 }
 

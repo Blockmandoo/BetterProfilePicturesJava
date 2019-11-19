@@ -26,12 +26,6 @@ h1 {
   font-size: 1.5em;
 }
 
-main {
-  padding: 0 18px;
-  width: 95%;
-  margin: auto;
-}
-
 body > div.loading {
   position: fixed;
   top: 0;
@@ -121,6 +115,8 @@ button.toggle label.checked {
 }
 
 main {
+  width: 95%;
+  margin: auto;
   padding: 20px 0 80px;
 }
 
@@ -130,6 +126,10 @@ main div {
 
 main .description {
   margin-bottom: 4px;
+}
+
+main > div > p + p, main > div > br + p {
+  margin-top: 8px;
 }
 
 .hidden {
@@ -190,6 +190,9 @@ image-card.holiday {
 
 /*Short Device*/
 @media (max-height: 600px) {
+  .choiceCount {
+    display: none;
+  }
   img {
     height: 60px;
     width: 60px;
@@ -213,6 +216,9 @@ image-card.holiday {
 
 /*Phone*/
 @media (max-width: 500px) {
+  .choiceCount {
+    display: none;
+  }
   img {
     height: 60px;
     width: 60px;
@@ -515,7 +521,7 @@ body > div.loading {
   background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 2s ease .5s;
+  transition: opacity 1.75s ease .25s;
   opacity: 1;
 }
 
@@ -675,8 +681,8 @@ button {
 button.lock, button.unlock {
   padding: 0;
   margin-top: 0;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   transform: translateY(-4px);
   border: none;
 }
@@ -705,7 +711,7 @@ main {
   background: linear-gradient(90deg, #b96c01, #dcdcdc);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation-duration: .7s;
+  animation-duration: .4s;
   animation-name: halloween;
   animation-iteration-count: infinite;
 }
@@ -716,71 +722,69 @@ main {
   background: linear-gradient(90deg, #f1b930, #859d3c);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation-duration: .7s;
+  animation-duration: .4s;
   animation-name: thanksgiving;
+  animation-iteration-count: infinite;
+}
+
+.limited.christmas {
+  color: #468e40;
+  background: #468e40;
+  background: linear-gradient(90deg, #468e40, #9c3b3b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .4s;
+  animation-name: christmas;
   animation-iteration-count: infinite;
 }
 
 @keyframes halloween {
   0% {
     color: #b96c01;
-    background: linear-gradient(90deg, #b96c01, #dcdcdc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  12% {
-    color: #1f1f1f;
-    background: #1f1f1f;
+    background: #b96c01;
     background: linear-gradient(90deg, #1f1f1f, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  25% {
-    color: #1f1f1f;
-    background: #1f1f1f;
+  16.7% {
+    color: #b96c01;
+    background: #b96c01;
     background: linear-gradient(90deg, #1f1f1f, #b96c01);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  37% {
-    color: #b96c01;
-    background: #b96c01;
-    background: linear-gradient(90deg, #1f1f1f, #b96c01, #1f1f1f);
+  33.3% {
+    color: #1f1f1f;
+    background: #1f1f1f;
+    background: linear-gradient(90deg, #dcdcdc, #1f1f1f, #b96c01);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   50% {
-    color: #b96c01;
-    background: #b96c01;
-    background: linear-gradient(90deg, #b96c01, #1f1f1f);
+    color: #1f1f1f;
+    background: #1f1f1f;
+    background: linear-gradient(90deg, #dcdcdc, #1f1f1f);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  62% {
+  66.7% {
     color: #dcdcdc;
     background: #dcdcdc;
-    background: linear-gradient(90deg, #dcdcdc, #b96c01, #1f1f1f);
+    background: linear-gradient(90deg, #b96c01, #dcdcdc, #1f1f1f);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  75% {
+  83.3% {
     color: #dcdcdc;
     background: #dcdcdc;
-    background: linear-gradient(90deg, #dcdcdc, #b96c01);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  87% {
-    color: #dcdcdc;
-    background: #dcdcdc;
-    background: linear-gradient(90deg, #dcdcdc, #b96c01, #dcdcdc);
+    background: linear-gradient(90deg, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   100% {
     color: #b96c01;
     background: #b96c01;
-    background: linear-gradient(90deg, #b96c01, #dcdcdc);
+    background: linear-gradient(90deg, #1f1f1f, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
@@ -789,63 +793,102 @@ main {
 @keyframes thanksgiving {
   0% {
     color: #f1b930;
-    background: linear-gradient(90deg, #f1b930, #859d3c);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  12% {
-    color: #6c2f00;
-    background: #6c2f00;
+    background: #f1b930;
     background: linear-gradient(90deg, #6c2f00, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  25% {
-    color: #6c2f00;
-    background: #6c2f00;
+  16.7% {
+    color: #f1b930;
+    background: #f1b930;
     background: linear-gradient(90deg, #6c2f00, #f1b930);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  37% {
-    color: #f1b930;
-    background: #f1b930;
-    background: linear-gradient(90deg, #6c2f00, #f1b930, #6c2f00);
+  33.3% {
+    color: #6c2f00;
+    background: #6c2f00;
+    background: linear-gradient(90deg, #859d3c, #6c2f00, #f1b930);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   50% {
-    color: #f1b930;
-    background: #f1b930;
-    background: linear-gradient(90deg, #f1b930, #6c2f00);
+    color: #6c2f00;
+    background: #6c2f00;
+    background: linear-gradient(90deg, #859d3c, #6c2f00);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  62% {
+  66.7% {
     color: #859d3c;
     background: #859d3c;
-    background: linear-gradient(90deg, #859d3c, #f1b930, #6c2f00);
+    background: linear-gradient(90deg, #f1b930, #859d3c, #6c2f00);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  75% {
+  83.3% {
     color: #859d3c;
     background: #859d3c;
-    background: linear-gradient(90deg, #859d3c, #f1b930);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  87% {
-    color: #859d3c;
-    background: #859d3c;
-    background: linear-gradient(90deg, #859d3c, #f1b930, #859d3c);
+    background: linear-gradient(90deg, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   100% {
     color: #f1b930;
     background: #f1b930;
-    background: linear-gradient(90deg, #f1b930, #859d3c);
+    background: linear-gradient(90deg, #6c2f00, #f1b930, #859d3c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes christmas {
+  0% {
+    color: #468e40;
+    background: #468e40;
+    background: linear-gradient(90deg, #dcdcdc, #468e40, #9c3b3e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  16.7% {
+    color: #468e40;
+    background: #468e40;
+    background: linear-gradient(90deg, #dcdcdc, #468e40);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  33.3% {
+    color: #dcdcdc;
+    background: #dcdcdc;
+    background: linear-gradient(90deg, #9c3b3e, #dcdcdc, #468e40);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  50% {
+    color: #dcdcdc;
+    background: #dcdcdc;
+    background: linear-gradient(90deg, #9c3b3e, #dcdcdc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  66.7% {
+    color: #9c3b3e;
+    background: #9c3b3e;
+    background: linear-gradient(90deg, #468e40, #9c3b3e, #dcdcdc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  83.3% {
+    color: #9c3b3e;
+    background: #9c3b3e;
+    background: linear-gradient(90deg, #468e40, #9c3b3e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  100% {
+    color: #468e40;
+    background: #468e40;
+    background: linear-gradient(90deg, #dcdcdc, #468e40, #9c3b3e);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }

@@ -224,9 +224,7 @@ function getHoliday() {
 	switch (month) {
 		case 0: //January
 			showHoliday("chineseNewYear");
-			if (day < 2) {
-				showHoliday("newYear");
-			}
+			if (day < 2) {showHoliday("newYear");}
 			break;
 		case 1: //Febuary
 			showHoliday("chineseNewYear");
@@ -258,17 +256,13 @@ function getHoliday() {
 			break;
 		case 10: //November
 			showHoliday("thanksgiving");
-			if (day > 27) {
-				showHoliday("christmas");
-			}
+			if (day > 27) {showHoliday("christmas");}
 			break;
 		case 11: //December
 			showHoliday("christmas");
 			showHoliday("hanukkah");
 			showHoliday("yule");
-			if (day > 20) {
-				showHoliday("newYear");
-			}
+			if (day > 20) {showHoliday("newYear");}
 			break;
 	}
 

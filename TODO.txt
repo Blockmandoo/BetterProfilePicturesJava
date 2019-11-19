@@ -1,16 +1,35 @@
 Logos:
-  Villains:
-    -x-Joker
-    -x-Poison Ivy
-    -x-Two face
-    Slade
+  Games:
+    Dungeons and Dragons
+  Heroes:
+    Thundercats
   Other:
     Deathly Hallows
     Overwatch heroes
     Pin
+  Shows:
+    Avatar
+    Black Mirror
+    Code Geass
+    Death Note
+    Doctor Who
+    Dragon Prince
+    Fullmetal Alchemist
+    Futurama
+    Gravity Falls
+    Sailor Moon
+    Seven Deadly Sins
+    Spongebob?
+    Star Trek
+    Star Wars
+    Steven Universe?
+    X Files
+  Villains:
+    Galactus
+    Slade
+    Venom
 
 Features:
-  Border Options
   Buttons:
     Download form submit button
     Search box

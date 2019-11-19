@@ -13,8 +13,8 @@
 
 /*Short Device*/
 @media (max-height: 600px) {
-  body > div.loading {
-    // display: none;
+  .choiceCount {
+    display: none;
   }
   img {
     height: 60px;
@@ -40,8 +40,8 @@
 
 /*Phone*/
 @media (max-width: 500px) {
-  body > div.loading {
-    // display: none;
+  .choiceCount {
+    display: none;
   }
   img {
   	height: $phoneImgSize;
