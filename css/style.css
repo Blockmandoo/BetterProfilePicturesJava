@@ -1,4 +1,5 @@
 @import url(buttonColors.css);
+/*Reset*/
 html, body, h1, h2, h3, h4, h5, p {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -24,6 +25,24 @@ h2 {
 
 h1 {
   font-size: 1.5em;
+}
+
+/*Layout*/
+body {
+  display: grid;
+  grid-template: "navi navi" "banner banner" "body body";
+}
+
+body > nav {
+  grid-area: navi;
+}
+
+body > section#banner {
+  grid-area: banner;
+}
+
+body > main {
+  grid-area: body;
 }
 
 body > div.loading {
@@ -84,7 +103,7 @@ nav > * {
 }
 
 #banner > aside > * {
-  margin: 10px 0px;
+  margin: 10px 0 0;
 }
 
 #banner input {
@@ -206,6 +225,63 @@ image-card.holiday {
   #banner #description {
     display: none;
   }
+  /*Short, Semi-Thick Device*/
+}
+
+@media (max-height: 600px) and (min-width: 500.1px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+    grid-template: "navi navi" "banner body" !important;
+    grid-auto-columns: 225px 1fr;
+    grid-auto-rows: 37px 1fr;
+  }
+  body > main {
+    height: 100%;
+    width: 99%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  body > main > :first-child {
+    margin-top: 25px;
+  }
+  body > section#head, body nav {
+    position: static;
+  }
+  body > section#head h1 {
+    width: auto;
+    border-bottom: none;
+  }
+  body > section#head h1::after {
+    content: "";
+    width: 90%;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    background: #aaa;
+    margin: auto;
+  }
+  body > #banner {
+    align-content: center;
+    text-align: center;
+    grid-template: "canvas" "description";
+  }
+  body > #banner > a#canvasLink {
+    text-align: center;
+  }
+  body > #banner > a#canvasLink canvas {
+    margin-left: 5px;
+  }
+  body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
+    display: block;
+  }
+  body > #banner > aside {
+    margin: auto;
+  }
+  body > #banner > aside > * {
+    margin: auto;
+  }
 }
 
 @media (max-height: 600px) and (max-width: 500px) {
@@ -236,6 +312,9 @@ image-card.holiday {
   }
   #banner > a#canvasLink {
     text-align: center;
+  }
+  #banner input#shareLink, #banner span#shareText:not(.hidden) {
+    display: block;
   }
   #banner aside {
     max-width: none;
@@ -275,6 +354,7 @@ image-card.holiday {
   }
 }
 
+/*Mode Transitions*/
 body::before, #banner, tool-tip {
   transition: background 1s ease, background-image 1s ease, color .4s ease;
 }
@@ -283,7 +363,7 @@ img, button.lock, button.unlock, nav {
   transition: background 1s ease, background-image 1s ease;
 }
 
-h1, h2, h3, h4, h5, p, nav a {
+h1, h2, h3, h4, h5, p {
   transition: color .4s ease;
 }
 
@@ -303,9 +383,9 @@ body.lightMode .darkMode {
 
 body.lightMode::before {
   content: "";
-  background: -webkit-linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
-  background: linear-gradient(rgba(179, 176, 170, 0.85) 25%, #aaa), url("../assets/6x6.png");
+  background: -webkit-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
+  background: -o-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
+  background: linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
   position: fixed;
@@ -317,7 +397,7 @@ body.lightMode::before {
   z-index: -1;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-height: 600px) {
   body.lightMode::before {
     background-size: 100%, 360px;
   }
@@ -341,7 +421,7 @@ body.lightMode nav > a:not(:last-child) {
 }
 
 body.lightMode nav > a:hover {
-  background: rgba(74, 118, 134, 0.2);
+  background: rgba(74, 118, 134, 0.3);
   color: white;
   text-decoration: none;
 }
@@ -415,9 +495,9 @@ body.darkMode .lightMode {
 
 body.darkMode::before {
   content: "";
-  background: -webkit-linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background: linear-gradient(rgba(56, 56, 56, 0.9) 25%, #383838), url("../assets/6x6.png");
+  background: -webkit-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
+  background: -o-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
+  background: linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
   position: fixed;
@@ -429,7 +509,7 @@ body.darkMode::before {
   z-index: -1;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-height: 600px) {
   body.darkMode::before {
     background-size: 100%, 360px;
   }
@@ -453,7 +533,7 @@ body.darkMode nav > a:not(:last-child) {
 }
 
 body.darkMode nav > a:hover {
-  background: rgba(247, 255, 203, 0.2);
+  background: rgba(247, 255, 203, 0.4);
   color: #1f1f1f;
   text-decoration: none;
 }
@@ -515,6 +595,7 @@ body.darkMode a:hover {
   color: #fe7a2b;
 }
 
+/*Styles*/
 body > div.loading {
   background: #303030;
   background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
@@ -535,6 +616,10 @@ body > div.loading.complete {
 
 #banner a:hover {
   text-decoration: underline;
+}
+
+nav > a {
+  transition: background .4s ease, color .6s ease;
 }
 
 canvas, button {

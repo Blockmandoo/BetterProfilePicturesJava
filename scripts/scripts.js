@@ -174,7 +174,7 @@ function darkmodeCheck() {
 function darkmodeToggle() {
 	var body = document.querySelector("body");
 	var toggle = document.querySelector("label[for='darkmode']");
-	if (body.classList[0] == "darkMode") {
+	if (body.classList[0] === "darkMode") {
 		body.className = "lightMode";
 		toggle.className = "checked";
 		setCookie("darkmode", "false");
@@ -206,10 +206,10 @@ function getCookie(cname) {
   var cookieArray = decodedCookie.split(';');
   for(var i = 0; i <cookieArray.length; i++) {
     var cookieVar = cookieArray[i];
-    while (cookieVar.charAt(0) == ' ') {
+    while (cookieVar.charAt(0) === ' ') {
       cookieVar = cookieVar.substring(1);
     }
-    if (cookieVar.indexOf(name) == 0) {
+    if (cookieVar.indexOf(name) === 0) {
       return cookieVar.substring(name.length, cookieVar.length);
     }
   }
@@ -261,6 +261,7 @@ function getHoliday() {
 		case 11: //December
 			showHoliday("christmas");
 			showHoliday("hanukkah");
+			showHoliday("kwanzaa");
 			showHoliday("yule");
 			if (day > 20) {showHoliday("newYear");}
 			break;
@@ -332,7 +333,7 @@ function randomishIcon() {
 		//Background locked
 		var backgroundColorName = document.querySelector("#backgroundColor image-card.active").getAttribute("name");
 		for (var i = 0; i < backgroundSchemes.length; i++) {
-			if (backgroundSchemes[i].backgroundColor == backgroundColorName) {
+			if (backgroundSchemes[i].backgroundColor === backgroundColorName) {
 				backgroundColorIndex = i;
 				break;
 			}
@@ -349,7 +350,7 @@ function randomishIcon() {
 		if (document.querySelector("#logoColor .lock")) {
 			var logoColorName = document.querySelector("#logoColor image-card.active").getAttribute("name");
 			for (var i = 0; i < logoSchemes.length; i++) {
-				if (logoSchemes[i].logoColor == logoColorName) {
+				if (logoSchemes[i].logoColor === logoColorName) {
 					logoColorIndex = i;
 					break;
 				}
@@ -457,7 +458,7 @@ function setIcon() {
 
 //Random icon lock switch
 function swapLock(button) {
-	if (button.className == "lock") {
+	if (button.className === "lock") {
 		button.className = "unlock";
 	} else {
 		button.className = "lock";

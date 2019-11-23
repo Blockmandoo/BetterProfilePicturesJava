@@ -1,4 +1,5 @@
 // main: style.scss
+
 /*Mobile layout*/
 
 /*Tablet*/
@@ -31,6 +32,65 @@
       display: none;
     }
   }
+  /*Short, Semi-Thick Device*/
+  @media (min-width: 500.1px) {
+    body {
+      overflow: hidden;
+      height: 100vh;
+    	grid-template:
+    		"navi navi"
+    		"banner body"
+        !important;
+      grid-auto-columns: 225px 1fr;
+      grid-auto-rows: 37px 1fr;
+      > main {
+        height: 100%;
+        width: 99%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0;
+        > :first-child {
+          margin-top: 25px;
+        }
+      }
+      > section#head, nav {
+        position: static;
+      }
+      > section#head h1 {
+        width: auto;
+        border-bottom: none;
+        &::after {
+          content: "";
+          width: 90%;
+          height: 3px;
+          display: block;
+          border-radius: 2px;
+          background: #aaa;
+          margin: auto;
+        }
+      }
+      > #banner {
+        align-content: center;
+        text-align: center;
+      	grid-template: "canvas" "description";
+        > a#canvasLink {
+          text-align: center;
+          canvas {
+            margin-left: 5px;
+          }
+        }
+        input#shareLink, span#shareText:not(.hidden) {
+          display: block;
+        }
+        > aside {
+          margin: auto;
+          > * {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
   @media (max-width: 500px) {
     #title {
       text-align: center;
@@ -59,6 +119,9 @@
   	grid-template: "canvas" "description";
     >a#canvasLink {
       text-align: center;
+    }
+    input#shareLink, span#shareText:not(.hidden) {
+      display: block;
     }
     aside {
       max-width: none;

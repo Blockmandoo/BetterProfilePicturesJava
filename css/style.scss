@@ -26,6 +26,7 @@ $toggleWidth: 55px;
 @import "_darkmode";
 // General Stylings
 
+/*Styles*/
 body > div.loading {
   background: #303030;
   background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
@@ -43,6 +44,9 @@ body > div.loading {
   &:hover {
     text-decoration: underline;
   }
+}
+nav > a {
+  transition: background .4s ease, color .6s ease;
 }
 canvas, button {
   filter: drop-shadow(4px 4px 4px $transparentBlack);

@@ -1,13 +1,30 @@
 // main: style.scss
-body > div.loading {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-  z-index: 100;
-	&.complete {
-		pointer-events: none;
+/*Layout*/
+body {
+	display: grid;
+	grid-template:
+		"navi navi"
+		"banner banner"
+		"body body";
+	> nav {
+		grid-area: navi;
+	}
+	> section#banner {
+		grid-area: banner;
+	}
+	> main {
+		grid-area: body;
+	}
+	> div.loading {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	  z-index: 100;
+		&.complete {
+			pointer-events: none;
+		}
 	}
 }
 nav {
@@ -46,7 +63,7 @@ nav {
 			min-width: 300px;
 		}
 		>* {
-			margin: 10px 0px;
+			margin: 10px 0 0;
 		}
 	}
 	input {

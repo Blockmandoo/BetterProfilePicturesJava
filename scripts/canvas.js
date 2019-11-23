@@ -41,7 +41,7 @@ function makeImage() {
 	logoImage.src = "assets/" + globalGenre + "/" + globalLogo + ".png";
 
 	//Change logo location if color is set to black.
-	if (globalLogoColor == "Black") {
+	if (globalLogoColor === "Black") {
 		logoImage.src = "assets/darkMode/" + globalGenre + "/" + globalLogo + ".png";
 	}
 
@@ -86,7 +86,7 @@ function makeImage() {
 		case "Pentagon":
 			borderOffset = 24;
 			break;
-		case "Septagon":
+		case "Heptagon":
 			borderOffset = 13;
 			break;
 		default:
