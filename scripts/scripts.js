@@ -7,27 +7,34 @@ var backgroundColorNames = [],
 
 //Activate active cards
 function activateCards() {
-	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").className = "active";
-	document.querySelector("#logo [name='" + globalLogo + "']").className = "active";
-	document.querySelector("#logoColor [name='" + globalLogoColor + "']").className = "active";
-	document.querySelector("#shape [name='" + globalShape + "']").className = "active";
-	document.querySelector("#backgroundStyle [name='" + globalBackgroundStyle + "']").className = "active";
+	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").classList.add("active");
+	document.querySelector("#logo [name='" + globalLogo + "']").classList.add("active");
+	document.querySelector("#logoColor [name='" + globalLogoColor + "']").classList.add("active");
+	document.querySelector("#shape [name='" + globalShape + "']").classList.add("active");
+	document.querySelector("#backgroundStyle [name='" + globalBackgroundStyle + "']").classList.add("active");
 }
 
 //Apply the total to the combination span
 function applyCount() {
 	//Count all the image-card elements in a div
 	function getChoiceCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday)");
+		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday):not(.searchHidden)");
 		return images.length;
 	}
 
-	//Count all the image-card elements in a div
+	//Count all the holiday image-card elements in a div
 	function getHolidayCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card.activeHoliday");
+		var images = document.querySelectorAll("div#" + catagory + " image-card.activeHoliday:not(.searchHidden)");
 		return images.length;
 	}
 
+	//Count all the search image-card elements in a div
+	function getSearchCount(catagory) {
+		var images = document.querySelectorAll("div#" + catagory + " image-card.searchHidden");
+		return images.length;
+	}
+
+	//Get the final count for the catagory
 	function getBothCount(catagory) {
 		return getChoiceCount(catagory) + getHolidayCount(catagory);
 	}
@@ -395,6 +402,105 @@ function randomishIcon() {
 	}
 	if (document.querySelector("#shape .unlock")) {
 		setShape(shapeNames[shapeIndex]);
+	}
+}
+
+//Search for a desired choice
+function search() {
+  //Un-hide all search results
+  var hidden = document.querySelectorAll(".searchHidden");
+  for (var i = 0; i < hidden.length; i++) {
+    hidden[i].classList.remove("searchHidden");
+  }
+
+  //Execute if there is a search
+  var searchValue = document.querySelector("#searchBox").value.toUpperCase();
+  if (searchValue !== "") {
+    //Hide logo choices
+    document.querySelector("#logo").classList.add("hidden");
+    var activeCard = document.querySelector("#genre > image-card.active")
+    if (activeCard) {
+      activeCard.classList.remove("active");
+    }
+
+    //Hide paragraphs in catagories if there is a search
+		hideElement("main > div > p:not(.description)");
+		hideElement("main > div > br");
+  }
+
+  var allCards = document.querySelectorAll("div:not(#genre) image-card");
+  for (var i = 0; i < allCards.length; i++) {
+    var card = allCards[i];
+
+    //Count valid matches
+    var nameAmount = checkAmount(card, "name");
+    var headAmount = checkAmount(card, "head");
+    var descriptionAmount = checkAmount(card, "description");
+    var keywordsAmount = checkAmount(card, "keywords");
+    var tooltipAmount = checkHTMLAmount(card, "tool-tip");
+
+    //Hide all image-cards that do not match the search in any way
+    if (nameAmount === -1 && headAmount === -1 && descriptionAmount === -1 && keywordsAmount === -1 && tooltipAmount === -1) {
+      card.classList.add("searchHidden");
+    }
+  }
+
+  //Hide any genre that is empty
+  var genreCards = document.querySelectorAll("#genre image-card");
+  for (var i = 0; i < genreCards.length; i++) {
+    var genreName = genreCards[i].getAttribute("name");
+    var options = document.querySelectorAll("#" + genreName + " image-card:not(.searchHidden)");
+    if (options.length === 0) {
+			hideElement("image-card[name="+ genreName +"]");
+      // var hiddenContent = document.querySelector("image-card[name="+ genreName +"]");
+      // hiddenContent.classList.add("searchHidden");
+    }
+  }
+
+  //Hide any option group that is empty
+  var catagoryDivs = document.querySelectorAll("main > div");
+  for (var i = 0; i < catagoryDivs.length; i++) {
+    var didElement = catagoryDivs[i]
+    var options = didElement.querySelectorAll("image-card:not(.searchHidden)");
+    if (options.length === 0) {
+      didElement.classList.add("searchHidden");
+    }
+  }
+
+  //If there are no possible options, display no search results
+  var hiddenDivs = document.querySelectorAll("main > div:not(.searchHidden)");
+  var noResults = document.querySelector("#noResults");
+  if (hiddenDivs.length !== 0) {
+    noResults.classList.add("hidden");
+  } else {
+    noResults.classList.remove("hidden");
+  }
+
+  applyCount();
+
+	//Check index of search, and if there are no results return -1
+  function checkAmount(card, name) {
+    var checkValue = card.getAttribute(name)
+    if (checkValue) {
+      return checkValue.toUpperCase().indexOf(searchValue);
+    } else {
+      return -1;
+    }
+  }
+	//Check index of search in tool-tip, and if there are no results return -1
+  function checkHTMLAmount(checkValue) {
+    if (checkValue) {
+      return checkValue.innerHTML.toUpperCase().indexOf(searchValue);
+    } else {
+      return -1;
+    }
+  }
+	//Hide elements with a special searchHidden class
+	function hideElement(cssID) {
+		var elements = document.querySelectorAll(cssID);
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.add("searchHidden");
+    }
 	}
 }
 

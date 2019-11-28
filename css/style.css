@@ -35,14 +35,82 @@ body {
 
 body > nav {
   grid-area: navi;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 
-body > section#banner {
+body > nav > * {
+  text-align: center;
+  padding: .6em;
+}
+
+body > #banner {
   grid-area: banner;
+  position: sticky;
+  top: 37px;
+  z-index: 2;
+  padding: 20px 0;
+  display: grid;
+  grid-template: ". canvas description .";
+}
+
+body > #banner > a#canvasLink {
+  grid-area: canvas;
+  text-align: right;
+}
+
+body > #banner > a#canvasLink canvas {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+body > #banner > aside {
+  grid-area: description;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+body > #banner > aside #description {
+  min-height: 80px;
+  min-width: 300px;
+}
+
+body > #banner > aside > * {
+  margin: 10px 0 0;
+}
+
+body > #banner input {
+  width: 0;
 }
 
 body > main {
   grid-area: body;
+  width: 95%;
+  margin: auto;
+  padding: 20px 0 80px;
+}
+
+body > main div {
+  margin-bottom: 15px;
+}
+
+body > main .description {
+  margin-bottom: 4px;
+}
+
+body > main > div > p + p, body > main > div > br + p {
+  margin-top: 8px;
+}
+
+body > main > #searchBox {
+  margin-bottom: 15px;
+  max-width: 300px;
+  width: 50%;
+  padding: 4px 10px 4px 25px;
 }
 
 body > div.loading {
@@ -56,58 +124,6 @@ body > div.loading {
 
 body > div.loading.complete {
   pointer-events: none;
-}
-
-nav {
-  z-index: 3;
-  position: sticky;
-  top: 0px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-}
-
-nav > * {
-  text-align: center;
-  padding: .6em;
-}
-
-#banner {
-  position: sticky;
-  top: 37px;
-  z-index: 2;
-  padding: 20px 0;
-  display: grid;
-  grid-template: ". canvas description .";
-}
-
-#banner > a#canvasLink {
-  grid-area: canvas;
-  text-align: right;
-}
-
-#banner > a#canvasLink canvas {
-  margin-right: 10px;
-  margin-left: 20px;
-}
-
-#banner > aside {
-  grid-area: description;
-  max-width: 400px;
-  margin-right: 20px;
-}
-
-#banner > aside #description {
-  min-height: 80px;
-  min-width: 300px;
-}
-
-#banner > aside > * {
-  margin: 10px 0 0;
-}
-
-#banner input {
-  width: 0;
 }
 
 button {
@@ -133,25 +149,7 @@ button.toggle label.checked {
   transform: translateX(29px);
 }
 
-main {
-  width: 95%;
-  margin: auto;
-  padding: 20px 0 80px;
-}
-
-main div {
-  margin-bottom: 15px;
-}
-
-main .description {
-  margin-bottom: 4px;
-}
-
-main > div > p + p, main > div > br + p {
-  margin-top: 8px;
-}
-
-.hidden {
+.hidden, .searchHidden {
   display: none;
 }
 
@@ -448,6 +446,20 @@ body.lightMode button.unlock {
   background-size: cover;
 }
 
+body.lightMode #searchBox {
+  background: transparent;
+  background-image: url("../assets/darkMode/symbols/Search.png"), linear-gradient(0deg, #1f1f1f -1750%, transparent 250%);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border: solid 2px #1f1f1f;
+  color: #1f1f1f;
+}
+
+body.lightMode #searchBox:focus {
+  border: solid 2px #bc5282;
+}
+
 body.lightMode image-card tool-tip {
   background: rgba(217, 217, 217, 0.75);
   border: 1px solid #383838;
@@ -558,6 +570,20 @@ body.darkMode button.lock {
 body.darkMode button.unlock {
   background: url("../assets/objects/Unlock.png");
   background-size: cover;
+}
+
+body.darkMode #searchBox {
+  background: transparent;
+  background-image: url("../assets/symbols/Search.png"), linear-gradient(0deg, #dcdcdc -1750%, transparent 250%);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border: solid 2px #dcdcdc;
+  color: #dcdcdc;
+}
+
+body.darkMode #searchBox:focus {
+  border: solid 2px #de464e;
 }
 
 body.darkMode image-card tool-tip {
@@ -770,6 +796,10 @@ button.lock, button.unlock {
   height: 28px;
   transform: translateY(-4px);
   border: none;
+}
+
+#searchBox {
+  border-radius: 20px;
 }
 
 image-card tool-tip {

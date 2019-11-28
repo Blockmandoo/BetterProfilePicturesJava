@@ -118,9 +118,9 @@ function setBackgroundColor(color) {
 	//Set active Color display
 	var activeColor = document.querySelector("#backgroundColor .active")
 	if (activeColor) {
-		activeColor.className = "";
+		activeColor.classList.remove("active");
 	}
-	document.querySelector("#backgroundColor [name='" + color + "']").className = "active";
+	document.querySelector("#backgroundColor [name='" + color + "']").classList.add("active");
 
 	updateImage();
 }
@@ -133,9 +133,9 @@ function setBackgroundStyle(style) {
 	//Set active Style display
 	var activeStyle = document.querySelector("#backgroundStyle .active")
 	if (activeStyle) {
-		activeStyle.className = "";
+		activeStyle.classList.remove("active");
 	}
-	document.querySelector("#backgroundStyle [name='" + style + "']").className = "active";
+	document.querySelector("#backgroundStyle [name='" + style + "']").classList.add("active");
 
 	globalBackgroundStyle = style;
 	updateImage();
@@ -151,9 +151,9 @@ function setGenre(genre) {
 	//Set active Genre display
 	var activeGenre = document.querySelector("#genre .active")
 	if (activeGenre) {
-		activeGenre.className = "";
+		activeGenre.classList.remove("active");
 	}
-	document.querySelector("#genre [name='" + tempGenre + "']").className = "active";
+	document.querySelector("#genre [name='" + tempGenre + "']").classList.add("active");
 
 	//Target the logo header and un-hide it.
 	var logosDiv = document.querySelector("#logo.hidden");
@@ -188,13 +188,13 @@ function setLogo(logo) {
 	//Set active Logo display
 	var activeLogo = document.querySelector("#logo .active")
 	if (activeLogo) {
-		activeLogo.className = "";
+		activeLogo.classList.remove("active");
 	}
 
 	//Sepcial case for shows
 	logo = logo.replace("/", "-");
 
-	document.querySelector("#logo #" + globalGenre + " [name='" + logo + "']").className = "active";
+	document.querySelector("#logo #" + globalGenre + " [name='" + logo + "']").classList.add("active");
 
 	updateImage();
 }
@@ -208,9 +208,9 @@ function setLogoColor(color) {
 	//Set active Color display
 	var activeColor = document.querySelector("#logoColor .active")
 	if (activeColor) {
-		activeColor.className = "";
+		activeColor.classList.remove("active");
 	}
-	document.querySelector("#logoColor [name='" + color + "']").className = "active";
+	document.querySelector("#logoColor [name='" + color + "']").classList.add("active");
 
 	updateImage();
 }
@@ -224,9 +224,9 @@ function setShape(shape) {
 	//Set active Shape display
 	var activeShape = document.querySelector("#shape .active")
 	if (activeShape) {
-		activeShape.className = "";
+		activeShape.classList.remove("active");
 	}
-	document.querySelector("#shape [name='" + shape + "']").className = "active";
+	document.querySelector("#shape [name='" + shape + "']").classList.add("active");
 
 	updateImage();
 }

@@ -8,12 +8,69 @@ body {
 		"body body";
 	> nav {
 		grid-area: navi;
+		z-index: 3;
+		position: sticky;
+		top: 0;
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		> * {
+			text-align: center;
+			padding: .6em;
+		}
 	}
-	> section#banner {
+	> #banner {
 		grid-area: banner;
+		position: sticky;
+		top: 37px;
+		z-index: 2;
+		padding: 20px 0;
+		display: grid;
+		grid-template: ". canvas description .";
+		> a#canvasLink {
+			grid-area: canvas;
+			text-align: right;
+			canvas {
+				margin-right: 10px;
+				margin-left: 20px;
+			}
+		}
+		> aside {
+			grid-area: description;
+			max-width: 400px;
+			margin-right: 20px;
+			#description {
+				min-height: 80px;
+				min-width: 300px;
+			}
+			> * {
+				margin: 10px 0 0;
+			}
+		}
+		input {
+			width: 0;
+		}
 	}
 	> main {
 		grid-area: body;
+		width: 95%;
+		margin: auto;
+		padding: 20px 0 80px;
+		div {
+			margin-bottom: 15px;
+		}
+		.description {
+			margin-bottom: 4px;
+		}
+		> div > p + p, > div > br + p {
+			margin-top: 8px;
+		}
+		> #searchBox {
+			margin-bottom: 15px;
+			max-width: 300px;
+			width: 50%;
+			padding: 4px 10px 4px 25px;
+		}
 	}
 	> div.loading {
 		position: fixed;
@@ -25,49 +82,6 @@ body {
 		&.complete {
 			pointer-events: none;
 		}
-	}
-}
-nav {
-	z-index: 3;
-	position: sticky;
-	top: 0px;
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: 1fr;
-	> * {
-		text-align: center;
-		padding: .6em;
-	}
-}
-#banner {
-	position: sticky;
-	top: 37px;
-	z-index: 2;
-	padding: 20px 0;
-	display: grid;
-	grid-template: ". canvas description .";
-	>a#canvasLink {
-		grid-area: canvas;
-		text-align: right;
-		canvas {
-			margin-right: 10px;
-			margin-left: 20px;
-		}
-	}
-	>aside {
-		grid-area: description;
-		max-width: 400px;
-		margin-right: 20px;
-		#description {
-			min-height: 80px;
-			min-width: 300px;
-		}
-		>* {
-			margin: 10px 0 0;
-		}
-	}
-	input {
-		width: 0;
 	}
 }
 button {
@@ -91,21 +105,7 @@ button {
 		}
 	}
 }
-main {
-	width: 95%;
-	margin: auto;
-	padding: 20px 0 80px;
-	div {
-		margin-bottom: 15px;
-	}
-	.description {
-		margin-bottom: 4px;
-	}
-	> div > p + p, > div > br + p {
-		margin-top: 8px;
-	}
-}
-.hidden {
+.hidden, .searchHidden {
 	display: none;
 }
 .invisible {

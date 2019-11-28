@@ -1,4 +1,5 @@
 // main: style.scss
+
 /*Light mode stylings*/
 body.lightMode {
 	background: $offwhite;
@@ -63,6 +64,18 @@ body.lightMode {
 	    background-size: cover;
 	  }
 	}
+	#searchBox {
+		background: transparent;
+		background-image: url('../assets/darkMode/symbols/Search.png'), linear-gradient(0deg, $black -1750%, transparent 250%);
+		background-size: contain;
+		background-position: left;
+		background-repeat: no-repeat;
+		border: solid 2px $black;
+		color: $black;
+		&:focus {
+			border: solid 2px #bc5282;
+		}
+	}
 	image-card {
 		tool-tip {
 			background: hsla(0, 0, 85, .75);
@@ -87,7 +100,6 @@ body.lightMode {
 			}
 		}
 	}
-
 	a {
 	  text-decoration: none;
 	  color: #a748a0;

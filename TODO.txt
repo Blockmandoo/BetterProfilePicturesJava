@@ -35,7 +35,6 @@ Logos:
 Features:
   Buttons:
     Download form submit button
-    Search box
     Upload images button
   Change Lightmode active green
   Color scrollbar
@@ -43,12 +42,12 @@ Features:
   Individual Random
   Overlay options
   Pages:
+    404 page
     Future plans page
     Setting page?
     Stats pages
     Suggestion page
   Reduce globals
-  Short browser (or tilted phone) split screen down the middle
   T-Shirt shape
   Write missing descriptions:
     BeastBoy
@@ -65,5 +64,4 @@ Features:
     Raven
     Riddler
     Scarecrow
-    Sphinx
     StaticShock
