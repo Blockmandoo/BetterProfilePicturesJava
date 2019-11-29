@@ -31,6 +31,7 @@ body > div.loading {
   background: #303030;
   background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
   background-size: 400px, cover;
+  @media (max-width: 500px), (max-height: 600px) {background-size: 300px, cover;}
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 1.75s ease .25s;

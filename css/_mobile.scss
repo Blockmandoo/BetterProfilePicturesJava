@@ -14,22 +14,24 @@
 
 /*Short Device*/
 @media (max-height: 600px) {
-  .choiceCount {
-    display: none;
-  }
-  img {
-    height: 60px;
-    width: 60px;
-  }
-  #banner {
-    canvas {
-      width: 33vh;
-    }
-    image-card > tool-tip {
+  body {
+    .choiceCount {
       display: none;
     }
-    #description {
-      display: none;
+    img {
+      height: 60px;
+      width: 60px;
+    }
+    #banner {
+      canvas {
+        width: 33vh;
+      }
+      image-card > tool-tip {
+        display: none;
+      }
+      #description {
+        display: none;
+      }
     }
   }
   /*Short, Semi-Thick Device*/
@@ -81,6 +83,7 @@
         }
         input#shareLink, span#shareText:not(.hidden) {
           display: block;
+          height: 0;
         }
         > aside {
           margin: auto;
@@ -100,37 +103,41 @@
 
 /*Phone*/
 @media (max-width: 500px) {
-  .choiceCount {
-    display: none;
-  }
-  img {
-  	height: $phoneImgSize;
-  	width: $phoneImgSize;
-  }
-  body p {
-    font-size: 15px;
-  }
-  nav {
-    font-size: .8em;
-  }
-  #banner {
-    top: 31px;
-    padding: 10px;
-  	grid-template: "canvas" "description";
-    > a#canvasLink {
+  body {
+    .choiceCount {
+      display: none;
+    }
+    img {
+    	height: $phoneImgSize;
+    	width: $phoneImgSize;
+    }
+    p {
+      font-size: 15px;
+    }
+    nav {
+      font-size: .8em;
+    }
+    > #banner {
+      top: 31px;
+      padding: 10px 0;
+    	grid-template: "canvas" "description";
+      > a#canvasLink {
+        text-align: center;
+      }
+      input#shareLink, span#shareText:not(.hidden) {
+        display: block;
+        height: 0;
+      }
+      aside {
+        max-width: none;
+        width: 100%;
+      }
+    }
+    #buttons {
       text-align: center;
     }
-    input#shareLink, span#shareText:not(.hidden) {
-      display: block;
-    }
-    aside {
-      max-width: none;
-      width: 100%;
-    }
   }
-  #buttons {
-    text-align: center;
-  }
+
 }
 
 /*SkinnyPhone*/

@@ -207,20 +207,20 @@ image-card.holiday {
 
 /*Short Device*/
 @media (max-height: 600px) {
-  .choiceCount {
+  body .choiceCount {
     display: none;
   }
-  img {
+  body img {
     height: 60px;
     width: 60px;
   }
-  #banner canvas {
+  body #banner canvas {
     width: 33vh;
   }
-  #banner image-card > tool-tip {
+  body #banner image-card > tool-tip {
     display: none;
   }
-  #banner #description {
+  body #banner #description {
     display: none;
   }
   /*Short, Semi-Thick Device*/
@@ -273,6 +273,7 @@ image-card.holiday {
   }
   body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
     display: block;
+    height: 0;
   }
   body > #banner > aside {
     margin: auto;
@@ -290,35 +291,36 @@ image-card.holiday {
 
 /*Phone*/
 @media (max-width: 500px) {
-  .choiceCount {
+  body .choiceCount {
     display: none;
   }
-  img {
+  body img {
     height: 60px;
     width: 60px;
   }
   body p {
     font-size: 15px;
   }
-  nav {
+  body nav {
     font-size: .8em;
   }
-  #banner {
+  body > #banner {
     top: 31px;
-    padding: 10px;
+    padding: 10px 0;
     grid-template: "canvas" "description";
   }
-  #banner > a#canvasLink {
+  body > #banner > a#canvasLink {
     text-align: center;
   }
-  #banner input#shareLink, #banner span#shareText:not(.hidden) {
+  body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
     display: block;
+    height: 0;
   }
-  #banner aside {
+  body > #banner aside {
     max-width: none;
     width: 100%;
   }
-  #buttons {
+  body #buttons {
     text-align: center;
   }
 }
@@ -630,6 +632,12 @@ body > div.loading {
   background-position: center;
   transition: opacity 1.75s ease .25s;
   opacity: 1;
+}
+
+@media (max-width: 500px), (max-height: 600px) {
+  body > div.loading {
+    background-size: 300px, cover;
+  }
 }
 
 body > div.loading.complete {
