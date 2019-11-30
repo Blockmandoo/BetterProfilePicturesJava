@@ -54,8 +54,7 @@
 					</label>
 				</button>
 				<br>
-				<button id="sudorandom" type="button" title="Use color schemes that make sense"
-				type="button">Random</button>
+				<button id="sudorandom" type="button" title="Use color schemes that make sense">Random</button>
 				<button id="random" type="button" title="Use any color scheme available">True Random</button>
 				<br class="noMobile">
 <!--
@@ -71,6 +70,7 @@
 	</section>
 	<main>
 		<input id="searchBox" type="text" name="search" value="" placeholder="Search" autocomplete="off">
+		<button id="clearSearch" type="reset" title="Clear">X</button>
 		<section id="noResults" class="hidden">
 			<h1>No results found</h1>
 			<p>Try a different search</p>
@@ -364,47 +364,47 @@
 					<span class="choiceCount"></span>
 					<!-- <button type="button">Random</button> -->
 				</p>
-				<image-card name="Beard" head="Beard" description="Just Santa's beard. Some kid wanted it for Christmas, and now she's giving it away.">
+				<image-card name="Beard" head="Beard" description="Just Santa's beard. Some kid wanted it for Christmas, and now she's giving it away." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Beard.png" alt="Beard">
 					<img class="darkMode" src="assets/christmas/Beard.png" alt="Beard">
 				</image-card>
-				<image-card name="CandyCanes" head="Candy Canes" description="You know, I've never really liked the taste of these, but aesthetically they are quite pleasant.">
+				<image-card name="CandyCanes" head="Candy Canes" description="You know, I've never really liked the taste of these, but aesthetically they are quite pleasant." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/CandyCanes.png" alt="CandyCanes">
 					<img class="darkMode" src="assets/christmas/CandyCanes.png" alt="CandyCanes">
 				</image-card>
-				<image-card name="LineTree" head="Line Christmas Tree" description="Rumor says that this was a tree 'drawn' in the curtains of a young Zorro on Christmas Eve.">
+				<image-card name="LineTree" head="Line Christmas Tree" description="Rumor says that this was a tree 'drawn' in the curtains of a young Zorro on Christmas Eve." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/LineTree.png" alt="LineTree">
 					<img class="darkMode" src="assets/christmas/LineTree.png" alt="LineTree">
 				</image-card>
-				<image-card name="LongBell" head="Long Bell" description="Ding dong. This is a bell. Not a condom.">
+				<image-card name="LongBell" head="Long Bell" description="Ding dong. This is a bell. Not a condom." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/LongBell.png" alt="LongBell">
 					<img class="darkMode" src="assets/christmas/LongBell.png" alt="LongBell">
 				</image-card>
-				<image-card name="Mistletoe" head="Mistletoe" description="Kiss me you fool.">
+				<image-card name="Mistletoe" head="Mistletoe" description="Kiss me you fool." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Mistletoe.png" alt="Mistletoe">
 					<img class="darkMode" src="assets/christmas/Mistletoe.png" alt="Mistletoe">
 				</image-card>
-				<image-card name="NorthStar" head="North Star" description="Follow this star to find three old guys who are trying to find some baby.">
+				<image-card name="NorthStar" head="North Star" description="Follow this star to find three old guys who are trying to find some baby." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/NorthStar.png" alt="NorthStar">
 					<img class="darkMode" src="assets/christmas/NorthStar.png" alt="NorthStar">
 				</image-card>
-				<image-card name="Present" head="Present" description="What could be inside?! A puppy maybe?">
+				<image-card name="Present" head="Present" description="What could be inside?! A puppy maybe?" keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Present.png" alt="Present">
 					<img class="darkMode" src="assets/christmas/Present.png" alt="Present">
 				</image-card>
-				<image-card name="SmallBells" head="Small Bells" description="These bells make me think of the Polar Express for some reason, and I don't feel like googling it to see if bells were important to the plot or not.">
+				<image-card name="SmallBells" head="Small Bells" description="These bells make me think of the Polar Express for some reason, and I don't feel like googling it to see if bells were important to the plot or not." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/SmallBells.png" alt="SmallBells">
 					<img class="darkMode" src="assets/christmas/SmallBells.png" alt="SmallBells">
 				</image-card>
-				<image-card name="Snowflake1" head="Snokeflake 1" description="This might be the same snowflake from the objects catagory, I'll never tell.">
+				<image-card name="Snowflake1" head="Snokeflake 1" description="This might be the same snowflake from the objects catagory, I'll never tell." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Snowflake1.png" alt="Snowflake1">
 					<img class="darkMode" src="assets/christmas/Snowflake1.png" alt="Snowflake1">
 				</image-card>
-				<image-card name="Snowflake2" head="Snokeflake 2" description="Now thats one good looking snowflake.">
+				<image-card name="Snowflake2" head="Snokeflake 2" description="Now thats one good looking snowflake." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Snowflake2.png" alt="Snowflake2">
 					<img class="darkMode" src="assets/christmas/Snowflake2.png" alt="Snowflake2">
 				</image-card>
-				<image-card name="Snowflake3" head="Snokeflake 3" description="By the time you're looking at the third of something, they start to look the same.">
+				<image-card name="Snowflake3" head="Snokeflake 3" description="By the time you're looking at the third of something, they start to look the same." keywords="winter holiday">
 					<img class="lightMode" src="assets/darkMode/christmas/Snowflake3.png" alt="Snowflake3">
 					<img class="darkMode" src="assets/christmas/Snowflake3.png" alt="Snowflake3">
 				</image-card>
@@ -736,39 +736,39 @@
 					<span class="choiceCount"></span>
 					<!-- <button type="button">Random</button> -->
 				</p>
-				<image-card name="Bat" head="Bat" description="Halloween is one of the few times a bat won't make you think of Batman, so enjoy!" class="holiday halloween">
+				<image-card name="Bat" head="Bat" description="Halloween is one of the few times a bat won't make you think of Batman, so enjoy!" class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Bat.png" alt="Bat">
 					<img class="darkMode" src="assets/halloween/Bat.png" alt="Bat">
 				</image-card>
-				<image-card name="Cat" head="Cat" description="This is obviously a black cat... unless you change its color, then I guess it won't be very <em>'halloweeny'</em>." class="holiday halloween">
+				<image-card name="Cat" head="Cat" description="This is obviously a black cat... unless you change its color, then I guess it won't be very <em>'halloweeny'</em>." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Cat.png" alt="Cat">
 					<img class="darkMode" src="assets/halloween/Cat.png" alt="Cat">
 				</image-card>
-				<image-card name="Cauldron" head="Cauldron" description="Mix, mix, swirl, mix." class="holiday halloween">
+				<image-card name="Cauldron" head="Cauldron" description="Mix, mix, swirl, mix." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Cauldron.png" alt="Cauldron">
 					<img class="darkMode" src="assets/halloween/Cauldron.png" alt="Cauldron">
 				</image-card>
-				<image-card name="Grave" head="Grave" description="Here lies the remains of some guy who spends too much time coding websites." class="holiday halloween">
+				<image-card name="Grave" head="Grave" description="Here lies the remains of some guy who spends too much time coding websites." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Grave.png" alt="Grave">
 					<img class="darkMode" src="assets/halloween/Grave.png" alt="Grave">
 				</image-card>
-				<image-card name="Jack1" head="Jack O'Lantern 1" description="Oh honey, look at what a cute jack o'lantern Suzy made!" class="holiday halloween">
+				<image-card name="Jack1" head="Jack O'Lantern 1" description="Oh honey, look at what a cute jack o'lantern Suzy made!" class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Jack1.png" alt="Jack1">
 					<img class="darkMode" src="assets/halloween/Jack1.png" alt="Jack1">
 				</image-card>
-				<image-card name="Jack2" head="Jack O'Lantern 2" description="Oh my goodness, we might want to have Steve checked out..." class="holiday halloween">
+				<image-card name="Jack2" head="Jack O'Lantern 2" description="Oh my goodness, we might want to have Steve checked out..." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Jack2.png" alt="Jack2">
 					<img class="darkMode" src="assets/halloween/Jack2.png" alt="Jack2">
 				</image-card>
-				<image-card name="Skull" head="Skull" description="Can you even consider this cute skull spooky?" class="holiday halloween">
+				<image-card name="Skull" head="Skull" description="Can you even consider this cute skull spooky?" class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Skull.png" alt="Skull">
 					<img class="darkMode" src="assets/halloween/Skull.png" alt="Skull">
 				</image-card>
-				<image-card name="Witch" head="Witch" description="Please don't stop this witch, she has a class of witches and wizards to teach." class="holiday halloween">
+				<image-card name="Witch" head="Witch" description="Please don't stop this witch, she has a class of witches and wizards to teach." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Witch.png" alt="Witch">
 					<img class="darkMode" src="assets/halloween/Witch.png" alt="Witch">
 				</image-card>
-				<image-card name="Hat" head="Witch's Hat" description="This hat isn't very good at sorting, but it is good for telling your friends that you are in a spooky mood for Halloween." class="holiday halloween">
+				<image-card name="Hat" head="Witch's Hat" description="This hat isn't very good at sorting, but it is good for telling your friends that you are in a spooky mood for Halloween." class="holiday halloween" keywords="holiday fall halloween">
 					<img class="lightMode" src="assets/darkMode/halloween/Hat.png" alt="Hat">
 					<img class="darkMode" src="assets/halloween/Hat.png" alt="Hat">
 				</image-card>
@@ -891,7 +891,7 @@
 					<img class="lightMode" src="assets/darkMode/heroes/JeanGrey.png" alt="JeanGrey">
 					<img class="darkMode" src="assets/heroes/JeanGrey.png" alt="JeanGrey">
 				</image-card>
-				<image-card name="MartianManHunter" head="MartianManHunter" description="A DC Superhero with super strength, flight, regeneration, shape-shifting, invisibilty.">
+				<image-card name="MartianManHunter" head="Martian Man Hunter" description="A DC Superhero with super strength, flight, regeneration, shape-shifting, invisibilty.">
 					<img class="lightMode" src="assets/darkMode/heroes/MartianManHunter.png" alt="MartianManHunter">
 					<img class="darkMode" src="assets/heroes/MartianManHunter.png" alt="MartianManHunter">
 				</image-card>
@@ -1591,27 +1591,27 @@
 					<span class="choiceCount"></span>
 					<!-- <button type="button">Random</button> -->
 				</p>
-				<image-card name="AssortedLeaves" head="Assorted Leaves" description="The leaves fell this year, right? Or did they just appear on the ground all at once again?">
+				<image-card name="AssortedLeaves" head="Assorted Leaves" description="The leaves fell this year, right? Or did they just appear on the ground all at once again?" keywords="holiday fall maple oak tree">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/AssortedLeaves.png" alt="AssortedLeaves">
 					<img class="darkMode" src="assets/Thanksgiving/AssortedLeaves.png" alt="AssortedLeaves">
 				</image-card>
-				<image-card name="HandTurkey" head="Hand Turkey" description="Billy made a turkey in school today so I suppose we need to put it on the fridge now...">
+				<image-card name="HandTurkey" head="Hand Turkey" description="Billy made a turkey in school today so I suppose we need to put it on the fridge now..." keywords="holiday fall">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/HandTurkey.png" alt="HandTurkey">
 					<img class="darkMode" src="assets/Thanksgiving/HandTurkey.png" alt="HandTurkey">
 				</image-card>
-				<image-card name="MapleLeaves" head="Maple Leaves" description="Is Canada tampering with our fall?">
+				<image-card name="MapleLeaves" head="Maple Leaves" description="Is Canada tampering with our fall?" keywords="holiday fall tree">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/MapleLeaves.png" alt="MapleLeaves">
 					<img class="darkMode" src="assets/Thanksgiving/MapleLeaves.png" alt="MapleLeaves">
 				</image-card>
-				<image-card name="OakLeaves" head="Oak Leaves" description="I asked to get these leaves' picture and they told me to leaf them alone... I'll just go.">
+				<image-card name="OakLeaves" head="Oak Leaves" description="I asked to get these leaves' picture and they told me to leaf them alone... I'll just go." keywords="holiday fall tree">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/OakLeaves.png" alt="OakLeaves">
 					<img class="darkMode" src="assets/Thanksgiving/OakLeaves.png" alt="OakLeaves">
 				</image-card>
-				<image-card name="PilgrimHat" head="Pilgrim Hat" description="Who knows why they put a buckle on their hat, probably some new fashion trend.">
+				<image-card name="PilgrimHat" head="Pilgrim Hat" description="Who knows why they put a buckle on their hat, probably some new fashion trend." keywords="holiday fall">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/PilgrimHat.png" alt="PilgrimHat">
 					<img class="darkMode" src="assets/Thanksgiving/PilgrimHat.png" alt="PilgrimHat">
 				</image-card>
-				<image-card name="Turkey" head="Turkey" description="You know... This turkey really doesn't look that different from Billy's turkey...">
+				<image-card name="Turkey" head="Turkey" description="You know... This turkey really doesn't look that different from Billy's turkey..." keywords="holiday fall">
 					<img class="lightMode" src="assets/darkMode/Thanksgiving/Turkey.png" alt="Turkey">
 					<img class="darkMode" src="assets/Thanksgiving/Turkey.png" alt="Turkey">
 				</image-card>
@@ -1718,7 +1718,7 @@
 				</tool-tip>
 				<img src="assets/logoColors/Topaz-Display.png" alt="">
 			</image-card>
-			<image-card name="Peridot" keywords="green jade">
+			<image-card name="Peridot" keywords="green jade grass trees">
 				<tool-tip>
 					<p>Peridot</p>
 				</tool-tip>
@@ -1748,62 +1748,62 @@
 				</tool-tip>
 				<img src="assets/logoColors/RoseQuartz-Display.png" alt="">
 			</image-card>
-			<image-card name="ChocolateDiamond" keywords="brown dark">
+			<image-card name="ChocolateDiamond" keywords="brown trees dark dirt soil">
 				<tool-tip>
 					<p>Chocolate Diamond</p>
 				</tool-tip>
 				<img src="assets/logoColors/ChocolateDiamond-Display.png" alt="">
 			</image-card>
-			<image-card name="Pumpkin" class="holiday halloween" keywords="yellow white light halloween spooky">
+			<image-card name="Pumpkin" class="holiday halloween" keywords="yellow white light halloween spooky holiday fall">
 				<tool-tip>
 					<p>Jack O'Lantern Candle</p>
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/Pumpkin-Display.png" alt="">
 			</image-card>
-			<image-card name="FallBrown" class="holiday thanksgiving" keywords="brown dark leaves leaf">
+			<image-card name="FallBrown" class="holiday thanksgiving" keywords="brown trees dark leaves leaf dirt soil holiday fall">
 				<tool-tip>
 					<p>Fall Brown</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/FallBrown-Display.png" alt="">
 			</image-card>
-			<image-card name="FallRed" class="holiday thanksgiving" keywords="red ruby leaves leaf">
+			<image-card name="FallRed" class="holiday thanksgiving" keywords="red ruby leaves leaf holiday fall">
 				<tool-tip>
 					<p>Fall Red</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/FallRed-Display.png" alt="">
 			</image-card>
-			<image-card name="FallOrange" class="holiday thanksgiving" keywords="orange leaves leaf">
+			<image-card name="FallOrange" class="holiday thanksgiving" keywords="orange leaves leaf holiday fall">
 				<tool-tip>
 					<p>Fall Orange</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/FallOrange-Display.png" alt="">
 			</image-card>
-			<image-card name="FallGreen" class="holiday thanksgiving" keywords="yellow green leaves leaf">
+			<image-card name="FallGreen" class="holiday thanksgiving" keywords="yellow green leaves leaf holiday fall">
 				<tool-tip>
 					<p>Fall Green</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/FallGreen-Display.png" alt="">
 			</image-card>
-			<image-card name="ChristmasRed" class="holiday christmas" keywords="">
+			<image-card name="ChristmasRed" class="holiday christmas" keywords="red ruby holiday winter">
 				<tool-tip>
 					<p>Christmas Red</p>
 					<p class="limited christmas">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/ChristmasRed-Display.png" alt="">
 			</image-card>
-			<image-card name="ChristmasGold" class="holiday christmas" keywords="">
+			<image-card name="ChristmasGold" class="holiday christmas" keywords="gold yellow light holiday winter">
 				<tool-tip>
 					<p>Christmas Gold</p>
 					<p class="limited christmas">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/logoColors/ChristmasGold-Display.png" alt="">
 			</image-card>
-			<image-card name="ChristmasGreen" class="holiday christmas" keywords="">
+			<image-card name="ChristmasGreen" class="holiday christmas" keywords="dark green grass trees holiday winter">
 				<tool-tip>
 					<p>Christmas Green</p>
 					<p class="limited christmas">Limited Edition!</p>
@@ -1821,103 +1821,103 @@
 			</p>
 			<!-- ============================== Standard ============================= -->
 			<p>Standard</p>
-			<image-card name="Ruby" keywords="">
+			<image-card name="Ruby" keywords="red">
 				<tool-tip>
 					<p>Ruby</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Ruby.png" alt="Ruby">
 			</image-card>
-			<image-card name="Copper" keywords="">
+			<image-card name="Copper" keywords="red orange bronze contrast">
 				<tool-tip>
 					<p>Copper</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Copper.png" alt="Copper">
 			</image-card>
-			<image-card name="Jasper" keywords="">
+			<image-card name="Jasper" keywords="orange light">
 				<tool-tip>
 					<p>Jasper</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Jasper.png" alt="Jasper">
 			</image-card>
-			<image-card name="Topaz" keywords="">
+			<image-card name="Topaz" keywords="yellow sun light">
 				<tool-tip>
 					<p>Topaz</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Topaz.png" alt="Topaz">
 			</image-card>
-			<image-card name="Chlorophyte" keywords="">
+			<image-card name="Chlorophyte" keywords="yellow green terraria saturated grass trees">
 				<tool-tip>
 					<p>Chlorophyte</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Chlorophyte.png" alt="Chlorophyte">
 			</image-card>
-			<image-card name="Peridot" keywords="">
+			<image-card name="Peridot" keywords="green grass trees">
 				<tool-tip>
 					<p>Peridot</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Peridot.png" alt="Peridot">
 			</image-card>
-			<image-card name="Jade" keywords="">
+			<image-card name="Jade" keywords="green blue light aqua teal cyan">
 				<tool-tip>
 					<p>Jade</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Jade.png" alt="Jade">
 			</image-card>
-			<image-card name="Aquamarine" keywords="">
+			<image-card name="Aquamarine" keywords="blue teal cyan">
 				<tool-tip>
 					<p>Aquamarine</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Aquamarine.png" alt="Aquamarine">
 			</image-card>
-			<image-card name="Cobalt" keywords="">
+			<image-card name="Cobalt" keywords="blue teal contrast indigo cyan">
 				<tool-tip>
 					<p>Cobalt</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Cobalt.png" alt="Cobalt">
 			</image-card>
-			<image-card name="Sapphire" keywords="">
+			<image-card name="Sapphire" keywords="blue navy dark indigo">
 				<tool-tip>
 					<p>Sapphire</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Sapphire.png" alt="Sapphire">
 			</image-card>
-			<image-card name="Amethyst" keywords="">
+			<image-card name="Amethyst" keywords="purple violet">
 				<tool-tip>
 					<p>Amethyst</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Amethyst.png" alt="Amethyst">
 			</image-card>
-			<image-card name="RoseQuartz" keywords="">
+			<image-card name="RoseQuartz" keywords="pink light">
 				<tool-tip>
 					<p>Rose Quartz</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-RoseQuartz.png" alt="RoseQuartz">
 			</image-card>
-			<image-card name="ChocolateDiamond" keywords="">
+			<image-card name="ChocolateDiamond" keywords="brown trees dark dirt soil">
 				<tool-tip>
 					<p>Chocolate Diamond</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-ChocolateDiamond.png" alt="ChocolateDiamond">
 			</image-card>
-			<image-card name="Obsidian" keywords="">
+			<image-card name="Obsidian" keywords="dark black blackboard charcoal grey gray">
 				<tool-tip>
 					<p>Obsidian</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Obsidian.png" alt="Obsidian">
 			</image-card>
-			<image-card name="Hematite" keywords="">
+			<image-card name="Hematite" keywords="gray grey metal steel dark">
 				<tool-tip>
 					<p>Hematite</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Hematite.png" alt="Hematite">
 			</image-card>
-			<image-card name="Pearl" keywords="">
+			<image-card name="Pearl" keywords="gray grey metal light">
 				<tool-tip>
 					<p>Pearl</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Pearl.png" alt="Pearl">
 			</image-card>
-			<image-card name="Moonstone" keywords="">
+			<image-card name="Moonstone" keywords="white cream grey gray light">
 				<tool-tip>
 					<p>Moonstone</p>
 				</tool-tip>
@@ -1926,103 +1926,103 @@
 			<br>
 			<!-- =============================== Light =============================== -->
 			<p>Light</p>
-			<image-card name="Rhododendron" keywords="">
+			<image-card name="Rhododendron" keywords="pink light">
 				<tool-tip>
 					<p>Rhododendron</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Rhododendron.png" alt="Rhododendron">
 			</image-card>
-			<image-card name="DiscoOrange" keywords="">
+			<image-card name="DiscoOrange" keywords="pink orange light clown saturated">
 				<tool-tip>
 					<p>Disco Orange</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DiscoOrange.png" alt="DiscoOrange">
 			</image-card>
-			<image-card name="BloodSky" keywords="">
+			<image-card name="BloodSky" keywords="pink red dark saturated light">
 				<tool-tip>
 					<p>Blood Sky</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-BloodSky.png" alt="BloodSky">
 			</image-card>
-			<image-card name="SailorsDelight" keywords="">
+			<image-card name="SailorsDelight" keywords="pink red orange peach light contrast">
 				<tool-tip>
 					<p>Sailor's Delight</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-SailorsDelight.png" alt="SailorsDelight">
 			</image-card>
-			<image-card name="Peach" keywords="">
+			<image-card name="Peach" keywords="orange yellow light mute">
 				<tool-tip>
 					<p>Peach</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Peach.png" alt="Peach">
 			</image-card>
-			<image-card name="Tangerine" keywords="">
+			<image-card name="Tangerine" keywords="orange yellow light">
 				<tool-tip>
 					<p>Tangerine</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Tangerine.png" alt="Tangerine">
 			</image-card>
-			<image-card name="Pyrite" keywords="">
+			<image-card name="Pyrite" keywords="gold yellow brown contrast contrast light">
 				<tool-tip>
 					<p>Pyrite</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Pyrite.png" alt="Pyrite">
 			</image-card>
-			<image-card name="Kiwi" keywords="">
+			<image-card name="Kiwi" keywords="orange yellow green light">
 				<tool-tip>
 					<p>Kiwi</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Kiwi.png" alt="Kiwi">
 			</image-card>
-			<image-card name="Bolivian" keywords="">
+			<image-card name="Bolivian" keywords="orange yellow green saturated light">
 				<tool-tip>
 					<p>Bolivian</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Bolivian.png" alt="Bolivian">
 			</image-card>
-			<image-card name="PeaGreen" keywords="">
+			<image-card name="PeaGreen" keywords="mute light">
 				<tool-tip>
 					<p>Pea Green</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-PeaGreen.png" alt="PeaGreen">
 			</image-card>
-			<image-card name="DiscoGreen" keywords="">
+			<image-card name="DiscoGreen" keywords="green light saturated">
 				<tool-tip>
 					<p>Disco Green</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DiscoGreen.png" alt="DiscoGreen">
 			</image-card>
-			<image-card name="DiscoCyan" keywords="">
+			<image-card name="DiscoCyan" keywords="blue green bluegreen cyan teal saturated light">
 				<tool-tip>
 					<p>Disco Cyan</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DiscoCyan.png" alt="DiscoCyan">
 			</image-card>
-			<image-card name="Ice" keywords="">
+			<image-card name="Ice" keywords="blue cyan teal white light">
 				<tool-tip>
 					<p>Ice</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Ice.png" alt="Ice">
 			</image-card>
-			<image-card name="PerfectDay" keywords="">
+			<image-card name="PerfectDay" keywords="blue light sky">
 				<tool-tip>
 					<p>Perfect Day</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-PerfectDay.png" alt="PerfectDay">
 			</image-card>
-			<image-card name="DiscoBlue" keywords="">
+			<image-card name="DiscoBlue" keywords="purple violet blue cyan teal saturated light">
 				<tool-tip>
 					<p>Disco Blue</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DiscoBlue.png" alt="DiscoBlue">
 			</image-card>
-			<image-card name="DiscoPink" keywords="">
+			<image-card name="DiscoPink" keywords="blue violet purple pink indigo saturated light">
 				<tool-tip>
 					<p>Disco Pink</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DiscoPink.png" alt="DiscoPink">
 			</image-card>
-			<image-card name="CorrodedSepia" keywords="">
+			<image-card name="CorrodedSepia" keywords="purple violet orange pink contrast light">
 				<tool-tip>
 					<p>Corroded Sepia</p>
 				</tool-tip>
@@ -2031,104 +2031,104 @@
 			<br>
 			<!-- ================================ Dark =============================== -->
 			<p>Dark</p>
-			<image-card name="BurningHorizon" keywords="">
+			<image-card name="BurningHorizon" keywords="dark violet purple red pink orange contrast saturated">
 				<tool-tip>
 					<p>Burning Horizon</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-BurningHorizon.png" alt="BurningHorizon">
 			</image-card>
-			<image-card name="Gold" keywords="">
+			<image-card name="Gold" keywords="dark yellow orange brown bronze contrast">
 				<tool-tip>
 					<p>Gold</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Gold.png" alt="Gold">
 			</image-card>
-			<image-card name="Camo" keywords="">
+			<image-card name="Camo" keywords="dark tan brown mute">
 				<tool-tip>
 					<p>Camo</p>
 					<p><em>Look, I don't know...</em></p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Camo.png" alt="Camo">
 			</image-card>
-			<image-card name="Sandstorm" keywords="">
+			<image-card name="Sandstorm" keywords="dark tan brown gold contrast">
 				<tool-tip>
 					<p>Sandstorm</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Sandstorm.png" alt="Sandstorm">
 			</image-card>
-			<image-card name="Zucchini" keywords="">
+			<image-card name="Zucchini" keywords="dark grass trees green contrast">
 				<tool-tip>
 					<p>Zucchini</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Zucchini.png" alt="Zucchini">
 			</image-card>
-			<image-card name="DeepDepths" keywords="">
+			<image-card name="DeepDepths" keywords="dark grass trees green">
 				<tool-tip>
 					<p>Deep Depths</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-DeepDepths.png" alt="DeepDepths">
 			</image-card>
-			<image-card name="Mourning" keywords="">
+			<image-card name="Mourning" keywords="dark green grey gray contrast olive mute">
 				<tool-tip>
 					<p>Mourning</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Mourning.png" alt="Mourning">
 			</image-card>
-			<image-card name="Aurora" keywords="">
+			<image-card name="Aurora" keywords="dark blue contrast cyan teal">
 				<tool-tip>
 					<p>Aurora</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Aurora.png" alt="Aurora">
 			</image-card>
-			<image-card name="Slate" keywords="">
+			<image-card name="Slate" keywords="dark mute blue contrast">
 				<tool-tip>
 					<p>Slate</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Slate.png" alt="Slate">
 			</image-card>
-			<image-card name="Flax" keywords="">
+			<image-card name="Flax" keywords="dark blue sky">
 				<tool-tip>
 					<p>Flax</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Flax.png" alt="Flax">
 			</image-card>
-			<image-card name="Midnight" keywords="">
+			<image-card name="Midnight" keywords="dark blue navy sky">
 				<tool-tip>
 					<p>Midnight</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Midnight.png" alt="Midnight">
 			</image-card>
-			<image-card name="Twitch" keywords="">
+			<image-card name="Twitch" keywords="dark purple violet mute pink">
 				<tool-tip>
 					<p>Twitch</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Twitch.png" alt="Twitch">
 			</image-card>
-			<image-card name="Twilight" keywords="">
+			<image-card name="Twilight" keywords="dark blue purple violet pink indigo contrast">
 				<tool-tip>
 					<p>Twilight</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Twilight.png" alt="Twilight">
 			</image-card>
-			<image-card name="Void" keywords="">
+			<image-card name="Void" keywords="dark purple violet mute">
 				<tool-tip>
 					<p>Void</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Void.png" alt="Void">
 			</image-card>
-			<image-card name="Corruption" keywords="">
+			<image-card name="Corruption" keywords="dark purple violet red mute">
 				<tool-tip>
 					<p>Corruption</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Corruption.png" alt="Corruption">
 			</image-card>
-			<image-card name="Tempest" keywords="">
+			<image-card name="Tempest" keywords="dark red pink">
 				<tool-tip>
 					<p>Tempest</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Tempest.png" alt="Tempest">
 			</image-card>
-			<image-card name="BronzeSunset" keywords="">
+			<image-card name="BronzeSunset" keywords="dark contrast blue orange yellow">
 				<tool-tip>
 					<p>Bronze Sunset</p>
 				</tool-tip>
@@ -2137,63 +2137,63 @@
 			<br>
 			<!-- ============================== Holiday ============================== -->
 			<p>Holiday</p>
-			<image-card name="Pumpkin" class="holiday halloween" keywords="">
+			<image-card name="Pumpkin" class="holiday halloween" keywords="orange halloween fall contrast dark holiday">
 				<tool-tip>
 					<p>Pumpkin Orange</p>
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Pumpkin.png" alt="Pumpkin">
 			</image-card>
-			<image-card name="HalloweenSunset" class="holiday halloween" keywords="">
+			<image-card name="HalloweenSunset" class="holiday halloween" keywords="yellow white light halloween fall holiday">
 				<tool-tip>
 					<p>Halloween Sunset</p>
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-HalloweenSunset.png" alt="HalloweenSunset">
 			</image-card>
-			<image-card name="HalloweenBlack" class="holiday halloween" keywords="">
+			<image-card name="HalloweenBlack" class="holiday halloween" keywords="black dark halloween fall holiday">
 				<tool-tip>
 					<p>Halloween Black</p>
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-HalloweenBlack.png" alt="HalloweenBlack">
 			</image-card>
-			<image-card name="FallBrown" class="holiday thanksgiving" keywords="">
+			<image-card name="FallBrown" class="holiday thanksgiving" keywords="brown dirt soil contrast dark holiday">
 				<tool-tip>
 					<p>Fall Brown</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-FallBrown.png" alt="FallBrown">
 			</image-card>
-			<image-card name="FallRed" class="holiday thanksgiving" keywords="">
+			<image-card name="FallRed" class="holiday thanksgiving" keywords="orange light holiday">
 				<tool-tip>
 					<p>Fall Red</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-FallRed.png" alt="FallRed">
 			</image-card>
-			<image-card name="FallOrange" class="holiday thanksgiving" keywords="">
+			<image-card name="FallOrange" class="holiday thanksgiving" keywords="orange yellow gold light holiday">
 				<tool-tip>
 					<p>Fall Orange</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-FallOrange.png" alt="FallOrange">
 			</image-card>
-			<image-card name="FallGreen" class="holiday thanksgiving" keywords="">
+			<image-card name="FallGreen" class="holiday thanksgiving" keywords="green yellow light holiday">
 				<tool-tip>
 					<p>Fall Green</p>
 					<p class="limited thanksgiving">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-FallGreen.png" alt="FallGreen">
 			</image-card>
-			<image-card name="BerryRed" class="holiday christmas" keywords="">
+			<image-card name="BerryRed" class="holiday christmas" keywords="red ruby dark contrast saturated light holiday winter">
 				<tool-tip>
 					<p>Merry Berry Red</p>
 					<p class="limited christmas">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-BerryRed.png" alt="BerryRed">
 			</image-card>
-			<image-card name="MistletoeGreen" class="holiday christmas" keywords="">
+			<image-card name="MistletoeGreen" class="holiday christmas" keywords="grass trees dark contrast saturated holiday winter">
 				<tool-tip>
 					<p>Mistletoe Green</p>
 					<p class="limited christmas">Limited Edition!</p>
@@ -2209,164 +2209,164 @@
 				<span class="choiceCount"></span>
 				<!-- <button type="button">Random</button> -->
 			</p>
-			<image-card name="Blast" keywords="">
+			<image-card name="Blast" keywords="opening anime dramatic">
 				<tool-tip>
 					<p>Blast</p>
 				</tool-tip>
 				<img src="assets/background/Blast-Contrast.png" alt="Blast">
 			</image-card>
-			<image-card name="Bricks" keywords="">
+			<image-card name="Bricks" keywords="wall">
 				<tool-tip>
 					<p>Bricks</p>
 				</tool-tip>
 				<img src="assets/background/Bricks-Contrast.png" alt="Bricks">
 			</image-card>
-			<image-card name="Camo" keywords="">
+			<image-card name="Camo" keywords="disguised">
 				<tool-tip>
 					<p>Camo</p>
 				</tool-tip>
 				<img src="assets/background/Camo-Contrast.png" alt="Camo">
 			</image-card>
-			<image-card name="CarbonFiber" keywords="">
+			<image-card name="CarbonFiber" keywords="stripes weave bricks floor">
 				<tool-tip>
 					<p>Carbon Fiber</p>
 				</tool-tip>
 				<img src="assets/background/CarbonFiber-Contrast.png" alt="CarbonFiber">
 			</image-card>
-			<image-card name="Checkerboard" keywords="">
+			<image-card name="Checkerboard" keywords="chess checkers floor">
 				<tool-tip>
 					<p>Checker Board</p>
 				</tool-tip>
 				<img src="assets/background/Checkerboard-Contrast.png" alt="Checkerboard">
 			</image-card>
-			<image-card name="Clouds" keywords="">
+			<image-card name="Clouds" keywords="sky">
 				<tool-tip>
 					<p>Clouds</p>
 				</tool-tip>
 				<img src="assets/background/Clouds-Contrast.png" alt="Clouds">
 			</image-card>
-			<image-card name="Diamond" keywords="">
+			<image-card name="Diamond" keywords="gems shiny reflective">
 				<tool-tip>
 					<p>Diamond</p>
 				</tool-tip>
 				<img src="assets/background/Diamond-Contrast.png" alt="Diamond">
 			</image-card>
-			<image-card name="Dots" keywords="">
+			<image-card name="Dots" keywords="circles">
 				<tool-tip>
 					<p>Dots</p>
 				</tool-tip>
 				<img src="assets/background/Dots-Contrast.png" alt="Dots">
 			</image-card>
-			<image-card name="Dust" keywords="">
+			<image-card name="Dust" keywords="speckles">
 				<tool-tip>
 					<p>Dust</p>
 				</tool-tip>
 				<img src="assets/background/Dust-Contrast.png" alt="Dust">
 			</image-card>
-			<image-card name="Gradient" keywords="">
+			<image-card name="Gradient" keywords="bland default simple wall floor">
 				<tool-tip>
 					<p>Gradient</p>
 				</tool-tip>
 				<img src="assets/background/Gradient-Contrast.png" alt="Gradient">
 			</image-card>
-			<image-card name="Hearts" keywords="">
+			<image-card name="Hearts" keywords="love valentines">
 				<tool-tip>
 					<p>Hearts</p>
 				</tool-tip>
 				<img src="assets/background/Hearts-Contrast.png" alt="Hearts">
 			</image-card>
-			<image-card name="Lines" keywords="">
+			<image-card name="Lines" keywords="wall">
 				<tool-tip>
 					<p>Lines</p>
 				</tool-tip>
 				<img src="assets/background/Lines-Contrast.png" alt="Lines">
 			</image-card>
-			<image-card name="Ocean" keywords="">
+			<image-card name="Ocean" keywords="squiggle">
 				<tool-tip>
 					<p>Ocean</p>
 				</tool-tip>
 				<img src="assets/background/Ocean-Contrast.png" alt="Ocean">
 			</image-card>
-			<image-card name="PlantSprouts" keywords="">
+			<image-card name="PlantSprouts" keywords="steven clouds sky">
 				<tool-tip>
 					<p>Plant Sprouts</p>
 				</tool-tip>
 				<img src="assets/background/PlantSprouts-Contrast.png" alt="PlantSprouts">
 			</image-card>
-			<image-card name="PolkaDot" keywords="">
+			<image-card name="PolkaDot" keywords="bubbles circles">
 				<tool-tip>
 					<p>Polka Dots</p>
 				</tool-tip>
 				<img src="assets/background/PolkaDot-Contrast.png" alt="PolkaDot">
 			</image-card>
-			<image-card name="Stairs" keywords="">
+			<image-card name="Stairs" keywords="hexagons lines">
 				<tool-tip>
 					<p>Stairs</p>
 				</tool-tip>
 				<img src="assets/background/Stairs-Contrast.png" alt="Stairs">
 			</image-card>
-			<image-card name="StarGrid" keywords="">
+			<image-card name="StarGrid" keywords="stars wall floor">
 				<tool-tip>
 					<p>Star Grid</p>
 				</tool-tip>
 				<img src="assets/background/StarGrid-Contrast.png" alt="StarGrid">
 			</image-card>
-			<image-card name="Stars" keywords="">
+			<image-card name="Stars" keywords="night sky">
 				<tool-tip>
 					<p>Stars</p>
 				</tool-tip>
 				<img src="assets/background/Stars-Contrast.png" alt="Stars">
 			</image-card>
-			<image-card name="Target" keywords="">
+			<image-card name="Target" keywords="ripple">
 				<tool-tip>
 					<p>Target</p>
 				</tool-tip>
 				<img src="assets/background/Target-Contrast.png" alt="Target">
 			</image-card>
-			<image-card name="Tessellation" keywords="">
+			<image-card name="Tessellation" keywords="floor triangles">
 				<tool-tip>
 					<p>Tessellation</p>
 				</tool-tip>
 				<img src="assets/background/Tessellation-Contrast.png" alt="Tessellation">
 			</image-card>
-			<image-card name="Tribal" keywords="">
+			<image-card name="Tribal" keywords="wall">
 				<tool-tip>
 					<p>Tribal</p>
 				</tool-tip>
 				<img src="assets/background/Tribal-Contrast.png" alt="Tribal">
 			</image-card>
-			<image-card name="Wallpaper" keywords="">
+			<image-card name="Wallpaper" keywords="diagonal checkerboard">
 				<tool-tip>
 					<p>Wallpaper</p>
 				</tool-tip>
 				<img src="assets/background/Wallpaper-Contrast.png" alt="Wallpaper">
 			</image-card>
-			<image-card name="Waves" keywords="">
+			<image-card name="Waves" keywords="windy cloth fabric">
 				<tool-tip>
 					<p>Waves</p>
 				</tool-tip>
 				<img src="assets/background/Waves-Contrast.png" alt="Waves">
 			</image-card>
-			<image-card name="Weave" keywords="">
+			<image-card name="Weave" keywords="bricks">
 				<tool-tip>
 					<p>Weave</p>
 				</tool-tip>
 				<img src="assets/background/Weave-Contrast.png" alt="Weave">
 			</image-card>
-			<image-card name="Web" keywords="">
+			<image-card name="Web" keywords="net">
 				<tool-tip>
 					<p>Web</p>
 				</tool-tip>
 				<img src="assets/background/Web-Contrast.png" alt="Web">
 			</image-card>
-			<image-card name="HalloweenSunset" class="holiday halloween" keywords="">
+			<image-card name="HalloweenSunset" class="holiday halloween" keywords="highlight holiday fall">
 				<tool-tip>
 					<p>Halloween Sunset</p>
 					<p class="limited halloween">Limited Edition!</p>
 				</tool-tip>
 				<img src="assets/background/HalloweenSunset-Contrast.png" alt="HalloweenSunset">
 			</image-card>
-			<image-card name="Pumpkin" class="holiday halloween" keywords="">
+			<image-card name="Pumpkin" class="holiday halloween" keywords="holiday fall">
 				<tool-tip>
 					<p>Pumpkin Shading</p>
 					<p class="limited halloween">Limited Edition!</p>
@@ -2424,7 +2424,7 @@
 			<image-card name="Circle">
 				<img src="assets/shapes/Circle.png" alt="Circle">
 			</image-card>
-			<image-card name="Pumpkin" class="holiday halloween">
+			<image-card name="Pumpkin" class="holiday halloween" keywords="holiday fall">
 				<tool-tip>
 					<p>Pumpkin</p>
 					<p class="limited halloween">Limited Edition!</p>

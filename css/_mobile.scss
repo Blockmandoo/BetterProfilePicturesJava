@@ -14,6 +14,7 @@
 
 /*Short Device*/
 @media (max-height: 600px) {
+  $imgSize: 60px;
   body {
     .choiceCount {
       display: none;
@@ -22,12 +23,27 @@
       height: 60px;
       width: 60px;
     }
+    image-card > tool-tip {
+      $padding: 3px;
+  		padding: $padding;
+  		width: 2*$imgSize;
+  		top: $imgSize;
+  		transform: translate(-1 / 2 * $imgSize - 2 * $padding, -20px);
+      > h5 {
+        font-size: .95em;
+        margin-bottom: 1px;
+      }
+      > p {
+        font-size: .8em;
+      }
+    }
+    image-card:hover > tool-tip {
+      $padding: 3px;
+  		transform: translate(-1 / 2 * $imgSize - 2 * $padding, 5px);
+    }
     #banner {
       canvas {
         width: 33vh;
-      }
-      image-card > tool-tip {
-        display: none;
       }
       #description {
         display: none;
@@ -37,6 +53,9 @@
   /*Short, Semi-Thick Device*/
   @media (min-width: 500.1px) {
     body {
+      > #banner > a#canvasLink canvas {
+        margin: auto;
+      }
       overflow: hidden;
       height: 100vh;
     	grid-template:
@@ -95,8 +114,17 @@
     }
   }
   @media (max-width: 500px) {
-    #title {
-      text-align: center;
+    body {
+      #title {
+        text-align: center;
+      }
+      // > aside {
+      //   margin: auto;
+      //   width: 95%;
+      //   > * {
+      //     margin: auto;
+      //   }
+      // }
     }
   }
 }
@@ -104,6 +132,9 @@
 /*Phone*/
 @media (max-width: 500px) {
   body {
+    > #banner > a#canvasLink canvas {
+      margin: auto;
+    }
     .choiceCount {
       display: none;
     }
@@ -128,9 +159,10 @@
         display: block;
         height: 0;
       }
-      aside {
+      > aside {
         max-width: none;
-        width: 100%;
+        margin: auto;
+        width: 95%;
       }
     }
     #buttons {

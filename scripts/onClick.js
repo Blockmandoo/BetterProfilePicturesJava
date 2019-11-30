@@ -2,6 +2,7 @@ function addClicks() {
 	autoPumpkin();
 	backgroundColorClicks();
 	backgroundStyleClicks();
+	clearSearchButton();
 	downloadLink();
 	genreClicks();
 	lockButton();
@@ -56,6 +57,21 @@ function addClicks() {
 				elements[i].attachEvent("onClick", function () {
 					var name = this.getAttribute("name");
 					setBackgroundStyle(name);
+				});
+			}
+		}
+	}
+
+	function clearSearchButton() {
+		var elements = document.querySelectorAll("#clearSearch");
+		for (var i = 0; i < elements.length; i++) {
+			if (elements[i].addEventListener) {
+				elements[i].addEventListener("click", function () {
+					clearSearch();
+				}, false);
+			} else if (elements[i].attachEvent) {
+				elements[i].attachEvent("onClick", function () {
+					clearSearch();
 				});
 			}
 		}

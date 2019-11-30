@@ -137,6 +137,13 @@ function catalogChoices() {
 	}
 }
 
+//Clear the search bar, and reset the search
+function clearSearch() {
+	var searchBox = document.querySelector("#searchBox");
+	searchBox.value = "";
+	search();
+}
+
 //Copy link button
 function copyLink() {
 	// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
@@ -452,8 +459,6 @@ function search() {
     var options = document.querySelectorAll("#" + genreName + " image-card:not(.searchHidden)");
     if (options.length === 0) {
 			hideElement("image-card[name="+ genreName +"]");
-      // var hiddenContent = document.querySelector("image-card[name="+ genreName +"]");
-      // hiddenContent.classList.add("searchHidden");
     }
   }
 
@@ -461,7 +466,7 @@ function search() {
   var catagoryDivs = document.querySelectorAll("main > div");
   for (var i = 0; i < catagoryDivs.length; i++) {
     var didElement = catagoryDivs[i]
-    var options = didElement.querySelectorAll("image-card:not(.searchHidden)");
+    var options = didElement.querySelectorAll("image-card:not(.searchHidden):not(.holiday)");
     if (options.length === 0) {
       didElement.classList.add("searchHidden");
     }
@@ -560,6 +565,20 @@ function setIcon() {
 	if (logo) setLogo(logo);
 	if (logoColor) setLogoColor(logoColor);
 	if (shape) setShape(shape);
+}
+
+//Show all keywords for image-cards (dev function)
+function showKeywords() {
+var keyworded = document.querySelectorAll("image-card[keywords]");
+for (var i = 0; i < keyworded.length; i++) {
+var keywords = keyworded[i].getAttribute("keywords").split(" ");
+for (var j = 0; j < keywords.length; j++) {
+	var node = document.createElement("p");
+	node.appendChild(document.createTextNode(keywords[j]));
+	var tooltip = keyworded[i].querySelector("tool-tip");
+	tooltip.appendChild(node);
+}
+}
 }
 
 //Random icon lock switch

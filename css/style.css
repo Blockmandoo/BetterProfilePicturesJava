@@ -4,624 +4,439 @@ html, body, h1, h2, h3, h4, h5, p {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 h5 {
-  font-size: 1.1em;
-}
+  font-size: 1.1em; }
 
 h4 {
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 h3 {
-  font-size: 1.3em;
-}
+  font-size: 1.3em; }
 
 h2 {
-  font-size: 1.4em;
-}
+  font-size: 1.4em; }
 
 h1 {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 /*Layout*/
 body {
   display: grid;
-  grid-template: "navi navi" "banner banner" "body body";
-}
-
-body > nav {
-  grid-area: navi;
-  z-index: 3;
-  position: sticky;
-  top: 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-}
-
-body > nav > * {
-  text-align: center;
-  padding: .6em;
-}
-
-body > #banner {
-  grid-area: banner;
-  position: sticky;
-  top: 37px;
-  z-index: 2;
-  padding: 20px 0;
-  display: grid;
-  grid-template: ". canvas description .";
-}
-
-body > #banner > a#canvasLink {
-  grid-area: canvas;
-  text-align: right;
-}
-
-body > #banner > a#canvasLink canvas {
-  margin-right: 10px;
-  margin-left: 20px;
-}
-
-body > #banner > aside {
-  grid-area: description;
-  max-width: 400px;
-  margin-right: 20px;
-}
-
-body > #banner > aside #description {
-  min-height: 80px;
-  min-width: 300px;
-}
-
-body > #banner > aside > * {
-  margin: 10px 0 0;
-}
-
-body > #banner input {
-  width: 0;
-}
-
-body > main {
-  grid-area: body;
-  width: 95%;
-  margin: auto;
-  padding: 20px 0 80px;
-}
-
-body > main div {
-  margin-bottom: 15px;
-}
-
-body > main .description {
-  margin-bottom: 4px;
-}
-
-body > main > div > p + p, body > main > div > br + p {
-  margin-top: 8px;
-}
-
-body > main > #searchBox {
-  margin-bottom: 15px;
-  max-width: 300px;
-  width: 50%;
-  padding: 4px 10px 4px 25px;
-}
-
-body > div.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-}
-
-body > div.loading.complete {
-  pointer-events: none;
-}
+  grid-template: "navi navi" "banner banner" "body body"; }
+  body > nav {
+    grid-area: navi;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr; }
+    body > nav > * {
+      text-align: center;
+      padding: .6em; }
+  body > #banner {
+    grid-area: banner;
+    position: sticky;
+    top: 37px;
+    z-index: 2;
+    padding: 20px 0;
+    display: grid;
+    grid-template: ". canvas description ."; }
+    body > #banner > a#canvasLink {
+      grid-area: canvas;
+      text-align: right; }
+      body > #banner > a#canvasLink canvas {
+        margin-right: 10px;
+        margin-left: 20px; }
+    body > #banner > aside {
+      grid-area: description;
+      max-width: 400px;
+      margin-right: 20px; }
+      body > #banner > aside #description {
+        min-height: 80px;
+        min-width: 300px; }
+      body > #banner > aside > * {
+        margin: 10px 0 0; }
+    body > #banner input {
+      width: 0; }
+  body > main {
+    grid-area: body;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0 80px; }
+    body > main div {
+      margin-bottom: 15px; }
+    body > main .description {
+      margin-bottom: 4px; }
+    body > main > div > p + p, body > main > div > br + p {
+      margin-top: 8px; }
+    body > main > #searchBox {
+      margin-bottom: 15px;
+      max-width: 300px;
+      width: 50%;
+      padding: 4px 10px 4px 25px;
+      transform: translateX(1.05em); }
+    body > main #clearSearch {
+      transform: translateX(-1.05em); }
+  body > div.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
+    body > div.loading.complete {
+      pointer-events: none; }
 
 button {
-  margin-top: 4px;
-}
-
-button.toggle {
-  padding: 4px;
-  width: 55px;
-}
-
-button.toggle input {
-  display: none;
-}
-
-button.toggle label {
-  display: block;
-  height: 16px;
-  width: 16px;
-}
-
-button.toggle label.checked {
-  transform: translateX(29px);
-}
+  margin-top: 4px; }
+  button.toggle {
+    padding: 4px;
+    width: 55px; }
+    button.toggle input {
+      display: none; }
+    button.toggle label {
+      display: block;
+      height: 16px;
+      width: 16px; }
+      button.toggle label.checked {
+        transform: translateX(29px); }
 
 .hidden, .searchHidden {
-  display: none;
-}
+  display: none; }
 
 .invisible {
   pointer-events: none;
-  opacity: 0;
-}
+  opacity: 0; }
 
 img {
   height: 80px;
-  width: 80px;
-}
+  width: 80px; }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 image-card {
   position: relative;
-  display: inline-block;
-}
-
-image-card tool-tip {
-  pointer-events: none;
-  padding: 5px;
-  width: 120px;
-  position: absolute;
-  display: block;
-  opacity: 0;
-  top: 80px;
-  transform: translate(-25px, -30px);
-  z-index: 1;
-  transition: opacity .4s ease, transform .6s ease;
-}
-
-image-card:hover tool-tip:not(:hover) {
-  opacity: 1;
-  transform: translate(-25px, 5px);
-}
-
-image-card.holiday {
-  display: none;
-}
+  display: inline-block; }
+  image-card > tool-tip {
+    pointer-events: none;
+    padding: 5px;
+    width: 120px;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 80px;
+    transform: translate(-25px, -30px);
+    z-index: 1;
+    transition: opacity .4s ease, transform .6s ease; }
+  image-card:hover > tool-tip {
+    opacity: 1;
+    transform: translate(-25px, 5px); }
+  image-card.holiday {
+    display: none; }
 
 /*Mobile layout*/
 /*Tablet*/
 @media (max-width: 777px) {
   canvas {
-    width: 33vw;
-  }
-  image-card > tool-tip {
-    display: none;
-  }
-}
+    width: 33vw; }
 
+  image-card > tool-tip {
+    display: none; } }
 /*Short Device*/
 @media (max-height: 600px) {
   body .choiceCount {
-    display: none;
-  }
+    display: none; }
   body img {
     height: 60px;
-    width: 60px;
-  }
+    width: 60px; }
+  body image-card > tool-tip {
+    padding: 3px;
+    width: 120px;
+    top: 60px;
+    transform: translate(-36px, -20px); }
+    body image-card > tool-tip > h5 {
+      font-size: .95em;
+      margin-bottom: 1px; }
+    body image-card > tool-tip > p {
+      font-size: .8em; }
+  body image-card:hover > tool-tip {
+    transform: translate(-36px, 5px); }
   body #banner canvas {
-    width: 33vh;
-  }
-  body #banner image-card > tool-tip {
-    display: none;
-  }
+    width: 33vh; }
   body #banner #description {
-    display: none;
-  }
-  /*Short, Semi-Thick Device*/
-}
+    display: none; }
 
+  /*Short, Semi-Thick Device*/ }
 @media (max-height: 600px) and (min-width: 500.1px) {
   body {
     overflow: hidden;
     height: 100vh;
-    grid-template: "navi navi" "banner body" !important;
+    grid-template: "navi navi" "banner body" !important;
     grid-auto-columns: 225px 1fr;
-    grid-auto-rows: 37px 1fr;
-  }
-  body > main {
-    height: 100%;
-    width: 99%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding: 0;
-  }
-  body > main > :first-child {
-    margin-top: 25px;
-  }
-  body > section#head, body nav {
-    position: static;
-  }
-  body > section#head h1 {
-    width: auto;
-    border-bottom: none;
-  }
-  body > section#head h1::after {
-    content: "";
-    width: 90%;
-    height: 3px;
-    display: block;
-    border-radius: 2px;
-    background: #aaa;
-    margin: auto;
-  }
-  body > #banner {
-    align-content: center;
-    text-align: center;
-    grid-template: "canvas" "description";
-  }
-  body > #banner > a#canvasLink {
-    text-align: center;
-  }
-  body > #banner > a#canvasLink canvas {
-    margin-left: 5px;
-  }
-  body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
-    display: block;
-    height: 0;
-  }
-  body > #banner > aside {
-    margin: auto;
-  }
-  body > #banner > aside > * {
-    margin: auto;
-  }
-}
-
+    grid-auto-rows: 37px 1fr; }
+    body > #banner > a#canvasLink canvas {
+      margin: auto; }
+    body > main {
+      height: 100%;
+      width: 99%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 0; }
+      body > main > :first-child {
+        margin-top: 25px; }
+    body > section#head, body nav {
+      position: static; }
+    body > section#head h1 {
+      width: auto;
+      border-bottom: none; }
+      body > section#head h1::after {
+        content: "";
+        width: 90%;
+        height: 3px;
+        display: block;
+        border-radius: 2px;
+        background: #aaa;
+        margin: auto; }
+    body > #banner {
+      align-content: center;
+      text-align: center;
+      grid-template: "canvas" "description"; }
+      body > #banner > a#canvasLink {
+        text-align: center; }
+        body > #banner > a#canvasLink canvas {
+          margin-left: 5px; }
+      body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
+        display: block;
+        height: 0; }
+      body > #banner > aside {
+        margin: auto; }
+        body > #banner > aside > * {
+          margin: auto; } }
 @media (max-height: 600px) and (max-width: 500px) {
-  #title {
-    text-align: center;
-  }
-}
-
+  body #title {
+    text-align: center; } }
 /*Phone*/
 @media (max-width: 500px) {
+  body > #banner > a#canvasLink canvas {
+    margin: auto; }
   body .choiceCount {
-    display: none;
-  }
+    display: none; }
   body img {
     height: 60px;
-    width: 60px;
-  }
+    width: 60px; }
   body p {
-    font-size: 15px;
-  }
+    font-size: 15px; }
   body nav {
-    font-size: .8em;
-  }
+    font-size: .8em; }
   body > #banner {
     top: 31px;
     padding: 10px 0;
-    grid-template: "canvas" "description";
-  }
-  body > #banner > a#canvasLink {
-    text-align: center;
-  }
-  body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
-    display: block;
-    height: 0;
-  }
-  body > #banner aside {
-    max-width: none;
-    width: 100%;
-  }
+    grid-template: "canvas" "description"; }
+    body > #banner > a#canvasLink {
+      text-align: center; }
+    body > #banner input#shareLink, body > #banner span#shareText:not(.hidden) {
+      display: block;
+      height: 0; }
+    body > #banner > aside {
+      max-width: none;
+      margin: auto;
+      width: 95%; }
   body #buttons {
-    text-align: center;
-  }
-}
-
+    text-align: center; } }
 /*SkinnyPhone*/
 @media (max-width: 400px) {
   #banner {
-    padding: 10px 0 5px;
-  }
-  #banner canvas {
-    width: 100px;
-  }
-  #banner #title {
-    text-align: center;
-  }
-  #banner #description {
-    display: none;
-  }
-  #banner br.noMobile {
-    display: none;
-  }
-}
-
+    padding: 10px 0 5px; }
+    #banner canvas {
+      width: 100px; }
+    #banner #title {
+      text-align: center; }
+    #banner #description {
+      display: none; }
+    #banner br.noMobile {
+      display: none; } }
 /*Really Short Device*/
 @media (max-height: 420px) {
   #banner {
-    padding: 10px 0 5px;
-  }
-  #banner canvas {
-    width: 136px;
-  }
-}
-
+    padding: 10px 0 5px; }
+    #banner canvas {
+      width: 136px; } }
 /*Mode Transitions*/
 body::before, #banner, tool-tip {
-  transition: background 1s ease, background-image 1s ease, color .4s ease;
-}
+  transition: background 1s ease, background-image 1s ease, color .4s ease; }
 
 img, button.lock, button.unlock, nav {
-  transition: background 1s ease, background-image 1s ease;
-}
+  transition: background 1s ease, background-image 1s ease; }
 
 h1, h2, h3, h4, h5, p {
-  transition: color .4s ease;
-}
+  transition: color .4s ease; }
 
 canvas, button {
-  transition: filter 1s ease;
-}
+  transition: filter 1s ease; }
 
 /*Light mode stylings*/
 body.lightMode {
   background: #aaa;
-  color: #1f1f1f;
-}
-
-body.lightMode .darkMode {
-  display: none;
-}
-
-body.lightMode::before {
-  content: "";
-  background: -webkit-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
-  background: linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
-  background-position: center;
-  background-size: 100%, 480px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-@media (max-width: 500px), (max-height: 600px) {
+  color: #1f1f1f; }
+  body.lightMode .darkMode {
+    display: none; }
   body.lightMode::before {
-    background-size: 100%, 360px;
-  }
-}
-
-body.lightMode nav {
-  background: #d65e5e;
-  background-image: linear-gradient(90deg, #fbb387, #d65e5e, #a748a0);
-}
-
-body.lightMode nav > a {
-  color: #1f1f1f;
-}
-
-body.lightMode nav > a:not(:first-child) {
-  border-left: 1px solid rgba(115, 28, 115, 0.5);
-}
-
-body.lightMode nav > a:not(:last-child) {
-  border-right: 1px solid rgba(115, 28, 115, 0.5);
-}
-
-body.lightMode nav > a:hover {
-  background: rgba(74, 118, 134, 0.3);
-  color: white;
-  text-decoration: none;
-}
-
-body.lightMode #banner {
-  background: #dcdcdc;
-}
-
-body.lightMode #banner a {
-  color: #0d81e6;
-}
-
-body.lightMode #banner a:hover {
-  color: #4fa3ec;
-}
-
-body.lightMode button.lock {
-  background: url("../assets/darkmode/objects/Lock.png");
-  background-size: cover;
-}
-
-body.lightMode button.unlock {
-  background: url("../assets/darkmode/objects/Unlock.png");
-  background-size: cover;
-}
-
-body.lightMode #searchBox {
-  background: transparent;
-  background-image: url("../assets/darkMode/symbols/Search.png"), linear-gradient(0deg, #1f1f1f -1750%, transparent 250%);
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  border: solid 2px #1f1f1f;
-  color: #1f1f1f;
-}
-
-body.lightMode #searchBox:focus {
-  border: solid 2px #bc5282;
-}
-
-body.lightMode image-card tool-tip {
-  background: rgba(217, 217, 217, 0.75);
-  border: 1px solid #383838;
-}
-
-body.lightMode image-card img {
-  background: rgba(255, 255, 255, 0.3);
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  transition: outline .4s ease, background .2s ease;
-}
-
-body.lightMode image-card:hover img {
-  outline: 2px solid #1f1f1f;
-  outline-offset: -2px;
-}
-
-body.lightMode image-card.active tool-tip {
-  border-color: #37b41d;
-}
-
-body.lightMode image-card.active img:not(:hover) {
-  outline-color: #37b41d;
-}
-
-body.lightMode a {
-  text-decoration: none;
-  color: #a748a0;
-}
-
-body.lightMode a:hover {
-  text-decoration: underline;
-  color: #d65e5e;
-}
+    content: "";
+    background: -webkit-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
+    background: -o-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
+    background: linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+    @media (max-width: 500px), (max-height: 600px) {
+      body.lightMode::before {
+        background-size: 100%, 360px; } }
+  body.lightMode nav {
+    background: #d65e5e;
+    background-image: linear-gradient(90deg, #fbb387, #d65e5e, #a748a0); }
+    body.lightMode nav > a {
+      color: #1f1f1f; }
+      body.lightMode nav > a:not(:first-child) {
+        border-left: 1px solid rgba(115, 28, 115, 0.5); }
+      body.lightMode nav > a:not(:last-child) {
+        border-right: 1px solid rgba(115, 28, 115, 0.5); }
+      body.lightMode nav > a:hover {
+        background: rgba(74, 118, 134, 0.3);
+        color: white;
+        text-decoration: none; }
+  body.lightMode #banner {
+    background: #dcdcdc; }
+    body.lightMode #banner a {
+      color: #0d81e6; }
+      body.lightMode #banner a:hover {
+        color: #4fa3ec; }
+  body.lightMode button.lock {
+    background: url("../assets/darkmode/objects/Lock.png");
+    background-size: cover; }
+  body.lightMode button.unlock {
+    background: url("../assets/darkmode/objects/Unlock.png");
+    background-size: cover; }
+  body.lightMode #searchBox {
+    background: transparent;
+    background-image: url("../assets/darkMode/symbols/Search.png"), linear-gradient(0deg, #1f1f1f -1750%, transparent 250%);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: solid 2px #1f1f1f;
+    color: #1f1f1f; }
+    body.lightMode #searchBox:focus {
+      border: solid 2px #bc5282; }
+  body.lightMode image-card tool-tip {
+    background: rgba(217, 217, 217, 0.75);
+    border: 1px solid #383838; }
+  body.lightMode image-card img {
+    background: rgba(255, 255, 255, 0.3);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+  body.lightMode image-card:hover img {
+    outline: 2px solid #1f1f1f;
+    outline-offset: -2px; }
+  body.lightMode image-card.active tool-tip {
+    border-color: #37b41d; }
+  body.lightMode image-card.active img:not(:hover) {
+    outline-color: #37b41d; }
+  body.lightMode a {
+    text-decoration: none;
+    color: #a748a0; }
+    body.lightMode a:hover {
+      text-decoration: underline;
+      color: #d65e5e; }
 
 /*Dark mode stylings*/
 body.darkMode {
   background: #383838;
-  color: #dcdcdc;
-}
-
-body.darkMode .lightMode {
-  display: none;
-}
-
-body.darkMode::before {
-  content: "";
-  background: -webkit-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background: linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background-position: center;
-  background-size: 100%, 480px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-@media (max-width: 500px), (max-height: 600px) {
+  color: #dcdcdc; }
+  body.darkMode .lightMode {
+    display: none; }
   body.darkMode::before {
-    background-size: 100%, 360px;
-  }
-}
-
-body.darkMode nav {
-  background: #b5037a;
-  background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b);
-}
-
-body.darkMode nav > a {
-  color: white;
-}
-
-body.darkMode nav > a:not(:first-child) {
-  border-left: 1px solid rgba(81, 1, 81, 0.5);
-}
-
-body.darkMode nav > a:not(:last-child) {
-  border-right: 1px solid rgba(81, 1, 81, 0.5);
-}
-
-body.darkMode nav > a:hover {
-  background: rgba(247, 255, 203, 0.4);
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-body.darkMode #banner {
-  background: #383838;
-}
-
-body.darkMode #banner a {
-  color: #77aedc;
-}
-
-body.darkMode #banner a:hover {
-  color: #529ddc;
-}
-
-body.darkMode button.lock {
-  background: url("../assets/objects/Lock.png");
-  background-size: cover;
-}
-
-body.darkMode button.unlock {
-  background: url("../assets/objects/Unlock.png");
-  background-size: cover;
-}
-
-body.darkMode #searchBox {
-  background: transparent;
-  background-image: url("../assets/symbols/Search.png"), linear-gradient(0deg, #dcdcdc -1750%, transparent 250%);
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  border: solid 2px #dcdcdc;
-  color: #dcdcdc;
-}
-
-body.darkMode #searchBox:focus {
-  border: solid 2px #de464e;
-}
-
-body.darkMode image-card tool-tip {
-  background: rgba(26, 26, 26, 0.75);
-  border: 1px solid #aaa;
-}
-
-body.darkMode image-card img {
-  background: rgba(38, 38, 38, 0.4);
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  transition: outline .4s ease, background .2s ease;
-}
-
-body.darkMode image-card img:hover {
-  outline: 2px solid #dcdcdc;
-  outline-offset: -2px;
-}
-
-body.darkMode image-card.active tool-tip {
-  border-color: #9efe1a;
-}
-
-body.darkMode image-card.active img:not(:hover) {
-  outline-color: #9efe1a;
-}
-
-body.darkMode a {
-  text-decoration: none;
-  color: #b5037a;
-}
-
-body.darkMode a:hover {
-  text-decoration: underline;
-  color: #fe7a2b;
-}
+    content: "";
+    background: -webkit-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background: -o-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background: linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
+    background-position: center;
+    background-size: 100%, 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: -1; }
+    @media (max-width: 500px), (max-height: 600px) {
+      body.darkMode::before {
+        background-size: 100%, 360px; } }
+  body.darkMode nav {
+    background: #b5037a;
+    background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b); }
+    body.darkMode nav > a {
+      color: white; }
+      body.darkMode nav > a:not(:first-child) {
+        border-left: 1px solid rgba(81, 1, 81, 0.5); }
+      body.darkMode nav > a:not(:last-child) {
+        border-right: 1px solid rgba(81, 1, 81, 0.5); }
+      body.darkMode nav > a:hover {
+        background: rgba(247, 255, 203, 0.4);
+        color: #1f1f1f;
+        text-decoration: none; }
+  body.darkMode #banner {
+    background: #383838; }
+    body.darkMode #banner a {
+      color: #77aedc; }
+      body.darkMode #banner a:hover {
+        color: #529ddc; }
+  body.darkMode button.lock {
+    background: url("../assets/objects/Lock.png");
+    background-size: cover; }
+  body.darkMode button.unlock {
+    background: url("../assets/objects/Unlock.png");
+    background-size: cover; }
+  body.darkMode #searchBox {
+    background: transparent;
+    background-image: url("../assets/symbols/Search.png"), linear-gradient(0deg, #dcdcdc -1750%, transparent 250%);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: solid 2px #dcdcdc;
+    color: #dcdcdc; }
+    body.darkMode #searchBox:focus {
+      border: solid 2px #de464e; }
+  body.darkMode image-card tool-tip {
+    background: rgba(26, 26, 26, 0.75);
+    border: 1px solid #aaa; }
+  body.darkMode image-card img {
+    background: rgba(38, 38, 38, 0.4);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline .4s ease, background .2s ease; }
+    body.darkMode image-card img:hover {
+      outline: 2px solid #dcdcdc;
+      outline-offset: -2px; }
+  body.darkMode image-card.active tool-tip {
+    border-color: #9efe1a; }
+  body.darkMode image-card.active img:not(:hover) {
+    outline-color: #9efe1a; }
+  body.darkMode a {
+    text-decoration: none;
+    color: #b5037a; }
+    body.darkMode a:hover {
+      text-decoration: underline;
+      color: #fe7a2b; }
 
 /*Styles*/
 body > div.loading {
@@ -631,202 +446,155 @@ body > div.loading {
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 1.75s ease .25s;
-  opacity: 1;
-}
-
-@media (max-width: 500px), (max-height: 600px) {
-  body > div.loading {
-    background-size: 300px, cover;
-  }
-}
-
-body > div.loading.complete {
-  opacity: 0;
-}
+  opacity: 1; }
+  @media (max-width: 500px), (max-height: 600px) {
+    body > div.loading {
+      background-size: 300px, cover; } }
+  body > div.loading.complete {
+    opacity: 0; }
 
 #banner a {
-  text-decoration: none;
-}
-
-#banner a:hover {
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  #banner a:hover {
+    text-decoration: underline; }
 
 nav > a {
-  transition: background .4s ease, color .6s ease;
-}
+  transition: background .4s ease, color .6s ease; }
 
 canvas, button {
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-}
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); }
 
 #buttons button {
   background: #ba047b;
   border-color: #ff7c29;
-  color: #dcdcdc;
-}
-
-#buttons button:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-  color: #1f1f1f;
-}
-
-#buttons button#download {
-  background: #ba047b;
-  border-color: #ff7c29;
-  color: #dcdcdc;
-  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Download.png"), linear-gradient(#ba047b, #ba047b);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#download:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-  color: #1f1f1f;
-}
-
-#buttons button#download:hover {
-  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ff7c29, #ff7c29);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button#upload {
-  background: #ba047b;
-  border-color: #ff7c29;
-  color: #dcdcdc;
-  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Upload.png"), linear-gradient(#ba047b, #ba047b);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#upload:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-  color: #1f1f1f;
-}
-
-#buttons button#upload:hover {
-  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ff7c29, #ff7c29);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button#share {
-  background: #ba047b;
-  border-color: #ff7c29;
-  color: #dcdcdc;
-  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Link.png"), linear-gradient(#ba047b, #ba047b);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#share:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-  color: #1f1f1f;
-}
-
-#buttons button#share:hover {
-  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ff7c29, #ff7c29);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button.toggle {
-  background: #ba047b;
-  border-color: #ff7c29;
-}
-
-#buttons button.toggle label {
-  background: #dcdcdc;
-}
-
-#buttons button.toggle:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-}
-
-#buttons button.toggle:hover label {
-  background: #1f1f1f;
-}
-
+  color: #dcdcdc; }
+  #buttons button:hover {
+    background: #ff7c29;
+    border-color: #ba047b;
+    color: #1f1f1f; }
+  #buttons button#download {
+    background: #ba047b;
+    border-color: #ff7c29;
+    color: #dcdcdc;
+    background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Download.png"), -o-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Download.png"), linear-gradient(#ba047b, #ba047b);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#download:hover {
+      background: #ff7c29;
+      border-color: #ba047b;
+      color: #1f1f1f; }
+    #buttons button#download:hover {
+      background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ff7c29, #ff7c29);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button#upload {
+    background: #ba047b;
+    border-color: #ff7c29;
+    color: #dcdcdc;
+    background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Upload.png"), linear-gradient(#ba047b, #ba047b);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#upload:hover {
+      background: #ff7c29;
+      border-color: #ba047b;
+      color: #1f1f1f; }
+    #buttons button#upload:hover {
+      background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ff7c29, #ff7c29);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button#share {
+    background: #ba047b;
+    border-color: #ff7c29;
+    color: #dcdcdc;
+    background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ba047b, #ba047b);
+    background: url("../assets/symbols/Link.png"), linear-gradient(#ba047b, #ba047b);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 24px; }
+    #buttons button#share:hover {
+      background: #ff7c29;
+      border-color: #ba047b;
+      color: #1f1f1f; }
+    #buttons button#share:hover {
+      background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ff7c29, #ff7c29);
+      background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ff7c29, #ff7c29);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #buttons button.toggle {
+    background: #ba047b;
+    border-color: #ff7c29; }
+    #buttons button.toggle label {
+      background: #dcdcdc; }
+    #buttons button.toggle:hover {
+      background: #ff7c29;
+      border-color: #ba047b; }
+      #buttons button.toggle:hover label {
+        background: #1f1f1f; }
 #buttons button {
   border-width: 1px;
   border-style: solid;
-  cursor: pointer;
-}
-
+  cursor: pointer; }
 #buttons * {
-  transition: background .3s ease, color .3s ease, filter 1s ease;
-}
-
+  transition: background .3s ease, color .3s ease, filter 1s ease; }
 #buttons .toggle label {
   transition: background .3s ease, color .3s ease, transform .4s ease;
-  cursor: pointer;
-}
-
+  cursor: pointer; }
 #buttons .toggle, #buttons .toggle label {
-  border-radius: 50px;
-}
+  border-radius: 50px; }
 
 button {
-  padding: 4px 6px;
-}
-
-button.lock, button.unlock {
-  padding: 0;
-  margin-top: 0;
-  width: 28px;
-  height: 28px;
-  transform: translateY(-4px);
-  border: none;
-}
+  padding: 4px 6px; }
+  button.lock, button.unlock {
+    padding: 0;
+    margin-top: 0;
+    width: 28px;
+    height: 28px;
+    transform: translateY(-4px);
+    border: none; }
 
 #searchBox {
-  border-radius: 20px;
-}
+  border-radius: 20px; }
+
+#clearSearch {
+  background: transparent;
+  color: inherit;
+  border: none; }
+  #clearSearch:hover {
+    filter: brightness(1.5); }
+
+image-card, #clearSearch, button {
+  cursor: pointer; }
 
 image-card tool-tip {
   text-align: center;
-  border-radius: 3px;
-}
-
-image-card tool-tip a {
-  text-decoration: none;
-  color: inherit;
-}
+  border-radius: 3px; }
+  image-card tool-tip a {
+    text-decoration: none;
+    color: inherit; }
 
 #shape img {
-  background: none;
-}
+  background: none; }
 
 main {
-  text-align: center;
-}
+  text-align: center; }
 
 .limited.halloween {
   color: #b96c01;
@@ -836,9 +604,7 @@ main {
   -webkit-background-clip: text;
   animation-duration: .4s;
   animation-name: halloween;
-  animation-iteration-count: infinite;
-}
-
+  animation-iteration-count: infinite; }
 .limited.thanksgiving {
   color: #f1b930;
   background: #f1b930;
@@ -847,9 +613,7 @@ main {
   -webkit-background-clip: text;
   animation-duration: .4s;
   animation-name: thanksgiving;
-  animation-iteration-count: infinite;
-}
-
+  animation-iteration-count: infinite; }
 .limited.christmas {
   color: #468e40;
   background: #468e40;
@@ -858,8 +622,7 @@ main {
   -webkit-background-clip: text;
   animation-duration: .4s;
   animation-name: christmas;
-  animation-iteration-count: infinite;
-}
+  animation-iteration-count: infinite; }
 
 @keyframes halloween {
   0% {
@@ -867,152 +630,126 @@ main {
     background: #b96c01;
     background: linear-gradient(90deg, #1f1f1f, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   16.7% {
     color: #b96c01;
     background: #b96c01;
     background: linear-gradient(90deg, #1f1f1f, #b96c01);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   33.3% {
     color: #1f1f1f;
     background: #1f1f1f;
     background: linear-gradient(90deg, #dcdcdc, #1f1f1f, #b96c01);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   50% {
     color: #1f1f1f;
     background: #1f1f1f;
     background: linear-gradient(90deg, #dcdcdc, #1f1f1f);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   66.7% {
     color: #dcdcdc;
     background: #dcdcdc;
     background: linear-gradient(90deg, #b96c01, #dcdcdc, #1f1f1f);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   83.3% {
     color: #dcdcdc;
     background: #dcdcdc;
     background: linear-gradient(90deg, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   100% {
     color: #b96c01;
     background: #b96c01;
     background: linear-gradient(90deg, #1f1f1f, #b96c01, #dcdcdc);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-}
-
+    -webkit-background-clip: text; } }
 @keyframes thanksgiving {
   0% {
     color: #f1b930;
     background: #f1b930;
     background: linear-gradient(90deg, #6c2f00, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   16.7% {
     color: #f1b930;
     background: #f1b930;
     background: linear-gradient(90deg, #6c2f00, #f1b930);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   33.3% {
     color: #6c2f00;
     background: #6c2f00;
     background: linear-gradient(90deg, #859d3c, #6c2f00, #f1b930);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   50% {
     color: #6c2f00;
     background: #6c2f00;
     background: linear-gradient(90deg, #859d3c, #6c2f00);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   66.7% {
     color: #859d3c;
     background: #859d3c;
     background: linear-gradient(90deg, #f1b930, #859d3c, #6c2f00);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   83.3% {
     color: #859d3c;
     background: #859d3c;
     background: linear-gradient(90deg, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   100% {
     color: #f1b930;
     background: #f1b930;
     background: linear-gradient(90deg, #6c2f00, #f1b930, #859d3c);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-}
-
+    -webkit-background-clip: text; } }
 @keyframes christmas {
   0% {
     color: #468e40;
     background: #468e40;
     background: linear-gradient(90deg, #dcdcdc, #468e40, #9c3b3e);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   16.7% {
     color: #468e40;
     background: #468e40;
     background: linear-gradient(90deg, #dcdcdc, #468e40);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   33.3% {
     color: #dcdcdc;
     background: #dcdcdc;
     background: linear-gradient(90deg, #9c3b3e, #dcdcdc, #468e40);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   50% {
     color: #dcdcdc;
     background: #dcdcdc;
     background: linear-gradient(90deg, #9c3b3e, #dcdcdc);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   66.7% {
     color: #9c3b3e;
     background: #9c3b3e;
     background: linear-gradient(90deg, #468e40, #9c3b3e, #dcdcdc);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   83.3% {
     color: #9c3b3e;
     background: #9c3b3e;
     background: linear-gradient(90deg, #468e40, #9c3b3e);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    -webkit-background-clip: text; }
   100% {
     color: #468e40;
     background: #468e40;
     background: linear-gradient(90deg, #dcdcdc, #468e40, #9c3b3e);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-}
+    -webkit-background-clip: text; } }

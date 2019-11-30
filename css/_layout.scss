@@ -65,11 +65,16 @@ body {
 		> div > p + p, > div > br + p {
 			margin-top: 8px;
 		}
+		$clearOffset: 2.1em;
 		> #searchBox {
 			margin-bottom: 15px;
 			max-width: 300px;
 			width: 50%;
 			padding: 4px 10px 4px 25px;
+			transform: translateX(1 / 2 * $clearOffset);
+		}
+		#clearSearch {
+			transform: translateX(-1 / 2 * $clearOffset);
 		}
 	}
 	> div.loading {
@@ -122,7 +127,7 @@ h1, h2, h3, h4 ,h5 {
 image-card {
 	position: relative;
 	display: inline-block;
-	tool-tip {
+	> tool-tip {
 		pointer-events: none;
 		padding: 5px;
 		width: 1.5*$imgSize;
@@ -134,7 +139,7 @@ image-card {
 		z-index: 1;
 		transition: opacity .4s ease, transform .6s ease;
 	}
-	&:hover tool-tip:not(:hover) {
+	&:hover > tool-tip {
 		opacity: 1;
 		transform: translate(-25px, 5px);
 	}

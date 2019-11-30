@@ -20,6 +20,7 @@ Logos:
     Fullmetal Alchemist
     Futurama
     Gravity Falls
+    Ladybug Miraculous
     Sailor Moon
     Seven Deadly Sins
     Spongebob?
@@ -40,6 +41,7 @@ Features:
   Color scrollbar
   Highlight new content
   Individual Random
+  Browser <500 x <600
   Overlay options
   Pages:
     404 page

@@ -84,6 +84,17 @@ button {
 #searchBox {
   border-radius: 20px;
 }
+#clearSearch {
+  background: transparent;
+  color: inherit;
+  border: none;
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
+image-card, #clearSearch, button {
+  cursor: pointer;
+}
 image-card tool-tip {
   text-align: center;
   border-radius: 3px;
