@@ -44,9 +44,9 @@ Features:
   Browser <500 x <600
   Overlay options
   Pages:
-    404 page
     Future plans page
     Setting page?
+      Darkmode
     Stats pages
     Suggestion page
   Reduce globals
