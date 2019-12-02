@@ -40,8 +40,12 @@ main > div h3 {
 }
 
 @media (max-height: 600px) and (min-width: 500.1px) {
-  body > main div {
-    margin: 30px 10px;
+  body > main {
+    max-width: none;
+  }
+  body > main > div {
+    max-width: 700px;
+    margin: 30px auto;
     padding: 4px;
   }
 }

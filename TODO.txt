@@ -11,21 +11,17 @@ Logos:
     Overwatch heroes
     Pin
   Shows:
-    Avatar
     Black Mirror
     Code Geass
     Death Note
     Doctor Who
-    Dragon Prince
     Fullmetal Alchemist
     Futurama
     Gravity Falls
-    Ladybug Miraculous
     Sailor Moon
     Seven Deadly Sins
     Spongebob?
     Star Trek
-    Star Wars
     Steven Universe?
     X Files
   Villains:

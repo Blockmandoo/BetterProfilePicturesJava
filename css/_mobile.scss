@@ -59,11 +59,10 @@
       overflow: hidden;
       height: 100vh;
     	grid-template:
-    		"navi navi"
-    		"banner body"
+    		"navi navi" 37px
+    		"banner body" 1fr
         !important;
       grid-auto-columns: 225px 1fr;
-      grid-auto-rows: 37px 1fr;
       > main {
         height: 100%;
         width: 99%;

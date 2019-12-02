@@ -26,7 +26,8 @@ body.darkMode {
 		// background: #1da71a;
 		background: #b5037a;
 		// background-image: linear-gradient(90deg, #7dc32c, #1da71a, #208873);
-		background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b);
+		// background-image: linear-gradient(90deg, #fe7a2b, #b5037a, #62025b);
+		background-image: linear-gradient(90deg, #d3305d, #8e036b, #540255);
 		> a {
 			color: white;
 			$transparentBorder: rgba(81, 1, 81, .5);
@@ -38,7 +39,8 @@ body.darkMode {
 				border-right: 1px solid $transparentBorder;
 			}
 			&:hover {
-				background: rgba(247,255,203,.4);
+				// background: rgba(247,255,203,.4);
+				background: rgba(255,125,41,.6);
 				color: $black;
 				text-decoration: none;
 			}

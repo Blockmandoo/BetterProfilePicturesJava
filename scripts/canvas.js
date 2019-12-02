@@ -61,7 +61,7 @@ function makeImage() {
 	var borderOffset;
 	switch (globalShape) {
     case "Circle":
-      borderOffset = -1;
+      borderOffset = -0.5;
       break;
 		case "Decagon":
 			borderOffset = 6;
