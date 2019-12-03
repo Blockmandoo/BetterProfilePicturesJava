@@ -14,5 +14,5 @@ img.flyingImageStart {
 
 img.flyingImageEnd {
   opacity: 0;
-  transform: translatex(-50%) translateY(-70vh) scale(0.5);
+  transform: translatex(-50%) translateY(-70vh) scale(0.1);
 }

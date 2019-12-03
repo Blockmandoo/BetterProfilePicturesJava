@@ -8,7 +8,7 @@ var backgroundColorNames = [],
 //Activate active cards
 function activateCards() {
 	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").classList.add("active");
-	document.querySelector("#logo [name='" + globalLogo + "']").classList.add("active");
+	document.querySelector("#logo #" + globalGenre + " [name='" + globalLogo + "']").classList.add("active");
 	document.querySelector("#logoColor [name='" + globalLogoColor + "']").classList.add("active");
 	document.querySelector("#shape [name='" + globalShape + "']").classList.add("active");
 	document.querySelector("#backgroundStyle [name='" + globalBackgroundStyle + "']").classList.add("active");

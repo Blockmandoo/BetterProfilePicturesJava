@@ -40,11 +40,12 @@ Features:
   Browser <500 x <600
   Overlay options
   Pages:
+    Feedback page
     Future plans page
     Setting page?
+      Random mode
       Darkmode
     Stats pages
-    Suggestion page
   Reduce globals
   T-Shirt shape
   Write missing descriptions:

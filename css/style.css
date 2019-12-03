@@ -848,6 +848,10 @@ image-card, #clearSearch, button {
   cursor: pointer;
 }
 
+image-card.folder img {
+  border-radius: 10%;
+}
+
 image-card tool-tip {
   text-align: center;
   border-radius: 3px;
