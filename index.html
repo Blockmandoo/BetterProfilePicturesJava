@@ -12,13 +12,14 @@
 	<meta name="msapplication-TileColor" content="#b54f35"> <!-- Windows thumbnail color -->
 	<meta name="msapplication-wide310x150logo" content="assets/favicon310x150.png"> <!-- Windows Rectangle thumbnail -->
 	<meta name="theme-color" content="#b54f35"/> <!-- Discord/Facbook theme color-->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media."/>
 	<meta property="og:image:type" content="image/png"/>
 	<meta property="og:image:url" content="/assets/favicon300.png"/> <!-- Discord / Facebook thumbnail -->
 	<meta property="og:site_name" content="BetterProfilePictures"/>
 	<meta property="og:title" content="Better Profile Pictures"/>
 	<meta property="og:type" content="article"/>
+	<script class="jquery" src="scripts/jquery-3.4.1.min.js"></script>
 	<script src="scripts/canvas.js"></script>
 	<script src="scripts/customElements.js"></script>
 	<script src="scripts/onClick.js"></script>
@@ -39,7 +40,7 @@
 		<canvas width="256" height="256"></canvas>
 		</a>
 		<aside>
-			<h1 id="title">Better Profile Pictures</h1>
+			<h2 id="title">Better Profile Pictures</h2>
 			<p id="description"> Welcome to Better Profile Pictures, here we help you find a new profile picture so you can finally replace the default one given to you by big social media companies. Pick a few options down below to get started. (There are currently
 				<span class="combinations">
 					over 75,000,000

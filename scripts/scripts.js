@@ -1,3 +1,7 @@
+//JS file with the mojority of the loose end code, anytime something needs code, and doesn't have a good file to go in, it goes here.
+//Basically the desktop for my site
+//Author: Nathanael Jacobsma
+
 var backgroundColorNames = [],
 		backgroundStyleNames = [],
 		logoNames = [],

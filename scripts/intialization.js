@@ -1,3 +1,6 @@
+//JS file that runs the functions that need to be run on page startup
+//Author: Nathanael Jacobsma
+
 function initialize() {
 	// Check the last darkmode setting
 	darkmodeCheck();

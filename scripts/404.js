@@ -1,3 +1,6 @@
+//JS File to animate the images at the bottom of the 404 page
+//Author: Nathanael Jacobsma
+
 function flyingImage() {
   var body = document.querySelector("body"),
       imgTest = document.createElement("img"),

@@ -1,3 +1,6 @@
+//JS file that handles the canvas image generation
+//Author: Nathanael Jacobsma
+
 var globalBackgroundColor = "BurningHorizon",
  		globalBackgroundStyle = "Stars",
 		globalGenre = "Objects",

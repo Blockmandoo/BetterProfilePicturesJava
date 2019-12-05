@@ -1,4 +1,9 @@
+//JS file in charge of adding on click events (and other events, but mostly click)
+//Most function names should be self-explanatory
+//Author: Nathanael Jacobsma
+
 function addClicks() {
+	//Functions embeded in this function as to clean up global functions
 	autoPumpkin();
 	backgroundColorClicks();
 	backgroundStyleClicks();
@@ -16,100 +21,45 @@ function addClicks() {
 
 	// Automatically change the shape to pumpkin if the texture is clicked
 	function autoPumpkin() {
-		var element = document.querySelector("#backgroundStyle image-card[name=Pumpkin]");
-		if (element.addEventListener) {
-			element.addEventListener("click", function () {
-				setShape("Pumpkin");
-			}, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("onClick", function () {
-				setShape("Pumpkin");
-			});
-		}
+		$("#backgroundStyle image-card[name=Pumpkin]").click(function() {
+			setShape("Pumpkin");
+		});
 	}
 
 	function backgroundColorClicks() {
-		var elements = document.querySelectorAll("#backgroundColor image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					setBackgroundColor(name);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					setBackgroundColor(name);
-				});
-			}
-		}
+		$("#backgroundColor image-card").click(function() {
+			var name = this.getAttribute("name");
+			setBackgroundColor(name);
+		});
 	}
 
 	function backgroundStyleClicks() {
-		var elements = document.querySelectorAll("#backgroundStyle image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					setBackgroundStyle(name);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					setBackgroundStyle(name);
-				});
-			}
-		}
+		$("#backgroundStyle image-card").click(function() {
+			var name = this.getAttribute("name");
+			setBackgroundStyle(name);
+		});
 	}
 
 	function clearSearchButton() {
-		var elements = document.querySelectorAll("#clearSearch");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					clearSearch();
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					clearSearch();
-				});
-			}
-		}
+		$("#clearSearch").click(clearSearch);
 	}
 
 	function downloadLink() {
-		var elements = document.querySelectorAll("#download, #canvasLink");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					downloadCanvas();
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					downloadCanvas();
-				});
-			}
-		}
+		$("#download, #canvasLink").click(downloadCanvas);
 	}
 
 	function genreClicks() {
-		var elements = document.querySelectorAll("#genre image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					setGenre(name);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					setGenre(name);
-				});
-			}
-		}
+		$("#genre image-card").click(function() {
+			var name = this.getAttribute("name");
+			setGenre(name);
+		});
 	}
 
 	function lockButton() {
+		$("button.lock, button.unlock").click(function() {
+			swapLock(this);
+		});
+		/*
 		var elements = document.querySelectorAll("button.lock, button.unlock");
 		for (var i = 0; i < elements.length; i++) {
 			if (elements[i].addEventListener) {
@@ -122,122 +72,46 @@ function addClicks() {
 				});
 			}
 		}
+		*/
 	}
 
 	function logoClicks() {
-		var elements = document.querySelectorAll("#logo image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					var head = this.getAttribute("head");
-					var description = this.getAttribute("description");
-					setLogo(name);
-					setDescription(head, description);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					var head = this.getAttribute("head");
-					var description = this.getAttribute("description");
-					setLogo(name);
-					setDescription(head, description);
-				});
-			}
-		}
+		$("#logo image-card").click(function() {
+			var name = this.getAttribute("name");
+			var head = this.getAttribute("head");
+			var description = this.getAttribute("description");
+			setLogo(name);
+			setDescription(head, description);
+		});
 	}
 
 	function logoColorClicks() {
-		var elements = document.querySelectorAll("#logoColor image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					setLogoColor(name);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					setLogoColor(name);
-				});
-			}
-		}
+		$("#logoColor image-card").click(function() {
+			var name = this.getAttribute("name");
+			setLogoColor(name);
+		});
 	}
 
 	function randomishLink() {
-		var element = document.querySelector("#sudorandom");
-		if (element.addEventListener) {
-			element.addEventListener("click", function () {
-				randomishIcon();
-			}, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("onClick", function () {
-				randomishIcon();
-			});
-		}
+		$("#sudorandom").click(randomishIcon);
 	}
 
 	function randomLink() {
-		var element = document.querySelector("#random");
-		if (element.addEventListener) {
-			element.addEventListener("click", function () {
-				randomIcon();
-			}, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("onClick", function () {
-				randomIcon();
-			});
-		}
+		$("#random").click(randomIcon);
 	}
 
 	function searchBox() {
-		var element = document.querySelector("#searchBox");
-		if (element.addEventListener) {
-			element.addEventListener("change", function () {
-				search();
-			}, false);
-			element.addEventListener("keyup", function () {
-				search();
-			}, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("onChange", function () {
-				search();
-			});
-			element.attachEvent("onKeyup", function () {
-				search();
-			});
-		}
+		$("#searchBox").change(search).keyup(search);
 	}
 
 	function shapeClicks() {
-		var elements = document.querySelectorAll("#shape image-card");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					var name = this.getAttribute("name");
-					setShape(name);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					var name = this.getAttribute("name");
-					setShape(name);
-				});
-			}
-		}
+		$("#shape image-card").click(function() {
+			var name = this.getAttribute("name");
+			setShape(name);
+		});
 	}
 
 	function shareLink() {
-		var elements = document.querySelectorAll("#share");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					copyLink();
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					copyLink();
-				});
-			}
-		}
+		$("#share").click(copyLink);
 	}
 }

@@ -1,3 +1,7 @@
+//JS file in charge of declaring decent color schemes to use for the random button
+//Once I learn how to use php or json better I'll swap this file over to that since this is rather messy imo
+//Author: Nathanael Jacobsma
+
 var logoSchemes = [],
 		backgroundSchemes = [];
 
