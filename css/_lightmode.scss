@@ -57,14 +57,14 @@ body.lightMode {
 		}
 	}
 	button {
-	  &.lock {
-	    background: url("../assets/darkmode/objects/Lock.png");
-	    background-size: cover;
-	  }
-	  &.unlock {
-	    background: url("../assets/darkmode/objects/Unlock.png");
-	    background-size: cover;
-	  }
+		&.lock {
+			background: url("../assets/darkmode/objects/Lock.png");
+			background-size: cover;
+		}
+		&.unlock {
+			background: url("../assets/darkmode/objects/Unlock.png");
+			background-size: cover;
+		}
 	}
 	#searchBox {
 		background: transparent;
@@ -103,11 +103,11 @@ body.lightMode {
 		}
 	}
 	a {
-	  text-decoration: none;
-	  color: #a748a0;
-	  &:hover {
-	    text-decoration: underline;
-	    color: #d65e5e;
-	  }
+		text-decoration: none;
+		color: #a748a0;
+		&:hover {
+			text-decoration: underline;
+			color: #d65e5e;
+		}
 	}
 }

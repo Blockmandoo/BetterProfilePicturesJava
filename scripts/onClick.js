@@ -59,20 +59,6 @@ function addClicks() {
 		$("button.lock, button.unlock").click(function() {
 			swapLock(this);
 		});
-		/*
-		var elements = document.querySelectorAll("button.lock, button.unlock");
-		for (var i = 0; i < elements.length; i++) {
-			if (elements[i].addEventListener) {
-				elements[i].addEventListener("click", function () {
-					swapLock(this);
-				}, false);
-			} else if (elements[i].attachEvent) {
-				elements[i].attachEvent("onClick", function () {
-					swapLock(this);
-				});
-			}
-		}
-		*/
 	}
 
 	function logoClicks() {

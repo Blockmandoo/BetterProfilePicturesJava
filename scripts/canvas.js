@@ -8,10 +8,10 @@ var globalBackgroundColor = "BurningHorizon",
 		globalLogoColor = "White",
 		globalShape = "RoundedSquare",
 		tempGenre,
-                                //1000 = 1 Second
-		refreshRate = 250,          //How often should I update the canvas?
-    refreshTime = 15000,        //How long should I update the canvas after the page loads?
-		secondRefreshTime = 4000;   //How long should I update the canvas?
+																//1000 = 1 Second
+		refreshRate = 250,					//How often should I update the canvas?
+		refreshTime = 15000,				//How long should I update the canvas after the page loads?
+		secondRefreshTime = 4000;	 //How long should I update the canvas?
 
 //Download canvas
 function downloadCanvas() {
@@ -63,9 +63,9 @@ function makeImage() {
 	//Shrink logo for odd shapes
 	var borderOffset;
 	switch (globalShape) {
-    case "Circle":
-      borderOffset = -0.5;
-      break;
+		case "Circle":
+			borderOffset = -0.5;
+			break;
 		case "Decagon":
 			borderOffset = 6;
 			break;
@@ -76,13 +76,13 @@ function makeImage() {
 		case "HexagonLong":
 			borderOffset = 17;
 			break;
-  	case "RoundedHexagon":
-  	case "RoundedHexagonLong":
+		case "RoundedHexagon":
+		case "RoundedHexagonLong":
 			borderOffset = 9;
 			break;
-    case "Pumpkin":
-      borderOffset = 50;
-      break;
+		case "Pumpkin":
+			borderOffset = 50;
+			break;
 		case "Nonogon":
 			borderOffset = 8;
 			break;
@@ -235,7 +235,7 @@ function setShape(shape) {
 }
 
 function updateImage() {
-  clearInterval(refresh);
+	clearInterval(refresh);
 	var refresh = setInterval(makeImage, refreshRate);
 	setTimeout(function () {
 		clearInterval(refresh);
@@ -243,5 +243,5 @@ function updateImage() {
 			console.log("Stop!");
 		}
 	}, refreshTime);
-  refreshTime = secondRefreshTime;
+	refreshTime = secondRefreshTime;
 }

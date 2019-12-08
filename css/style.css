@@ -838,18 +838,21 @@ button.lock, button.unlock {
   background: transparent;
   color: inherit;
   border: none;
+  opacity: .6;
+  transition: opacity .4s ease;
 }
 
 #clearSearch:hover {
   filter: brightness(1.5);
+  opacity: 1;
+}
+
+#clearSearch:active {
+  color: #be0b76;
 }
 
 image-card, #clearSearch, button {
   cursor: pointer;
-}
-
-image-card.folder img {
-  border-radius: 10%;
 }
 
 image-card tool-tip {

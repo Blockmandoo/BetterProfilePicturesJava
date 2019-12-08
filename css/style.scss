@@ -28,171 +28,177 @@ $toggleWidth: 55px;
 
 /*Styles*/
 body > div.loading {
-  background: #303030;
-  background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
-  background-size: 400px, cover;
-  @media (max-width: 500px), (max-height: 600px) {background-size: 300px, cover;}
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 1.75s ease .25s;
-  opacity: 1;
-  &.complete {
-    opacity: 0;
-  }
+	background: #303030;
+	background-image: url(../assets/Loading.svg), radial-gradient(transparent, #191919);
+	background-size: 400px, cover;
+	@media (max-width: 500px), (max-height: 600px) {background-size: 300px, cover;}
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: opacity 1.75s ease .25s;
+	opacity: 1;
+	&.complete {
+		opacity: 0;
+	}
 }
 #banner a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 nav > a {
-  transition: background .4s ease, color .6s ease;
+	transition: background .4s ease, color .6s ease;
 }
 canvas, button {
-  filter: drop-shadow(4px 4px 4px $transparentBlack);
+	filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
 #buttons {
-  @include buttons(#ba047b, #ff7c29);
-  button {
-    border-width: 1px;
-    border-style: solid;
-    cursor: pointer;
-  }
-  * {
-    transition: background .3s ease, color .3s ease, filter 1s ease;
-  }
-  .toggle label {
-    transition: background .3s ease, color .3s ease, transform .4s ease;
-    cursor: pointer;
-  }
-  .toggle, .toggle label {
-    border-radius: 50px;
-  }
+	@include buttons(#ba047b, #ff7c29);
+	button {
+		border-width: 1px;
+		border-style: solid;
+		cursor: pointer;
+	}
+	* {
+		transition: background .3s ease, color .3s ease, filter 1s ease;
+	}
+	.toggle label {
+		transition: background .3s ease, color .3s ease, transform .4s ease;
+		cursor: pointer;
+	}
+	.toggle, .toggle label {
+		border-radius: 50px;
+	}
 }
 button {
-  padding: 4px 6px;
-  &.lock, &.unlock {
-    padding: 0;
-    margin-top: 0;
-    width: 28px;
+	padding: 4px 6px;
+	&.lock, &.unlock {
+		padding: 0;
+		margin-top: 0;
+		width: 28px;
 		height: 28px;
-    transform: translateY(-4px);
-    border: none;
-  }
+		transform: translateY(-4px);
+		border: none;
+	}
 }
 #searchBox {
-  border-radius: 20px;
+	border-radius: 20px;
 }
 #clearSearch {
-  background: transparent;
-  color: inherit;
-  border: none;
-  &:hover {
-    filter: brightness(1.5);
-  }
+	background: transparent;
+	color: inherit;
+	border: none;
+	opacity: .6;
+	transition: opacity .4s ease;
+	&:hover {
+		filter: brightness(1.5);
+		opacity: 1;
+	}
+	&:active {
+		color: #be0b76;
+	}
 }
 image-card, #clearSearch, button {
-  cursor: pointer;
+	cursor: pointer;
 }
 image-card.folder img {
-  border-radius: 10%;
+	// border-radius: 10%;
 }
 image-card tool-tip {
-  text-align: center;
-  border-radius: 3px;
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+	text-align: center;
+	border-radius: 3px;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 #shape img {
-  background: none;
+	background: none;
 }
 main {
-  text-align: center;
+	text-align: center;
 }
 @mixin threeColorAnimation($color1, $color2, $color3) {
-  0% {
-    color: $color2;
-    background: $color2;
-    background: linear-gradient(90deg, $color1, $color2, $color3);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  16.7% {
-    color: $color2;
-    background: $color2;
-    background: linear-gradient(90deg, $color1, $color2);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  33.3% {
-    color: $color1;
-    background: $color1;
-    background: linear-gradient(90deg, $color3, $color1, $color2);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  50% {
-    color: $color1;
-    background: $color1;
-    background: linear-gradient(90deg, $color3, $color1);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  66.7% {
-    color: $color3;
-    background: $color3;
-    background: linear-gradient(90deg, $color2, $color3, $color1);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  83.3% {
-    color: $color3;
-    background: $color3;
-    background: linear-gradient(90deg, $color2, $color3);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  100% {
-    color: $color2;
-    background: $color2;
-    background: linear-gradient(90deg, $color1, $color2, $color3);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+	0% {
+		color: $color2;
+		background: $color2;
+		background: linear-gradient(90deg, $color1, $color2, $color3);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	16.7% {
+		color: $color2;
+		background: $color2;
+		background: linear-gradient(90deg, $color1, $color2);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	33.3% {
+		color: $color1;
+		background: $color1;
+		background: linear-gradient(90deg, $color3, $color1, $color2);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	50% {
+		color: $color1;
+		background: $color1;
+		background: linear-gradient(90deg, $color3, $color1);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	66.7% {
+		color: $color3;
+		background: $color3;
+		background: linear-gradient(90deg, $color2, $color3, $color1);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	83.3% {
+		color: $color3;
+		background: $color3;
+		background: linear-gradient(90deg, $color2, $color3);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	100% {
+		color: $color2;
+		background: $color2;
+		background: linear-gradient(90deg, $color1, $color2, $color3);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
 }
 
 @mixin limitedAppearence($name, $color2, $color3) {
-  color: $color2;
-  background: $color2;
-  background: linear-gradient(90deg, $color2, $color3);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation-duration: .4s;
-  animation-name: $name;
-  animation-iteration-count: infinite;
+	color: $color2;
+	background: $color2;
+	background: linear-gradient(90deg, $color2, $color3);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation-duration: .4s;
+	animation-name: $name;
+	animation-iteration-count: infinite;
 }
 
 .limited {
-  &.halloween {
-    @include limitedAppearence(halloween, #b96c01, $white);
-  }
-  &.thanksgiving {
-    @include limitedAppearence(thanksgiving, #f1b930, #859d3c);
-  }
-  &.christmas {
-    @include limitedAppearence(christmas, #468e40, #9c3b3b);
-  }
+	&.halloween {
+		@include limitedAppearence(halloween, #b96c01, $white);
+	}
+	&.thanksgiving {
+		@include limitedAppearence(thanksgiving, #f1b930, #859d3c);
+	}
+	&.christmas {
+		@include limitedAppearence(christmas, #468e40, #9c3b3b);
+	}
 }
 
 @keyframes halloween {
-  @include threeColorAnimation($black, #b96c01, $white);
+	@include threeColorAnimation($black, #b96c01, $white);
 }
 @keyframes thanksgiving {
-  @include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
+	@include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
 }
 @keyframes christmas {
-  @include threeColorAnimation($white, #468e40, #9c3b3e);
+	@include threeColorAnimation($white, #468e40, #9c3b3e);
 }

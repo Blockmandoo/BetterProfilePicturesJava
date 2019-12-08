@@ -47,6 +47,7 @@ Features:
       Darkmode
     Stats pages
   Reduce globals
+  Scrollbar color
   T-Shirt shape
   Write missing descriptions:
     BeastBoy

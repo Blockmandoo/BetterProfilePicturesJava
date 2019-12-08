@@ -4,198 +4,198 @@
 
 /*Tablet*/
 @media (max-width: 777px) {
-  canvas {
-    width: 33vw;
-  }
-  image-card > tool-tip {
-    display: none;
-  }
+	canvas {
+		width: 33vw;
+	}
+	image-card > tool-tip {
+		display: none;
+	}
 }
 
 /*Short Device*/
 @media (max-height: 600px) {
-  $imgSize: 60px;
-  body {
-    .choiceCount {
-      display: none;
-    }
-    img {
-      height: 60px;
-      width: 60px;
-    }
-    image-card > tool-tip {
-      $padding: 3px;
-  		padding: $padding;
-  		width: 2*$imgSize;
-  		top: $imgSize;
-  		transform: translate(-1 / 2 * $imgSize - 2 * $padding, -20px);
-      > h5 {
-        font-size: .95em;
-        margin-bottom: 1px;
-      }
-      > p {
-        font-size: .8em;
-      }
-    }
-    image-card:hover > tool-tip {
-      $padding: 3px;
-  		transform: translate(-1 / 2 * $imgSize - 2 * $padding, 5px);
-    }
-    #banner {
-      canvas {
-        width: 33vh;
-      }
-      #description {
-        display: none;
-      }
-    }
-  }
-  /*Short, Semi-Thick Device*/
-  @media (min-width: 500.1px) {
-    body {
-      > #banner > a#canvasLink canvas {
-        margin: auto;
-      }
-      overflow: hidden;
-      height: 100vh;
-    	grid-template:
-    		"navi navi" 37px
-    		"banner body" 1fr
-        !important;
-      grid-auto-columns: 225px 1fr;
-      > main {
-        height: 100%;
-        width: 99%;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        padding: 0;
-        > :first-child {
-          margin-top: 25px;
-        }
-      }
-      > section#head, nav {
-        position: static;
-      }
-      > section#head h1 {
-        width: auto;
-        border-bottom: none;
-        &::after {
-          content: "";
-          width: 90%;
-          height: 3px;
-          display: block;
-          border-radius: 2px;
-          background: #aaa;
-          margin: auto;
-        }
-      }
-      > #banner {
-        align-content: center;
-        text-align: center;
-      	grid-template: "canvas" "description";
-        > a#canvasLink {
-          text-align: center;
-          canvas {
-            margin-left: 5px;
-          }
-        }
-        input#shareLink, span#shareText:not(.hidden) {
-          display: block;
-          height: 0;
-        }
-        > aside {
-          margin: auto;
-          > * {
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 500px) {
-    body {
-      #title {
-        text-align: center;
-      }
-      // > aside {
-      //   margin: auto;
-      //   width: 95%;
-      //   > * {
-      //     margin: auto;
-      //   }
-      // }
-    }
-  }
+	$imgSize: 60px;
+	body {
+		.choiceCount {
+			display: none;
+		}
+		img {
+			height: 60px;
+			width: 60px;
+		}
+		image-card > tool-tip {
+			$padding: 3px;
+			padding: $padding;
+			width: 2*$imgSize;
+			top: $imgSize;
+			transform: translate(-1 / 2 * $imgSize - 2 * $padding, -20px);
+			> h5 {
+				font-size: .95em;
+				margin-bottom: 1px;
+			}
+			> p {
+				font-size: .8em;
+			}
+		}
+		image-card:hover > tool-tip {
+			$padding: 3px;
+			transform: translate(-1 / 2 * $imgSize - 2 * $padding, 5px);
+		}
+		#banner {
+			canvas {
+				width: 33vh;
+			}
+			#description {
+				display: none;
+			}
+		}
+	}
+	/*Short, Semi-Thick Device*/
+	@media (min-width: 500.1px) {
+		body {
+			> #banner > a#canvasLink canvas {
+				margin: auto;
+			}
+			overflow: hidden;
+			height: 100vh;
+			grid-template:
+				"navi navi" 37px
+				"banner body" 1fr
+				!important;
+			grid-auto-columns: 225px 1fr;
+			> main {
+				height: 100%;
+				width: 99%;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				padding: 0;
+				> :first-child {
+					margin-top: 25px;
+				}
+			}
+			> section#head, nav {
+				position: static;
+			}
+			> section#head h1 {
+				width: auto;
+				border-bottom: none;
+				&::after {
+					content: "";
+					width: 90%;
+					height: 3px;
+					display: block;
+					border-radius: 2px;
+					background: #aaa;
+					margin: auto;
+				}
+			}
+			> #banner {
+				align-content: center;
+				text-align: center;
+				grid-template: "canvas" "description";
+				> a#canvasLink {
+					text-align: center;
+					canvas {
+						margin-left: 5px;
+					}
+				}
+				input#shareLink, span#shareText:not(.hidden) {
+					display: block;
+					height: 0;
+				}
+				> aside {
+					margin: auto;
+					> * {
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 500px) {
+		body {
+			#title {
+				text-align: center;
+			}
+			// > aside {
+			//	 margin: auto;
+			//	 width: 95%;
+			//	 > * {
+			//		 margin: auto;
+			//	 }
+			// }
+		}
+	}
 }
 
 /*Phone*/
 @media (max-width: 500px) {
-  body {
-    > #banner > a#canvasLink canvas {
-      margin: auto;
-    }
-    .choiceCount {
-      display: none;
-    }
-    img {
-    	height: $phoneImgSize;
-    	width: $phoneImgSize;
-    }
-    p {
-      font-size: 15px;
-    }
-    nav {
-      font-size: .8em;
-    }
-    > #banner {
-      top: 31px;
-      padding: 10px 0;
-    	grid-template: "canvas" "description";
-      > a#canvasLink {
-        text-align: center;
-      }
-      input#shareLink, span#shareText:not(.hidden) {
-        display: block;
-        height: 0;
-      }
-      > aside {
-        max-width: none;
-        margin: auto;
-        width: 95%;
-      }
-    }
-    #buttons {
-      text-align: center;
-    }
-  }
+	body {
+		> #banner > a#canvasLink canvas {
+			margin: auto;
+		}
+		.choiceCount {
+			display: none;
+		}
+		img {
+			height: $phoneImgSize;
+			width: $phoneImgSize;
+		}
+		p {
+			font-size: 15px;
+		}
+		nav {
+			font-size: .8em;
+		}
+		> #banner {
+			top: 31px;
+			padding: 10px 0;
+			grid-template: "canvas" "description";
+			> a#canvasLink {
+				text-align: center;
+			}
+			input#shareLink, span#shareText:not(.hidden) {
+				display: block;
+				height: 0;
+			}
+			> aside {
+				max-width: none;
+				margin: auto;
+				width: 95%;
+			}
+		}
+		#buttons {
+			text-align: center;
+		}
+	}
 
 }
 
 /*SkinnyPhone*/
 @media (max-width: 400px) {
-  #banner {
-    padding: 10px 0 5px;
-    canvas {
-      width: 100px;
-    }
-    #title {
-      text-align: center;
-    }
-    #description {
-      display: none;
-    }
-    br.noMobile {
-      display: none;
-    }
-  }
+	#banner {
+		padding: 10px 0 5px;
+		canvas {
+			width: 100px;
+		}
+		#title {
+			text-align: center;
+		}
+		#description {
+			display: none;
+		}
+		br.noMobile {
+			display: none;
+		}
+	}
 }
 
 /*Really Short Device*/
 @media (max-height: 420px) {
-  #banner {
-    padding: 10px 0 5px;
-    canvas {
-      width: 136px;
-    }
-  }
+	#banner {
+		padding: 10px 0 5px;
+		canvas {
+			width: 136px;
+		}
+	}
 }
