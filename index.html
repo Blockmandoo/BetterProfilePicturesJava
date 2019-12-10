@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> <!-- Mac thumbnail -->
 	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon64.png"> <!-- Normal browser thumbnail -->
@@ -11,14 +12,14 @@
 	<meta name="msapplication-square70x70logo" content="assets/favicon70.png"> <!-- Windows 70 thumbnail -->
 	<meta name="msapplication-TileColor" content="#b54f35"> <!-- Windows thumbnail color -->
 	<meta name="msapplication-wide310x150logo" content="assets/favicon310x150.png"> <!-- Windows Rectangle thumbnail -->
-	<meta name="theme-color" content="#b54f35"/> <!-- Discord / Facebook theme color-->
+	<meta name="theme-color" content="#b54f35" /> <!-- Discord / Facebook theme color-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media."/>
-	<meta property="og:image:type" content="image/png"/>
-	<meta property="og:image:url" content="/assets/favicon300.png"/> <!-- Discord / Facebook thumbnail -->
-	<meta property="og:site_name" content="BetterProfilePictures"/>
-	<meta property="og:title" content="Better Profile Pictures"/>
-	<meta property="og:type" content="article"/>
+	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media." />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:url" content="/assets/favicon300.png" /> <!-- Discord / Facebook thumbnail -->
+	<meta property="og:site_name" content="BetterProfilePictures" />
+	<meta property="og:title" content="Better Profile Pictures" />
+	<meta property="og:type" content="article" />
 	<script class="jquery" src="scripts/jquery-3.4.1.min.js"></script>
 	<script src="scripts/canvas.js"></script>
 	<script src="scripts/customElements.js"></script>
@@ -33,32 +34,32 @@
 	<nav>
 		<a href="index.html">Picture Generator</a>
 		<a href="about.html">About Us</a>
+		<!-- <a href="feedback.html">Feedback</a> -->
+		<!-- <a href="future.html">Future plans</a> -->
 		<a href="patches.html">Patch Notes</a>
-		<!-- <a>Suggestions</a> -->
+		<!-- <a href="setting.html">Settings</a> -->
+		<!-- <a href="stats.html">Statistics</a> -->
 	</nav>
-	<section id="banner"><a href="#" id="canvasLink">
-		<canvas width="256" height="256"></canvas>
+	<section id="banner">
+		<a href="#" id="canvasLink">
+			<canvas width="256" height="256"></canvas>
 		</a>
 		<aside>
 			<h2 id="title">Better Profile Pictures</h2>
-			<p id="description"> Welcome to Better Profile Pictures, here we help you find a new profile picture so you can finally replace the default one given to you by big social media companies. Pick a few options down below to get started. (There are currently
+			<p id="description"> Welcome to Better Profile Pictures, here we help you find a new profile picture so you can finally replace the default one given to you by big social media companies. Pick a few options down below to get started. (There are
+				currently
 				<span class="combinations">
 					over 75,000,000
 				</span>
 				combinations, so have fun!)</p>
 			<div id="buttons">
 				Darkmode:
-				<button class="toggle" onClick="darkmodeToggle()">
-					<input id="darkmode" type="checkbox">
-					<label for="darkmode" class="" onClick="darkmodeToggle()">
-						&nbsp;
-					</label>
-				</button>
+				<toggle-switch id="darkmode"></toggle-switch>
 				<br>
 				<button id="sudorandom" type="button" title="Use color schemes that make sense">Random</button>
 				<button id="random" type="button" title="Use any color scheme available">True Random</button>
 				<br class="noMobile">
-<!--
+				<!--
 				Future Upload Button
 				<button id="upload" type="button" class="disabled">Upload</button>
 				<input type="file" id="upload" name="Logo"> <br>
@@ -293,7 +294,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/abstract/SharpPoint.png" alt="SharpPoint">
 					<img class="darkMode" src="assets/LowRes/abstract/SharpPoint.png" alt="SharpPoint">
 				</image-card>
-				<image-card name="SpeedCube" head="Speed Cube" description="A speed cube, for anyone wondering, is a Rubik's Cube specifically made to be solved quickly, making turns super easy to do, and in some cases it can more than double how quickly you can solve one. Stop looking at me like that! I already said middle school was a wierd time for me.">
+				<image-card name="SpeedCube" head="Speed Cube"
+					description="A speed cube, for anyone wondering, is a Rubik's Cube specifically made to be solved quickly, making turns super easy to do, and in some cases it can more than double how quickly you can solve one. Stop looking at me like that! I already said middle school was a wierd time for me.">
 					<img class="lightMode" src="assets/LowRes/darkMode/abstract/SpeedCube.png" alt="SpeedCube">
 					<img class="darkMode" src="assets/LowRes/abstract/SpeedCube.png" alt="SpeedCube">
 				</image-card>
@@ -301,11 +303,13 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/abstract/StarCross.png" alt="StarCross">
 					<img class="darkMode" src="assets/LowRes/abstract/StarCross.png" alt="StarCross">
 				</image-card>
-				<image-card name="TetrisCross" head="Tetris Cross" description="I know Tetris pieces normally have 4 segments, not 3, but what else am I supposed to call this. I'm just trying my hardest to stop people from seeing some sort of swastika in it... awh crap now you see it don't you. Another day, another person not gonna use this logo.">
+				<image-card name="TetrisCross" head="Tetris Cross"
+					description="I know Tetris pieces normally have 4 segments, not 3, but what else am I supposed to call this. I'm just trying my hardest to stop people from seeing some sort of swastika in it... awh crap now you see it don't you. Another day, another person not gonna use this logo.">
 					<img class="lightMode" src="assets/LowRes/darkMode/abstract/TetrisCross.png" alt="TetrisCross">
 					<img class="darkMode" src="assets/LowRes/abstract/TetrisCross.png" alt="TetrisCross">
 				</image-card>
-				<image-card name="TriDot" head="Tri-Dot" description="Logo design is all about being as simple as possible, while still conveying a- look I'm gonna be straight with you, our boss hasn't being paying us very well If we don't put out so many logos he fires us, so just don't tell him, please.">
+				<image-card name="TriDot" head="Tri-Dot"
+					description="Logo design is all about being as simple as possible, while still conveying a- look I'm gonna be straight with you, our boss hasn't being paying us very well If we don't put out so many logos he fires us, so just don't tell him, please.">
 					<img class="lightMode" src="assets/LowRes/darkMode/abstract/TriDot.png" alt="TriDot">
 					<img class="darkMode" src="assets/LowRes/abstract/TriDot.png" alt="TriDot">
 				</image-card>
@@ -398,19 +402,23 @@
 					<span class="choiceCount"></span>
 					<!-- <button type="button">Random</button> -->
 				</p>
-				<image-card name="Discord" head="Discord" description="Discord is designed to help gamers talk to each other in real time. Discord features also include text-based chat rooms and direct messages. Connecting with friends involves joining an existing gaming server or sending an email invitation.">
+				<image-card name="Discord" head="Discord"
+					description="Discord is designed to help gamers talk to each other in real time. Discord features also include text-based chat rooms and direct messages. Connecting with friends involves joining an existing gaming server or sending an email invitation.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Discord.png" alt="Discord">
 					<img class="darkMode" src="assets/LowRes/defaults/Discord.png" alt="Discord">
 				</image-card>
-				<image-card name="Facebook" head="Facebook" description="A popular free social networking website that allows registered users to create profiles, upload photos and videos, send messages and keep in touch with friends, family and colleagues.">
+				<image-card name="Facebook" head="Facebook"
+					description="A popular free social networking website that allows registered users to create profiles, upload photos and videos, send messages and keep in touch with friends, family and colleagues.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Facebook.png" alt="Facebook">
 					<img class="darkMode" src="assets/LowRes/defaults/Facebook.png" alt="Facebook">
 				</image-card>
-				<image-card name="Instagram" head="Instagram" description="Upload photos and short videos through a mobile app. As with other social networking platforms, Instagram users can like, comment on and bookmark others' posts, as well as send private messages to their friends.">
+				<image-card name="Instagram" head="Instagram"
+					description="Upload photos and short videos through a mobile app. As with other social networking platforms, Instagram users can like, comment on and bookmark others' posts, as well as send private messages to their friends.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Instagram.png" alt="Instagram">
 					<img class="darkMode" src="assets/LowRes/defaults/Instagram.png" alt="Instagram">
 				</image-card>
-				<image-card name="LinkedIn" head="LinkedIn" description="A social networking site designed specifically for the business community. The goal of the site is to allow registered members to establish and document networks of people they know and trust professionally.">
+				<image-card name="LinkedIn" head="LinkedIn"
+					description="A social networking site designed specifically for the business community. The goal of the site is to allow registered members to establish and document networks of people they know and trust professionally.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/LinkedIn.png" alt="LinkedIn">
 					<img class="darkMode" src="assets/LowRes/defaults/LinkedIn.png" alt="LinkedIn">
 				</image-card>
@@ -418,7 +426,9 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Pinterest.png" alt="Pinterest">
 					<img class="darkMode" src="assets/LowRes/defaults/Pinterest.png" alt="Pinterest">
 				</image-card>
-				<image-card name="Reddit" head="Reddit" description="An American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members." keywords="colored">
+				<image-card name="Reddit" head="Reddit"
+					description="An American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Reddit.png" alt="Reddit">
 					<img class="darkMode" src="assets/LowRes/defaults/Reddit.png" alt="Reddit">
 				</image-card>
@@ -426,15 +436,18 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Snapchat.png" alt="Snapchat">
 					<img class="darkMode" src="assets/LowRes/defaults/Snapchat.png" alt="Snapchat">
 				</image-card>
-				<image-card name="Tumblr" head="Tumblr" description="A microblogging and social networking website. The service allows users to post multimedia and other content to a short-form blog. Users can follow other users' blogs. Bloggers can also make their blogs private.">
+				<image-card name="Tumblr" head="Tumblr"
+					description="A microblogging and social networking website. The service allows users to post multimedia and other content to a short-form blog. Users can follow other users' blogs. Bloggers can also make their blogs private.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Tumblr.png" alt="Tumblr">
 					<img class="darkMode" src="assets/LowRes/defaults/Tumblr.png" alt="Tumblr">
 				</image-card>
-				<image-card name="Twitch" head="Twitch" description="A social service that allows users to watch streams of individuals varying vastly in content. Users can choose a stream to watch and chat with others watching or even with the host of the stream." keywords="colored">
+				<image-card name="Twitch" head="Twitch"
+					description="A social service that allows users to watch streams of individuals varying vastly in content. Users can choose a stream to watch and chat with others watching or even with the host of the stream." keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Twitch.png" alt="Twitch">
 					<img class="darkMode" src="assets/LowRes/defaults/Twitch.png" alt="Twitch">
 				</image-card>
-				<image-card name="Twitter" head="Twitter" description="A free social networking microblogging service that allows registered members to broadcast short posts called tweets. Tweets, which may include hyperlinks, are limited to 140 characters.">
+				<image-card name="Twitter" head="Twitter"
+					description="A free social networking microblogging service that allows registered members to broadcast short posts called tweets. Tweets, which may include hyperlinks, are limited to 140 characters.">
 					<img class="lightMode" src="assets/LowRes/darkMode/defaults/Twitter.png" alt="Twitter">
 					<img class="darkMode" src="assets/LowRes/defaults/Twitter.png" alt="Twitter">
 				</image-card>
@@ -584,7 +597,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/games/Minecraft.png" alt="Minecraft">
 					<img class="darkMode" src="assets/LowRes/games/Minecraft.png" alt="Minecraft">
 				</image-card>
-				<image-card name="MinecraftCreeper" head="<a target='_blank' href='https://www.minecraft.net'>Minecraft Creeper</a>" description="The creeper is an iconic mob in minecraft that resulted from an accidental swapping of body parts in the early development of a pig model.">
+				<image-card name="MinecraftCreeper" head="<a target='_blank' href='https://www.minecraft.net'>Minecraft Creeper</a>"
+					description="The creeper is an iconic mob in minecraft that resulted from an accidental swapping of body parts in the early development of a pig model.">
 					<img class="lightMode" src="assets/LowRes/darkMode/games/MinecraftCreeper.png" alt="MinecraftCreeper">
 					<img class="darkMode" src="assets/LowRes/games/MinecraftCreeper.png" alt="MinecraftCreeper">
 				</image-card>
@@ -612,15 +626,18 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/games/Pokemon.png" alt="Pokemon">
 					<img class="darkMode" src="assets/LowRes/games/Pokemon.png" alt="Pokemon">
 				</image-card>
-				<image-card name="PokemonInstinct" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Instinct</a>" description="Team Instinct relies on a trainer's instincts. Instinct's members believe that Pokémon have excellent intuition and are interested in learning more about its connection to the egg hatching process.">
+				<image-card name="PokemonInstinct" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Instinct</a>"
+					description="Team Instinct relies on a trainer's instincts. Instinct's members believe that Pokémon have excellent intuition and are interested in learning more about its connection to the egg hatching process.">
 					<img class="lightMode" src="assets/LowRes/darkMode/games/PokemonInstinct.png" alt="PokemonInstinct">
 					<img class="darkMode" src="assets/LowRes/games/PokemonInstinct.png" alt="PokemonInstinct">
 				</image-card>
-				<image-card name="PokemonMystic" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Mystic</a>" description="Team Mystic relies on analyzing every situation. Mystic's members believe that Pokémon have immeasurable wisdom and are interested in learning more about why Pokémon experience evolution.">
+				<image-card name="PokemonMystic" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Mystic</a>"
+					description="Team Mystic relies on analyzing every situation. Mystic's members believe that Pokémon have immeasurable wisdom and are interested in learning more about why Pokémon experience evolution.">
 					<img class="lightMode" src="assets/LowRes/darkMode/games/PokemonMystic.png" alt="PokemonMystic">
 					<img class="darkMode" src="assets/LowRes/games/PokemonMystic.png" alt="PokemonMystic">
 				</image-card>
-				<image-card name="PokemonValor" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Valor</a>" description="Team Valor relies on strength in battle. Valor's members believe that Pokémon are stronger and more warmhearted than humans and are interested in enhancing their natural power.">
+				<image-card name="PokemonValor" head="<a target='_blank' href='https://www.pokemon.com'>Pokémon Valor</a>"
+					description="Team Valor relies on strength in battle. Valor's members believe that Pokémon are stronger and more warmhearted than humans and are interested in enhancing their natural power.">
 					<img class="lightMode" src="assets/LowRes/darkMode/games/PokemonValor.png" alt="PokemonValor">
 					<img class="darkMode" src="assets/LowRes/games/PokemonValor.png" alt="PokemonValor">
 				</image-card>
@@ -770,7 +787,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Aquaman.png" alt="Aquaman">
 					<img class="darkMode" src="assets/LowRes/heroes/Aquaman.png" alt="Aquaman">
 				</image-card>
-				<image-card name="Avengers" head="Avengers" description="A Marvel superhero team. The original founders were Thor, Antman, Wasp, and Hulk. This is however different in movies where the founders are Nick Fury, Iron Man, Thor, Captain America, Black Widow, Hawkeye, and Hulk.">
+				<image-card name="Avengers" head="Avengers"
+					description="A Marvel superhero team. The original founders were Thor, Antman, Wasp, and Hulk. This is however different in movies where the founders are Nick Fury, Iron Man, Thor, Captain America, Black Widow, Hawkeye, and Hulk.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Avengers.png" alt="Avengers">
 					<img class="darkMode" src="assets/LowRes/heroes/Avengers.png" alt="Avengers">
 				</image-card>
@@ -778,7 +796,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Batman.png" alt="Batman">
 					<img class="darkMode" src="assets/LowRes/heroes/Batman.png" alt="Batman">
 				</image-card>
-				<image-card name="BeastBoy" head="BeastBoy" description="A DC superhero with the ability to morph into any animal he knows of and mimic the abilities of those animals, because of this he has large amounts of empathy for animals causing him to be vegan.">
+				<image-card name="BeastBoy" head="BeastBoy"
+					description="A DC superhero with the ability to morph into any animal he knows of and mimic the abilities of those animals, because of this he has large amounts of empathy for animals causing him to be vegan.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/BeastBoy.png" alt="BeastBoy">
 					<img class="darkMode" src="assets/LowRes/heroes/BeastBoy.png" alt="BeastBoy">
 				</image-card>
@@ -870,7 +889,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/IronMan.png" alt="IronMan">
 					<img class="darkMode" src="assets/LowRes/heroes/IronMan.png" alt="IronMan">
 				</image-card>
-				<image-card name="JeanGrey" head="Jean Grey" description="A Marvel superhero in the X-Men that has telepathic and telekinetic superpowers. She also lives with the curse of being an Omega-level mutant that has the physical manifestation of cosmic Phoenix Force." keywords="gray">
+				<image-card name="JeanGrey" head="Jean Grey"
+					description="A Marvel superhero in the X-Men that has telepathic and telekinetic superpowers. She also lives with the curse of being an Omega-level mutant that has the physical manifestation of cosmic Phoenix Force." keywords="gray">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/JeanGrey.png" alt="JeanGrey">
 					<img class="darkMode" src="assets/LowRes/heroes/JeanGrey.png" alt="JeanGrey">
 				</image-card>
@@ -886,7 +906,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Punisher.png" alt="Punisher">
 					<img class="darkMode" src="assets/LowRes/heroes/Punisher.png" alt="Punisher">
 				</image-card>
-				<image-card name="Raven" head="Raven" description="A DC superhero with a wide range of super powers including the ability to sense and alter other's emotions, absorb other's pain to heal them faster than normal, and project a black energy that can stretch long distances, become intangible, and it allows her to fly.">
+				<image-card name="Raven" head="Raven"
+					description="A DC superhero with a wide range of super powers including the ability to sense and alter other's emotions, absorb other's pain to heal them faster than normal, and project a black energy that can stretch long distances, become intangible, and it allows her to fly.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Raven.png" alt="Raven">
 					<img class="darkMode" src="assets/LowRes/heroes/Raven.png" alt="Raven">
 				</image-card>
@@ -926,19 +947,23 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Thor.png" alt="Thor">
 					<img class="darkMode" src="assets/LowRes/heroes/Thor.png" alt="Thor">
 				</image-card>
-				<image-card name="Vision" head="Vision" description="A Marvel superhero that has superhuman senses, stamina, reflexes, speed, agility, strength, analytical capabilities, and the ability to process information and make calculations with superhuman speed and accuracy.">
+				<image-card name="Vision" head="Vision"
+					description="A Marvel superhero that has superhuman senses, stamina, reflexes, speed, agility, strength, analytical capabilities, and the ability to process information and make calculations with superhuman speed and accuracy.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Vision.png" alt="Vision">
 					<img class="darkMode" src="assets/LowRes/heroes/Vision.png" alt="Vision">
 				</image-card>
-				<image-card name="Wasp" head="Wasp" description="A Marvel superhero with the same powers as Antman but with the addition of flight, this means she can shrink to the size of an atom, and grow to the size of a building, all while being able to fly.">
+				<image-card name="Wasp" head="Wasp"
+					description="A Marvel superhero with the same powers as Antman but with the addition of flight, this means she can shrink to the size of an atom, and grow to the size of a building, all while being able to fly.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Wasp.png" alt="Wasp">
 					<img class="darkMode" src="assets/LowRes/heroes/Wasp.png" alt="Wasp">
 				</image-card>
-				<image-card name="Watchmen" head="Watchmen" description="A DC superhero team including The Comedian, Doctor Manhattan, Nite Owl, Ozymandias, Rorschach and Silk Spectre. There are also a few other minor superheroes on the team." keywords="colored">
+				<image-card name="Watchmen" head="Watchmen" description="A DC superhero team including The Comedian, Doctor Manhattan, Nite Owl, Ozymandias, Rorschach and Silk Spectre. There are also a few other minor superheroes on the team."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Watchmen.png" alt="Watchmen">
 					<img class="darkMode" src="assets/LowRes/heroes/Watchmen.png" alt="Watchmen">
 				</image-card>
-				<image-card name="Wolverine" head="Wolverine" description="A Marvel superhero with healing powers. Earlier in his life he was had a metal skeleton implanted into his bones since he can heal back anything, this allows for him to have super strength and retractable claw blades from his hands.">
+				<image-card name="Wolverine" head="Wolverine"
+					description="A Marvel superhero with healing powers. Earlier in his life he was had a metal skeleton implanted into his bones since he can heal back anything, this allows for him to have super strength and retractable claw blades from his hands.">
 					<img class="lightMode" src="assets/LowRes/darkMode/heroes/Wolverine.png" alt="Wolverine">
 					<img class="darkMode" src="assets/LowRes/heroes/Wolverine.png" alt="Wolverine">
 				</image-card>
@@ -1215,7 +1240,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/objects/Headphones.png" alt="Headphones">
 					<img class="darkMode" src="assets/LowRes/objects/Headphones.png" alt="Headphones">
 				</image-card>
-				<image-card name="Leaf" head="Leaf" description="This is the logo of our lovely website, but no one should recognize it if they have never seen this site, so feel free to use it without the fear of your friends knowing where you got it without you telling them.">
+				<image-card name="Leaf" head="Leaf"
+					description="This is the logo of our lovely website, but no one should recognize it if they have never seen this site, so feel free to use it without the fear of your friends knowing where you got it without you telling them.">
 					<img class="lightMode" src="assets/LowRes/darkMode/objects/Leaf.png" alt="Leaf">
 					<img class="darkMode" src="assets/LowRes/objects/Leaf.png" alt="Leaf">
 				</image-card>
@@ -1342,7 +1368,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/other/NewDocument.png" alt="NewDocument">
 					<img class="darkMode" src="assets/LowRes/other/NewDocument.png" alt="NewDocument">
 				</image-card>
-				<image-card name="RainCloud" head="Rain Cloud" description="Can't feel happy anymore? Always feeling depressed? Did you lose your job? Did Debrah take all the kids and won't let you see them? ...ahem, does it feel like there's always a cloud raining down on you, this is the logo for you.">
+				<image-card name="RainCloud" head="Rain Cloud"
+					description="Can't feel happy anymore? Always feeling depressed? Did you lose your job? Did Debrah take all the kids and won't let you see them? ...ahem, does it feel like there's always a cloud raining down on you, this is the logo for you.">
 					<img class="lightMode" src="assets/LowRes/darkMode/other/RainCloud.png" alt="RainCloud">
 					<img class="darkMode" src="assets/LowRes/other/RainCloud.png" alt="RainCloud">
 				</image-card>
@@ -1441,63 +1468,84 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Arryn.png" alt="Arryn">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Arryn.png" alt="Arryn">
 				</image-card>
-				<image-card name="gameofthrones-Baelish" head="Game of Thrones - Baelish" description="House Baelish of Harrenhal is an extinct noble house that held fealty to House Arryn of the Vale. Petyr Baelish, called &quot;Littlefinger&quot;, was the only living member of the house at the beginning of the fourth century.">
+				<image-card name="gameofthrones-Baelish" head="Game of Thrones - Baelish"
+					description="House Baelish of Harrenhal is an extinct noble house that held fealty to House Arryn of the Vale. Petyr Baelish, called &quot;Littlefinger&quot;, was the only living member of the house at the beginning of the fourth century.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Baelish.png" alt="Baelish">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Baelish.png" alt="Baelish">
 				</image-card>
-				<image-card name="gameofthrones-Baratheon" head="Game of Thrones - Baratheon" description="&quot;Ours Is the Fury.&quot; House Baratheon of Storm's End is a Great House of Westeros. House Baratheon became the royal house of the Seven Kingdoms after Robert Baratheon led a rebellion against the Targaryen dynasty." keywords="colored">
+				<image-card name="gameofthrones-Baratheon" head="Game of Thrones - Baratheon"
+					description="&quot;Ours Is the Fury.&quot; House Baratheon of Storm's End is a Great House of Westeros. House Baratheon became the royal house of the Seven Kingdoms after Robert Baratheon led a rebellion against the Targaryen dynasty."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Baratheon.png" alt="Baratheon">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Baratheon.png" alt="Baratheon">
 				</image-card>
-				<image-card name="gameofthrones-Bolton" head="Game of Thrones - Bolton" description="&quot;Our Blades Are Sharp.&quot; House Bolton of the Dreadfort is an extinct Great House from the North. House Bolton was infamous for its centuries-old practice of flaying their enemies alive, to the point that they used a flayed man as their House sigil." keywords="colored">
+				<image-card name="gameofthrones-Bolton" head="Game of Thrones - Bolton"
+					description="&quot;Our Blades Are Sharp.&quot; House Bolton of the Dreadfort is an extinct Great House from the North. House Bolton was infamous for its centuries-old practice of flaying their enemies alive, to the point that they used a flayed man as their House sigil."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Bolton.png" alt="Bolton">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Bolton.png" alt="Bolton">
 				</image-card>
-				<image-card name="gameofthrones-Clegane" head="Game of Thrones - Clegane" description="House Clegane of Clegane's Keep is an extinct vassal house that holds fealty to House Lannister of Casterly Rock. They are landed knights rather than a full noble house, but have strong ties to the Lannisters." keywords="colored">
+				<image-card name="gameofthrones-Clegane" head="Game of Thrones - Clegane"
+					description="House Clegane of Clegane's Keep is an extinct vassal house that holds fealty to House Lannister of Casterly Rock. They are landed knights rather than a full noble house, but have strong ties to the Lannisters."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Clegane.png" alt="Clegane">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Clegane.png" alt="Clegane">
 				</image-card>
-				<image-card name="gameofthrones-Forester" head="Game of Thrones - Forester" description="&quot;Iron From Ice.&quot; House Forrester of Ironrath is an exiled noble house from the Wolfswood in the North of Westeros. They are vassals of the Glovers of Deepwood Motte, as well as staunch Stark bannermen.">
+				<image-card name="gameofthrones-Forester" head="Game of Thrones - Forester"
+					description="&quot;Iron From Ice.&quot; House Forrester of Ironrath is an exiled noble house from the Wolfswood in the North of Westeros. They are vassals of the Glovers of Deepwood Motte, as well as staunch Stark bannermen.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Forester.png" alt="Forester">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Forester.png" alt="Forester">
 				</image-card>
-				<image-card name="gameofthrones-GoTLogo" head="Game of Thrones Logo" description="The Game of Thrones logo. Or at least the one I'm willing to put on this website, seeing as I try to limit each logo to only containing a maximum of two letters.">
+				<image-card name="gameofthrones-GoTLogo" head="Game of Thrones Logo"
+					description="The Game of Thrones logo. Or at least the one I'm willing to put on this website, seeing as I try to limit each logo to only containing a maximum of two letters.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/GoTLogo.png" alt="GoTLogo">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/GoTLogo.png" alt="GoTLogo">
 				</image-card>
-				<image-card name="gameofthrones-Glover" head="Game of Thrones - Glover" description="House Glover of Deepwood Motte is a noble house from the Wolfswood in the North of Westeros. They are loyal vassals of House Stark of Winterfell, and have their seat at the wooden stronghold Deepwood Motte.">
+				<image-card name="gameofthrones-Glover" head="Game of Thrones - Glover"
+					description="House Glover of Deepwood Motte is a noble house from the Wolfswood in the North of Westeros. They are loyal vassals of House Stark of Winterfell, and have their seat at the wooden stronghold Deepwood Motte.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Glover.png" alt="Glover">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Glover.png" alt="Glover">
 				</image-card>
-				<image-card name="gameofthrones-Greyjoy" head="Game of Thrones - Greyjoy" description="&quot;What Is Dead May Never Die.&quot; House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron Islands, a harsh and bleak collection of islands off the west coast of Westeros, from the castle at Pyke." keywords="gray">
+				<image-card name="gameofthrones-Greyjoy" head="Game of Thrones - Greyjoy"
+					description="&quot;What Is Dead May Never Die.&quot; House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron Islands, a harsh and bleak collection of islands off the west coast of Westeros, from the castle at Pyke."
+					keywords="gray">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Greyjoy.png" alt="Greyjoy">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Greyjoy.png" alt="Greyjoy">
 				</image-card>
-				<image-card name="gameofthrones-IronThrone" head="Game of Thrones - Iron Throne" description="The Iron Throne is the throne upon which the King of the Andals, the Rhoynar, and the First Men sits. The Iron Throne was forged at the order of Aegon the Conqueror, the first of the Targaryen Kings, who conquered six of the seven independent kingdoms of Westeros and unified them under his rule.">
+				<image-card name="gameofthrones-IronThrone" head="Game of Thrones - Iron Throne"
+					description="The Iron Throne is the throne upon which the King of the Andals, the Rhoynar, and the First Men sits. The Iron Throne was forged at the order of Aegon the Conqueror, the first of the Targaryen Kings, who conquered six of the seven independent kingdoms of Westeros and unified them under his rule.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/IronThrone.png" alt="IronThrone">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/IronThrone.png" alt="IronThrone">
 				</image-card>
-				<image-card name="gameofthrones-Lannister" head="Game of Thrones - Lannister" description="&quot;Hear me roar!&quot; House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of it's richest and most powerful families and oldest dynasties. Their seat is Casterly Rock, a massive rocky promontory overlooking the Sunset Sea which has had habitations and fortifications built into it over the millennia.">
+				<image-card name="gameofthrones-Lannister" head="Game of Thrones - Lannister"
+					description="&quot;Hear me roar!&quot; House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of it's richest and most powerful families and oldest dynasties. Their seat is Casterly Rock, a massive rocky promontory overlooking the Sunset Sea which has had habitations and fortifications built into it over the millennia.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Lannister.png" alt="Lannister">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Lannister.png" alt="Lannister">
 				</image-card>
-				<image-card name="gameofthrones-Reed" head="Game of Thrones - Reed" description="House Reed of Greywater Watch is a vassal house that holds fealty to House Stark of Winterfell. They control the vast area of swampland and bog stretching across the narrowest part of the continent of Westeros, the Neck.">
+				<image-card name="gameofthrones-Reed" head="Game of Thrones - Reed"
+					description="House Reed of Greywater Watch is a vassal house that holds fealty to House Stark of Winterfell. They control the vast area of swampland and bog stretching across the narrowest part of the continent of Westeros, the Neck.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Reed.png" alt="Reed">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Reed.png" alt="Reed">
 				</image-card>
-				<image-card name="gameofthrones-Stark" head="Game of Thrones - Stark" description="&quot;Winter is Coming.&quot; House Stark of Winterfell is a Great House of Westeros, ruling over the vast region known as the North from their seat in Winterfell. It is one of the oldest lines of Westeros nobility by far, claiming a line of descent stretching back over eight thousand years." keywords="colored">
+				<image-card name="gameofthrones-Stark" head="Game of Thrones - Stark"
+					description="&quot;Winter is Coming.&quot; House Stark of Winterfell is a Great House of Westeros, ruling over the vast region known as the North from their seat in Winterfell. It is one of the oldest lines of Westeros nobility by far, claiming a line of descent stretching back over eight thousand years."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Stark.png" alt="Stark">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Stark.png" alt="Stark">
 				</image-card>
-				<image-card name="gameofthrones-Targaryen" head="Game of Thrones - Targaryen" description="&quot;Fire and Blood.&quot; House Targaryen of King's Landing is a Great House of Westeros and the current ruling royal House of the Seven Kingdoms. House Targaryen conquered and unified the realm before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House.">
+				<image-card name="gameofthrones-Targaryen" head="Game of Thrones - Targaryen"
+					description="&quot;Fire and Blood.&quot; House Targaryen of King's Landing is a Great House of Westeros and the current ruling royal House of the Seven Kingdoms. House Targaryen conquered and unified the realm before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Targaryen.png" alt="Targaryen">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Targaryen.png" alt="Targaryen">
 				</image-card>
-				<image-card name="gameofthrones-Tully" head="Game of Thrones - Tully" description="&quot;Family, Duty, Honor.&quot; House Tully of Riverrun is a deposed Great House of Westeros. At the onset of the War of the Five Kings, House Tully came under attack by House Lannister and lent its support for House Stark when they came to their aid in the liberation of the Riverlands." keywords="colored">
+				<image-card name="gameofthrones-Tully" head="Game of Thrones - Tully"
+					description="&quot;Family, Duty, Honor.&quot; House Tully of Riverrun is a deposed Great House of Westeros. At the onset of the War of the Five Kings, House Tully came under attack by House Lannister and lent its support for House Stark when they came to their aid in the liberation of the Riverlands."
+					keywords="colored">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Tully.png" alt="Tully">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Tully.png" alt="Tully">
 				</image-card>
-				<image-card name="gameofthrones-Tyrell" head="Game of Thrones - Tyrell" description="&quot;Growing Strong.&quot; House Tyrell of Highgarden is an extinct Great House of Westeros. It ruled over the Reach, a vast, fertile, and heavily-populated region of southwestern Westeros.">
+				<image-card name="gameofthrones-Tyrell" head="Game of Thrones - Tyrell"
+					description="&quot;Growing Strong.&quot; House Tyrell of Highgarden is an extinct Great House of Westeros. It ruled over the Reach, a vast, fertile, and heavily-populated region of southwestern Westeros.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/gameofthrones/Tyrell.png" alt="Tyrell">
 					<img class="darkMode" src="assets/LowRes/shows/gameofthrones/Tyrell.png" alt="Tyrell">
 				</image-card>
@@ -1585,7 +1633,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/starwars/BobaFett.png" alt="BobaFett">
 					<img class="darkMode" src="assets/LowRes/shows/starwars/BobaFett.png" alt="BobaFett">
 				</image-card>
-				<image-card name="starwars-FirstOrder" head="Star Wars - First Order" description="The First Order is an autocratic military dictatorship that formed following the fall of the Galactic Empire. The organization has amassed its power in secret over three decades.">
+				<image-card name="starwars-FirstOrder" head="Star Wars - First Order"
+					description="The First Order is an autocratic military dictatorship that formed following the fall of the Galactic Empire. The organization has amassed its power in secret over three decades.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/starwars/FirstOrder.png" alt="FirstOrder">
 					<img class="darkMode" src="assets/LowRes/shows/starwars/FirstOrder.png" alt="FirstOrder">
 				</image-card>
@@ -1593,7 +1642,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/starwars/GalacticEmpire.png" alt="GalacticEmpire">
 					<img class="darkMode" src="assets/LowRes/shows/starwars/GalacticEmpire.png" alt="GalacticEmpire">
 				</image-card>
-				<image-card name="starwars-GalacticRepublic" head="Star Wars - Galactic Republic" description="The Galactic Republic, or simply called The Republic, is a democratic constitutional republic that has sustained itself peacefully for over twenty-five thousand years. It is mainly overseen by the Senate, a body in the Legislative Branch of the Republic government.">
+				<image-card name="starwars-GalacticRepublic" head="Star Wars - Galactic Republic"
+					description="The Galactic Republic, or simply called The Republic, is a democratic constitutional republic that has sustained itself peacefully for over twenty-five thousand years. It is mainly overseen by the Senate, a body in the Legislative Branch of the Republic government.">
 					<img class="lightMode" src="assets/LowRes/darkMode/shows/starwars/GalacticRepublic.png" alt="GalacticRepublic">
 					<img class="darkMode" src="assets/LowRes/shows/starwars/GalacticRepublic.png" alt="GalacticRepublic">
 				</image-card>
@@ -1696,7 +1746,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/sports/Soccer.png" alt="Soccer">
 					<img class="darkMode" src="assets/LowRes/sports/Soccer.png" alt="Soccer">
 				</image-card>
-				<image-card name="Tennis" head="Tennis" description="Did you know tennis balls are filled with a 'bouncy' gas, and kept in an air tight container to make sure they stay filled until they get used? Pretty odd right? I suggest watching a youtube video on it when you get some free time.">
+				<image-card name="Tennis" head="Tennis"
+					description="Did you know tennis balls are filled with a 'bouncy' gas, and kept in an air tight container to make sure they stay filled until they get used? Pretty odd right? I suggest watching a youtube video on it when you get some free time.">
 					<img class="lightMode" src="assets/LowRes/darkMode/sports/Tennis.png" alt="Tennis">
 					<img class="darkMode" src="assets/LowRes/sports/Tennis.png" alt="Tennis">
 				</image-card>
@@ -1767,7 +1818,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/symbols/Pi.png" alt="Pi">
 					<img class="darkMode" src="assets/LowRes/symbols/Pi.png" alt="Pi">
 				</image-card>
-				<image-card name="Play" head="Play" description="This triangle for some reason has been agreed upon by the higher council of logo design to mean 'Play' when used for recordings. So rest assured that everyone that sees this triangle will know that you want them to... play... you? Wait no, that can't be right.">
+				<image-card name="Play" head="Play"
+					description="This triangle for some reason has been agreed upon by the higher council of logo design to mean 'Play' when used for recordings. So rest assured that everyone that sees this triangle will know that you want them to... play... you? Wait no, that can't be right.">
 					<img class="lightMode" src="assets/LowRes/darkMode/symbols/Play.png" alt="Play">
 					<img class="darkMode" src="assets/LowRes/symbols/Play.png" alt="Play">
 				</image-card>
@@ -1783,7 +1835,8 @@
 					<img class="lightMode" src="assets/LowRes/darkMode/symbols/QMark.png" alt="QMark">
 					<img class="darkMode" src="assets/LowRes/symbols/QMark.png" alt="QMark">
 				</image-card>
-				<image-card name="Radioactive" head="Radioactive" description="I'm waking up to ash and dust. I wipe my brow and I sweat my rust. I'm breathing in the chemicals. I'm breaking in, shaping up, then checking out on the prison bus. This is it, the apocalypse.">
+				<image-card name="Radioactive" head="Radioactive"
+					description="I'm waking up to ash and dust. I wipe my brow and I sweat my rust. I'm breathing in the chemicals. I'm breaking in, shaping up, then checking out on the prison bus. This is it, the apocalypse.">
 					<img class="lightMode" src="assets/LowRes/darkMode/symbols/Radioactive.png" alt="Radioactive">
 					<img class="darkMode" src="assets/LowRes/symbols/Radioactive.png" alt="Radioactive">
 				</image-card>
@@ -2662,4 +2715,5 @@
 	</main>
 	<script src="scripts/intialization.js"></script>
 </body>
+
 </html>

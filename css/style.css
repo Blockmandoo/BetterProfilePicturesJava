@@ -30,7 +30,7 @@ h1 {
 /*Layout*/
 body {
   display: grid;
-  grid-template: "navi navi" "banner banner" "body body";
+  grid-template: "navi" "banner" "body";
 }
 
 body > nav {
@@ -135,23 +135,25 @@ button {
   margin-top: 4px;
 }
 
-button.toggle {
-  padding: 4px;
-  width: 55px;
+toggle-switch {
+  display: inline-block;
+  padding: 5px;
+  width: 45px;
+  transform: translateY(0.5em);
 }
 
-button.toggle input {
-  display: none;
-}
-
-button.toggle label {
+toggle-switch toggle-peg {
   display: block;
-  height: 16px;
-  width: 16px;
+  height: 15px;
+  width: 15px;
 }
 
-button.toggle label.checked {
-  transform: translateX(29px);
+toggle-switch toggle-peg.checked {
+  transform: translateX(30px);
+}
+
+toggle-switch + br {
+  margin-bottom: 5px;
 }
 
 .hidden, .searchHidden {
@@ -407,8 +409,6 @@ body.lightMode .darkMode {
 
 body.lightMode::before {
   content: "";
-  background: -webkit-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
   background: linear-gradient(rgba(200, 200, 200, 0.85) 25%, #dcdcdc), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
@@ -533,8 +533,6 @@ body.darkMode .lightMode {
 
 body.darkMode::before {
   content: "";
-  background: -webkit-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
-  background: -o-linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
   background: linear-gradient(rgba(70, 70, 70, 0.9) 25%, #383838), url("../assets/6x6.png");
   background-position: center;
   background-size: 100%, 480px;
@@ -680,7 +678,7 @@ nav > a {
   transition: background .4s ease, color .6s ease;
 }
 
-canvas, button {
+canvas, button, toggle-switch {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -700,8 +698,6 @@ canvas, button {
   background: #ba047b;
   border-color: #ff7c29;
   color: #dcdcdc;
-  background: url("../assets/symbols/Download.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Download.png"), -o-linear-gradient(#ba047b, #ba047b);
   background: url("../assets/symbols/Download.png"), linear-gradient(#ba047b, #ba047b);
   background-position: right;
   background-size: contain;
@@ -716,37 +712,7 @@ canvas, button {
 }
 
 #buttons button#download:hover {
-  background: url("../assets/darkMode/symbols/Download.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Download.png"), -o-linear-gradient(#ff7c29, #ff7c29);
   background: url("../assets/darkMode/symbols/Download.png"), linear-gradient(#ff7c29, #ff7c29);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#buttons button#upload {
-  background: #ba047b;
-  border-color: #ff7c29;
-  color: #dcdcdc;
-  background: url("../assets/symbols/Upload.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Upload.png"), -o-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Upload.png"), linear-gradient(#ba047b, #ba047b);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-right: 24px;
-}
-
-#buttons button#upload:hover {
-  background: #ff7c29;
-  border-color: #ba047b;
-  color: #1f1f1f;
-}
-
-#buttons button#upload:hover {
-  background: url("../assets/darkMode/symbols/Upload.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Upload.png"), -o-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Upload.png"), linear-gradient(#ff7c29, #ff7c29);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -756,8 +722,6 @@ canvas, button {
   background: #ba047b;
   border-color: #ff7c29;
   color: #dcdcdc;
-  background: url("../assets/symbols/Link.png"), -webkit-linear-gradient(#ba047b, #ba047b);
-  background: url("../assets/symbols/Link.png"), -o-linear-gradient(#ba047b, #ba047b);
   background: url("../assets/symbols/Link.png"), linear-gradient(#ba047b, #ba047b);
   background-position: right;
   background-size: contain;
@@ -772,33 +736,31 @@ canvas, button {
 }
 
 #buttons button#share:hover {
-  background: url("../assets/darkMode/symbols/Link.png"), -webkit-linear-gradient(#ff7c29, #ff7c29);
-  background: url("../assets/darkMode/symbols/Link.png"), -o-linear-gradient(#ff7c29, #ff7c29);
   background: url("../assets/darkMode/symbols/Link.png"), linear-gradient(#ff7c29, #ff7c29);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#buttons button.toggle {
+#buttons toggle-switch {
   background: #ba047b;
   border-color: #ff7c29;
 }
 
-#buttons button.toggle label {
+#buttons toggle-switch toggle-peg {
   background: #dcdcdc;
 }
 
-#buttons button.toggle:hover {
+#buttons toggle-switch:hover {
   background: #ff7c29;
   border-color: #ba047b;
 }
 
-#buttons button.toggle:hover label {
+#buttons toggle-switch:hover toggle-peg {
   background: #1f1f1f;
 }
 
-#buttons button {
+#buttons button, #buttons toggle-switch {
   border-width: 1px;
   border-style: solid;
   cursor: pointer;
@@ -808,12 +770,12 @@ canvas, button {
   transition: background .3s ease, color .3s ease, filter 1s ease;
 }
 
-#buttons .toggle label {
+#buttons toggle-switch toggle-peg {
   transition: background .3s ease, color .3s ease, transform .4s ease;
   cursor: pointer;
 }
 
-#buttons .toggle, #buttons .toggle label {
+#buttons toggle-switch, #buttons toggle-switch toggle-peg {
   border-radius: 50px;
 }
 
@@ -871,39 +833,6 @@ image-card tool-tip a {
 
 main {
   text-align: center;
-}
-
-.limited.halloween {
-  color: #b96c01;
-  background: #b96c01;
-  background: linear-gradient(90deg, #b96c01, #dcdcdc);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation-duration: .4s;
-  animation-name: halloween;
-  animation-iteration-count: infinite;
-}
-
-.limited.thanksgiving {
-  color: #f1b930;
-  background: #f1b930;
-  background: linear-gradient(90deg, #f1b930, #859d3c);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation-duration: .4s;
-  animation-name: thanksgiving;
-  animation-iteration-count: infinite;
-}
-
-.limited.christmas {
-  color: #468e40;
-  background: #468e40;
-  background: linear-gradient(90deg, #468e40, #9c3b3b);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation-duration: .4s;
-  animation-name: christmas;
-  animation-iteration-count: infinite;
 }
 
 @keyframes halloween {
@@ -1060,4 +989,37 @@ main {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
+}
+
+.limited.halloween {
+  color: #b96c01;
+  background: #b96c01;
+  background: linear-gradient(90deg, #b96c01, #dcdcdc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .4s;
+  animation-name: halloween;
+  animation-iteration-count: infinite;
+}
+
+.limited.thanksgiving {
+  color: #f1b930;
+  background: #f1b930;
+  background: linear-gradient(90deg, #f1b930, #859d3c);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .4s;
+  animation-name: thanksgiving;
+  animation-iteration-count: infinite;
+}
+
+.limited.christmas {
+  color: #468e40;
+  background: #468e40;
+  background: linear-gradient(90deg, #468e40, #9c3b3b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-duration: .4s;
+  animation-name: christmas;
+  animation-iteration-count: infinite;
 }

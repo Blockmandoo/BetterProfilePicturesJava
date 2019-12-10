@@ -9,8 +9,6 @@ body.lightMode {
 	}
 	&::before {
 		content: "";
-		background: -webkit-linear-gradient(rgba(200,200,200,0.85) 25%, #dcdcdc), url("../assets/6x6.png");
-		background: -o-linear-gradient(rgba(200,200,200,0.85) 25%, #dcdcdc), url("../assets/6x6.png");
 		background: linear-gradient(rgba(200,200,200,0.85) 25%, #dcdcdc), url("../assets/6x6.png");
 		background-position: center;
 		background-size: 100%, $imgSize*6;

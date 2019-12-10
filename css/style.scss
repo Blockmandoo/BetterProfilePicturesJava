@@ -7,7 +7,6 @@ $lightgreen: #9efe1a;
 $darkgreen: #37b41d;
 $imgSize: 80px;
 $phoneImgSize: 60px;
-$toggleWidth: 55px;
 
 @import "buttonColors.css";
 // Reset
@@ -49,12 +48,12 @@ body > div.loading {
 nav > a {
 	transition: background .4s ease, color .6s ease;
 }
-canvas, button {
+canvas, button, toggle-switch {
 	filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
 #buttons {
 	@include buttons(#ba047b, #ff7c29);
-	button {
+	button, toggle-switch {
 		border-width: 1px;
 		border-style: solid;
 		cursor: pointer;
@@ -62,11 +61,11 @@ canvas, button {
 	* {
 		transition: background .3s ease, color .3s ease, filter 1s ease;
 	}
-	.toggle label {
+	toggle-switch toggle-peg {
 		transition: background .3s ease, color .3s ease, transform .4s ease;
 		cursor: pointer;
 	}
-	.toggle, .toggle label {
+	toggle-switch, toggle-switch toggle-peg {
 		border-radius: 50px;
 	}
 }
@@ -181,6 +180,16 @@ main {
 	animation-iteration-count: infinite;
 }
 
+@keyframes halloween {
+	@include threeColorAnimation($black, #b96c01, $white);
+}
+@keyframes thanksgiving {
+	@include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
+}
+@keyframes christmas {
+	@include threeColorAnimation($white, #468e40, #9c3b3e);
+}
+
 .limited {
 	&.halloween {
 		@include limitedAppearence(halloween, #b96c01, $white);
@@ -191,14 +200,4 @@ main {
 	&.christmas {
 		@include limitedAppearence(christmas, #468e40, #9c3b3b);
 	}
-}
-
-@keyframes halloween {
-	@include threeColorAnimation($black, #b96c01, $white);
-}
-@keyframes thanksgiving {
-	@include threeColorAnimation(#6c2f00, #f1b930, #859d3c);
-}
-@keyframes christmas {
-	@include threeColorAnimation($white, #468e40, #9c3b3e);
 }

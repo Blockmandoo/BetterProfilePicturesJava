@@ -2,8 +2,6 @@
 
 // Set background to color and an image on the right
 @mixin background($color, $imageURL) {
-	background: url($imageURL), -webkit-linear-gradient($color, $color);
-	background: url($imageURL), -o-linear-gradient($color, $color);
 	background: url($imageURL), linear-gradient($color, $color);
 	background-position: right;
 	background-size: contain;
@@ -71,15 +69,34 @@
 	}
 }
 
+// Protocol for toggle switch
+@mixin toggleswitch($backgroundColor, $borderColor, $pegColor, $pegHoverColor) {
+	toggle-switch {
+		background: $backgroundColor;
+		border-color: $borderColor;
+		toggle-peg {
+			background: $pegColor;
+		}
+		&:hover {
+			background: $borderColor;
+			border-color: $backgroundColor;
+			toggle-peg {
+				background: $pegHoverColor;
+			}
+		}
+	}
+}
+
 // Light colored buttons
 @mixin buttonsLight($backgroundColor, $borderColor) {
 	button {
 		@include button($backgroundColor, $borderColor,  $black, $black);
 		@include download($backgroundColor, $borderColor, "../assets/darkMode/symbols/Download.png", "../assets/darkMode/symbols/Download.png", $black, $black);
-		@include upload($backgroundColor, $borderColor, "../assets/darkMode/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $black, $black);
+		// @include upload($backgroundColor, $borderColor, "../assets/darkMode/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $black, $black);
 		@include share($backgroundColor, $borderColor, "../assets/darkMode/symbols/Link.png", "../assets/darkMode/symbols/Link.png", $black, $black);
-		@include toggle($backgroundColor, $borderColor, $black, $black);
+		// @include toggle($backgroundColor, $borderColor, $black, $black);
 	}
+	@include toggleswitch($backgroundColor, $borderColor, $black, $black);
 }
 
 // Normal colored buttons
@@ -87,10 +104,11 @@
 	button {
 		@include button($backgroundColor, $borderColor,  $white, $black);
 		@include download($backgroundColor, $borderColor, "../assets/symbols/Download.png", "../assets/darkMode/symbols/Download.png", $white, $black);
-		@include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $white, $black);
+		// @include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/darkMode/symbols/Upload.png", $white, $black);
 		@include share($backgroundColor, $borderColor, "../assets/symbols/Link.png", "../assets/darkMode/symbols/Link.png", $white, $black);
-		@include toggle($backgroundColor, $borderColor, $white, $black);
+		// @include toggle($backgroundColor, $borderColor, $white, $black);
 	}
+	@include toggleswitch($backgroundColor, $borderColor, $white, $black);
 }
 
 // Dark colored buttons
@@ -98,8 +116,9 @@
 	button {
 		@include button($backgroundColor, $borderColor,  $white, $white);
 		@include download($backgroundColor, $borderColor, "../assets/symbols/Download.png", "../assets/symbols/Download.png", $white, $white);
-		@include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/symbols/Upload.png", $white, $white);
+		// @include upload($backgroundColor, $borderColor, "../assets/symbols/Upload.png", "../assets/symbols/Upload.png", $white, $white);
 		@include share($backgroundColor, $borderColor, "../assets/symbols/Link.png", "../assets/symbols/Link.png", $white, $white);
-		@include toggle($backgroundColor, $borderColor, $white, $white);
+		// @include toggle($backgroundColor, $borderColor, $white, $white);
 	}
+	@include toggleswitch($backgroundColor, $borderColor, $white, $white);
 }

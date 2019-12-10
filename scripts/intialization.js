@@ -2,8 +2,9 @@
 //Author: Nathanael Jacobsma
 
 function initialize() {
-	darkmodeCheck();          // Check the last darkmode setting
 	activateCards();          // Activate cards
+	addToggles();             // Setup all toggles
+	darkmodeCheck();          // Check the last darkmode setting
 	catalogChoices();         // Catalog all the choice for the random button
 	updateImage();            // Run canvas function on repeat
 	addClicks();              // Add onClick events to image-cards

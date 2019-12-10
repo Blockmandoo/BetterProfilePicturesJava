@@ -3,9 +3,9 @@
 body {
 	display: grid;
 	grid-template:
-		"navi navi"
-		"banner banner"
-		"body body";
+		"navi"
+		"banner"
+		"body";
 	> nav {
 		grid-area: navi;
 		z-index: 3;
@@ -91,24 +91,26 @@ body {
 }
 button {
 	margin-top: 4px;
-	&.toggle {
-		$padding: 4px;
-		padding: $padding;
-		width: $toggleWidth;
-		input {
-			display: none;
-		}
-		label {
-			$labelSize: 16px;
-			display: block;
-			height: $labelSize;
-			width: $labelSize;
-			&.checked {
-				transform: translateX($toggleWidth - (2 * $padding + $labelSize + 2 /*2 x Border width*/));
-
-			}
+}
+toggle-switch {
+	$width: 45px;
+	$padding: 5px;
+	display: inline-block;
+	padding: $padding;
+	width: $width;
+	transform: translateY(.5em);
+	toggle-peg {
+		$pegSize: 20px - $padding;
+		display: block;
+		height: $pegSize;
+		width: $pegSize;
+		&.checked {
+			transform: translateX($width - $pegSize);
 		}
 	}
+}
+toggle-switch + br {
+	margin-bottom: 5px;
 }
 .hidden, .searchHidden {
 	display: none;

@@ -6,36 +6,39 @@ var backgroundColorNames = [],
 		backgroundStyleNames = [],
 		logoNames = [],
 		logoColorNames = [],
-		shapeNames = [],
-		devMode = false;
+		shapeNames = [];
 
 //Activate active cards
 function activateCards() {
-	document.querySelector("#backgroundColor [name='" + globalBackgroundColor + "']").classList.add("active");
-	document.querySelector("#logo #" + globalGenre + " [name='" + globalLogo + "']").classList.add("active");
-	document.querySelector("#logoColor [name='" + globalLogoColor + "']").classList.add("active");
-	document.querySelector("#shape [name='" + globalShape + "']").classList.add("active");
-	document.querySelector("#backgroundStyle [name='" + globalBackgroundStyle + "']").classList.add("active");
+	$("#backgroundColor [name='" + globalBackgroundColor + "']").addClass("active");
+	$("#logo #" + globalGenre + " [name='" + globalLogo + "']").addClass("active");
+	$("#logoColor [name='" + globalLogoColor + "']").addClass("active");
+	$("#shape [name='" + globalShape + "']").addClass("active");
+	$("#backgroundStyle [name='" + globalBackgroundStyle + "']").addClass("active");
+}
+
+//Setup toggle switches
+function addToggles() {
+var toggles = $("toggle-switch");
+var togglePeg = $("<toggle-peg></toggle-peg>");
+toggles.append(togglePeg);
 }
 
 //Apply the total to the combination span
 function applyCount() {
 	//Count all the image-card elements in a div
 	function getChoiceCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday):not(.searchHidden)");
-		return images.length;
+		return $("div#" + catagory + " image-card:not(.holiday):not(.activeHoliday):not(.searchHidden)").length;
 	}
 
 	//Count all the holiday image-card elements in a div
 	function getHolidayCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card.activeHoliday:not(.searchHidden)");
-		return images.length;
+		return $("div#" + catagory + " image-card.activeHoliday:not(.searchHidden)").length;
 	}
 
 	//Count all the search image-card elements in a div
 	function getSearchCount(catagory) {
-		var images = document.querySelectorAll("div#" + catagory + " image-card.searchHidden");
-		return images.length;
+		return $("div#" + catagory + " image-card.searchHidden").length;
 	}
 
 	//Get the final count for the catagory
@@ -119,11 +122,12 @@ function applyHead() {
 
 //intialization to get all the possible options
 function catalogChoices() {
-	var backgroundColors = document.querySelectorAll("#backgroundColor image-card:not(.holiday)");
-	var backgroundStyles = document.querySelectorAll("#backgroundStyle image-card:not(.holiday)");
-	var logos = document.querySelectorAll("#logo image-card");
-	var logoColors = document.querySelectorAll("#logoColor image-card:not(.holiday)");
-	var shapes = document.querySelectorAll("#shape image-card:not(.holiday)");
+	var backgroundColors = $("#backgroundColor image-card:not(.holiday)");
+	var backgroundStyles = $("#backgroundStyle image-card:not(.holiday)");
+	var logos = $("#logo image-card");
+	var logoColors = $("#logoColor image-card:not(.holiday)");
+	var shapes = $("#shape image-card:not(.holiday)");
+
 	for (var i = 0; i < backgroundColors.length; i++) {
 		backgroundColorNames.push(backgroundColors[i].getAttribute("name"));
 	}
@@ -143,8 +147,7 @@ function catalogChoices() {
 
 //Clear the search bar, and reset the search
 function clearSearch() {
-	var searchBox = document.querySelector("#searchBox");
-	searchBox.value = "";
+	$("#searchBox").val("");
 	search();
 }
 
@@ -169,43 +172,37 @@ function copyLink() {
 
 //Check storage for what darkmode should be in
 function darkmodeCheck() {
-	var body = document.querySelector("body");
-	var toggle = document.querySelector("label[for='darkmode']");
+	var body = $("body");
+	var toggle = $("#darkmode > toggle-peg");
 	switch (getCookie("darkmode")) {
-		case "true":
-			body.className = "darkMode";
-			if (toggle) {toggle.className = "";}
-			break;
 		case "false":
-			body.className = "lightMode";
-			if (toggle) {toggle.className = "checked";}
+			body.removeClass("darkMode");
+			body.addClass("lightMode");
+			toggle.addClass("checked");
 			break;
-		case "":
+		case "true":
+		default:
 			setCookie("darkmode", "true");
-			body.className = "darkMode";
-			if (toggle) {toggle.className = "";}
+			body.addClass("darkMode");
+			toggle.removeClass("checked");
 			break;
 	}
 }
 
 //Toggle darkmode on and off
 function darkmodeToggle() {
-	var body = document.querySelector("body");
-	var toggle = document.querySelector("label[for='darkmode']");
-	if (body.classList[0] === "darkMode") {
-		body.className = "lightMode";
-		toggle.className = "checked";
+	var body = $("body");
+	var toggle = $("#darkmode > toggle-peg");
+	if (body.hasClass("darkMode")) {
+		body.removeClass("darkMode");
+		body.addClass("lightMode");
+		toggle.addClass("checked");
 		setCookie("darkmode", "false");
-		if (devMode) {
-			console.log("Setting to light mode.");
-		}
 	} else {
-		body.className = "darkMode";
-		toggle.className = "";
+		body.removeClass("lightMode");
+		body.addClass("darkMode");
+		toggle.removeClass("checked");
 		setCookie("darkmode", "true");
-		if (devMode) {
-			console.log("Setting to dark mode.");
-		}
 	}
 }
 
@@ -392,13 +389,6 @@ function randomishIcon() {
 	var logoElement = document.querySelector("image-card[name="+logoName+"]");
 	var genre = logoElement.parentNode.getAttribute("id");
 
-	if (devMode) {
-		console.log("Logo Color Index: " + logoColorIndex);
-		console.log("BG Color Index: " + backgroundColorIndex);
-		// console.log("BG Style Index: " + backgroundStyleIndex);
-		// console.log("Logo Index: " + logoIndex);
-		// console.log("Shape Index: " + shapeIndex);
-	}
 	//Setting the icon
 	if (document.querySelector("#backgroundStyle .unlock")) {
 		setBackgroundStyle(backgroundStyleNames[backgroundStyleIndex]);

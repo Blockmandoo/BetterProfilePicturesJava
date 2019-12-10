@@ -8,6 +8,7 @@ function addClicks() {
 	backgroundColorClicks();
 	backgroundStyleClicks();
 	clearSearchButton();
+	darkmodeButton();
 	downloadLink();
 	genreClicks();
 	lockButton();
@@ -42,6 +43,10 @@ function addClicks() {
 
 	function clearSearchButton() {
 		$("#clearSearch").click(clearSearch);
+	}
+
+	function darkmodeButton() {
+		$("#darkmode").click(darkmodeToggle);
 	}
 
 	function downloadLink() {

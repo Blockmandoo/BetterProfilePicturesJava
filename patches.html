@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> <!-- Mac thumbnail -->
 	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon64.png"> <!-- Normal browser thumbnail -->
-	<link rel="preload" href="assets/loading.svg"> <!-- Preload loading gif -->
+	<link rel="preload" href="assets/loading.svg" as="image"> <!-- Preload loading gif -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/textpage.css">
 	<meta charset="utf-8">
@@ -12,17 +13,19 @@
 	<meta name="msapplication-square70x70logo" content="assets/favicon70.png"> <!-- Windows 70 thumbnail -->
 	<meta name="msapplication-TileColor" content="#b54f35"> <!-- Windows thumbnail color -->
 	<meta name="msapplication-wide310x150logo" content="assets/favicon310x150.png"> <!-- Windows Rectangle thumbnail -->
-	<meta name="theme-color" content="#b54f35"/> <!-- Discord/Facbook theme color-->
+	<meta name="theme-color" content="#b54f35" /> <!-- Discord/Facebook theme color-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media."/>
-	<meta property="og:image:type" content="image/png"/>
-	<meta property="og:image:url" content="/assets/favicon300.png"/> <!-- Discord / Facebook thumbnail -->
-	<meta property="og:site_name" content="BetterProfilePictures"/>
-	<meta property="og:title" content="Better Profile Pictures"/>
-	<meta property="og:type" content="article"/>
+	<meta property="og:description" content="Automatically generating a new profile picture for you to use on social media." />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:url" content="/assets/favicon300.png" /> <!-- Discord / Facebook thumbnail -->
+	<meta property="og:site_name" content="BetterProfilePictures" />
+	<meta property="og:title" content="Better Profile Pictures" />
+	<meta property="og:type" content="article" />
+	<script class="jquery" src="scripts/jquery-3.4.1.min.js"></script>
 	<script src="scripts/scripts.js"></script>
 	<title>BPP - Patch Notes</title>
 </head>
+
 <body class="darkMode">
 	<div class="loading"></div>
 	<section id="head">
@@ -32,20 +35,43 @@
 	<nav id="textPageNav">
 		<a href="index.html">Picture Generator</a>
 		<a href="about.html">About Us</a>
+		<!-- <a href="feedback.html">Feedback</a> -->
+		<!-- <a href="future.html">Future plans</a> -->
 		<a href="patches.html">Patch Notes</a>
-		<!-- <a>Suggestions</a> -->
+		<!-- <a href="setting.html">Settings</a> -->
+		<!-- <a href="stats.html">Statistics</a> -->
 	</nav>
 	<main>
 		<!-- Emmet to make patches -->
-		<!-- div.patch#patch1_##>(h3>a{Patch 1.##})+p+ul>li -->
-		<div class="patch" id="patch1_13">
-			<h3><a href="">Patch 1.13</a> - Dec 2 2019</h3>
+		<!-- div.patch#patch3_##>(h3>a{Patch 3.##})+p+ul>li -->
+		<div class="patch" id="patch3_14">
+			<h3><a href="https://betterprofilepicturejava.netlify.com">Patch 3.14</a> - Dec 10, 2019</h3>
+			<p>Who ordered the pie?</p>
+			<ul>
+				<li>Changed all patch versions to be patch 3.x since this is technically the 3rd rewrite of B.P.P. Forgive me for any confusion this causes. (which makes this version π, yay)</li>
+				<li>Finally ran the website through a spell check (really, no one was gonna tell me about our <em>snoke</em>flakes?)</li>
+				<li>Fixed a broken sleeping logo, who knows how long that's been broken</li>
+				<li>Improved load time of the website drastically
+					<ul>
+						<li>This was accomplished mostly by reducing the size of the images used to display options</li>
+						<li>Initially we used the same images used to render the finished product.</li>
+						<li>This meant a reduction from 256x256 to 80x80, this is a reduction of 59,136 pixels per image, or ~90% improvement</li>
+						<li>We also made a bunch of the text files used to make the website significantly smaller, in some cases reducing the file by 2,000 lines or nearly 30%</li>
+					</ul>
+				</li>
+				<li>More about page information</li>
+				<li>New default Twitch logo, since they updated their default profile picture</li>
+				<li>Renamed Nonogon and Octogon to Nonagon and Octagon, since that's the RIGHT way to spell it, my brain just disagrees.</li>
+			</ul>
+		</div>
+		<div class="patch" id="patch3_13">
+			<h3><a href="https://5de5c9da925f200008b13471--betterprofilepicturejava.netlify.com/">Patch 3.13</a> - Dec 2, 2019</h3>
 			<p>ALL THE LOGOS!!!</p>
 			<ul>
-				<li>Added a ton of new logos, so that some catagories that were lacking are not anymore, this mostly includes the show catagory, but also sports</li>
+				<li>Added a ton of new logos, so that some categories that were lacking are not anymore, this mostly includes the show category, but also sports</li>
 				<li>Added keywords to all the logos with color in them (colored) so they can easily be searched</li>
 				<li>Fixed nav bar height on text pages that are short on content (i.e. the 404 page) and being displayed on wide mobile devices</li>
-				<li>Modified the navigation bar colors, hopefully its easier to read now</li>
+				<li>Modified the navigation bar colors, hopefully it's easier to read now</li>
 				<li>Moved the scroll bar on wide mobile devices on the about and patch pages</li>
 				<li>New Logos:
 					<ul>
@@ -58,33 +84,33 @@
 						<li>Totalling: 59 Brand new logos</li>
 					</ul>
 				</li>
-				<li>Slight tweak to how logos are handled on a circlular background</li>
+				<li>Slight tweak to how logos are handled on a circular background</li>
 				<li>Technically <em>removed</em> the snowflake logo from objects, but there a bigger duplicate in the winter section (which also means its temporary now)</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_12_2">
-			<h3><a href="">Patch 1.12.2</a> - Dec 1 2019</h3>
+		<div class="patch" id="patch3_12_2">
+			<h3><a href="https://5de39df8eaf80c00088b98a1--betterprofilepicturejava.netlify.com">Patch 3.12.2</a> - Dec 1, 2019</h3>
 			<p>Error 404 Patch not found</p>
 			<ul>
-				<li>Added a 404 page, its pretty cool</li>
+				<li>Added a 404 page, it's pretty cool</li>
 				<li>Added a few redirects (/home → /index, /news → /patches, /info → /about)</li>
 				<li>Added a whole bunch of scripting and images to make the 404 page look neat</li>
 				<li>Changed the colors of the loading animation</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_12_1">
-			<h3><a href="https://betterprofilepicturejava.netlify.com">Patch 1.12.1</a> - Nov 30 2019</h3>
+		<div class="patch" id="patch3_12_1">
+			<h3><a href="https://5de24b6cddea32000a4cd4cc--betterprofilepicturejava.netlify.com/">Patch 3.12.1</a> - Nov 30, 2019</h3>
 			<p>Use the key!</p>
 			<ul>
 				<li>Added <em>lots</em> of keywords, mainly for colors</li>
 				<li>Added a clear search button</li>
 				<li>Cursor now changes when you hover over an option, we went a while without that...</li>
 				<li>Fixed some layout issues on mobile (it feels like this is what we do every patch)</li>
-				<li>Mobile devices turned on their sides had their tool tips tweaked</li>
+				<li>Mobile devices turned on their sides had their tooltips tweaked</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_12_0">
-			<h3><a href="https://5ddf8e34434c6f00088968be--betterprofilepicturejava.netlify.com/">Patch 1.12.0</a> - Nov 28 2019</h3>
+		<div class="patch" id="patch3_12_0">
+			<h3><a href="https://5ddf8e34434c6f00088968be--betterprofilepicturejava.netlify.com/">Patch 3.12.0</a> - Nov 28, 2019</h3>
 			<p>Where did I leave that logo... Oh here it is!</p>
 			<ul>
 				<li>Cleaned up some javascript, and css</li>
@@ -93,8 +119,8 @@
 						<li>Hopefully it is mobile friendly, more testing required...</li>
 						<li>It can find content via the options' titles, descriptions, keywords, or developement IDs (this usually means the title with no spaces)</li>
 						<li>It comes with a little magnifying glass, so... thats cool</li>
-						<li>It hides anything that does not match it's search, and display special text if absolutly nothing is found</li>
-						<li>It will change the count of any given catagory based on how many results show</li>
+						<li>It hides anything that does not match it's search, and display special text if absolutely nothing is found</li>
+						<li>It will change the count of any given category based on how many results show</li>
 						<li>Started adding keywords to options, most are not even started</li>
 						<li>The border will change anytime someone is typing in it, this isn't really that impressive I suppose, but we like it, so here it is in the patch notes</li>
 						<li>The page returns to normal when the search box is cleared</li>
@@ -104,15 +130,15 @@
 				<li>Updated the magnifying glass logo symbol to no longer read "I should probably add a search feature at some point..." and now reads "Hey, I finally added a search bar by the way!"</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_11">
-			<h3><a href="https://5dd8c34fae9bed000931c72f--betterprofilepicturejava.netlify.com/">Patch 1.11</a> - Nov 22 2019</h3>
+		<div class="patch" id="patch3_11">
+			<h3><a href="https://5dd8c34fae9bed000931c72f--betterprofilepicturejava.netlify.com/">Patch 3.11</a> - Nov 22, 2019</h3>
 			<p>Ho ho ho</p>
 			<ul>
 				<li>Added massive changes to how the website looks on a sideways mobile phone</li>
 				<li>Added some christmas content that will appear after November 28th</li>
 				<li>Also added 2 fall leaf logos</li>
 				<li>Cleaned up unused files</li>
-				<li>Hid stats on about page in preperation for adding a stat page... eventually</li>
+				<li>Hid stats on about page in preparation for adding a stat page... eventually</li>
 				<li>Hid the count of how many choices there are on mobile</li>
 				<li>Lighmode text pages (about/patches) now tapers off smoother at the bottom</li>
 				<li>Made the hover effect on the nav bar more noticable, and transition better</li>
@@ -147,16 +173,16 @@
 						<li>Christmas Red</li>
 					</ul>
 				</li>
-				<li>Renamed Septagon to Heptagon, because apearently thats the more common word</li>
+				<li>Renamed Septagon to Heptagon, because apparently that's the more common word</li>
 				<li>Renamed the Random button to True Random, Random-ish to Random, and swapped positions</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_10">
-			<h3><a href="https://5dce5569d9c54b0007cb1179--betterprofilepicturejava.netlify.com">Patch 1.10</a> - Nov 15 2019</h3>
+		<div class="patch" id="patch3_10">
+			<h3><a href="https://5dce5569d9c54b0007cb1179--betterprofilepicturejava.netlify.com">Patch 3.10</a> - Nov 15, 2019</h3>
 			<p>Give 'yer thanks!</p>
 			<ul>
-				<li>Added a whole bunch of new Thanksgiving content that we should have finished weeks ago, lets get the christmas stuff done soon, shall we?</li>
-				<li>Fixed a typo for skull and cross bones in lightmode, whoops</li>
+				<li>Added a whole bunch of new Thanksgiving content that we should have finished weeks ago, let's get the christmas stuff done soon, shall we?</li>
+				<li>Fixed a typo for skull and crossbones in lightmode, whoops</li>
 				<li>Merged a few past patches because they were too small to be a whole update (yes that does mean we went back in time with patch numbers, this one would have been patch 1.13)</li>
 				<li>New background colors:
 					<ul>
@@ -184,8 +210,8 @@
 				</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_9_3">
-			<h3><a href="https://5dcdb52bb4e65d0008403cb1--betterprofilepicturejava.netlify.com">Patch 1.9.3</a> - Nov 14 2019</h3>
+		<div class="patch" id="patch3_9_3">
+			<h3><a href="https://5dcdb52bb4e65d0008403cb1--betterprofilepicturejava.netlify.com">Patch 3.9.3</a> - Nov 14, 2019</h3>
 			<p>Smol patches are smol</p>
 			<ul>
 				<li>Added a new dev function to activate all holidays</li>
@@ -194,8 +220,8 @@
 				<li>Renamed page headings on browser tabs to use 'BPP'</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_9_2">
-			<h3><a href="https://5dbc58b150fe53fc0ec92dce--betterprofilepicturejava.netlify.com">Patch 1.9.2</a> - Nov 1 2019</h3>
+		<div class="patch" id="patch3_9_2">
+			<h3><a href="https://5dbc58b150fe53fc0ec92dce--betterprofilepicturejava.netlify.com">Patch 3.9.2</a> - Nov 1, 2019</h3>
 			<p>Smol patches are smol</p>
 			<ul>
 				<li>Added spacing in the patch notes to make it more readable</li>
@@ -204,18 +230,18 @@
 				<li>Made loading screen display on mobile again</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_9_1">
-			<h3><a href="https://5db8930006a16600086a37f7--betterprofilepicturejava.netlify.com">Patch 1.9.1</a> - Oct 29 2019</h3>
+		<div class="patch" id="patch3_9_1">
+			<h3><a href="https://5db8930006a16600086a37f7--betterprofilepicturejava.netlify.com">Patch 3.9.1</a> - Oct 29, 2019</h3>
 			<p>Smol patches are smol</p>
 			<ul>
 				<li>Added a lot of missing descriptions, there are still more though</li>
 				<li>Added a secret function that allows you to set the current holiday, shhhh only you will know it exists</li>
-				<li>Got rid of the holiday count for each choice, but its now included with the normal count</li>
+				<li>Got rid of the holiday count for each choice, but it's now included with the normal count</li>
 				<li>There is now a count for all the logos too</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_9_0">
-			<h3><a href="https://5db31ef9fc95e1000741c61b--betterprofilepicturejava.netlify.com">Patch 1.9.0</a> - Oct 26 2019</h3>
+		<div class="patch" id="patch3_9_0">
+			<h3><a href="https://5db31ef9fc95e1000741c61b--betterprofilepicturejava.netlify.com">Patch 3.9.0</a> - Oct 26, 2019</h3>
 			<p>Smol patches are smol</p>
 			<ul>
 				<li>Added a new count number to each choice for people who like numbers (except logos, need a different approach for those)</li>
@@ -225,8 +251,8 @@
 				<li>The choice count includes a holiday count to keep track of how many holiday choices are currently available</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_8">
-			<h3><a href="https://5db31ef9fc95e1000741c61b--betterprofilepicturejava.netlify.com">Patch 1.8</a> - Oct 25 2019</h3>
+		<div class="patch" id="patch3_8">
+			<h3><a href="https://5db31ef9fc95e1000741c61b--betterprofilepicturejava.netlify.com">Patch 3.8</a> - Oct 25, 2019</h3>
 			<p>Patch notes, because everyone cares about the history of this page... right?</p>
 			<ul>
 				<li>Brand new loading screen that <em>should</em> load before everything else, and then fades once everything is loaded, also made a loading <a href="loading.html">page</a> for testing</li>
@@ -237,14 +263,14 @@
 				<li>The loading screen doesn't render on phones, since it acts funny there, might revisit this later</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_6">
-			<h3><a href="https://5db18b6d25cf980008c96388--betterprofilepicturejava.netlify.com">Patch 1.7</a> - Oct 24 2019</h3>
+		<div class="patch" id="patch3_6">
+			<h3><a href="https://5db18b6d25cf980008c96388--betterprofilepicturejava.netlify.com">Patch 3.7</a> - Oct 24, 2019</h3>
 			<p>Spooky scary skeletons.</p>
 			<ul>
 				<li>Added code for holidays, once content is added for those, they will only display for 1 month (i.e. Christmas in December)</li>
 				<li>Added darkmode tracking cookies, so you don't have to turn on the light everytime</li>
 				<li>Added Halloween content</li>
-				<li>All halloween content is marked as limited time, as it will not be easily accessable after October</li>
+				<li>All Halloween content is marked as limited time, as it will not be easily accessible after October</li>
 				<li>Changed how logo color is applied, it now fits the size based on how much it is shrunk by image shape</li>
 				<li>Fixed few minor typos around the site</li>
 				<li>Pumpkin shape is automatically selected if pumpkin background style is selected</li>
@@ -287,12 +313,12 @@
 				</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_5">
-			<h3><a href="https://5daa779910191c000763b724--betterprofilepicturejava.netlify.com">Patch 1.6</a> - Oct 18 2019</h3>
+		<div class="patch" id="patch3_5">
+			<h3><a href="https://5daa779910191c000763b724--betterprofilepicturejava.netlify.com">Patch 3.6</a> - Oct 18, 2019</h3>
 			<p>Colors, some good, some bad.</p>
 			<ul>
 				<li>Added a whole bunch of icons no one will probably ever see, but shows up if you save the website as a shortcut</li>
-				<li>Added flexability for mobile devices on their side or short windows</li>
+				<li>Added flexibility for mobile devices on their side or short windows</li>
 				<li>Canvas now refreshes for 15 seconds after the page loads up, and 4 seconds after a button is pressed</li>
 				<li>Brand new share button (works off of the code added last patch that can decode the query variables)</li>
 				<li>New background colors:
@@ -326,11 +352,11 @@
 				</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_4">
-			<h3><a href="https://5da68164cc8b9a000b7cc476--betterprofilepicturejava.netlify.com">Patch 1.4</a> - Oct 15 2019</h3>
+		<div class="patch" id="patch3_4">
+			<h3><a href="https://5da68164cc8b9a000b7cc476--betterprofilepicturejava.netlify.com">Patch 3.4</a> - Oct 15, 2019</h3>
 			<p>Content Patch! Look at all the content.</p>
 			<ul>
-				<li>Brand new starting image using the burning horizon background color, star background style, along with the rounded sqaure</li>
+				<li>Brand new starting image using the burning horizon background color, star background style, along with the rounded square</li>
 				<li>Fixed game links to now open in a new tab instead of getting rid of your lovely picture</li>
 				<li>Minor change, but now when you hover over the combinations it says how many decent combinations there are (based on the randomish color schemes)</li>
 				<li>New genre: Hieroglyphic</li>
@@ -363,11 +389,11 @@
 				<li>New shapes:
 					<ul>
 						<li>Decagon</li>
-						<li>Nonogon</li>
+						<li>Nonagon</li>
 						<li>Pentagon</li>
 						<li>Rounded Hexagon Long</li>
 						<li>Rounded Hexagon</li>
-						<li>Rounded Octogon</li>
+						<li>Rounded Octagon</li>
 						<li>Septagon</li>
 					</ul>
 				</li>
@@ -375,8 +401,8 @@
 				<li>Simplified shape handling to only need one image instead of two</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_3">
-			<h3><a href="https://5da208e2fca013000871c683--betterprofilepicturejava.netlify.com">Patch 1.3</a> - Oct 12 2019</h3>
+		<div class="patch" id="patch3_3">
+			<h3><a href="https://5da208e2fca013000871c683--betterprofilepicturejava.netlify.com">Patch 3.3</a> - Oct 12, 2019</h3>
 			<p>Logo descriptions! Finally!</p>
 			<ul>
 				<li>Added headings and descriptions that display when you click on a logo</li>
@@ -387,8 +413,8 @@
 				<li>Logos now have an auto generated tooltip based on the heading of the logo</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_2">
-			<h3><a href="https://5d9e6ceb7db8110008262bfb--betterprofilepicturejava.netlify.com">Patch 1.2</a> - Oct 9 2019</h3>
+		<div class="patch" id="patch3_2">
+			<h3><a href="https://5d9e6ceb7db8110008262bfb--betterprofilepicturejava.netlify.com">Patch 3.2</a> - Oct 9, 2019</h3>
 			<p>Oh my gosh that randomish button was so much work.</p>
 			<ul>
 				<li>Added a 'Randomish' button that picks from preset color schemes (This was actually a lot more work that it might seem)</li>
@@ -403,8 +429,8 @@
 				</li>
 			</ul>
 		</div>
-		<div class="patch" id="patch1_1">
-			<h3><a href="https://5d9649eeb9cf870008c492a0--betterprofilepicturejava.netlify.com">Patch 1.1</a> - Oct 3 2019</h3>
+		<div class="patch" id="patch3_1">
+			<h3><a href="https://5d9649eeb9cf870008c492a0--betterprofilepicturejava.netlify.com">Patch 3.1</a> - Oct 3, 2019</h3>
 			<p>Finally some new villain logos.</p>
 			<ul>
 				<li>Added a lock for the random button</li>
@@ -427,8 +453,8 @@
 				</li>
 			</ul>
 		</div>
-		<div id="patch1_0" class="patch">
-			<h3><a href="https://5d942cb26e13da0008c58731--betterprofilepicturejava.netlify.com">Patch 1.0</a> - Oct 1 2019</h3>
+		<div id="patch3_0" class="patch">
+			<h3><a href="https://5d942cb26e13da0008c58731--betterprofilepicturejava.netlify.com">Patch 3.0</a> - Oct 1, 2019</h3>
 			<p>First fully functioning version of B.P.P.</p>
 			<ul>
 				<li>Added 'Background' to globalColor and globalStyle</li>
@@ -456,4 +482,5 @@
 	</main>
 	<script src="scripts/textPageInitialize.js"></script>
 </body>
+
 </html>

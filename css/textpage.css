@@ -39,6 +39,10 @@ main > div h3 {
   padding-bottom: 10px;
 }
 
+main > div > p {
+  margin: 6px;
+}
+
 @media (max-height: 600px) and (min-width: 500.1px) {
   body > main {
     max-width: none;

@@ -15,9 +15,6 @@ var globalBackgroundColor = "BurningHorizon",
 
 //Download canvas
 function downloadCanvas() {
-	if (devMode) {
-		console.log("Attempting to save image");
-	}
 	var canvas = document.querySelector("canvas");
 	var imageData = canvas.toDataURL("image/png");
 	// create temporary link
@@ -35,9 +32,6 @@ function downloadCanvas() {
 function makeImage() {
 	var canvas = document.querySelector("canvas"); //Grab canvas element.
 	var canvasContext = canvas.getContext("2d");
-	if (devMode) {
-		console.log("Refresh image");
-	}
 
 	//Define the logo image.
 	var logoImage = new Image();
@@ -98,21 +92,18 @@ function makeImage() {
 	}
 
 	//Draw profile picture.
-	canvasContext.globalCompositeOperation = "source-in";
-	canvasContext.drawImage(logoImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
-	canvasContext.globalCompositeOperation = "source-atop";
-	canvasContext.drawImage(logoColorImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
-	canvasContext.globalCompositeOperation = "destination-over";
-	canvasContext.drawImage(backgroundImage, 0, 0, 256, 256);
-	canvasContext.globalCompositeOperation = "destination-in";
-	canvasContext.drawImage(shapeImage, 0, 0, 256, 256);
+  drawImage("source-in", logoImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
+  drawImage("source-atop", logoColorImage, borderOffset, borderOffset, 256 - 2 * borderOffset, 256 - 2 * borderOffset);
+  drawImage("destination-over", backgroundImage, 0, 0, 256, 256);
+  drawImage("destination-in", shapeImage, 0, 0, 256, 256);
+  function drawImage(compOperation, image, x1, y1, x2, y2) {
+  	canvasContext.globalCompositeOperation = compOperation;
+  	canvasContext.drawImage(image, x1, y1, x2, y2);
+  }
 
 }
 
 function setBackgroundColor(color) {
-	if (devMode) {
-		console.log("Setting background color: " + color);
-	}
 	globalBackgroundColor = color;
 
 	//Set download button color
@@ -129,10 +120,6 @@ function setBackgroundColor(color) {
 }
 
 function setBackgroundStyle(style) {
-	if (devMode) {
-		console.log("Setting background style: " + style);
-	}
-
 	//Set active Style display
 	var activeStyle = document.querySelector("#backgroundStyle .active")
 	if (activeStyle) {
@@ -145,14 +132,11 @@ function setBackgroundStyle(style) {
 }
 
 function setGenre(genre) {
-	if (devMode) {
-		console.log("Setting genre: " + genre);
-	}
 	//Sets a temp genre
 	tempGenre = genre;
 
 	//Set active Genre display
-	var activeGenre = document.querySelector("#genre .active")
+	var activeGenre = document.querySelector("#genre .active");
 	if (activeGenre) {
 		activeGenre.classList.remove("active");
 	}
@@ -178,10 +162,6 @@ function setGenre(genre) {
 }
 
 function setLogo(logo) {
-	if (devMode) {
-		console.log("Setting logo: " + logo);
-	}
-
 	//Sepcial case for shows
 	logo = logo.replace("-", "/");
 
@@ -189,7 +169,7 @@ function setLogo(logo) {
 	globalGenre = tempGenre;
 
 	//Set active Logo display
-	var activeLogo = document.querySelector("#logo .active")
+	var activeLogo = document.querySelector("#logo .active");
 	if (activeLogo) {
 		activeLogo.classList.remove("active");
 	}
@@ -203,13 +183,10 @@ function setLogo(logo) {
 }
 
 function setLogoColor(color) {
-	if (devMode) {
-		console.log("Setting logo color: " + color);
-	}
 	globalLogoColor = color;
 
 	//Set active Color display
-	var activeColor = document.querySelector("#logoColor .active")
+	var activeColor = $("#logoColor .active")[0];
 	if (activeColor) {
 		activeColor.classList.remove("active");
 	}
@@ -219,13 +196,10 @@ function setLogoColor(color) {
 }
 
 function setShape(shape) {
-	if (devMode) {
-		console.log("Setting shape: " + shape);
-	}
 	globalShape = shape;
 
 	//Set active Shape display
-	var activeShape = document.querySelector("#shape .active")
+	var activeShape = document.querySelector("#shape .active");
 	if (activeShape) {
 		activeShape.classList.remove("active");
 	}
@@ -239,9 +213,6 @@ function updateImage() {
 	var refresh = setInterval(makeImage, refreshRate);
 	setTimeout(function () {
 		clearInterval(refresh);
-		if (devMode) {
-			console.log("Stop!");
-		}
 	}, refreshTime);
 	refreshTime = secondRefreshTime;
 }

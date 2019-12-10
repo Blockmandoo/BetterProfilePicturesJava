@@ -6,10 +6,12 @@ Logos:
     Dungeons and Dragons
   Heroes:
     Thundercats
+  Military
   Other:
     Deathly Hallows
     Overwatch heroes
     Pin
+    Shuffle
   Shows:
     Black Mirror
     Code Geass
@@ -33,11 +35,12 @@ Features:
   Buttons:
     Download form submit button
     Upload images button
+  Browser <500 x <600
   Change Lightmode active green
   Color scrollbar
+  Fix toggle switch
   Highlight new content
   Individual Random
-  Browser <500 x <600
   Overlay options
   Pages:
     Feedback page
@@ -45,23 +48,8 @@ Features:
     Setting page?
       Random mode
       Darkmode
-    Stats pages
+    Stats page
   Reduce globals
   Scrollbar color
   T-Shirt shape
-  Write missing descriptions:
-    BeastBoy
-    Cyborg
-    DoctorDoom
-    GeneralZod
-    GreenArrow
-    HarleyQuinn
-    Hawkeye
-    Hawkgirl
-    Hawkman
-    LegionOfDoom
-    LexLuther
-    Raven
-    Riddler
-    Scarecrow
-    StaticShock
+  Write missing descriptions
