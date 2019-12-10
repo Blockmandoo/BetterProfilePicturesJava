@@ -68,6 +68,11 @@ body > #banner > a#canvasLink canvas {
   margin-left: 20px;
 }
 
+body > #banner > a#canvasLink canvas.clone {
+  position: absolute;
+  z-index: 3;
+}
+
 body > #banner > aside {
   grid-area: description;
   max-width: 400px;
@@ -286,6 +291,8 @@ image-card.holiday {
     align-content: center;
     text-align: center;
     grid-template: "canvas" "description";
+    width: 225px;
+    padding: 4px;
   }
   body > #banner > a#canvasLink {
     text-align: center;
@@ -678,7 +685,7 @@ nav > a {
   transition: background .4s ease, color .6s ease;
 }
 
-canvas, button, toggle-switch {
+canvas:not(.clone), button, toggle-switch {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 

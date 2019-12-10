@@ -33,6 +33,10 @@ body {
 			canvas {
 				margin-right: 10px;
 				margin-left: 20px;
+				&.clone {
+					position: absolute;
+					z-index: 3;
+				}
 			}
 		}
 		> aside {

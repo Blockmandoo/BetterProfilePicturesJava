@@ -38,7 +38,6 @@ Features:
   Browser <500 x <600
   Change Lightmode active green
   Color scrollbar
-  Fix toggle switch
   Highlight new content
   Individual Random
   Overlay options
@@ -48,7 +47,7 @@ Features:
     Setting page?
       Random mode
       Darkmode
-    Stats page
+      Stats page
   Reduce globals
   Scrollbar color
   T-Shirt shape

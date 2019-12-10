@@ -10,12 +10,33 @@ var globalBackgroundColor = "BurningHorizon",
 		tempGenre,
 																//1000 = 1 Second
 		refreshRate = 250,					//How often should I update the canvas?
-		refreshTime = 15000,				//How long should I update the canvas after the page loads?
+		refreshTime = 10000,				//How long should I update the canvas after the page loads?
 		secondRefreshTime = 4000;	 //How long should I update the canvas?
+
+//Clone the canvas, and then fade it away
+function cloneFadeCanvas() {
+	var fadeTime = 1000;
+	var canvas = $("canvas:not(.clone)")
+	var canvasClone = canvas.clone();
+
+	//Create a clone of the canvas and label it as such
+	canvasClone.addClass("clone");
+	canvasClone.insertBefore(canvas);
+
+	//Copy the content of the canvas from the original
+	var cloneContext = canvasClone[0].getContext('2d');
+	cloneContext.drawImage(canvas[0], 0, 0);
+
+	//Fade the canvas clone out of existence
+	canvasClone.fadeOut(fadeTime);
+	setTimeout(function() {
+		canvasClone.remove();
+	}, fadeTime);
+}
 
 //Download canvas
 function downloadCanvas() {
-	var canvas = document.querySelector("canvas");
+	var canvas = document.querySelector("canvas:not(.clone)");
 	var imageData = canvas.toDataURL("image/png");
 	// create temporary link
 	var tmpLink = document.createElement("a");
@@ -30,7 +51,7 @@ function downloadCanvas() {
 
 //Core function
 function makeImage() {
-	var canvas = document.querySelector("canvas"); //Grab canvas element.
+	var canvas = document.querySelector("canvas:not(.clone)"); //Grab canvas element.
 	var canvasContext = canvas.getContext("2d");
 
 	//Define the logo image.
@@ -209,6 +230,10 @@ function setShape(shape) {
 }
 
 function updateImage() {
+  //Make a clone of the canvas for a fade effect
+  cloneFadeCanvas();
+
+  //Update the canvas
 	clearInterval(refresh);
 	var refresh = setInterval(makeImage, refreshRate);
 	setTimeout(function () {

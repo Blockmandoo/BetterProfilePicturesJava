@@ -48,7 +48,7 @@ body > div.loading {
 nav > a {
 	transition: background .4s ease, color .6s ease;
 }
-canvas, button, toggle-switch {
+canvas:not(.clone), button, toggle-switch {
 	filter: drop-shadow(4px 4px 4px $transparentBlack);
 }
 #buttons {

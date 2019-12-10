@@ -93,6 +93,8 @@
 				align-content: center;
 				text-align: center;
 				grid-template: "canvas" "description";
+				width: 225px;
+		    padding: 4px;
 				> a#canvasLink {
 					text-align: center;
 					canvas {
