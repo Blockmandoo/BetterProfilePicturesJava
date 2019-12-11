@@ -33,11 +33,6 @@ body > div.loading {
 	@media (max-width: 500px), (max-height: 600px) {background-size: 300px, cover;}
 	background-repeat: no-repeat;
 	background-position: center;
-	transition: opacity 1.75s ease .25s;
-	opacity: 1;
-	&.complete {
-		opacity: 0;
-	}
 }
 #banner a {
 	text-decoration: none;

@@ -659,18 +659,12 @@ body > div.loading {
   background-size: 400px, cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 1.75s ease .25s;
-  opacity: 1;
 }
 
 @media (max-width: 500px), (max-height: 600px) {
   body > div.loading {
     background-size: 300px, cover;
   }
-}
-
-body > div.loading.complete {
-  opacity: 0;
 }
 
 #banner a {

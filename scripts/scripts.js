@@ -213,6 +213,14 @@ function delCookie(name) {
 	return document.cookie;
 }
 
+//Fade out the element then delete it
+function fadeDelete(elem, fadeTime) {
+	elem.fadeOut(fadeTime);
+	setTimeout(function() {
+		elem.remove();
+	}, fadeTime);
+}
+
 //Grab any variable from cookies
 function getCookie(cname) {
 	// https://www.w3schools.com/js/js_cookies.asp
@@ -292,7 +300,7 @@ function getHoliday() {
 
 //Remove loading animation
 function loadingComplete() {
-	document.querySelector("div.loading").classList.add("complete")
+	fadeDelete($("div.loading"), 20);
 }
 
 //Random icon generator
