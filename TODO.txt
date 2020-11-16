@@ -11,6 +11,7 @@ Logos:
     Deathly Hallows
     Overwatch heroes
     Pin
+    Samsung apps
     Shuffle
   Shows:
     Black Mirror
@@ -32,6 +33,7 @@ Logos:
     Venom
 
 Features:
+  App shape
   Buttons:
     Download form submit button
     Upload images button
@@ -47,7 +49,7 @@ Features:
     Setting page?
       Random mode
       Darkmode
-      Stats page
+    Stats page
   Reduce globals
   Scrollbar color
   T-Shirt shape
